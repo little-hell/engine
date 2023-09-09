@@ -18,8 +18,9 @@
 #define NET_COMMON_H
 
 #include "d_mode.h"
-#include "net_defs.h"
-#include "net_packet.h"
+
+#include "littlehell/net/defs.h"
+#include "net/packet.h"
 
 typedef enum
 {
