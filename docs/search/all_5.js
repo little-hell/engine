@@ -26,7 +26,7 @@ var searchData=
   ['endoom_5fw_23',['ENDOOM_W',['../i__endoom_8c.html#add1107f947f16e9506490c3cf1dd11a2',1,'i_endoom.c']]],
   ['env_5fvar_5ft_24',['env_var_t',['../structenv__var__t.html',1,'']]],
   ['env_5fvars_25',['env_vars',['../m__misc_8c.html#abe8dd639d8b56a078182d75f95a6204e',1,'m_misc.c']]],
-  ['episode_26',['episode',['../d__mode_8c.html#a56f392e22a2ee14eb23160beb035c4b8',1,'d_mode.c']]],
+  ['episode_26',['episode',['../structnet__gamesettings__t.html#af0cee81a0db6207ac7cf054b66507907',1,'net_gamesettings_t::episode()'],['../d__mode_8c.html#a56f392e22a2ee14eb23160beb035c4b8',1,'episode():&#160;d_mode.c']]],
   ['escapepressed_27',['EscapePressed',['../gui_8c.html#a29cff07de7be37cda262e3067ce51a02',1,'gui.c']]],
   ['ev_5fjoystick_28',['ev_joystick',['../d__event_8h.html#a4c676ef04244b4debba9a1d0306d00afa82d71816bbee11c4d7fd1aebefbcaf15',1,'d_event.h']]],
   ['ev_5fkeydown_29',['ev_keydown',['../d__event_8h.html#a4c676ef04244b4debba9a1d0306d00afac0bac0591674973c49101729eec1f45f',1,'d_event.h']]],
@@ -60,5 +60,6 @@ var searchData=
   ['expected_5fnodes_57',['expected_nodes',['../gui_8c.html#aa211199df44b07cd2ad88280992ae79d',1,'gui.c']]],
   ['extautomap_58',['extautomap',['../structcrispy__t.html#ab57668d068deb342a74785ada2fb12d8',1,'crispy_t']]],
   ['extra_5fdefaults_59',['extra_defaults',['../m__config_8c.html#a272800ba524fc3583d73ae9ef01165c4',1,'m_config.c']]],
-  ['extra_5fdefaults_5flist_60',['extra_defaults_list',['../m__config_8c.html#a4f767fe93bd44b550bd4a5fa411f4ab3',1,'m_config.c']]]
+  ['extra_5fdefaults_5flist_60',['extra_defaults_list',['../m__config_8c.html#a4f767fe93bd44b550bd4a5fa411f4ab3',1,'m_config.c']]],
+  ['extratics_61',['extratics',['../structnet__gamesettings__t.html#a737bb95a5a80142442c72b0e32a3da9e',1,'net_gamesettings_t']]]
 ];

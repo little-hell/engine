@@ -68,7 +68,7 @@ var searchData=
   ['m_5fvsnprintf_65',['M_vsnprintf',['../m__misc_8c.html#ad5772d362ba67979ef6d2cab435fe827',1,'M_vsnprintf(char *buf, size_t buf_len, const char *s, va_list args):&#160;m_misc.c'],['../m__misc_8h.html#ad5772d362ba67979ef6d2cab435fe827',1,'M_vsnprintf(char *buf, size_t buf_len, const char *s, va_list args):&#160;m_misc.c']]],
   ['m_5fwritefile_66',['M_WriteFile',['../m__misc_8c.html#af902438c58fba33113ee075e5f8705dc',1,'M_WriteFile(const char *name, const void *source, int length):&#160;m_misc.c'],['../m__misc_8h.html#af902438c58fba33113ee075e5f8705dc',1,'M_WriteFile(const char *name, const void *source, int length):&#160;m_misc.c']]],
   ['mapfile_67',['MapFile',['../w__file__win32_8c.html#acd9fb81706d47169bb42658c95c1cc8e',1,'w_file_win32.c']]],
-  ['mapmousewheeltobuttons_68',['MapMouseWheelToButtons',['../i__input_8c.html#ad21b0ca65198bafb1311623abe932c42',1,'i_input.c']]],
+  ['mapmousewheeltobuttons_68',['MapMouseWheelToButtons',['../input_8c.html#ad21b0ca65198bafb1311623abe932c42',1,'input.c']]],
   ['mappingindex_69',['MappingIndex',['../gusconf_8c.html#ae245f064887710cbc7382a64876bb80b',1,'gusconf.c']]],
   ['mem_5ffclose_70',['mem_fclose',['../memio_8c.html#ab35f98620ce923dbda920ddd1768099a',1,'mem_fclose(MEMFILE *stream):&#160;memio.c'],['../memio_8h.html#ab35f98620ce923dbda920ddd1768099a',1,'mem_fclose(MEMFILE *stream):&#160;memio.c']]],
   ['mem_5ffopen_5fread_71',['mem_fopen_read',['../memio_8c.html#ac9b94867787f23484f7eee83fb1550f8',1,'mem_fopen_read(void *buf, size_t buflen):&#160;memio.c'],['../memio_8h.html#ac9b94867787f23484f7eee83fb1550f8',1,'mem_fopen_read(void *buf, size_t buflen):&#160;memio.c']]],

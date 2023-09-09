@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('md_drawable_api.html',''); initResizab
   <div class="headertitle"><div class="title">Drawable API Design Document </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md9"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md2"></a>
 Creating a Drawable</h1>
 <div class="fragment"><div class="line">DrawableTextures *textures = drawable_get_textures();</div>
 <div class="line">Drawable drawable = {</div>
@@ -140,7 +140,7 @@ Creating a Drawable</h1>
 <div class="line">    </div>
 <div class="line"><span class="comment">// Under the hood this uses the DrawableRegistry</span></div>
 <div class="line">drawable_create_drawable(&amp;drawable, <span class="stringliteral">&quot;statusbar&quot;</span>); </div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md10"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
 Destroying a drawable</h1>
 <div class="fragment"><div class="line"><span class="comment">// Again, using the DrawableRegistry under the hood</span></div>
 <div class="line">drawable_destroy_drawable(drawable, <span class="stringliteral">&quot;statusbar&quot;</span>); </div>
@@ -148,7 +148,7 @@ Destroying a drawable</h1>
 <div class="line"><span class="comment">// All Drawables can be destroyed (such as at exit), just a wrapper</span></div>
 <div class="line">around the DrawableRegistry.</div>
 <div class="line">drawables_destroy_all();</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md11"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
 Accessing a Drawable</h2>
 <div class="fragment"><div class="line"><span class="comment">// Again, wrapper around the Drawable registry</span></div>
 <div class="line">Drawable *drawable = drawable_get_drawable(drawable, <span class="stringliteral">&quot;statusbar&quot;</span>);</div>

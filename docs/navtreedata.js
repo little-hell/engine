@@ -25,18 +25,18 @@
 var NAVTREE =
 [
   [ "Little Hell Engine", "index.html", [
-    [ "Building", "index.html#autotoc_md1", [
-      [ "Troubleshooting", "index.html#autotoc_md2", null ],
-      [ "Dependencies", "index.html#autotoc_md3", null ],
-      [ "Setup for Linux and macOS (Nix Package Manager)", "index.html#autotoc_md4", null ],
-      [ "Setup for BSD", "index.html#autotoc_md5", null ],
-      [ "Setup on Windows", "index.html#autotoc_md6", null ],
-      [ "Compiling", "index.html#autotoc_md7", null ]
+    [ "Building", "index.html#autotoc_md4", [
+      [ "Troubleshooting", "index.html#autotoc_md6", null ],
+      [ "Dependencies", "index.html#autotoc_md7", null ],
+      [ "Setup for Linux and macOS (Nix Package Manager)", "index.html#autotoc_md8", null ],
+      [ "Setup for BSD", "index.html#autotoc_md9", null ],
+      [ "Setup on Windows", "index.html#autotoc_md10", null ],
+      [ "Compiling", "index.html#autotoc_md11", null ]
     ] ],
     [ "Drawable API Design Document", "md_drawable_api.html", [
-      [ "Creating a Drawable", "md_drawable_api.html#autotoc_md9", null ],
-      [ "Destroying a drawable", "md_drawable_api.html#autotoc_md10", [
-        [ "Accessing a Drawable", "md_drawable_api.html#autotoc_md11", null ]
+      [ "Creating a Drawable", "md_drawable_api.html#autotoc_md2", null ],
+      [ "Destroying a drawable", "md_drawable_api.html#autotoc_md3", [
+        [ "Accessing a Drawable", "md_drawable_api.html#autotoc_md5", null ]
       ] ]
     ] ],
     [ "Adding music to", "md_music.html", null ],
@@ -73,18 +73,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "a11y_8c.html",
-"d__iwad_8c.html#a91ff75681399aff051eca7daf05ca82e",
-"functions.html",
-"i__endoom_8c.html#add1107f947f16e9506490c3cf1dd11a2",
-"i__sdlmusic_8c.html#aadf4cc339eaa159d7cd6f76ee484dbd7",
-"i__video_8c.html#a396a8e3d4c336c43f731e59be403b059",
-"m__bbox_8h.html#a3d658325c4b0f5ce0063023d0cbdc34e",
-"m__controls_8h.html#a14f5d9e162c0b97ff895a6cdb04f789f",
-"memio_8c.html#ab35f98620ce923dbda920ddd1768099a",
-"petname_8c.html#a618f09076febdb085c963ba4aa389bb3",
-"structcrispy__t.html#a3d47b9e001e71ed9d887c66e90e70f89",
-"structrw_8c.html#a157deca01237a1523f3d163476105d1e",
-"v__video_8c.html#ad590556d64a7d048f28e0ce5f0d395c7"
+"d__event_8h.html#affd7920bad997064b65b7dbf64d2a8c1a754a7b1ee97ee8e2bae9add2c71b0c0d",
+"doomkeys_8h.html#ab99474b01ffcbc57d74b60a77895e5e8",
+"gusconf_8c.html#ac3992807d5de705c83913657f033f49e",
+"i__sound_8c.html#a89b2e6202c0db553b4f3839e14c359cf",
+"i__video_8c.html#af70977aba17810971219c473ab4ebc2a",
+"joystick_8c.html#ada14e5472aae9a5a468067773ea42a42",
+"m__controls_8c.html#a901f7c02ef5e49a6ede4b45255df6403",
+"m__misc_8c.html#a0a401a3d69179db3217adc1cf45f697c",
+"midifile_8h.html#a7c1ad34a70ac29157d218ca108803f6fa96265b07ab37111b00781ff1a4ea2661",
+"server_8c.html#a3eb5233457ecfb52a644ca8ec2c6b911",
+"structlumpinfo__s.html#a2d1878df895d6efa5a556e0fb69c8b0b",
+"structrw_8h.html#a19b739cfbc3b0bf03753ef1a93e3688c",
+"v__video_8h.html#aa76f7fa6f3bb489abbc4e9f5d61b1e03"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

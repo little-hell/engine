@@ -1,0 +1,8 @@
+<map id="server.h" name="server.h">
+<area shape="rect" id="node1" title=" " alt="" coords="211,5,285,31"/>
+<area shape="rect" id="node2" href="$client_8c.html" title=" " alt="" coords="5,79,75,104"/>
+<area shape="rect" id="node3" href="$d__loop_8c.html" title=" " alt="" coords="99,79,175,104"/>
+<area shape="rect" id="node4" href="$dedicated_8c.html" title=" " alt="" coords="199,79,297,104"/>
+<area shape="rect" id="node5" href="$gui_8c.html" title=" " alt="" coords="321,79,375,104"/>
+<area shape="rect" id="node6" href="$server_8c.html" title=" " alt="" coords="399,79,473,104"/>
+</map>

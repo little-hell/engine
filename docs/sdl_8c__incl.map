@@ -1,0 +1,23 @@
+<map id="sdl.c" name="sdl.c">
+<area shape="rect" id="node1" title=" " alt="" coords="452,5,504,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,79,76,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="159,372,229,397"/>
+<area shape="rect" id="node4" title=" " alt="" coords="882,225,949,251"/>
+<area shape="rect" id="node5" href="$doomtype_8h.html" title=" " alt="" coords="304,299,404,324"/>
+<area shape="rect" id="node8" href="$i__system_8h.html" title=" " alt="" coords="309,152,402,177"/>
+<area shape="rect" id="node11" href="$m__argv_8h.html" title=" " alt="" coords="202,152,285,177"/>
+<area shape="rect" id="node12" href="$m__misc_8h.html" title=" " alt="" coords="675,152,761,177"/>
+<area shape="rect" id="node15" href="$defs_8h.html" title=" " alt="" coords="460,152,605,177"/>
+<area shape="rect" id="node17" href="$io_8h.html" title=" " alt="" coords="332,79,403,104"/>
+<area shape="rect" id="node18" href="$packet_8h.html" title=" " alt="" coords="427,79,529,104"/>
+<area shape="rect" id="node19" href="$sdl_8h.html" title=" " alt="" coords="553,79,632,104"/>
+<area shape="rect" id="node20" href="$z__zone_8h.html" title=" " alt="" coords="856,152,935,177"/>
+<area shape="rect" id="node21" title=" " alt="" coords="887,79,973,104"/>
+<area shape="rect" id="node6" title=" " alt="" coords="392,372,479,397"/>
+<area shape="rect" id="node7" title=" " alt="" coords="297,372,368,397"/>
+<area shape="rect" id="node9" href="$d__ticcmd_8h.html" title=" " alt="" coords="365,225,458,251"/>
+<area shape="rect" id="node10" href="$d__event_8h.html" title=" " alt="" coords="253,225,340,251"/>
+<area shape="rect" id="node13" title=" " alt="" coords="783,225,858,251"/>
+<area shape="rect" id="node14" title=" " alt="" coords="674,225,759,251"/>
+<area shape="rect" id="node16" href="$sha1_8h.html" title=" " alt="" coords="533,225,599,251"/>
+</map>

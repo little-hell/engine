@@ -15,6 +15,7 @@ pkgs.clangStdenv.mkDerivation {
     gdb
     gdbgui
     glib
+    graphviz
     hotspot
     meson
     ninja

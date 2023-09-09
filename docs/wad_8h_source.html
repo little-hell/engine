@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: wad.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('wad_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">wad.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="wad_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright(C) 1993-1996 Id Software, Inc.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright(C) 2005-2014 Simon Howard</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// This program is free software; you can redistribute it and/or</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// modify it under the terms of the GNU General Public License</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// as published by the Free Software Foundation; either version 2</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// of the License, or (at your option) any later version.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// GNU General Public License for more details.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// DESCRIPTION:</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//  WAD I/O functions.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifndef __W_WAD__</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define __W_WAD__</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="doomtype_8h.html">doomtype.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="w__file_8h.html">w_file.h</a>&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">//</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// TYPES</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">//</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="wad_8h.html#a93ee1f41a43c199361a0c3492efa1dc8">   33</a></span><span class="keyword">typedef</span> <a class="code hl_define" href="doomtype_8h.html#ad3452973d13097fbf78c7768ea446ab8">PACKED_STRUCT</a>({</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// Should be &quot;IWAD&quot; or &quot;PWAD&quot;.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">char</span> identification[4];</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="wad_8h.html#a6296a6851e7791fae5401322643c65b1">numlumps</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">int</span> infotableofs;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}) wadinfo_t;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="wad_8h.html#a74154a40163fa7e5edcdbb759fff1fa7">   41</a></span><span class="keyword">typedef</span> <a class="code hl_define" href="doomtype_8h.html#ad3452973d13097fbf78c7768ea446ab8">PACKED_STRUCT</a>({</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">int</span> filepos;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">int</span> size;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>[8];</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}) filelump_t;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">//</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// WADFILE I/O related stuff.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">//</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="wad_8h.html#a18a38f805d0be1641ebaa9f13e770c69">   51</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structlumpinfo__s.html">lumpinfo_s</a> <a class="code hl_struct" href="structlumpinfo__s.html">lumpinfo_t</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">   52</a></span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code hl_typedef" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structlumpinfo__s.html">   54</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structlumpinfo__s.html">lumpinfo_s</a></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structlumpinfo__s.html#a99a05949472658c9ac8c208abfedf85a">   56</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structlumpinfo__s.html#a99a05949472658c9ac8c208abfedf85a">name</a>[8];</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structlumpinfo__s.html#a58d3bb8b617f2323c9575c1172556a11">   57</a></span>    <a class="code hl_struct" href="struct__wad__file__s.html">wad_file_t</a> *<a class="code hl_variable" href="structlumpinfo__s.html#a58d3bb8b617f2323c9575c1172556a11">wad_file</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structlumpinfo__s.html#ad762e87c8c7a1fe8f85353c1fa92bfca">   58</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structlumpinfo__s.html#ad762e87c8c7a1fe8f85353c1fa92bfca">position</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structlumpinfo__s.html#ad56864d172774cf4e0b5bebd02c4c78d">   59</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structlumpinfo__s.html#ad56864d172774cf4e0b5bebd02c4c78d">size</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structlumpinfo__s.html#ada4f22fa6daba16f83b40d3cbbdcfd0d">   60</a></span>    <span class="keywordtype">void</span> *<a class="code hl_variable" href="structlumpinfo__s.html#ada4f22fa6daba16f83b40d3cbbdcfd0d">cache</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// Used for hash table lookups</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structlumpinfo__s.html#a2d1878df895d6efa5a556e0fb69c8b0b">   63</a></span>    <a class="code hl_typedef" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> <a class="code hl_variable" href="structlumpinfo__s.html#a2d1878df895d6efa5a556e0fb69c8b0b">next</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">extern</span> <a class="code hl_struct" href="structlumpinfo__s.html">lumpinfo_t</a> **<a class="code hl_variable" href="wad_8h.html#a865510aa0414aac157a03786a9be4817">lumpinfo</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">extern</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="wad_8h.html#a6296a6851e7791fae5401322643c65b1">numlumps</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><a class="code hl_struct" href="struct__wad__file__s.html">wad_file_t</a> *<a class="code hl_function" href="wad_8h.html#a9da78f1d4960db9f30d4cb169f42c414">W_AddFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">void</span> <a class="code hl_function" href="wad_8h.html#a4aebc982420593c84f76a4123fce58d4">W_Reload</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><a class="code hl_typedef" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> <a class="code hl_function" href="wad_8h.html#a38c8ab141f1cba3c8a02b8f1b9665b08">W_CheckNumForName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><a class="code hl_typedef" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> <a class="code hl_function" href="wad_8h.html#a7aec624f04ead896a2055e25cfcacf46">W_GetNumForName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><a class="code hl_typedef" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> <a class="code hl_function" href="wad_8h.html#abf605a252fa38bcfc52f16f6500e529c">W_CheckNumForNameFromTo</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <span class="keywordtype">int</span> from, <span class="keywordtype">int</span> to);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keywordtype">int</span> <a class="code hl_function" href="wad_8h.html#a7c76b81eedc5fd1460ed22d352edcb9d">W_LumpLength</a>(<a class="code hl_typedef" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> lump);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">void</span> <a class="code hl_function" href="wad_8h.html#ae76fb6ee964ca198d4023d937eabdee1">W_ReadLump</a>(<a class="code hl_typedef" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> lump, <span class="keywordtype">void</span> *dest);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keywordtype">void</span> *<a class="code hl_function" href="wad_8h.html#a49cc5e0745afe2d6b84275c3c69cbaa5">W_CacheLumpNum</a>(<a class="code hl_typedef" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> lump, <span class="keywordtype">int</span> tag);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keywordtype">void</span> *<a class="code hl_function" href="wad_8h.html#a5d997a9258d20956bdb407b9ab3519b4">W_CacheLumpName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <span class="keywordtype">int</span> tag);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keywordtype">void</span> <a class="code hl_function" href="wad_8h.html#a54a553b39e4295afe0848bdac3512a84">W_GenerateHashTable</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">extern</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="wad_8h.html#af8b55978a24280bde02dc59df9e5d987">W_LumpNameHash</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *s);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keywordtype">void</span> <a class="code hl_function" href="wad_8h.html#a26d6349de52a87f881b41cafe99e4666">W_ReleaseLumpNum</a>(<a class="code hl_typedef" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> lump);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keywordtype">void</span> <a class="code hl_function" href="wad_8h.html#a9994389a827150e40a8f77ec7698cc8c">W_ReleaseLumpName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="wad_8h.html#a124c321a56a46e6130ece87508ba5f07">W_WadNameForLump</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structlumpinfo__s.html">lumpinfo_t</a> *lump);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">boolean</span> <a class="code hl_function" href="wad_8h.html#aa2d560ed6f7203667faccffad07d8465">W_IsIWADLump</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structlumpinfo__s.html">lumpinfo_t</a> *lump);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">char</span> **<a class="code hl_function" href="wad_8h.html#acd8d56b94e54dd18d1947e3698b92181">W_GetWADFileNames</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="adoomtype_8h_html"><div class="ttname"><a href="doomtype_8h.html">doomtype.h</a></div></div>
+<div class="ttc" id="adoomtype_8h_html_ad3452973d13097fbf78c7768ea446ab8"><div class="ttname"><a href="doomtype_8h.html#ad3452973d13097fbf78c7768ea446ab8">PACKED_STRUCT</a></div><div class="ttdeci">#define PACKED_STRUCT(...)</div><div class="ttdef"><b>Definition:</b> doomtype.h:80</div></div>
+<div class="ttc" id="astruct__wad__file__s_html"><div class="ttname"><a href="struct__wad__file__s.html">_wad_file_s</a></div><div class="ttdef"><b>Definition:</b> w_file.h:54</div></div>
+<div class="ttc" id="astructlumpinfo__s_html"><div class="ttname"><a href="structlumpinfo__s.html">lumpinfo_s</a></div><div class="ttdef"><b>Definition:</b> wad.h:55</div></div>
+<div class="ttc" id="astructlumpinfo__s_html_a2d1878df895d6efa5a556e0fb69c8b0b"><div class="ttname"><a href="structlumpinfo__s.html#a2d1878df895d6efa5a556e0fb69c8b0b">lumpinfo_s::next</a></div><div class="ttdeci">lumpindex_t next</div><div class="ttdef"><b>Definition:</b> wad.h:63</div></div>
+<div class="ttc" id="astructlumpinfo__s_html_a58d3bb8b617f2323c9575c1172556a11"><div class="ttname"><a href="structlumpinfo__s.html#a58d3bb8b617f2323c9575c1172556a11">lumpinfo_s::wad_file</a></div><div class="ttdeci">wad_file_t * wad_file</div><div class="ttdef"><b>Definition:</b> wad.h:57</div></div>
+<div class="ttc" id="astructlumpinfo__s_html_a99a05949472658c9ac8c208abfedf85a"><div class="ttname"><a href="structlumpinfo__s.html#a99a05949472658c9ac8c208abfedf85a">lumpinfo_s::name</a></div><div class="ttdeci">char name[8]</div><div class="ttdef"><b>Definition:</b> wad.h:56</div></div>
+<div class="ttc" id="astructlumpinfo__s_html_ad56864d172774cf4e0b5bebd02c4c78d"><div class="ttname"><a href="structlumpinfo__s.html#ad56864d172774cf4e0b5bebd02c4c78d">lumpinfo_s::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition:</b> wad.h:59</div></div>
+<div class="ttc" id="astructlumpinfo__s_html_ad762e87c8c7a1fe8f85353c1fa92bfca"><div class="ttname"><a href="structlumpinfo__s.html#ad762e87c8c7a1fe8f85353c1fa92bfca">lumpinfo_s::position</a></div><div class="ttdeci">int position</div><div class="ttdef"><b>Definition:</b> wad.h:58</div></div>
+<div class="ttc" id="astructlumpinfo__s_html_ada4f22fa6daba16f83b40d3cbbdcfd0d"><div class="ttname"><a href="structlumpinfo__s.html#ada4f22fa6daba16f83b40d3cbbdcfd0d">lumpinfo_s::cache</a></div><div class="ttdeci">void * cache</div><div class="ttdef"><b>Definition:</b> wad.h:60</div></div>
+<div class="ttc" id="astructrw_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> structrw.c:33</div></div>
+<div class="ttc" id="aw__file_8h_html"><div class="ttname"><a href="w__file_8h.html">w_file.h</a></div></div>
+<div class="ttc" id="awad_8h_html_a124c321a56a46e6130ece87508ba5f07"><div class="ttname"><a href="wad_8h.html#a124c321a56a46e6130ece87508ba5f07">W_WadNameForLump</a></div><div class="ttdeci">const char * W_WadNameForLump(const lumpinfo_t *lump)</div><div class="ttdef"><b>Definition:</b> wad.c:632</div></div>
+<div class="ttc" id="awad_8h_html_a26d6349de52a87f881b41cafe99e4666"><div class="ttname"><a href="wad_8h.html#a26d6349de52a87f881b41cafe99e4666">W_ReleaseLumpNum</a></div><div class="ttdeci">void W_ReleaseLumpNum(lumpindex_t lump)</div><div class="ttdef"><b>Definition:</b> wad.c:457</div></div>
+<div class="ttc" id="awad_8h_html_a38c8ab141f1cba3c8a02b8f1b9665b08"><div class="ttname"><a href="wad_8h.html#a38c8ab141f1cba3c8a02b8f1b9665b08">W_CheckNumForName</a></div><div class="ttdeci">lumpindex_t W_CheckNumForName(const char *name)</div><div class="ttdef"><b>Definition:</b> wad.c:265</div></div>
+<div class="ttc" id="awad_8h_html_a49cc5e0745afe2d6b84275c3c69cbaa5"><div class="ttname"><a href="wad_8h.html#a49cc5e0745afe2d6b84275c3c69cbaa5">W_CacheLumpNum</a></div><div class="ttdeci">void * W_CacheLumpNum(lumpindex_t lump, int tag)</div><div class="ttdef"><b>Definition:</b> wad.c:396</div></div>
+<div class="ttc" id="awad_8h_html_a4aebc982420593c84f76a4123fce58d4"><div class="ttname"><a href="wad_8h.html#a4aebc982420593c84f76a4123fce58d4">W_Reload</a></div><div class="ttdeci">void W_Reload(void)</div><div class="ttdef"><b>Definition:</b> wad.c:593</div></div>
+<div class="ttc" id="awad_8h_html_a54a553b39e4295afe0848bdac3512a84"><div class="ttname"><a href="wad_8h.html#a54a553b39e4295afe0848bdac3512a84">W_GenerateHashTable</a></div><div class="ttdeci">void W_GenerateHashTable(void)</div><div class="ttdef"><b>Definition:</b> wad.c:551</div></div>
+<div class="ttc" id="awad_8h_html_a5d997a9258d20956bdb407b9ab3519b4"><div class="ttname"><a href="wad_8h.html#a5d997a9258d20956bdb407b9ab3519b4">W_CacheLumpName</a></div><div class="ttdeci">void * W_CacheLumpName(const char *name, int tag)</div><div class="ttdef"><b>Definition:</b> wad.c:442</div></div>
+<div class="ttc" id="awad_8h_html_a6296a6851e7791fae5401322643c65b1"><div class="ttname"><a href="wad_8h.html#a6296a6851e7791fae5401322643c65b1">numlumps</a></div><div class="ttdeci">unsigned int numlumps</div><div class="ttdef"><b>Definition:</b> wad.c:42</div></div>
+<div class="ttc" id="awad_8h_html_a7aec624f04ead896a2055e25cfcacf46"><div class="ttname"><a href="wad_8h.html#a7aec624f04ead896a2055e25cfcacf46">W_GetNumForName</a></div><div class="ttdeci">lumpindex_t W_GetNumForName(const char *name)</div><div class="ttdef"><b>Definition:</b> wad.c:312</div></div>
+<div class="ttc" id="awad_8h_html_a7c76b81eedc5fd1460ed22d352edcb9d"><div class="ttname"><a href="wad_8h.html#a7c76b81eedc5fd1460ed22d352edcb9d">W_LumpLength</a></div><div class="ttdeci">int W_LumpLength(lumpindex_t lump)</div><div class="ttdef"><b>Definition:</b> wad.c:345</div></div>
+<div class="ttc" id="awad_8h_html_a865510aa0414aac157a03786a9be4817"><div class="ttname"><a href="wad_8h.html#a865510aa0414aac157a03786a9be4817">lumpinfo</a></div><div class="ttdeci">lumpinfo_t ** lumpinfo</div><div class="ttdef"><b>Definition:</b> wad.c:41</div></div>
+<div class="ttc" id="awad_8h_html_a9994389a827150e40a8f77ec7698cc8c"><div class="ttname"><a href="wad_8h.html#a9994389a827150e40a8f77ec7698cc8c">W_ReleaseLumpName</a></div><div class="ttdeci">void W_ReleaseLumpName(const char *name)</div><div class="ttdef"><b>Definition:</b> wad.c:478</div></div>
+<div class="ttc" id="awad_8h_html_a9da78f1d4960db9f30d4cb169f42c414"><div class="ttname"><a href="wad_8h.html#a9da78f1d4960db9f30d4cb169f42c414">W_AddFile</a></div><div class="ttdeci">wad_file_t * W_AddFile(const char *filename)</div><div class="ttdef"><b>Definition:</b> wad.c:101</div></div>
+<div class="ttc" id="awad_8h_html_aa2d560ed6f7203667faccffad07d8465"><div class="ttname"><a href="wad_8h.html#aa2d560ed6f7203667faccffad07d8465">W_IsIWADLump</a></div><div class="ttdeci">boolean W_IsIWADLump(const lumpinfo_t *lump)</div><div class="ttdef"><b>Definition:</b> wad.c:637</div></div>
+<div class="ttc" id="awad_8h_html_abf605a252fa38bcfc52f16f6500e529c"><div class="ttname"><a href="wad_8h.html#abf605a252fa38bcfc52f16f6500e529c">W_CheckNumForNameFromTo</a></div><div class="ttdeci">lumpindex_t W_CheckNumForNameFromTo(const char *name, int from, int to)</div><div class="ttdef"><b>Definition:</b> wad.c:326</div></div>
+<div class="ttc" id="awad_8h_html_acd8d56b94e54dd18d1947e3698b92181"><div class="ttname"><a href="wad_8h.html#acd8d56b94e54dd18d1947e3698b92181">W_GetWADFileNames</a></div><div class="ttdeci">char ** W_GetWADFileNames(void)</div><div class="ttdef"><b>Definition:</b> wad.c:66</div></div>
+<div class="ttc" id="awad_8h_html_ae76fb6ee964ca198d4023d937eabdee1"><div class="ttname"><a href="wad_8h.html#ae76fb6ee964ca198d4023d937eabdee1">W_ReadLump</a></div><div class="ttdeci">void W_ReadLump(lumpindex_t lump, void *dest)</div><div class="ttdef"><b>Definition:</b> wad.c:361</div></div>
+<div class="ttc" id="awad_8h_html_af53134ff3c932d06fa1f0f38e8af9e12"><div class="ttname"><a href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a></div><div class="ttdeci">int lumpindex_t</div><div class="ttdef"><b>Definition:</b> wad.h:52</div></div>
+<div class="ttc" id="awad_8h_html_af8b55978a24280bde02dc59df9e5d987"><div class="ttname"><a href="wad_8h.html#af8b55978a24280bde02dc59df9e5d987">W_LumpNameHash</a></div><div class="ttdeci">unsigned int W_LumpNameHash(const char *s)</div><div class="ttdef"><b>Definition:</b> wad.c:72</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e39524e9df6662b37587778d04828827.html">littlehell</a></li><li class="navelem"><a class="el" href="dir_a87bb55b01ba0ee55a2445c60cbfeda7.html">wad</a></li><li class="navelem"><a class="el" href="wad_8h.html">wad.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

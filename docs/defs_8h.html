@@ -1,0 +1,629 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: defs.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('defs_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
+  <div class="headertitle"><div class="title">defs.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="doomtype_8h_source.html">doomtype.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__ticcmd_8h_source.html">d_ticcmd.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sha1_8h_source.html">sha1.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for defs.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="defs_8h__incl.svg" width="338" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="defs_8h__dep__incl.svg" width="2488" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div>
+<p><a href="defs_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__net__packet__s.html">_net_packet_s</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__net__module__s.html">_net_module_s</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__net__addr__s.html">_net_addr_s</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__connect__data__t.html">net_connect_data_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html">net_gamesettings_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__ticdiff__t.html">net_ticdiff_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__full__ticcmd__t.html">net_full_ticcmd_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__querydata__t.html">net_querydata_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__waitdata__t.html">net_waitdata_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a39f290e561242b6aad7fcc906111bb17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a39f290e561242b6aad7fcc906111bb17">MAXNETNODES</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a39f290e561242b6aad7fcc906111bb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667d7a1845f930f6dc2449ef8215af21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a667d7a1845f930f6dc2449ef8215af21">NET_MAXPLAYERS</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a667d7a1845f930f6dc2449ef8215af21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff7a87b07b258a41a48ea1c54e74983"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#afff7a87b07b258a41a48ea1c54e74983">MAXPLAYERNAME</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:afff7a87b07b258a41a48ea1c54e74983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27be2baa1dffeeb2bb80cd4773bb8022"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a27be2baa1dffeeb2bb80cd4773bb8022">BACKUPTICS</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:a27be2baa1dffeeb2bb80cd4773bb8022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f401319fea663dd2164305566196ea6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a2f401319fea663dd2164305566196ea6">NET_MAGIC_NUMBER</a>&#160;&#160;&#160;1454104972U</td></tr>
+<tr class="separator:a2f401319fea663dd2164305566196ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac16d15cfe8401c702c8dbf4a4101f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a4ac16d15cfe8401c702c8dbf4a4101f5">NET_OLD_MAGIC_NUMBER</a>&#160;&#160;&#160;3436803284U</td></tr>
+<tr class="separator:a4ac16d15cfe8401c702c8dbf4a4101f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209a1524bd0d3848510bb0054c109402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a209a1524bd0d3848510bb0054c109402">NET_RELIABLE_PACKET</a>&#160;&#160;&#160;(1 &lt;&lt; 15)</td></tr>
+<tr class="separator:a209a1524bd0d3848510bb0054c109402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62bf3991b499757eb6fe8c8c8a2c4a5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a62bf3991b499757eb6fe8c8c8a2c4a5d">NET_TICDIFF_FORWARD</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
+<tr class="separator:a62bf3991b499757eb6fe8c8c8a2c4a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95a1c961a26e0219b75598761d99c51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#ab95a1c961a26e0219b75598761d99c51">NET_TICDIFF_SIDE</a>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
+<tr class="separator:ab95a1c961a26e0219b75598761d99c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c56722b0538c6438b2ff9f946a15ef9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a1c56722b0538c6438b2ff9f946a15ef9">NET_TICDIFF_TURN</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
+<tr class="separator:a1c56722b0538c6438b2ff9f946a15ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a143cb326555b0aa1748a385a6f8e35e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a143cb326555b0aa1748a385a6f8e35e8">NET_TICDIFF_BUTTONS</a>&#160;&#160;&#160;(1 &lt;&lt; 3)</td></tr>
+<tr class="separator:a143cb326555b0aa1748a385a6f8e35e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a2e577e49324a33073c5bbb51aae47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#ad0a2e577e49324a33073c5bbb51aae47">NET_TICDIFF_CONSISTANCY</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
+<tr class="separator:ad0a2e577e49324a33073c5bbb51aae47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9495f55da8ba5aae3fc75ab38be68d78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a9495f55da8ba5aae3fc75ab38be68d78">NET_TICDIFF_CHATCHAR</a>&#160;&#160;&#160;(1 &lt;&lt; 5)</td></tr>
+<tr class="separator:a9495f55da8ba5aae3fc75ab38be68d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff48319df25ec52ca4b088902530fb4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#aff48319df25ec52ca4b088902530fb4c">NET_TICDIFF_RAVEN</a>&#160;&#160;&#160;(1 &lt;&lt; 6)</td></tr>
+<tr class="separator:aff48319df25ec52ca4b088902530fb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a137bfa42d199672b967296576c754fb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a137bfa42d199672b967296576c754fb2">NET_TICDIFF_STRIFE</a>&#160;&#160;&#160;(1 &lt;&lt; 7)</td></tr>
+<tr class="separator:a137bfa42d199672b967296576c754fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a860272d446fd5e66bba50f3250ed86f9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__net__module__s.html">_net_module_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a860272d446fd5e66bba50f3250ed86f9">net_module_t</a></td></tr>
+<tr class="separator:a860272d446fd5e66bba50f3250ed86f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6802427b54fedda6f77bbcdc5cd359"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__net__packet__s.html">_net_packet_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a></td></tr>
+<tr class="separator:a5b6802427b54fedda6f77bbcdc5cd359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d45b2db095a3d40ebb2ea35a1cd800"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__net__addr__s.html">_net_addr_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a></td></tr>
+<tr class="separator:a39d45b2db095a3d40ebb2ea35a1cd800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe2cf388588e99bf6c173fca0b9df85"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__net__context__s.html">_net_context_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#afbe2cf388588e99bf6c173fca0b9df85">net_context_t</a></td></tr>
+<tr class="separator:afbe2cf388588e99bf6c173fca0b9df85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a829d5172fc5604a6ce6631a3df890430"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a829d5172fc5604a6ce6631a3df890430">net_protocol_t</a> { <a class="el" href="defs_8h.html#a829d5172fc5604a6ce6631a3df890430a55172b6cd0469fc5856da589a9a500a7">NET_PROTOCOL_CHOCOLATE_DOOM_0</a>
+, <a class="el" href="defs_8h.html#a829d5172fc5604a6ce6631a3df890430ab6d49c3f5962679ce4018a583096897b">NET_NUM_PROTOCOLS</a>
+, <a class="el" href="defs_8h.html#a829d5172fc5604a6ce6631a3df890430ace39740c2da33b3094a5e5bacc3a505b">NET_PROTOCOL_UNKNOWN</a>
+ }</td></tr>
+<tr class="separator:a829d5172fc5604a6ce6631a3df890430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e6d730c706c7e785da4540a5f04cb1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1">net_packet_type_t</a> { <br />
+&#160;&#160;<a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1adffeb400d40be9f7c99f6787ed237bf8">NET_PACKET_TYPE_SYN</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a7bba683a9e30754b6a76ba8ab972a1c8">NET_PACKET_TYPE_ACK</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1ac5527c8905f5f12f1173065b5a2b613d">NET_PACKET_TYPE_REJECTED</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a51802116b37cfd15bba7181e99a187d5">NET_PACKET_TYPE_KEEPALIVE</a>
+, <br />
+&#160;&#160;<a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a63f440dec9b646f54afacc858afe9f85">NET_PACKET_TYPE_WAITING_DATA</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a8df0c1d0394c1087e604c8df9298d5cd">NET_PACKET_TYPE_GAMESTART</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a03c4ad062d1b1df3c48a991075c4d6db">NET_PACKET_TYPE_GAMEDATA</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a26c278c361f62c5a97e9e25c89e0bcf9">NET_PACKET_TYPE_GAMEDATA_ACK</a>
+, <br />
+&#160;&#160;<a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a1bd568f03b422749d885b45e3c8d90ce">NET_PACKET_TYPE_DISCONNECT</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a4c8d4db24b11efede7a8b07a6526f1d4">NET_PACKET_TYPE_DISCONNECT_ACK</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a338c0e0eaec365a6c3f0f7d55e47a133">NET_PACKET_TYPE_RELIABLE_ACK</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a4e5d998103cc4f71968c0c9a60db218a">NET_PACKET_TYPE_GAMEDATA_RESEND</a>
+, <br />
+&#160;&#160;<a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a2e9a52450f6ea94368198d5a972fe803">NET_PACKET_TYPE_CONSOLE_MESSAGE</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a20eae08608ea94058546aad4262aee75">NET_PACKET_TYPE_QUERY</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a8e1a937b92b1b4064a4e04c20d49307a">NET_PACKET_TYPE_QUERY_RESPONSE</a>
+, <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a73b80145f4c79ebc08c6240f6a31364c">NET_PACKET_TYPE_LAUNCH</a>
+, <br />
+&#160;&#160;<a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1a7400dc36bb4828447f9635ffb3eba3d6">NET_PACKET_TYPE_NAT_HOLE_PUNCH</a>
+<br />
+ }</td></tr>
+<tr class="separator:a13e6d730c706c7e785da4540a5f04cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31c09fb787a1bead7b56a5286ef5936"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936">net_master_packet_type_t</a> { <br />
+&#160;&#160;<a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936a6a8a0927c151a77769f8ac88fa06ba02">NET_MASTER_PACKET_TYPE_ADD</a>
+, <a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936a2cacc23d03d00408dd30bfd01979a216">NET_MASTER_PACKET_TYPE_ADD_RESPONSE</a>
+, <a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936ad6282b64e01e18c00dcf157dd92cda6e">NET_MASTER_PACKET_TYPE_QUERY</a>
+, <a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936a76130d660f336f19a065e328f31c877a">NET_MASTER_PACKET_TYPE_QUERY_RESPONSE</a>
+, <br />
+&#160;&#160;<a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936aab61a1bfd96444f2fb0a7551f05fae46">NET_MASTER_PACKET_TYPE_GET_METADATA</a>
+, <a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936a9ca3015536f330b599b458955d952fd2">NET_MASTER_PACKET_TYPE_GET_METADATA_RESPONSE</a>
+, <a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936ad580942424b5b25caff91b351e44f50f">NET_MASTER_PACKET_TYPE_SIGN_START</a>
+, <a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936a9b859bfc0142b8ad58a7a8a0107ea538">NET_MASTER_PACKET_TYPE_SIGN_START_RESPONSE</a>
+, <br />
+&#160;&#160;<a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936a734842361a9a727ef835fe921e48474d">NET_MASTER_PACKET_TYPE_SIGN_END</a>
+, <a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936a26e92483037d5f645555a8fc3275557b">NET_MASTER_PACKET_TYPE_SIGN_END_RESPONSE</a>
+, <a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936afc0ac870460510193f1af8b59860945a">NET_MASTER_PACKET_TYPE_NAT_HOLE_PUNCH</a>
+, <a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936ac6f6f88b8138a4dc61a69577170f19d9">NET_MASTER_PACKET_TYPE_NAT_HOLE_PUNCH_ALL</a>
+<br />
+ }</td></tr>
+<tr class="separator:af31c09fb787a1bead7b56a5286ef5936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a27be2baa1dffeeb2bb80cd4773bb8022" name="a27be2baa1dffeeb2bb80cd4773bb8022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27be2baa1dffeeb2bb80cd4773bb8022">&#9670;&#160;</a></span>BACKUPTICS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BACKUPTICS&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39f290e561242b6aad7fcc906111bb17" name="a39f290e561242b6aad7fcc906111bb17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f290e561242b6aad7fcc906111bb17">&#9670;&#160;</a></span>MAXNETNODES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXNETNODES&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afff7a87b07b258a41a48ea1c54e74983" name="afff7a87b07b258a41a48ea1c54e74983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff7a87b07b258a41a48ea1c54e74983">&#9670;&#160;</a></span>MAXPLAYERNAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXPLAYERNAME&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f401319fea663dd2164305566196ea6" name="a2f401319fea663dd2164305566196ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f401319fea663dd2164305566196ea6">&#9670;&#160;</a></span>NET_MAGIC_NUMBER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_MAGIC_NUMBER&#160;&#160;&#160;1454104972U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a667d7a1845f930f6dc2449ef8215af21" name="a667d7a1845f930f6dc2449ef8215af21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a667d7a1845f930f6dc2449ef8215af21">&#9670;&#160;</a></span>NET_MAXPLAYERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_MAXPLAYERS&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ac16d15cfe8401c702c8dbf4a4101f5" name="a4ac16d15cfe8401c702c8dbf4a4101f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac16d15cfe8401c702c8dbf4a4101f5">&#9670;&#160;</a></span>NET_OLD_MAGIC_NUMBER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_OLD_MAGIC_NUMBER&#160;&#160;&#160;3436803284U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a209a1524bd0d3848510bb0054c109402" name="a209a1524bd0d3848510bb0054c109402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209a1524bd0d3848510bb0054c109402">&#9670;&#160;</a></span>NET_RELIABLE_PACKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_RELIABLE_PACKET&#160;&#160;&#160;(1 &lt;&lt; 15)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a143cb326555b0aa1748a385a6f8e35e8" name="a143cb326555b0aa1748a385a6f8e35e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a143cb326555b0aa1748a385a6f8e35e8">&#9670;&#160;</a></span>NET_TICDIFF_BUTTONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_TICDIFF_BUTTONS&#160;&#160;&#160;(1 &lt;&lt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9495f55da8ba5aae3fc75ab38be68d78" name="a9495f55da8ba5aae3fc75ab38be68d78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9495f55da8ba5aae3fc75ab38be68d78">&#9670;&#160;</a></span>NET_TICDIFF_CHATCHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_TICDIFF_CHATCHAR&#160;&#160;&#160;(1 &lt;&lt; 5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0a2e577e49324a33073c5bbb51aae47" name="ad0a2e577e49324a33073c5bbb51aae47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0a2e577e49324a33073c5bbb51aae47">&#9670;&#160;</a></span>NET_TICDIFF_CONSISTANCY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_TICDIFF_CONSISTANCY&#160;&#160;&#160;(1 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62bf3991b499757eb6fe8c8c8a2c4a5d" name="a62bf3991b499757eb6fe8c8c8a2c4a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62bf3991b499757eb6fe8c8c8a2c4a5d">&#9670;&#160;</a></span>NET_TICDIFF_FORWARD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_TICDIFF_FORWARD&#160;&#160;&#160;(1 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff48319df25ec52ca4b088902530fb4c" name="aff48319df25ec52ca4b088902530fb4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff48319df25ec52ca4b088902530fb4c">&#9670;&#160;</a></span>NET_TICDIFF_RAVEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_TICDIFF_RAVEN&#160;&#160;&#160;(1 &lt;&lt; 6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab95a1c961a26e0219b75598761d99c51" name="ab95a1c961a26e0219b75598761d99c51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab95a1c961a26e0219b75598761d99c51">&#9670;&#160;</a></span>NET_TICDIFF_SIDE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_TICDIFF_SIDE&#160;&#160;&#160;(1 &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a137bfa42d199672b967296576c754fb2" name="a137bfa42d199672b967296576c754fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a137bfa42d199672b967296576c754fb2">&#9670;&#160;</a></span>NET_TICDIFF_STRIFE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_TICDIFF_STRIFE&#160;&#160;&#160;(1 &lt;&lt; 7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c56722b0538c6438b2ff9f946a15ef9" name="a1c56722b0538c6438b2ff9f946a15ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c56722b0538c6438b2ff9f946a15ef9">&#9670;&#160;</a></span>NET_TICDIFF_TURN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_TICDIFF_TURN&#160;&#160;&#160;(1 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a39d45b2db095a3d40ebb2ea35a1cd800" name="a39d45b2db095a3d40ebb2ea35a1cd800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d45b2db095a3d40ebb2ea35a1cd800">&#9670;&#160;</a></span>net_addr_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__net__addr__s.html">_net_addr_s</a> <a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbe2cf388588e99bf6c173fca0b9df85" name="afbe2cf388588e99bf6c173fca0b9df85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe2cf388588e99bf6c173fca0b9df85">&#9670;&#160;</a></span>net_context_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__net__context__s.html">_net_context_s</a> <a class="el" href="defs_8h.html#afbe2cf388588e99bf6c173fca0b9df85">net_context_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a860272d446fd5e66bba50f3250ed86f9" name="a860272d446fd5e66bba50f3250ed86f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860272d446fd5e66bba50f3250ed86f9">&#9670;&#160;</a></span>net_module_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__net__module__s.html">_net_module_s</a> <a class="el" href="defs_8h.html#a860272d446fd5e66bba50f3250ed86f9">net_module_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b6802427b54fedda6f77bbcdc5cd359" name="a5b6802427b54fedda6f77bbcdc5cd359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6802427b54fedda6f77bbcdc5cd359">&#9670;&#160;</a></span>net_packet_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__net__packet__s.html">_net_packet_s</a> <a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="af31c09fb787a1bead7b56a5286ef5936" name="af31c09fb787a1bead7b56a5286ef5936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31c09fb787a1bead7b56a5286ef5936">&#9670;&#160;</a></span>net_master_packet_type_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="defs_8h.html#af31c09fb787a1bead7b56a5286ef5936">net_master_packet_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936a6a8a0927c151a77769f8ac88fa06ba02" name="af31c09fb787a1bead7b56a5286ef5936a6a8a0927c151a77769f8ac88fa06ba02"></a>NET_MASTER_PACKET_TYPE_ADD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936a2cacc23d03d00408dd30bfd01979a216" name="af31c09fb787a1bead7b56a5286ef5936a2cacc23d03d00408dd30bfd01979a216"></a>NET_MASTER_PACKET_TYPE_ADD_RESPONSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936ad6282b64e01e18c00dcf157dd92cda6e" name="af31c09fb787a1bead7b56a5286ef5936ad6282b64e01e18c00dcf157dd92cda6e"></a>NET_MASTER_PACKET_TYPE_QUERY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936a76130d660f336f19a065e328f31c877a" name="af31c09fb787a1bead7b56a5286ef5936a76130d660f336f19a065e328f31c877a"></a>NET_MASTER_PACKET_TYPE_QUERY_RESPONSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936aab61a1bfd96444f2fb0a7551f05fae46" name="af31c09fb787a1bead7b56a5286ef5936aab61a1bfd96444f2fb0a7551f05fae46"></a>NET_MASTER_PACKET_TYPE_GET_METADATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936a9ca3015536f330b599b458955d952fd2" name="af31c09fb787a1bead7b56a5286ef5936a9ca3015536f330b599b458955d952fd2"></a>NET_MASTER_PACKET_TYPE_GET_METADATA_RESPONSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936ad580942424b5b25caff91b351e44f50f" name="af31c09fb787a1bead7b56a5286ef5936ad580942424b5b25caff91b351e44f50f"></a>NET_MASTER_PACKET_TYPE_SIGN_START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936a9b859bfc0142b8ad58a7a8a0107ea538" name="af31c09fb787a1bead7b56a5286ef5936a9b859bfc0142b8ad58a7a8a0107ea538"></a>NET_MASTER_PACKET_TYPE_SIGN_START_RESPONSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936a734842361a9a727ef835fe921e48474d" name="af31c09fb787a1bead7b56a5286ef5936a734842361a9a727ef835fe921e48474d"></a>NET_MASTER_PACKET_TYPE_SIGN_END&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936a26e92483037d5f645555a8fc3275557b" name="af31c09fb787a1bead7b56a5286ef5936a26e92483037d5f645555a8fc3275557b"></a>NET_MASTER_PACKET_TYPE_SIGN_END_RESPONSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936afc0ac870460510193f1af8b59860945a" name="af31c09fb787a1bead7b56a5286ef5936afc0ac870460510193f1af8b59860945a"></a>NET_MASTER_PACKET_TYPE_NAT_HOLE_PUNCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af31c09fb787a1bead7b56a5286ef5936ac6f6f88b8138a4dc61a69577170f19d9" name="af31c09fb787a1bead7b56a5286ef5936ac6f6f88b8138a4dc61a69577170f19d9"></a>NET_MASTER_PACKET_TYPE_NAT_HOLE_PUNCH_ALL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a13e6d730c706c7e785da4540a5f04cb1" name="a13e6d730c706c7e785da4540a5f04cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e6d730c706c7e785da4540a5f04cb1">&#9670;&#160;</a></span>net_packet_type_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="defs_8h.html#a13e6d730c706c7e785da4540a5f04cb1">net_packet_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1adffeb400d40be9f7c99f6787ed237bf8" name="a13e6d730c706c7e785da4540a5f04cb1adffeb400d40be9f7c99f6787ed237bf8"></a>NET_PACKET_TYPE_SYN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a7bba683a9e30754b6a76ba8ab972a1c8" name="a13e6d730c706c7e785da4540a5f04cb1a7bba683a9e30754b6a76ba8ab972a1c8"></a>NET_PACKET_TYPE_ACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1ac5527c8905f5f12f1173065b5a2b613d" name="a13e6d730c706c7e785da4540a5f04cb1ac5527c8905f5f12f1173065b5a2b613d"></a>NET_PACKET_TYPE_REJECTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a51802116b37cfd15bba7181e99a187d5" name="a13e6d730c706c7e785da4540a5f04cb1a51802116b37cfd15bba7181e99a187d5"></a>NET_PACKET_TYPE_KEEPALIVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a63f440dec9b646f54afacc858afe9f85" name="a13e6d730c706c7e785da4540a5f04cb1a63f440dec9b646f54afacc858afe9f85"></a>NET_PACKET_TYPE_WAITING_DATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a8df0c1d0394c1087e604c8df9298d5cd" name="a13e6d730c706c7e785da4540a5f04cb1a8df0c1d0394c1087e604c8df9298d5cd"></a>NET_PACKET_TYPE_GAMESTART&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a03c4ad062d1b1df3c48a991075c4d6db" name="a13e6d730c706c7e785da4540a5f04cb1a03c4ad062d1b1df3c48a991075c4d6db"></a>NET_PACKET_TYPE_GAMEDATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a26c278c361f62c5a97e9e25c89e0bcf9" name="a13e6d730c706c7e785da4540a5f04cb1a26c278c361f62c5a97e9e25c89e0bcf9"></a>NET_PACKET_TYPE_GAMEDATA_ACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a1bd568f03b422749d885b45e3c8d90ce" name="a13e6d730c706c7e785da4540a5f04cb1a1bd568f03b422749d885b45e3c8d90ce"></a>NET_PACKET_TYPE_DISCONNECT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a4c8d4db24b11efede7a8b07a6526f1d4" name="a13e6d730c706c7e785da4540a5f04cb1a4c8d4db24b11efede7a8b07a6526f1d4"></a>NET_PACKET_TYPE_DISCONNECT_ACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a338c0e0eaec365a6c3f0f7d55e47a133" name="a13e6d730c706c7e785da4540a5f04cb1a338c0e0eaec365a6c3f0f7d55e47a133"></a>NET_PACKET_TYPE_RELIABLE_ACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a4e5d998103cc4f71968c0c9a60db218a" name="a13e6d730c706c7e785da4540a5f04cb1a4e5d998103cc4f71968c0c9a60db218a"></a>NET_PACKET_TYPE_GAMEDATA_RESEND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a2e9a52450f6ea94368198d5a972fe803" name="a13e6d730c706c7e785da4540a5f04cb1a2e9a52450f6ea94368198d5a972fe803"></a>NET_PACKET_TYPE_CONSOLE_MESSAGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a20eae08608ea94058546aad4262aee75" name="a13e6d730c706c7e785da4540a5f04cb1a20eae08608ea94058546aad4262aee75"></a>NET_PACKET_TYPE_QUERY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a8e1a937b92b1b4064a4e04c20d49307a" name="a13e6d730c706c7e785da4540a5f04cb1a8e1a937b92b1b4064a4e04c20d49307a"></a>NET_PACKET_TYPE_QUERY_RESPONSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a73b80145f4c79ebc08c6240f6a31364c" name="a13e6d730c706c7e785da4540a5f04cb1a73b80145f4c79ebc08c6240f6a31364c"></a>NET_PACKET_TYPE_LAUNCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13e6d730c706c7e785da4540a5f04cb1a7400dc36bb4828447f9635ffb3eba3d6" name="a13e6d730c706c7e785da4540a5f04cb1a7400dc36bb4828447f9635ffb3eba3d6"></a>NET_PACKET_TYPE_NAT_HOLE_PUNCH&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a829d5172fc5604a6ce6631a3df890430" name="a829d5172fc5604a6ce6631a3df890430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a829d5172fc5604a6ce6631a3df890430">&#9670;&#160;</a></span>net_protocol_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="defs_8h.html#a829d5172fc5604a6ce6631a3df890430">net_protocol_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a829d5172fc5604a6ce6631a3df890430a55172b6cd0469fc5856da589a9a500a7" name="a829d5172fc5604a6ce6631a3df890430a55172b6cd0469fc5856da589a9a500a7"></a>NET_PROTOCOL_CHOCOLATE_DOOM_0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a829d5172fc5604a6ce6631a3df890430ab6d49c3f5962679ce4018a583096897b" name="a829d5172fc5604a6ce6631a3df890430ab6d49c3f5962679ce4018a583096897b"></a>NET_NUM_PROTOCOLS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a829d5172fc5604a6ce6631a3df890430ace39740c2da33b3094a5e5bacc3a505b" name="a829d5172fc5604a6ce6631a3df890430ace39740c2da33b3094a5e5bacc3a505b"></a>NET_PROTOCOL_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e39524e9df6662b37587778d04828827.html">littlehell</a></li><li class="navelem"><a class="el" href="dir_eb4414a30792db200c0834c81d05af8f.html">net</a></li><li class="navelem"><a class="el" href="defs_8h.html">defs.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

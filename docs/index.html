@@ -128,13 +128,13 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__home_joshuam_Dropbox_Projects_little_hell_engine_README"></a> </p>
-<h1><a class="anchor" id="autotoc_md1"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Building</h1>
 <p>Builds are officially supported for Linux, macOS and Windows. Note that Windows builds require the use of <a href="https://msys2.org">MSYS2</a>.</p>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Troubleshooting</h2>
 <p>If you have difficulty getting any of this to work (whether the documentation be incomplete, unclear, or inaccurate) or otherwise have a bad developer experience that should be considered a <em>BUG</em> and you should file a GitHub issue ❤️</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Dependencies</h2>
 <ul>
 <li>SDL2</li>
@@ -145,23 +145,23 @@ Dependencies</h2>
 <li>Python 3 (for Meson)</li>
 <li>CMake (for Meson and SDL)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
 Setup for Linux and macOS (Nix Package Manager)</h2>
 <p>It's highly recommended that if you're on Linux or macOS, you install the <a href="https://nixos.org/download">Nix</a> package manager. This will allow you to simultaneously obtain all the dependencies <em>and</em> launch a virtual environment where they are all installed, with one command.</p>
 <p>From the project root:</p>
 <div class="fragment"><div class="line">nix-shell shell.nix</div>
 </div><!-- fragment --><p>Now the project dependencies are installed, and you're dropped into an environment primed and ready to compile the project.</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Setup for BSD</h2>
 <p>I haven't tried building yet on BSD, but there's no reason it shouldn't work. Refer to the dependencies section and find each of those packages in your ports tree and install them. After that, you should be good to compile the project.</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 Setup on Windows</h2>
 <p>The officially supported method of building Little Hell on Windows is to use <a href="https://msys2.org">MSYS2</a>. Refer to the MSYS2 documentation for installation.</p>
 <p>Choose the <b>MSYS2 UCRT64</b> terminal and enter the following:</p>
 <div class="fragment"><div class="line">pacman -S mingw-w64-ucrt-x86_64-meson mingw-w64-ucrt-x86_64-SDL2 mingw-w64-ucrt-x86_64-SDL2_mixer mingw-w64-ucrt-x86_64-SDL2_net mingw-w64-ucrt-x86_64-ninja mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-gcc</div>
 </div><!-- fragment --><p>Now you're ready to compile the project.</p>
 <p>Note that while we are installing CMake as a package, it's being used by Meson to find dependencies (such as SDL).</p>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 Compiling</h2>
 <p>After you gotten the dependencies sorted out for your specific platform in the section(s) above, the rest of the build process is universal regardless of what system you're on, thanks to Meson and Ninja.</p>
 <p>From the project directory, run the following at a terminal (Linux/macOS/BSD) or a MSYS2 shell (Windows):</p>

@@ -6,7 +6,7 @@ var searchData=
   ['h3_3',['h3',['../structsha1__context__s.html#acdc1842b5084cd63be8949f4080c3063',1,'sha1_context_s']]],
   ['h4_4',['h4',['../structsha1__context__s.html#ad552e6cd00966b71c736d0bd2cea231c',1,'sha1_context_s']]],
   ['had_5fwarning_5',['had_warning',['../gui_8c.html#a8d9cb92f1501868b09ee2f34337f0b73',1,'gui.c']]],
-  ['handle_6',['handle',['../structmusicinfo__t.html#af00649903461d89019ab9cbb3fefb5ca',1,'musicinfo_t::handle()'],['../structwin32__wad__file__t.html#a60172456e726af427c83b8baa0440f09',1,'win32_wad_file_t::handle()']]],
+  ['handle_6',['handle',['../structmusicinfo__t.html#af00649903461d89019ab9cbb3fefb5ca',1,'musicinfo_t::handle()'],['../structwin32__wad__file__t.html#a60172456e726af427c83b8baa0440f09',1,'win32_wad_file_t::handle()'],['../struct__net__addr__s.html#abeb604c8de61a380b7304dcf5ae22633',1,'_net_addr_s::handle()']]],
   ['handle_5fmap_7',['handle_map',['../structwin32__wad__file__t.html#a5facff3aa812a435166bfda7f149c0b0',1,'win32_wad_file_t']]],
   ['haved1e5_8',['haved1e5',['../structcrispy__t.html#abcd7099d98b944fe51e2065774a5077c',1,'crispy_t']]],
   ['havee1m10_9',['havee1m10',['../structcrispy__t.html#a752177d7ed09a1ad5b6a954da909f1a0',1,'crispy_t']]],

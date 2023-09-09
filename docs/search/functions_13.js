@@ -6,7 +6,7 @@ var searchData=
   ['updategrab_3',['UpdateGrab',['../i__video_8c.html#a66062b459f0f24df5b50dfe6c1b1c851',1,'i_video.c']]],
   ['updategui_4',['UpdateGUI',['../gui_8c.html#a7d4528d71cb815f941ac340f834a31df',1,'gui.c']]],
   ['updatemasterserver_5',['UpdateMasterServer',['../server_8c.html#acee148c6a3204ccaa89ec7c317e84560',1,'server.c']]],
-  ['updatemousebuttonstate_6',['UpdateMouseButtonState',['../i__input_8c.html#ac15edd4fcf2bb1cb4ad69dc99af0e210',1,'i_input.c']]],
+  ['updatemousebuttonstate_6',['UpdateMouseButtonState',['../input_8c.html#ac15edd4fcf2bb1cb4ad69dc99af0e210',1,'input.c']]],
   ['updatemusicvolume_7',['UpdateMusicVolume',['../i__sdlmusic_8c.html#ad271a8d9977b79ec0179d9d2e09202a6',1,'i_sdlmusic.c']]],
   ['updatevoicefrequency_8',['UpdateVoiceFrequency',['../i__oplmusic_8c.html#a6263a7be6622950d8a7675290dc919b9',1,'i_oplmusic.c']]]
 ];

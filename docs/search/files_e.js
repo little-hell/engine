@@ -1,16 +1,10 @@
 var searchData=
 [
-  ['w_5fchecksum_2ec_0',['w_checksum.c',['../w__checksum_8c.html',1,'']]],
-  ['w_5fchecksum_2eh_1',['w_checksum.h',['../w__checksum_8h.html',1,'']]],
-  ['w_5ffile_2ec_2',['w_file.c',['../w__file_8c.html',1,'']]],
-  ['w_5ffile_2eh_3',['w_file.h',['../w__file_8h.html',1,'']]],
-  ['w_5ffile_5fposix_2ec_4',['w_file_posix.c',['../w__file__posix_8c.html',1,'']]],
-  ['w_5ffile_5fstdc_2ec_5',['w_file_stdc.c',['../w__file__stdc_8c.html',1,'']]],
-  ['w_5ffile_5fwin32_2ec_6',['w_file_win32.c',['../w__file__win32_8c.html',1,'']]],
-  ['w_5fmain_2ec_7',['w_main.c',['../w__main_8c.html',1,'']]],
-  ['w_5fmain_2eh_8',['w_main.h',['../w__main_8h.html',1,'']]],
-  ['w_5fmerge_2ec_9',['w_merge.c',['../w__merge_8c.html',1,'']]],
-  ['w_5fmerge_2eh_10',['w_merge.h',['../w__merge_8h.html',1,'']]],
-  ['w_5fwad_2ec_11',['w_wad.c',['../w__wad_8c.html',1,'']]],
-  ['w_5fwad_2eh_12',['w_wad.h',['../w__wad_8h.html',1,'']]]
+  ['v_5fdiskicon_2ec_0',['v_diskicon.c',['../v__diskicon_8c.html',1,'']]],
+  ['v_5fdiskicon_2eh_1',['v_diskicon.h',['../v__diskicon_8h.html',1,'']]],
+  ['v_5fpatch_2eh_2',['v_patch.h',['../v__patch_8h.html',1,'']]],
+  ['v_5ftrans_2ec_3',['v_trans.c',['../v__trans_8c.html',1,'']]],
+  ['v_5ftrans_2eh_4',['v_trans.h',['../v__trans_8h.html',1,'']]],
+  ['v_5fvideo_2ec_5',['v_video.c',['../v__video_8c.html',1,'']]],
+  ['v_5fvideo_2eh_6',['v_video.h',['../v__video_8h.html',1,'']]]
 ];

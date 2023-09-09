@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Doxygen Awesome" />
 <meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
 <!-- END twitter metadata -->
-<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell/engine/src/net/io.h Source File</title>
+<title>Little Hell Engine: io.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -147,45 +147,46 @@ $(document).ready(function(){initNavTree('io_8h_source.html',''); initResizable(
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifndef NET_IO_H</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define NET_IO_H</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;littlehell/net/defs.h&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="defs_8h.html">littlehell/net/defs.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">extern</span> net_addr_t <a class="code hl_variable" href="io_8h.html#a6b3b924cda8fe48c2dfc133fc2f2edd5">net_broadcast_addr</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct__net__addr__s.html">net_addr_t</a> <a class="code hl_variable" href="io_8h.html#a6b3b924cda8fe48c2dfc133fc2f2edd5">net_broadcast_addr</a>;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Create a new network context.</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>net_context_t *<a class="code hl_function" href="io_8h.html#a622b4a0cb0261e973dbb4221174c986b">NET_NewContext</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><a class="code hl_struct" href="struct__net__context__s.html">net_context_t</a> *<a class="code hl_function" href="io_8h.html#a622b4a0cb0261e973dbb4221174c986b">NET_NewContext</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Add a network module to a context.</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="io_8h.html#acf6c6a01da09eaaffb634f98703a81fa">NET_AddModule</a>(net_context_t *context, net_module_t *module);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="io_8h.html#acf6c6a01da09eaaffb634f98703a81fa">NET_AddModule</a>(<a class="code hl_struct" href="struct__net__context__s.html">net_context_t</a> *context, <a class="code hl_struct" href="struct__net__module__s.html">net_module_t</a> *module);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// Send a packet to the given address.</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="io_8h.html#aa4183c3b0a8dbcd1a080ae4e7c53c505">NET_SendPacket</a>(net_addr_t *addr, net_packet_t *packet);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="io_8h.html#aa4183c3b0a8dbcd1a080ae4e7c53c505">NET_SendPacket</a>(<a class="code hl_struct" href="struct__net__addr__s.html">net_addr_t</a> *addr, <a class="code hl_struct" href="struct__net__packet__s.html">net_packet_t</a> *packet);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// Send a broadcast using all modules in the given context.</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> <a class="code hl_function" href="io_8h.html#a9955399a50c6272418622a5fda4f6a9c">NET_SendBroadcast</a>(net_context_t *context, net_packet_t *packet);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> <a class="code hl_function" href="io_8h.html#a9955399a50c6272418622a5fda4f6a9c">NET_SendBroadcast</a>(<a class="code hl_struct" href="struct__net__context__s.html">net_context_t</a> *context, <a class="code hl_struct" href="struct__net__packet__s.html">net_packet_t</a> *packet);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// Check all modules in the given context and receive a packet, returning true</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// if a packet was received. The result is stored in *packet and the source is</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// stored in *addr, with an implicit reference added. The packet must be freed</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// by the caller and the reference releasd.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">boolean</span> <a class="code hl_function" href="io_8h.html#a424bdfe70761063f18e7f76ba8d0e53d">NET_RecvPacket</a>(net_context_t *context, net_addr_t **addr, net_packet_t **packet);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">boolean</span> <a class="code hl_function" href="io_8h.html#a424bdfe70761063f18e7f76ba8d0e53d">NET_RecvPacket</a>(<a class="code hl_struct" href="struct__net__context__s.html">net_context_t</a> *context, <a class="code hl_struct" href="struct__net__addr__s.html">net_addr_t</a> **addr, <a class="code hl_struct" href="struct__net__packet__s.html">net_packet_t</a> **packet);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// Return a string representation of the given address. The result points to a</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// static buffer and will become invalid with the next call.</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">char</span> *<a class="code hl_function" href="io_8h.html#a2decf509a660eb41bf044a26ddf96ef1">NET_AddrToString</a>(net_addr_t *addr);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">char</span> *<a class="code hl_function" href="io_8h.html#a2decf509a660eb41bf044a26ddf96ef1">NET_AddrToString</a>(<a class="code hl_struct" href="struct__net__addr__s.html">net_addr_t</a> *addr);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// Add a reference to the given address.</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">void</span> <a class="code hl_function" href="io_8h.html#a2a88fdee2a9350798e9fca9bd3442936">NET_ReferenceAddress</a>(net_addr_t *addr);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">void</span> <a class="code hl_function" href="io_8h.html#a2a88fdee2a9350798e9fca9bd3442936">NET_ReferenceAddress</a>(<a class="code hl_struct" href="struct__net__addr__s.html">net_addr_t</a> *addr);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// Release a reference to the given address. When there are no more references,</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// the address will be freed.</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span> <a class="code hl_function" href="io_8h.html#a2685d53cd6262e7ac2426d6329abb318">NET_ReleaseAddress</a>(net_addr_t *addr);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span> <a class="code hl_function" href="io_8h.html#a2685d53cd6262e7ac2426d6329abb318">NET_ReleaseAddress</a>(<a class="code hl_struct" href="struct__net__addr__s.html">net_addr_t</a> *addr);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// Resolve a string representation of an address. If successful, a net_addr_t</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// pointer is received with an implicit reference that must be freed by the</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// caller when it is no longer needed.</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>net_addr_t *<a class="code hl_function" href="io_8h.html#a3a387a87937300ed8d881ddfbc9bd8a9">NET_ResolveAddress</a>(net_context_t *context, <span class="keyword">const</span> <span class="keywordtype">char</span> *address);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><a class="code hl_struct" href="struct__net__addr__s.html">net_addr_t</a> *<a class="code hl_function" href="io_8h.html#a3a387a87937300ed8d881ddfbc9bd8a9">NET_ResolveAddress</a>(<a class="code hl_struct" href="struct__net__context__s.html">net_context_t</a> *context, <span class="keyword">const</span> <span class="keywordtype">char</span> *address);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif </span><span class="comment">/* #ifndef NET_IO_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="adefs_8h_html"><div class="ttname"><a href="defs_8h.html">defs.h</a></div></div>
 <div class="ttc" id="aio_8h_html_a2685d53cd6262e7ac2426d6329abb318"><div class="ttname"><a href="io_8h.html#a2685d53cd6262e7ac2426d6329abb318">NET_ReleaseAddress</a></div><div class="ttdeci">void NET_ReleaseAddress(net_addr_t *addr)</div><div class="ttdef"><b>Definition:</b> io.c:134</div></div>
 <div class="ttc" id="aio_8h_html_a2a88fdee2a9350798e9fca9bd3442936"><div class="ttname"><a href="io_8h.html#a2a88fdee2a9350798e9fca9bd3442936">NET_ReferenceAddress</a></div><div class="ttdeci">void NET_ReferenceAddress(net_addr_t *addr)</div><div class="ttdef"><b>Definition:</b> io.c:124</div></div>
 <div class="ttc" id="aio_8h_html_a2decf509a660eb41bf044a26ddf96ef1"><div class="ttname"><a href="io_8h.html#a2decf509a660eb41bf044a26ddf96ef1">NET_AddrToString</a></div><div class="ttdeci">char * NET_AddrToString(net_addr_t *addr)</div><div class="ttdef"><b>Definition:</b> io.c:115</div></div>
@@ -196,6 +197,10 @@ $(document).ready(function(){initNavTree('io_8h_source.html',''); initResizable(
 <div class="ttc" id="aio_8h_html_a9955399a50c6272418622a5fda4f6a9c"><div class="ttname"><a href="io_8h.html#a9955399a50c6272418622a5fda4f6a9c">NET_SendBroadcast</a></div><div class="ttdeci">void NET_SendBroadcast(net_context_t *context, net_packet_t *packet)</div><div class="ttdef"><b>Definition:</b> io.c:84</div></div>
 <div class="ttc" id="aio_8h_html_aa4183c3b0a8dbcd1a080ae4e7c53c505"><div class="ttname"><a href="io_8h.html#aa4183c3b0a8dbcd1a080ae4e7c53c505">NET_SendPacket</a></div><div class="ttdeci">void NET_SendPacket(net_addr_t *addr, net_packet_t *packet)</div><div class="ttdef"><b>Definition:</b> io.c:79</div></div>
 <div class="ttc" id="aio_8h_html_acf6c6a01da09eaaffb634f98703a81fa"><div class="ttname"><a href="io_8h.html#acf6c6a01da09eaaffb634f98703a81fa">NET_AddModule</a></div><div class="ttdeci">void NET_AddModule(net_context_t *context, net_module_t *module)</div><div class="ttdef"><b>Definition:</b> io.c:49</div></div>
+<div class="ttc" id="astruct__net__addr__s_html"><div class="ttname"><a href="struct__net__addr__s.html">_net_addr_s</a></div><div class="ttdef"><b>Definition:</b> defs.h:96</div></div>
+<div class="ttc" id="astruct__net__context__s_html"><div class="ttname"><a href="struct__net__context__s.html">_net_context_s</a></div><div class="ttdef"><b>Definition:</b> io.c:32</div></div>
+<div class="ttc" id="astruct__net__module__s_html"><div class="ttname"><a href="struct__net__module__s.html">_net_module_s</a></div><div class="ttdef"><b>Definition:</b> defs.h:61</div></div>
+<div class="ttc" id="astruct__net__packet__s_html"><div class="ttname"><a href="struct__net__packet__s.html">_net_packet_s</a></div><div class="ttdef"><b>Definition:</b> defs.h:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
