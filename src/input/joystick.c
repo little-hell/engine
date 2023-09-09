@@ -24,9 +24,10 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "littlehell/input/joystick.h"
+
 #include "doomtype.h"
 #include "d_event.h"
-#include "i_joystick.h"
 #include "i_system.h"
 
 #include "m_config.h"

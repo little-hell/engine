@@ -24,7 +24,9 @@
 #include "doomkeys.h"
 #include "doomtype.h"
 #include "d_event.h"
-#include "i_input.h"
+
+#include "littlehell/input/input.h"
+
 #include "i_timer.h" // [crispy]
 #include "m_argv.h"
 #include "m_config.h"

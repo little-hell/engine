@@ -36,10 +36,11 @@ engine_source_files = files(
     src_dir / 'd_mode.c',
     src_dir / 'd_iwad.c',
     src_dir / 'd_loop.c',
-    src_dir / 'i_input.c',
+
+    src_dir / 'input' / 'input.c',
+    src_dir / 'input' / 'joystick.c',
 
     src_dir / 'gusconf.c',
-
 
     # Eventually, we will have:
     #src_dir / system_src_dir / 'system.c',
@@ -49,7 +50,6 @@ engine_source_files = files(
     # But for now:
     src_dir / 'i_system.c',
 
-    src_dir / 'i_joystick.c',
     src_dir / 'i_cdmus.c',
     src_dir / 'i_endoom.c',
     src_dir / 'i_videohr.c',
