@@ -42,7 +42,7 @@
 #include "i_video.h"
 #include "m_misc.h"
 #include "v_video.h"
-#include "w_wad.h"
+#include "littlehell/wad/wad.h"
 #include "z_zone.h"
 
 #ifdef _WIN32

@@ -31,7 +31,7 @@
 #include "v_diskicon.h"
 #include "z_zone.h"
 
-#include "w_wad.h"
+#include "littlehell/wad/wad.h"
 
 //
 // GLOBALS

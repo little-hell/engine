@@ -34,8 +34,12 @@
 
 #include "d_loop.h"
 #include "doomtype.h"
+
 #include "littlehell/input/input.h"
 #include "littlehell/input/joystick.h"
+
+#include "littlehell/wad/wad.h"
+
 #include "i_system.h"
 #include "i_timer.h"
 #include "i_video.h"
@@ -45,7 +49,6 @@
 #include "tables.h"
 #include "v_diskicon.h"
 #include "v_video.h"
-#include "w_wad.h"
 #include "z_zone.h"
 
 int SCREENWIDTH, SCREENHEIGHT, SCREENHEIGHT_4_3;

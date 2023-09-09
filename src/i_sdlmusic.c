@@ -37,7 +37,7 @@
 #include "m_config.h"
 #include "m_misc.h"
 #include "sha1.h"
-#include "w_wad.h"
+#include "littlehell/wad/wad.h"
 #include "z_zone.h"
 
 

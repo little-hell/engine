@@ -27,8 +27,8 @@
 #include "i_swap.h" // [crispy] LONG()
 #include "i_system.h"
 #include "m_misc.h"
-#include "w_merge.h"
-#include "w_wad.h"
+#include "littlehell/wad/wad.h"
+#include "wad/merge.h"
 #include "z_zone.h"
 
 typedef enum

@@ -18,12 +18,14 @@
 
 #include <stdlib.h>
 
-#include "d_iwad.h"
+#include "littlehell/wad/iwad.h"
+#include "littlehell/wad/wad.h"
+
+#include "wad/merge.h"
+
 #include "i_system.h"
 #include "m_argv.h"
 #include "w_main.h"
-#include "w_merge.h"
-#include "w_wad.h"
 #include "z_zone.h"
 
 // TODO: FIX

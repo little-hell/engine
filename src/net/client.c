@@ -32,6 +32,8 @@
 #include "littlehell/net/defs.h"
 #include "littlehell/net/query.h"
 
+#include "littlehell/wad/wad.h"
+
 #include "net/common.h"
 #include "net/gui.h"
 #include "net/io.h"
@@ -41,7 +43,6 @@
 #include "net/petname.h"
 
 #include "w_checksum.h"
-#include "w_wad.h"
 
 // TODO: FIX
 #define PACKAGE_STRING "littlehell"
