@@ -27,5 +27,5 @@ var structrw_8c =
     [ "ParseProtocolName", "structrw_8c.html#a4a1b5ac875425a700b4ba9d65c30fbba", null ],
     [ "name", "structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb", null ],
     [ "protocol", "structrw_8c.html#ade36739c701ca04b722c2ece73175e64", null ],
-    [ "protocol_names", "structrw_8c.html#ad739729594a6e2b960e79deb501ff193", null ]
+    [ "protocol_names", "structrw_8c.html#ade6a30b26b8fbc81b59d3c8c397c635d", null ]
 ];

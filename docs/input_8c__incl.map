@@ -1,0 +1,21 @@
+<map id="input.c" name="input.c">
+<area shape="rect" id="node1" title=" " alt="" coords="555,5,621,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="145,445,215,471"/>
+<area shape="rect" id="node3" href="$sdl_8h.html" title=" " alt="" coords="145,152,204,177"/>
+<area shape="rect" id="node6" href="$doomtype_8h.html" title=" " alt="" coords="459,372,559,397"/>
+<area shape="rect" id="node11" title=" " alt="" coords="280,79,400,104"/>
+<area shape="rect" id="node12" href="$doomkeys_8h.html" title=" " alt="" coords="424,79,525,104"/>
+<area shape="rect" id="node13" href="$d__event_8h.html" title=" " alt="" coords="507,225,594,251"/>
+<area shape="rect" id="node14" href="$input_8h.html" title=" " alt="" coords="93,79,256,104"/>
+<area shape="rect" id="node15" href="$i__timer_8h.html" title=" " alt="" coords="702,79,781,104"/>
+<area shape="rect" id="node16" href="$m__fixed_8h.html" title=" " alt="" coords="696,152,781,177"/>
+<area shape="rect" id="node17" href="$m__argv_8h.html" title=" " alt="" coords="589,152,672,177"/>
+<area shape="rect" id="node18" href="$m__config_8h.html" title=" " alt="" coords="695,225,788,251"/>
+<area shape="rect" id="node19" href="$crispy_8h.html" title=" " alt="" coords="857,152,927,177"/>
+<area shape="rect" id="node4" href="$defs_8h.html" title=" " alt="" coords="131,225,277,251"/>
+<area shape="rect" id="node5" title=" " alt="" coords="275,299,341,324"/>
+<area shape="rect" id="node9" href="$d__ticcmd_8h.html" title=" " alt="" coords="157,299,251,324"/>
+<area shape="rect" id="node10" href="$sha1_8h.html" title=" " alt="" coords="366,299,431,324"/>
+<area shape="rect" id="node7" title=" " alt="" coords="518,445,605,471"/>
+<area shape="rect" id="node8" title=" " alt="" coords="423,445,494,471"/>
+</map>

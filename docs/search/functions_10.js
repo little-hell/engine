@@ -1,8 +1,8 @@
 var searchData=
 [
   ['readalltracks_0',['ReadAllTracks',['../midifile_8c.html#a2e834aeb46eb0bf0a7c76f0ee7fab136',1,'midifile.c']]],
-  ['readbuttonstate_1',['ReadButtonState',['../i__joystick_8c.html#a49fb467651ee614aa6faf3d9402b2ab8',1,'i_joystick.c']]],
-  ['readbuttonstategamepad_2',['ReadButtonStateGamepad',['../i__joystick_8c.html#a519d9f76ea2423083048925dd248539c',1,'i_joystick.c']]],
+  ['readbuttonstate_1',['ReadButtonState',['../joystick_8c.html#a49fb467651ee614aa6faf3d9402b2ab8',1,'joystick.c']]],
+  ['readbuttonstategamepad_2',['ReadButtonStateGamepad',['../joystick_8c.html#a519d9f76ea2423083048925dd248539c',1,'joystick.c']]],
   ['readbyte_3',['ReadByte',['../midifile_8c.html#a9913c6913cc53fcc0a4d172554f86595',1,'midifile.c']]],
   ['readbytesequence_4',['ReadByteSequence',['../midifile_8c.html#a8f6dabf4f04f14a9e6a70014366ec8b5',1,'midifile.c']]],
   ['readchannelevent_5',['ReadChannelEvent',['../midifile_8c.html#a0960ff0e4cd278a5ad4f6a82b0f147d1',1,'midifile.c']]],

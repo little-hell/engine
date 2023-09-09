@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: net_gamesettings_t Struct Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structnet__gamesettings__t.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structnet__gamesettings__t-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">net_gamesettings_t Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="defs_8h_source.html">defs.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a5d3530a24e106ae043aeec9ee61e2418"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#a5d3530a24e106ae043aeec9ee61e2418">ticdup</a></td></tr>
+<tr class="separator:a5d3530a24e106ae043aeec9ee61e2418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737bb95a5a80142442c72b0e32a3da9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#a737bb95a5a80142442c72b0e32a3da9e">extratics</a></td></tr>
+<tr class="separator:a737bb95a5a80142442c72b0e32a3da9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db7394dbc40b5d296dbe2277a81bcb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#a5db7394dbc40b5d296dbe2277a81bcb3">deathmatch</a></td></tr>
+<tr class="separator:a5db7394dbc40b5d296dbe2277a81bcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0cee81a0db6207ac7cf054b66507907"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#af0cee81a0db6207ac7cf054b66507907">episode</a></td></tr>
+<tr class="separator:af0cee81a0db6207ac7cf054b66507907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea610dca2f49486f5572f9ba89f33254"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#aea610dca2f49486f5572f9ba89f33254">nomonsters</a></td></tr>
+<tr class="separator:aea610dca2f49486f5572f9ba89f33254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907b9bee836ec1e955f2ff9a98d9e3e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#a907b9bee836ec1e955f2ff9a98d9e3e9">fast_monsters</a></td></tr>
+<tr class="separator:a907b9bee836ec1e955f2ff9a98d9e3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a822b84a0cfd17fdf51937295fffebda1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#a822b84a0cfd17fdf51937295fffebda1">respawn_monsters</a></td></tr>
+<tr class="separator:a822b84a0cfd17fdf51937295fffebda1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bb7769fe07f62d1bf21136c5e11d59"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#ab1bb7769fe07f62d1bf21136c5e11d59">map</a></td></tr>
+<tr class="separator:ab1bb7769fe07f62d1bf21136c5e11d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a849f2d5ac7115a81652c082283eccf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#a1a849f2d5ac7115a81652c082283eccf">skill</a></td></tr>
+<tr class="separator:a1a849f2d5ac7115a81652c082283eccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fea87c5d478f818d4d03b0c79896f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#a84fea87c5d478f818d4d03b0c79896f3">gameversion</a></td></tr>
+<tr class="separator:a84fea87c5d478f818d4d03b0c79896f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98b8431342be26f1a5e03742d30e4e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#aa98b8431342be26f1a5e03742d30e4e6">lowres_turn</a></td></tr>
+<tr class="separator:aa98b8431342be26f1a5e03742d30e4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe869a5aa2018e4bd7168d5198ad94a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#afe869a5aa2018e4bd7168d5198ad94a1">new_sync</a></td></tr>
+<tr class="separator:afe869a5aa2018e4bd7168d5198ad94a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72168123112375f7bf7ef0f749c97de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#aa72168123112375f7bf7ef0f749c97de">timelimit</a></td></tr>
+<tr class="separator:aa72168123112375f7bf7ef0f749c97de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257ea378dd6e07d6797be3d7db2a0bcf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#a257ea378dd6e07d6797be3d7db2a0bcf">loadgame</a></td></tr>
+<tr class="separator:a257ea378dd6e07d6797be3d7db2a0bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68bbcca91bf3e9c1e7b4493dd0e71be8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#a68bbcca91bf3e9c1e7b4493dd0e71be8">random</a></td></tr>
+<tr class="separator:a68bbcca91bf3e9c1e7b4493dd0e71be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0feec3c0a533c3bcff82088e42d76a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#ac0feec3c0a533c3bcff82088e42d76a9">num_players</a></td></tr>
+<tr class="separator:ac0feec3c0a533c3bcff82088e42d76a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb467918a449dd502d78187d6f96d995"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#acb467918a449dd502d78187d6f96d995">consoleplayer</a></td></tr>
+<tr class="separator:acb467918a449dd502d78187d6f96d995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17ac50f322f8700b47d8abfccbc7402"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__gamesettings__t.html#af17ac50f322f8700b47d8abfccbc7402">player_classes</a> [<a class="el" href="defs_8h.html#a667d7a1845f930f6dc2449ef8215af21">NET_MAXPLAYERS</a>]</td></tr>
+<tr class="separator:af17ac50f322f8700b47d8abfccbc7402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="acb467918a449dd502d78187d6f96d995" name="acb467918a449dd502d78187d6f96d995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb467918a449dd502d78187d6f96d995">&#9670;&#160;</a></span>consoleplayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::consoleplayer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5db7394dbc40b5d296dbe2277a81bcb3" name="a5db7394dbc40b5d296dbe2277a81bcb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db7394dbc40b5d296dbe2277a81bcb3">&#9670;&#160;</a></span>deathmatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::deathmatch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0cee81a0db6207ac7cf054b66507907" name="af0cee81a0db6207ac7cf054b66507907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0cee81a0db6207ac7cf054b66507907">&#9670;&#160;</a></span>episode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::episode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a737bb95a5a80142442c72b0e32a3da9e" name="a737bb95a5a80142442c72b0e32a3da9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737bb95a5a80142442c72b0e32a3da9e">&#9670;&#160;</a></span>extratics</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::extratics</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a907b9bee836ec1e955f2ff9a98d9e3e9" name="a907b9bee836ec1e955f2ff9a98d9e3e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907b9bee836ec1e955f2ff9a98d9e3e9">&#9670;&#160;</a></span>fast_monsters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::fast_monsters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84fea87c5d478f818d4d03b0c79896f3" name="a84fea87c5d478f818d4d03b0c79896f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84fea87c5d478f818d4d03b0c79896f3">&#9670;&#160;</a></span>gameversion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::gameversion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a257ea378dd6e07d6797be3d7db2a0bcf" name="a257ea378dd6e07d6797be3d7db2a0bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257ea378dd6e07d6797be3d7db2a0bcf">&#9670;&#160;</a></span>loadgame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::loadgame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa98b8431342be26f1a5e03742d30e4e6" name="aa98b8431342be26f1a5e03742d30e4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98b8431342be26f1a5e03742d30e4e6">&#9670;&#160;</a></span>lowres_turn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::lowres_turn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1bb7769fe07f62d1bf21136c5e11d59" name="ab1bb7769fe07f62d1bf21136c5e11d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1bb7769fe07f62d1bf21136c5e11d59">&#9670;&#160;</a></span>map</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::map</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe869a5aa2018e4bd7168d5198ad94a1" name="afe869a5aa2018e4bd7168d5198ad94a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe869a5aa2018e4bd7168d5198ad94a1">&#9670;&#160;</a></span>new_sync</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::new_sync</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea610dca2f49486f5572f9ba89f33254" name="aea610dca2f49486f5572f9ba89f33254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea610dca2f49486f5572f9ba89f33254">&#9670;&#160;</a></span>nomonsters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::nomonsters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0feec3c0a533c3bcff82088e42d76a9" name="ac0feec3c0a533c3bcff82088e42d76a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0feec3c0a533c3bcff82088e42d76a9">&#9670;&#160;</a></span>num_players</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::num_players</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af17ac50f322f8700b47d8abfccbc7402" name="af17ac50f322f8700b47d8abfccbc7402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af17ac50f322f8700b47d8abfccbc7402">&#9670;&#160;</a></span>player_classes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::player_classes[<a class="el" href="defs_8h.html#a667d7a1845f930f6dc2449ef8215af21">NET_MAXPLAYERS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68bbcca91bf3e9c1e7b4493dd0e71be8" name="a68bbcca91bf3e9c1e7b4493dd0e71be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68bbcca91bf3e9c1e7b4493dd0e71be8">&#9670;&#160;</a></span>random</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::random</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a822b84a0cfd17fdf51937295fffebda1" name="a822b84a0cfd17fdf51937295fffebda1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a822b84a0cfd17fdf51937295fffebda1">&#9670;&#160;</a></span>respawn_monsters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::respawn_monsters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a849f2d5ac7115a81652c082283eccf" name="a1a849f2d5ac7115a81652c082283eccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a849f2d5ac7115a81652c082283eccf">&#9670;&#160;</a></span>skill</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::skill</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d3530a24e106ae043aeec9ee61e2418" name="a5d3530a24e106ae043aeec9ee61e2418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3530a24e106ae043aeec9ee61e2418">&#9670;&#160;</a></span>ticdup</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::ticdup</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa72168123112375f7bf7ef0f749c97de" name="aa72168123112375f7bf7ef0f749c97de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72168123112375f7bf7ef0f749c97de">&#9670;&#160;</a></span>timelimit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_gamesettings_t::timelimit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="defs_8h_source.html">defs.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structnet__gamesettings__t.html">net_gamesettings_t</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

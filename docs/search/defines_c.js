@@ -1,9 +1,21 @@
 var searchData=
 [
   ['net_5fcl_5fexpandticnum_0',['NET_CL_ExpandTicNum',['../client_8c.html#a106c19dd53d3e8f5121f1de781f99305',1,'client.c']]],
-  ['net_5fsv_5fexpandticnum_1',['NET_SV_ExpandTicNum',['../server_8c.html#a8ef701c2f4c9a912583a64f4c68fdeaf',1,'server.c']]],
-  ['noreturn_2',['NORETURN',['../doomtype_8h.html#aa1728270d73c5d1598de1fd691762eb1',1,'doomtype.h']]],
-  ['norm_5fpitch_3',['NORM_PITCH',['../i__sound_8h.html#a37059d54c44e891d60742bb6cc47ef70',1,'i_sound.h']]],
-  ['num_5fchannels_4',['NUM_CHANNELS',['../i__sdlsound_8c.html#ae5597ce31d23d11493e6e674fe257d73',1,'NUM_CHANNELS():&#160;i_sdlsound.c'],['../mus2mid_8c.html#ae5597ce31d23d11493e6e674fe257d73',1,'NUM_CHANNELS():&#160;mus2mid.c']]],
-  ['num_5fvirtual_5fbuttons_5',['NUM_VIRTUAL_BUTTONS',['../i__joystick_8h.html#ab597a42fef94ebf83fd47bcb4a2317a0',1,'i_joystick.h']]]
+  ['net_5fmagic_5fnumber_1',['NET_MAGIC_NUMBER',['../defs_8h.html#a2f401319fea663dd2164305566196ea6',1,'defs.h']]],
+  ['net_5fmaxplayers_2',['NET_MAXPLAYERS',['../defs_8h.html#a667d7a1845f930f6dc2449ef8215af21',1,'defs.h']]],
+  ['net_5fold_5fmagic_5fnumber_3',['NET_OLD_MAGIC_NUMBER',['../defs_8h.html#a4ac16d15cfe8401c702c8dbf4a4101f5',1,'defs.h']]],
+  ['net_5freliable_5fpacket_4',['NET_RELIABLE_PACKET',['../defs_8h.html#a209a1524bd0d3848510bb0054c109402',1,'defs.h']]],
+  ['net_5fsv_5fexpandticnum_5',['NET_SV_ExpandTicNum',['../server_8c.html#a8ef701c2f4c9a912583a64f4c68fdeaf',1,'server.c']]],
+  ['net_5fticdiff_5fbuttons_6',['NET_TICDIFF_BUTTONS',['../defs_8h.html#a143cb326555b0aa1748a385a6f8e35e8',1,'defs.h']]],
+  ['net_5fticdiff_5fchatchar_7',['NET_TICDIFF_CHATCHAR',['../defs_8h.html#a9495f55da8ba5aae3fc75ab38be68d78',1,'defs.h']]],
+  ['net_5fticdiff_5fconsistancy_8',['NET_TICDIFF_CONSISTANCY',['../defs_8h.html#ad0a2e577e49324a33073c5bbb51aae47',1,'defs.h']]],
+  ['net_5fticdiff_5fforward_9',['NET_TICDIFF_FORWARD',['../defs_8h.html#a62bf3991b499757eb6fe8c8c8a2c4a5d',1,'defs.h']]],
+  ['net_5fticdiff_5fraven_10',['NET_TICDIFF_RAVEN',['../defs_8h.html#aff48319df25ec52ca4b088902530fb4c',1,'defs.h']]],
+  ['net_5fticdiff_5fside_11',['NET_TICDIFF_SIDE',['../defs_8h.html#ab95a1c961a26e0219b75598761d99c51',1,'defs.h']]],
+  ['net_5fticdiff_5fstrife_12',['NET_TICDIFF_STRIFE',['../defs_8h.html#a137bfa42d199672b967296576c754fb2',1,'defs.h']]],
+  ['net_5fticdiff_5fturn_13',['NET_TICDIFF_TURN',['../defs_8h.html#a1c56722b0538c6438b2ff9f946a15ef9',1,'defs.h']]],
+  ['noreturn_14',['NORETURN',['../doomtype_8h.html#aa1728270d73c5d1598de1fd691762eb1',1,'doomtype.h']]],
+  ['norm_5fpitch_15',['NORM_PITCH',['../i__sound_8h.html#a37059d54c44e891d60742bb6cc47ef70',1,'i_sound.h']]],
+  ['num_5fchannels_16',['NUM_CHANNELS',['../i__sdlsound_8c.html#ae5597ce31d23d11493e6e674fe257d73',1,'NUM_CHANNELS():&#160;i_sdlsound.c'],['../mus2mid_8c.html#ae5597ce31d23d11493e6e674fe257d73',1,'NUM_CHANNELS():&#160;mus2mid.c']]],
+  ['num_5fvirtual_5fbuttons_17',['NUM_VIRTUAL_BUTTONS',['../joystick_8h.html#ab597a42fef94ebf83fd47bcb4a2317a0',1,'joystick.h']]]
 ];

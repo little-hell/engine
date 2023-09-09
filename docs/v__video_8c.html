@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Doxygen Awesome" />
 <meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
 <!-- END twitter metadata -->
-<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell/engine/src/v_video.c File Reference</title>
+<title>Little Hell Engine: v_video.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -139,19 +139,19 @@ $(document).ready(function(){initNavTree('v__video_8c.html',''); initResizable()
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="i__system_8h_source.html">i_system.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="doomtype_8h_source.html">doomtype.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="i__input_8h_source.html">i_input.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="input_8h_source.html">littlehell/input/input.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="wad_8h_source.html">littlehell/wad/wad.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="i__swap_8h_source.html">i_swap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="i__video_8h_source.html">i_video.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__bbox_8h_source.html">m_bbox.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__misc_8h_source.html">m_misc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="v__video_8h_source.html">v_video.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="w__wad_8h_source.html">w_wad.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="z__zone_8h_source.html">z_zone.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="crispy_8h_source.html">crispy.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for v_video.c:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 0 -->
+<div class="center"><iframe scrolling="no" frameborder="0" src="v__video_8c__incl.svg" width="1754" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -225,7 +225,7 @@ Functions</h2></td></tr>
 <tr class="separator:affad4dc810b1d4f03ddb2c46e60c0158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7acf0eea18357b4f42c24bb3f3b30e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ad7acf0eea18357b4f42c24bb3f3b30e8">V_DrawRawScreen</a> (<a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *raw)</td></tr>
 <tr class="separator:ad7acf0eea18357b4f42c24bb3f3b30e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae48de21213e50836e0a129e42b0f15bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ae48de21213e50836e0a129e42b0f15bf">V_DrawFullscreenRawOrPatch</a> (<a class="el" href="w__wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> index)</td></tr>
+<tr class="memitem:ae48de21213e50836e0a129e42b0f15bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ae48de21213e50836e0a129e42b0f15bf">V_DrawFullscreenRawOrPatch</a> (<a class="el" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> index)</td></tr>
 <tr class="separator:ae48de21213e50836e0a129e42b0f15bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97c89d97d81b9fbcc4058631c2ac449e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a97c89d97d81b9fbcc4058631c2ac449e">V_Init</a> (void)</td></tr>
 <tr class="separator:a97c89d97d81b9fbcc4058631c2ac449e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -849,7 +849,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void V_DrawFullscreenRawOrPatch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="w__wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1504,10 +1504,10 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">    {<a class="code hl_function" href="v__video_8c.html#aa9eed63c63ca7bbcf781c3fe19fc002c">drawpatchpx11</a>, <a class="code hl_function" href="v__video_8c.html#a362b8c3c13d6a466a44ad7c0af499036">drawpatchpx10</a>}, {<a class="code hl_function" href="v__video_8c.html#adda3677b3668506eb287df03103024ef">drawpatchpx01</a>, <a class="code hl_function" href="v__video_8c.html#a53a88672a4cfd0217261599ecb9e5fba">drawpatchpx00</a>}}</div>
-<div class="ttc" id="av__video_8c_html_a362b8c3c13d6a466a44ad7c0af499036"><div class="ttname"><a href="v__video_8c.html#a362b8c3c13d6a466a44ad7c0af499036">drawpatchpx10</a></div><div class="ttdeci">static const pixel_t drawpatchpx10(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:182</div></div>
-<div class="ttc" id="av__video_8c_html_a53a88672a4cfd0217261599ecb9e5fba"><div class="ttname"><a href="v__video_8c.html#a53a88672a4cfd0217261599ecb9e5fba">drawpatchpx00</a></div><div class="ttdeci">static const pixel_t drawpatchpx00(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:160</div></div>
-<div class="ttc" id="av__video_8c_html_aa9eed63c63ca7bbcf781c3fe19fc002c"><div class="ttname"><a href="v__video_8c.html#aa9eed63c63ca7bbcf781c3fe19fc002c">drawpatchpx11</a></div><div class="ttdeci">static const pixel_t drawpatchpx11(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:193</div></div>
-<div class="ttc" id="av__video_8c_html_adda3677b3668506eb287df03103024ef"><div class="ttname"><a href="v__video_8c.html#adda3677b3668506eb287df03103024ef">drawpatchpx01</a></div><div class="ttdeci">static const pixel_t drawpatchpx01(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:171</div></div>
+<div class="ttc" id="av__video_8c_html_a362b8c3c13d6a466a44ad7c0af499036"><div class="ttname"><a href="v__video_8c.html#a362b8c3c13d6a466a44ad7c0af499036">drawpatchpx10</a></div><div class="ttdeci">static const pixel_t drawpatchpx10(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:183</div></div>
+<div class="ttc" id="av__video_8c_html_a53a88672a4cfd0217261599ecb9e5fba"><div class="ttname"><a href="v__video_8c.html#a53a88672a4cfd0217261599ecb9e5fba">drawpatchpx00</a></div><div class="ttdeci">static const pixel_t drawpatchpx00(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:161</div></div>
+<div class="ttc" id="av__video_8c_html_aa9eed63c63ca7bbcf781c3fe19fc002c"><div class="ttname"><a href="v__video_8c.html#aa9eed63c63ca7bbcf781c3fe19fc002c">drawpatchpx11</a></div><div class="ttdeci">static const pixel_t drawpatchpx11(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:194</div></div>
+<div class="ttc" id="av__video_8c_html_adda3677b3668506eb287df03103024ef"><div class="ttname"><a href="v__video_8c.html#adda3677b3668506eb287df03103024ef">drawpatchpx01</a></div><div class="ttdeci">static const pixel_t drawpatchpx01(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:172</div></div>
 </div><!-- fragment -->
 </div>
 </div>

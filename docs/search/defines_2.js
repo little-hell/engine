@@ -20,8 +20,8 @@ var searchData=
   ['cpu_5fto_5fle32_17',['cpu_to_le32',['../aes__prng_8c.html#a1d5ae0c36d519a1b0a789db69a598f28',1,'aes_prng.c']]],
   ['cr_5fesc_18',['cr_esc',['../v__trans_8h.html#a5da84f99d6d90e0e470354d1329d519b',1,'v_trans.h']]],
   ['cr_5fgrey_19',['CR_GREY',['../v__trans_8h.html#a08486c3967753b6866c2a394749bc5f8',1,'v_trans.h']]],
-  ['create_5fbutton_5faxis_20',['CREATE_BUTTON_AXIS',['../i__joystick_8h.html#a3d53fc238fc95fb91893bdad05e45862',1,'i_joystick.h']]],
-  ['create_5fhat_5faxis_21',['CREATE_HAT_AXIS',['../i__joystick_8h.html#a0cbf07a7b16ae63fc970eb83407bb894',1,'i_joystick.h']]],
+  ['create_5fbutton_5faxis_20',['CREATE_BUTTON_AXIS',['../joystick_8h.html#a3d53fc238fc95fb91893bdad05e45862',1,'joystick.h']]],
+  ['create_5fhat_5faxis_21',['CREATE_HAT_AXIS',['../joystick_8h.html#a0cbf07a7b16ae63fc970eb83407bb894',1,'joystick.h']]],
   ['crispy_5ffpslimit_5fmax_22',['CRISPY_FPSLIMIT_MAX',['../crispy_8h.html#a6d1f07c90ec60514c8a947d82ecbaff8',1,'crispy.h']]],
   ['ctolerance_23',['CTOLERANCE',['../v__trans_8c.html#a6cadc8b83ab637f58fbd4089e2913b60',1,'v_trans.c']]]
 ];

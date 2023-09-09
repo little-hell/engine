@@ -1,0 +1,8 @@
+<map id="doomkeys.h" name="doomkeys.h">
+<area shape="rect" id="node1" title=" " alt="" coords="155,5,256,31"/>
+<area shape="rect" id="node2" href="$gui_8c.html" title=" " alt="" coords="5,79,59,104"/>
+<area shape="rect" id="node3" href="$input_8c.html" title=" " alt="" coords="83,79,149,104"/>
+<area shape="rect" id="node4" href="$iwad_8c.html" title=" " alt="" coords="173,79,237,104"/>
+<area shape="rect" id="node5" href="$m__config_8c.html" title=" " alt="" coords="262,79,354,104"/>
+<area shape="rect" id="node6" href="$m__controls_8c.html" title=" " alt="" coords="378,79,483,104"/>
+</map>

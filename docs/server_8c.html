@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Doxygen Awesome" />
 <meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
 <!-- END twitter metadata -->
-<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell/engine/src/net/server.c File Reference</title>
+<title>Little Hell Engine: server.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -143,9 +143,9 @@ $(document).ready(function(){initNavTree('server_8c.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="i__timer_8h_source.html">i_timer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__argv_8h_source.html">m_argv.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__misc_8h_source.html">m_misc.h</a>&quot;</code><br />
-<code>#include &quot;littlehell/net/client.h&quot;</code><br />
-<code>#include &quot;littlehell/net/defs.h&quot;</code><br />
-<code>#include &quot;littlehell/net/query.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="client_8h_source.html">littlehell/net/client.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="defs_8h_source.html">littlehell/net/defs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="query_8h_source.html">littlehell/net/query.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="common_8h_source.html">net/common.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="io_8h_source.html">net/io.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="loop_8h_source.html">net/loop.h</a>&quot;</code><br />
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('server_8c.html',''); initResizable(); 
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for server.c:</div>
 <div class="dyncontent">
-<div class="center"><!-- SVG 0 -->
+<div class="center"><iframe scrolling="no" frameborder="0" src="server_8c__incl.svg" width="1746" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -216,15 +216,15 @@ Functions</h2></td></tr>
 <tr class="separator:a7ce0ed31699517e440ba4ae1d1c9fef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af781237c363ea493fae68be275645459"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#af781237c363ea493fae68be275645459">NET_SV_AdvanceWindow</a> (void)</td></tr>
 <tr class="separator:af781237c363ea493fae68be275645459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27147f1978c48b52f0481696a271e7e1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a27147f1978c48b52f0481696a271e7e1">NET_SV_FindClient</a> (net_addr_t *addr)</td></tr>
+<tr class="memitem:a27147f1978c48b52f0481696a271e7e1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a27147f1978c48b52f0481696a271e7e1">NET_SV_FindClient</a> (<a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *addr)</td></tr>
 <tr class="separator:a27147f1978c48b52f0481696a271e7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac94bfe53a6113514e0fb40c5ad06a4b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ac94bfe53a6113514e0fb40c5ad06a4b6">NET_SV_SendReject</a> (net_addr_t *addr, const char *msg)</td></tr>
+<tr class="memitem:ac94bfe53a6113514e0fb40c5ad06a4b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ac94bfe53a6113514e0fb40c5ad06a4b6">NET_SV_SendReject</a> (<a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *addr, const char *msg)</td></tr>
 <tr class="separator:ac94bfe53a6113514e0fb40c5ad06a4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a697226fb9e83919971062a04b2536d1b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a697226fb9e83919971062a04b2536d1b">NET_SV_InitNewClient</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client, net_addr_t *addr, net_protocol_t <a class="el" href="structrw_8c.html#ade36739c701ca04b722c2ece73175e64">protocol</a>)</td></tr>
+<tr class="memitem:a697226fb9e83919971062a04b2536d1b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a697226fb9e83919971062a04b2536d1b">NET_SV_InitNewClient</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client, <a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *addr, <a class="el" href="defs_8h.html#a829d5172fc5604a6ce6631a3df890430">net_protocol_t</a> <a class="el" href="structrw_8c.html#ade36739c701ca04b722c2ece73175e64">protocol</a>)</td></tr>
 <tr class="separator:a697226fb9e83919971062a04b2536d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63b92d0d2a81872497652fd45e4aa95e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a63b92d0d2a81872497652fd45e4aa95e">NET_SV_ParseSYN</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client, net_addr_t *addr)</td></tr>
+<tr class="memitem:a63b92d0d2a81872497652fd45e4aa95e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a63b92d0d2a81872497652fd45e4aa95e">NET_SV_ParseSYN</a> (<a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client, <a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *addr)</td></tr>
 <tr class="separator:a63b92d0d2a81872497652fd45e4aa95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addb1ea3eae3fb1f0c3dec2d0eb2c0613"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#addb1ea3eae3fb1f0c3dec2d0eb2c0613">NET_SV_ParseLaunch</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="memitem:addb1ea3eae3fb1f0c3dec2d0eb2c0613"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#addb1ea3eae3fb1f0c3dec2d0eb2c0613">NET_SV_ParseLaunch</a> (<a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
 <tr class="separator:addb1ea3eae3fb1f0c3dec2d0eb2c0613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08c3cad3fec8a2f835ebb40eaafc1b64"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a08c3cad3fec8a2f835ebb40eaafc1b64">StartGame</a> (void)</td></tr>
 <tr class="separator:a08c3cad3fec8a2f835ebb40eaafc1b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,27 +234,27 @@ Functions</h2></td></tr>
 <tr class="separator:a7dec57a040863b68560fec38f41010fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d5c8e636805a1b9f7bd2d22eb195e5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ac8d5c8e636805a1b9f7bd2d22eb195e5">SendAllWaitingData</a> (void)</td></tr>
 <tr class="separator:ac8d5c8e636805a1b9f7bd2d22eb195e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb9840d3611631813a117bb6ef67de03"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#aeb9840d3611631813a117bb6ef67de03">NET_SV_ParseGameStart</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="memitem:aeb9840d3611631813a117bb6ef67de03"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#aeb9840d3611631813a117bb6ef67de03">NET_SV_ParseGameStart</a> (<a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
 <tr class="separator:aeb9840d3611631813a117bb6ef67de03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11f629cb8984d120f0e47dfc7bca19b5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a11f629cb8984d120f0e47dfc7bca19b5">NET_SV_SendResendRequest</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client, int start, int end)</td></tr>
 <tr class="separator:a11f629cb8984d120f0e47dfc7bca19b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae96b8770e88e9a5332a3602e2cbb5fac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ae96b8770e88e9a5332a3602e2cbb5fac">NET_SV_CheckResends</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
 <tr class="separator:ae96b8770e88e9a5332a3602e2cbb5fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02499ba314f6ee358f5505c68428ba26"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a02499ba314f6ee358f5505c68428ba26">NET_SV_ParseGameData</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="memitem:a02499ba314f6ee358f5505c68428ba26"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a02499ba314f6ee358f5505c68428ba26">NET_SV_ParseGameData</a> (<a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
 <tr class="separator:a02499ba314f6ee358f5505c68428ba26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad12cf895652801b113a61cf020081a9e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ad12cf895652801b113a61cf020081a9e">NET_SV_ParseGameDataACK</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="memitem:ad12cf895652801b113a61cf020081a9e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ad12cf895652801b113a61cf020081a9e">NET_SV_ParseGameDataACK</a> (<a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
 <tr class="separator:ad12cf895652801b113a61cf020081a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04769c90017f73f4e7da042bb5e7c442"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a04769c90017f73f4e7da042bb5e7c442">NET_SV_SendTics</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client, unsigned int start, unsigned int end)</td></tr>
 <tr class="separator:a04769c90017f73f4e7da042bb5e7c442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a72064fa4e8ad64c0cb86fcebffdaaa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a1a72064fa4e8ad64c0cb86fcebffdaaa">NET_SV_ParseResendRequest</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="memitem:a1a72064fa4e8ad64c0cb86fcebffdaaa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a1a72064fa4e8ad64c0cb86fcebffdaaa">NET_SV_ParseResendRequest</a> (<a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
 <tr class="separator:a1a72064fa4e8ad64c0cb86fcebffdaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8daf7579dc1dab8d34703f15ebcbbded"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a8daf7579dc1dab8d34703f15ebcbbded">NET_SV_SendQueryResponse</a> (net_addr_t *addr)</td></tr>
+<tr class="memitem:a8daf7579dc1dab8d34703f15ebcbbded"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a8daf7579dc1dab8d34703f15ebcbbded">NET_SV_SendQueryResponse</a> (<a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *addr)</td></tr>
 <tr class="separator:a8daf7579dc1dab8d34703f15ebcbbded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfe99c5688ff2df84bd773229b9cfb40"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#acfe99c5688ff2df84bd773229b9cfb40">NET_SV_ParseHolePunch</a> (net_packet_t *packet)</td></tr>
+<tr class="memitem:acfe99c5688ff2df84bd773229b9cfb40"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#acfe99c5688ff2df84bd773229b9cfb40">NET_SV_ParseHolePunch</a> (<a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *packet)</td></tr>
 <tr class="separator:acfe99c5688ff2df84bd773229b9cfb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c9932fb5c74dc2a6ba6beb667165141"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a7c9932fb5c74dc2a6ba6beb667165141">NET_SV_MasterPacket</a> (net_packet_t *packet)</td></tr>
+<tr class="memitem:a7c9932fb5c74dc2a6ba6beb667165141"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a7c9932fb5c74dc2a6ba6beb667165141">NET_SV_MasterPacket</a> (<a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *packet)</td></tr>
 <tr class="separator:a7c9932fb5c74dc2a6ba6beb667165141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a755c1b5344509cbd02a3f3a83747f008"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a755c1b5344509cbd02a3f3a83747f008">NET_SV_Packet</a> (net_packet_t *packet, net_addr_t *addr)</td></tr>
+<tr class="memitem:a755c1b5344509cbd02a3f3a83747f008"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a755c1b5344509cbd02a3f3a83747f008">NET_SV_Packet</a> (<a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *packet, <a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *addr)</td></tr>
 <tr class="separator:a755c1b5344509cbd02a3f3a83747f008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a282908a8c3ddb69d5d3cfb8ba63e8d8d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a282908a8c3ddb69d5d3cfb8ba63e8d8d">NET_SV_PumpSendQueue</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
 <tr class="separator:a282908a8c3ddb69d5d3cfb8ba63e8d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,7 +264,7 @@ Functions</h2></td></tr>
 <tr class="separator:a0b6bc0f79ea894c9aa6ff92bf6eebeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1cae95711f02353a6315a09264a4ca3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ae1cae95711f02353a6315a09264a4ca3">NET_SV_RunClient</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
 <tr class="separator:ae1cae95711f02353a6315a09264a4ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a201c4373fc1bd659029953de2b1d7d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a201c4373fc1bd659029953de2b1d7d6b">NET_SV_AddModule</a> (net_module_t *module)</td></tr>
+<tr class="memitem:a201c4373fc1bd659029953de2b1d7d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a201c4373fc1bd659029953de2b1d7d6b">NET_SV_AddModule</a> (<a class="el" href="defs_8h.html#a860272d446fd5e66bba50f3250ed86f9">net_module_t</a> *module)</td></tr>
 <tr class="separator:a201c4373fc1bd659029953de2b1d7d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbb41990d4947a0b733beb6d20e3b4fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#abbb41990d4947a0b733beb6d20e3b4fa">NET_SV_Init</a> (void)</td></tr>
 <tr class="separator:abbb41990d4947a0b733beb6d20e3b4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,19 +283,19 @@ Variables</h2></td></tr>
 <tr class="separator:a23fa778abea6aff3ed2a517e370f54ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a213175372c234e12f69febec8d6861"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a9a213175372c234e12f69febec8d6861">server_initialized</a> = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
 <tr class="separator:a9a213175372c234e12f69febec8d6861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac279999e0a8256cd5a705a5643d14d3f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__t.html">net_client_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ac279999e0a8256cd5a705a5643d14d3f">clients</a> [MAXNETNODES]</td></tr>
+<tr class="memitem:ac279999e0a8256cd5a705a5643d14d3f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__t.html">net_client_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ac279999e0a8256cd5a705a5643d14d3f">clients</a> [<a class="el" href="defs_8h.html#a39f290e561242b6aad7fcc906111bb17">MAXNETNODES</a>]</td></tr>
 <tr class="separator:ac279999e0a8256cd5a705a5643d14d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00bb63558e68b68a3b5f681a16294f66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a00bb63558e68b68a3b5f681a16294f66">sv_players</a> [NET_MAXPLAYERS]</td></tr>
+<tr class="memitem:a00bb63558e68b68a3b5f681a16294f66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a00bb63558e68b68a3b5f681a16294f66">sv_players</a> [<a class="el" href="defs_8h.html#a667d7a1845f930f6dc2449ef8215af21">NET_MAXPLAYERS</a>]</td></tr>
 <tr class="separator:a00bb63558e68b68a3b5f681a16294f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76267af2f64dd700499c31211e702432"><td class="memItemLeft" align="right" valign="top">static net_context_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a76267af2f64dd700499c31211e702432">server_context</a></td></tr>
+<tr class="memitem:a76267af2f64dd700499c31211e702432"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="defs_8h.html#afbe2cf388588e99bf6c173fca0b9df85">net_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a76267af2f64dd700499c31211e702432">server_context</a></td></tr>
 <tr class="separator:a76267af2f64dd700499c31211e702432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8588ec66ff8863dab70d404fe05c31c"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ab8588ec66ff8863dab70d404fe05c31c">sv_gamemode</a></td></tr>
 <tr class="separator:ab8588ec66ff8863dab70d404fe05c31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a247e6d5e1e6c8372128f60730ee5fa5f"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a247e6d5e1e6c8372128f60730ee5fa5f">sv_gamemission</a></td></tr>
 <tr class="separator:a247e6d5e1e6c8372128f60730ee5fa5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ea49ca6b252be4f055d9733c2fe790f"><td class="memItemLeft" align="right" valign="top">static net_gamesettings_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a2ea49ca6b252be4f055d9733c2fe790f">sv_settings</a></td></tr>
+<tr class="memitem:a2ea49ca6b252be4f055d9733c2fe790f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__gamesettings__t.html">net_gamesettings_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a2ea49ca6b252be4f055d9733c2fe790f">sv_settings</a></td></tr>
 <tr class="separator:a2ea49ca6b252be4f055d9733c2fe790f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa9bd5f8e391fb3c82c2f4e2b578b42a"><td class="memItemLeft" align="right" valign="top">static net_addr_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#afa9bd5f8e391fb3c82c2f4e2b578b42a">master_server</a> = NULL</td></tr>
+<tr class="memitem:afa9bd5f8e391fb3c82c2f4e2b578b42a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#afa9bd5f8e391fb3c82c2f4e2b578b42a">master_server</a> = NULL</td></tr>
 <tr class="separator:afa9bd5f8e391fb3c82c2f4e2b578b42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee34f946baa7aa85a08da692617378b2"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#aee34f946baa7aa85a08da692617378b2">master_refresh_time</a></td></tr>
 <tr class="separator:aee34f946baa7aa85a08da692617378b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,7 +303,7 @@ Variables</h2></td></tr>
 <tr class="separator:adb35c8877fcca845e11ac9ee9d45331e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfcdfacae4d67993d0e6a0141a0b0fae"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#abfcdfacae4d67993d0e6a0141a0b0fae">recvwindow_start</a></td></tr>
 <tr class="separator:abfcdfacae4d67993d0e6a0141a0b0fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a206d7b46172b982cfdd7119579e7d567"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__recv__t.html">net_client_recv_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a206d7b46172b982cfdd7119579e7d567">recvwindow</a> [BACKUPTICS][NET_MAXPLAYERS]</td></tr>
+<tr class="memitem:a206d7b46172b982cfdd7119579e7d567"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__recv__t.html">net_client_recv_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a206d7b46172b982cfdd7119579e7d567">recvwindow</a> [<a class="el" href="defs_8h.html#a27be2baa1dffeeb2bb80cd4773bb8022">BACKUPTICS</a>][<a class="el" href="defs_8h.html#a667d7a1845f930f6dc2449ef8215af21">NET_MAXPLAYERS</a>]</td></tr>
 <tr class="separator:a206d7b46172b982cfdd7119579e7d567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -475,7 +475,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void NET_SV_AddModule </td>
           <td>(</td>
-          <td class="paramtype">net_module_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a860272d446fd5e66bba50f3250ed86f9">net_module_t</a> *&#160;</td>
           <td class="paramname"><em>module</em></td><td>)</td>
           <td></td>
         </tr>
@@ -680,7 +680,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static <a class="el" href="structnet__client__t.html">net_client_t</a> * NET_SV_FindClient </td>
           <td>(</td>
-          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *&#160;</td>
           <td class="paramname"><em>addr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -756,13 +756,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">net_protocol_t&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a829d5172fc5604a6ce6631a3df890430">net_protocol_t</a>&#160;</td>
           <td class="paramname"><em>protocol</em>&#160;</td>
         </tr>
         <tr>
@@ -818,7 +818,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void NET_SV_MasterPacket </td>
           <td>(</td>
-          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
           <td></td>
         </tr>
@@ -974,13 +974,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void NET_SV_Packet </td>
           <td>(</td>
-          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *&#160;</td>
           <td class="paramname"><em>addr</em>&#160;</td>
         </tr>
         <tr>
@@ -1010,7 +1010,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void NET_SV_ParseGameData </td>
           <td>(</td>
-          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -1046,7 +1046,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void NET_SV_ParseGameDataACK </td>
           <td>(</td>
-          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -1082,7 +1082,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void NET_SV_ParseGameStart </td>
           <td>(</td>
-          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -1118,7 +1118,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void NET_SV_ParseHolePunch </td>
           <td>(</td>
-          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1144,7 +1144,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void NET_SV_ParseLaunch </td>
           <td>(</td>
-          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -1180,7 +1180,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void NET_SV_ParseResendRequest </td>
           <td>(</td>
-          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -1216,7 +1216,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void NET_SV_ParseSYN </td>
           <td>(</td>
-          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a5b6802427b54fedda6f77bbcdc5cd359">net_packet_t</a> *&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -1228,7 +1228,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *&#160;</td>
           <td class="paramname"><em>addr</em>&#160;</td>
         </tr>
         <tr>
@@ -1385,7 +1385,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void NET_SV_SendQueryResponse </td>
           <td>(</td>
-          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *&#160;</td>
           <td class="paramname"><em>addr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1406,7 +1406,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void NET_SV_SendReject </td>
           <td>(</td>
-          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a> *&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
@@ -1647,7 +1647,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structnet__client__t.html">net_client_t</a> clients[MAXNETNODES]</td>
+          <td class="memname"><a class="el" href="structnet__client__t.html">net_client_t</a> clients[<a class="el" href="defs_8h.html#a39f290e561242b6aad7fcc906111bb17">MAXNETNODES</a>]</td>
         </tr>
       </table>
   </td>
@@ -1713,7 +1713,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">net_addr_t* master_server = NULL</td>
+          <td class="memname"><a class="el" href="defs_8h.html#a39d45b2db095a3d40ebb2ea35a1cd800">net_addr_t</a>* master_server = NULL</td>
         </tr>
       </table>
   </td>
@@ -1735,7 +1735,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structnet__client__recv__t.html">net_client_recv_t</a> recvwindow[BACKUPTICS][NET_MAXPLAYERS]</td>
+          <td class="memname"><a class="el" href="structnet__client__recv__t.html">net_client_recv_t</a> recvwindow[<a class="el" href="defs_8h.html#a27be2baa1dffeeb2bb80cd4773bb8022">BACKUPTICS</a>][<a class="el" href="defs_8h.html#a667d7a1845f930f6dc2449ef8215af21">NET_MAXPLAYERS</a>]</td>
         </tr>
       </table>
   </td>
@@ -1779,7 +1779,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">net_context_t* server_context</td>
+          <td class="memname"><a class="el" href="defs_8h.html#afbe2cf388588e99bf6c173fca0b9df85">net_context_t</a>* server_context</td>
         </tr>
       </table>
   </td>
@@ -1889,7 +1889,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structnet__client__t.html">net_client_t</a>* sv_players[NET_MAXPLAYERS]</td>
+          <td class="memname"><a class="el" href="structnet__client__t.html">net_client_t</a>* sv_players[<a class="el" href="defs_8h.html#a667d7a1845f930f6dc2449ef8215af21">NET_MAXPLAYERS</a>]</td>
         </tr>
       </table>
   </td>
@@ -1911,7 +1911,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">net_gamesettings_t sv_settings</td>
+          <td class="memname"><a class="el" href="structnet__gamesettings__t.html">net_gamesettings_t</a> sv_settings</td>
         </tr>
       </table>
   </td>

@@ -33,7 +33,7 @@ var searchData=
   ['v_5fscreenshot_30',['V_ScreenShot',['../v__video_8c.html#a68cdd84f557fdf89ba067486a80fd139',1,'V_ScreenShot(const char *format):&#160;v_video.c'],['../v__video_8h.html#a68cdd84f557fdf89ba067486a80fd139',1,'V_ScreenShot(const char *format):&#160;v_video.c']]],
   ['v_5fsetpatchclipcallback_31',['V_SetPatchClipCallback',['../v__video_8c.html#a3389b05235eab9fb54f68dc5304c2675',1,'V_SetPatchClipCallback(vpatchclipfunc_t func):&#160;v_video.c'],['../v__video_8h.html#a3389b05235eab9fb54f68dc5304c2675',1,'V_SetPatchClipCallback(vpatchclipfunc_t func):&#160;v_video.c']]],
   ['v_5fusebuffer_32',['V_UseBuffer',['../v__video_8c.html#a88aa8778652f032671812478a0e9e201',1,'V_UseBuffer(pixel_t *buffer):&#160;v_video.c'],['../v__video_8h.html#a88aa8778652f032671812478a0e9e201',1,'V_UseBuffer(pixel_t *buffer):&#160;v_video.c']]],
-  ['validspritelumpname_33',['ValidSpriteLumpName',['../w__merge_8c.html#ab9b7e9b03fb02627438a38414a9ec073',1,'w_merge.c']]],
+  ['validspritelumpname_33',['ValidSpriteLumpName',['../merge_8c.html#ab9b7e9b03fb02627438a38414a9ec073',1,'merge.c']]],
   ['voicekeyoff_34',['VoiceKeyOff',['../i__oplmusic_8c.html#ad909c620083fb4aa3a3b22db07e7a09a',1,'i_oplmusic.c']]],
   ['voicekeyon_35',['VoiceKeyOn',['../i__oplmusic_8c.html#a7fe7b0770bf7946c4cdcaa06b67893b5',1,'i_oplmusic.c']]]
 ];
