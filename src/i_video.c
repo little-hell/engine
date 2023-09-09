@@ -34,8 +34,8 @@
 
 #include "d_loop.h"
 #include "doomtype.h"
-#include "i_input.h"
-#include "i_joystick.h"
+#include "littlehell/input/input.h"
+#include "littlehell/input/joystick.h"
 #include "i_system.h"
 #include "i_timer.h"
 #include "i_video.h"

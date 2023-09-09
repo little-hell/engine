@@ -30,7 +30,8 @@
 
 #include "doomtype.h"
 
-#include "i_input.h"
+#include "littlehell/input/input.h"
+
 #include "i_swap.h"
 #include "i_video.h"
 #include "m_bbox.h"
