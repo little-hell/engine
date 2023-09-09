@@ -1,0 +1,28 @@
+var i__system_8c =
+[
+    [ "atexit_listentry_s", "structatexit__listentry__s.html", "structatexit__listentry__s" ],
+    [ "DEFAULT_RAM", "i__system_8c.html#a034c0764a6b8a2cdb0a70f910744510b", null ],
+    [ "DOS_MEM_DUMP_SIZE", "i__system_8c.html#ac9d535e4f3f7639074a365b74493d2e7", null ],
+    [ "MIN_RAM", "i__system_8c.html#aa7848d9677326dabfac2c04a770734b2", null ],
+    [ "WIN32_LEAN_AND_MEAN", "i__system_8c.html#ac7bef5d85e3dcd73eef56ad39ffc84a9", null ],
+    [ "atexit_listentry_t", "i__system_8c.html#a5aad2c37df45c19eb62bf1c1f4bed4a3", null ],
+    [ "AutoAllocMemory", "i__system_8c.html#a7fee47f7328f1cf9172185d536054e36", null ],
+    [ "I_AtExit", "i__system_8c.html#a3d77cc4e1d9a8304d4a50e9b8dc2e98f", null ],
+    [ "I_ConsoleStdout", "i__system_8c.html#aac0c8283e4b3f2d7eed94bbd88246e81", null ],
+    [ "I_Error", "i__system_8c.html#a7f9f28f1b18f76d7354421940c3ee31b", null ],
+    [ "I_GetMemoryValue", "i__system_8c.html#a302e3eaf79c48abd2f76c544ba5cdde7", null ],
+    [ "I_PrintBanner", "i__system_8c.html#a118b1ef7cf1f788cb59c7b80ca93826b", null ],
+    [ "I_PrintDivider", "i__system_8c.html#a533410bae7a753d8ab187d96e284b95d", null ],
+    [ "I_PrintStartupBanner", "i__system_8c.html#a9ba3a9edbd73f246794b77ad758aa63d", null ],
+    [ "I_Quit", "i__system_8c.html#adfe1542b246b6d8c91ea8b9ec1eddd49", null ],
+    [ "I_Realloc", "i__system_8c.html#a72911c1eec4c7b74a0cc4b0eb56ac738", null ],
+    [ "I_Tactile", "i__system_8c.html#a4c3c44f728e027e15aac240f44bd83ad", null ],
+    [ "I_ZoneBase", "i__system_8c.html#ab086123b763d029189e05898416f3ad4", null ],
+    [ "already_quitting", "i__system_8c.html#af5391c8e0943faa9381ef3670c6cc31a", null ],
+    [ "dos_mem_dump", "i__system_8c.html#a3ec8216253ea756e56bcb9f855751e5a", null ],
+    [ "exit_funcs", "i__system_8c.html#a624dc863751bea420fec1d5a59c20e65", null ],
+    [ "mem_dump_custom", "i__system_8c.html#a8a19a2c2bc950ff34c4852e88b10f9f0", null ],
+    [ "mem_dump_dos622", "i__system_8c.html#a8630a3470ee5e19339849d1e1cac2e93", null ],
+    [ "mem_dump_dosbox", "i__system_8c.html#ae34a27ce420c112f3c231f131950dce8", null ],
+    [ "mem_dump_win98", "i__system_8c.html#a9d4ae896e7c5c0877d51d7fa51bf74e3", null ]
+];

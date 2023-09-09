@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['valid_5fmodes_0',['valid_modes',['../d__mode_8c.html#a5f478db02bb031f6d05544bd5f3fa50d',1,'d_mode.c']]],
+  ['valid_5fversions_1',['valid_versions',['../d__mode_8c.html#ab14088193687f48b7a6056232e7a0184',1,'d_mode.c']]],
+  ['value_2',['value',['../structmidi__fallback__t.html#a84e7d8d5930a52ba4cc02ea6cbd42628',1,'midi_fallback_t::value()'],['../structregistry__value__t.html#ae74b3021e9d9a5b6a4e3e34bbe4e281a',1,'registry_value_t::value()']]],
+  ['vanilla_5fkeyboard_5fmapping_3',['vanilla_keyboard_mapping',['../i__input_8c.html#a5ad845d91a388cf304c2b75b01f019e4',1,'vanilla_keyboard_mapping():&#160;i_input.c'],['../i__video_8h.html#a5ad845d91a388cf304c2b75b01f019e4',1,'vanilla_keyboard_mapping():&#160;i_input.c']]],
+  ['var_4',['var',['../structenv__var__t.html#ac394a7bad8bc520b37ca61babeec1875',1,'env_var_t']]],
+  ['variation_5',['variation',['../midifallback_8c.html#a4899017c78c9daaf0a7d28f2fbb858cf',1,'midifallback.c']]],
+  ['version_6',['version',['../d__mode_8c.html#aa577d1fcf565b5fce7f696ad477b777b',1,'d_mode.c']]],
+  ['vga_5fporch_5fflash_7',['vga_porch_flash',['../i__video_8c.html#a6ebbcd3d5d72f981dc9c033eb8919e23',1,'vga_porch_flash():&#160;i_video.c'],['../i__video_8h.html#a6ebbcd3d5d72f981dc9c033eb8919e23',1,'vga_porch_flash():&#160;i_video.c']]],
+  ['video_5fdisplay_8',['video_display',['../i__video_8c.html#a5824af03a202a8ed652e372a7c3840f8',1,'i_video.c']]],
+  ['video_5fdriver_9',['video_driver',['../i__video_8c.html#a01c824505648c335fde35a3b04ea40b5',1,'video_driver():&#160;i_video.c'],['../i__video_8h.html#a01c824505648c335fde35a3b04ea40b5',1,'video_driver():&#160;i_video.c']]],
+  ['voice_5falloced_5flist_10',['voice_alloced_list',['../i__oplmusic_8c.html#a9fba539a9515af88cf85838276082ed3',1,'i_oplmusic.c']]],
+  ['voice_5falloced_5fnum_11',['voice_alloced_num',['../i__oplmusic_8c.html#a64a401d4b36ac3292523f9f0d40d05d2',1,'i_oplmusic.c']]],
+  ['voice_5ffree_5flist_12',['voice_free_list',['../i__oplmusic_8c.html#ac242f2341cc56fbeccdd63400e9aec99',1,'i_oplmusic.c']]],
+  ['voice_5ffree_5fnum_13',['voice_free_num',['../i__oplmusic_8c.html#a81459cd3a2bb02a9d0a6f68212423da1',1,'i_oplmusic.c']]],
+  ['voice_5foperators_14',['voice_operators',['../i__oplmusic_8c.html#acc2bd2520b9dd868bc4ac5a7ca03334f',1,'i_oplmusic.c']]],
+  ['voices_15',['voices',['../i__oplmusic_8c.html#a9dcafdad3648a2f311a07930b59c3f76',1,'i_oplmusic.c']]],
+  ['volume_16',['volume',['../structsfxinfo__struct.html#a5cafa10c64276f265298d80ee413e8a3',1,'sfxinfo_struct']]],
+  ['volume_5fmapping_5ftable_17',['volume_mapping_table',['../i__oplmusic_8c.html#aa4358b10a967a1a0e26ac96a923d242d',1,'i_oplmusic.c']]],
+  ['vsync_18',['vsync',['../structcrispy__t.html#a70829c2d703973e2ee8dc837b4a2f4c6',1,'crispy_t']]]
+];

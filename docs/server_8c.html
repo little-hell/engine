@@ -1,0 +1,1936 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell/engine/src/net/server.c File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('server_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">server.c File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="doomtype_8h_source.html">doomtype.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__mode_8h_source.html">d_mode.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__system_8h_source.html">i_system.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__timer_8h_source.html">i_timer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__argv_8h_source.html">m_argv.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__misc_8h_source.html">m_misc.h</a>&quot;</code><br />
+<code>#include &quot;littlehell/net/client.h&quot;</code><br />
+<code>#include &quot;littlehell/net/defs.h&quot;</code><br />
+<code>#include &quot;littlehell/net/query.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="common_8h_source.html">net/common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="io_8h_source.html">net/io.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="loop_8h_source.html">net/loop.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="packet_8h_source.html">net/packet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="server_8h_source.html">net/server.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sdl_8h_source.html">net/sdl.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="structrw_8h_source.html">net/structrw.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for server.c:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__client__t.html">net_client_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__client__recv__t.html">net_client_recv_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ac73e6f903c16eca7710f92e36e1c6fbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ac73e6f903c16eca7710f92e36e1c6fbf">PACKAGE_STRING</a>&#160;&#160;&#160;&quot;littlehell&quot;</td></tr>
+<tr class="separator:ac73e6f903c16eca7710f92e36e1c6fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3bafd317729bb4fe83788b5fb8c9ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a0a3bafd317729bb4fe83788b5fb8c9ac">MASTER_REFRESH_PERIOD</a>&#160;&#160;&#160;30 /* twice per minute */</td></tr>
+<tr class="separator:a0a3bafd317729bb4fe83788b5fb8c9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bddeba3bfa194bfe53843617489efe5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a1bddeba3bfa194bfe53843617489efe5">MASTER_RESOLVE_PERIOD</a>&#160;&#160;&#160;8 * 60 * 60 /* 8 hours */</td></tr>
+<tr class="separator:a1bddeba3bfa194bfe53843617489efe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef701c2f4c9a912583a64f4c68fdeaf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a8ef701c2f4c9a912583a64f4c68fdeaf">NET_SV_ExpandTicNum</a>(b)&#160;&#160;&#160;<a class="el" href="common_8c.html#a82a27dba8a2bf171d4e8a33d65676294">NET_ExpandTicNum</a>(<a class="el" href="client_8c.html#a275fbaf3d1ea4d1efaeb0f5d3938c982">recvwindow_start</a>, (b))</td></tr>
+<tr class="separator:a8ef701c2f4c9a912583a64f4c68fdeaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a85b9f75392d42c8bdec0800a8adeea6b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a85b9f75392d42c8bdec0800a8adeea6b">net_server_state_t</a> { <a class="el" href="server_8c.html#a85b9f75392d42c8bdec0800a8adeea6ba2bc1cc07dd9f6ff4936dc88edb4e6569">SERVER_WAITING_LAUNCH</a>
+, <a class="el" href="server_8c.html#a85b9f75392d42c8bdec0800a8adeea6ba9b2ee81bbfc4da11d60ef3d2d0e1b74c">SERVER_WAITING_START</a>
+, <a class="el" href="server_8c.html#a85b9f75392d42c8bdec0800a8adeea6ba370f29f7ae5db312f522801fb4cf39c7">SERVER_IN_GAME</a>
+ }</td></tr>
+<tr class="separator:a85b9f75392d42c8bdec0800a8adeea6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aaf976d361a0d7cd3053f911b9bee4e38"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#aaf976d361a0d7cd3053f911b9bee4e38">NET_SV_DisconnectClient</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:aaf976d361a0d7cd3053f911b9bee4e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae114706f003987c89064cd2a8dc1d300"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ae114706f003987c89064cd2a8dc1d300">ClientConnected</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:ae114706f003987c89064cd2a8dc1d300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e23f9eb1a24d209212dbe011d24fc4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a88e23f9eb1a24d209212dbe011d24fc4">NET_SV_SendConsoleMessage</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client, const char *s,...) <a class="el" href="doomtype_8h.html#a44ea3bff2cf6f65cc9883ecbc6a7a9f1">PRINTF_ATTR</a>(2</td></tr>
+<tr class="separator:a88e23f9eb1a24d209212dbe011d24fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb5233457ecfb52a644ca8ec2c6b911"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a3eb5233457ecfb52a644ca8ec2c6b911">NET_SV_BroadcastMessage</a> (const char *s,...) <a class="el" href="doomtype_8h.html#a44ea3bff2cf6f65cc9883ecbc6a7a9f1">PRINTF_ATTR</a>(1</td></tr>
+<tr class="separator:a3eb5233457ecfb52a644ca8ec2c6b911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b55f5b4da962c3913e487d8776a40e3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a5b55f5b4da962c3913e487d8776a40e3">NET_SV_AssignPlayers</a> (void)</td></tr>
+<tr class="separator:a5b55f5b4da962c3913e487d8776a40e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ab5d801b9c77d26b42af609cf2bf1a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#af9ab5d801b9c77d26b42af609cf2bf1a">NET_SV_NumPlayers</a> (void)</td></tr>
+<tr class="separator:af9ab5d801b9c77d26b42af609cf2bf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51638eab27f18fd793233416d4f960e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ab51638eab27f18fd793233416d4f960e">NET_SV_NumReadyPlayers</a> (void)</td></tr>
+<tr class="separator:ab51638eab27f18fd793233416d4f960e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252100819f8ef5bd1d5b6e5c75c77e77"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a252100819f8ef5bd1d5b6e5c75c77e77">NET_SV_MaxPlayers</a> (void)</td></tr>
+<tr class="separator:a252100819f8ef5bd1d5b6e5c75c77e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80910478c5e8205b455812f294bb938a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a80910478c5e8205b455812f294bb938a">NET_SV_NumDrones</a> (void)</td></tr>
+<tr class="separator:a80910478c5e8205b455812f294bb938a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55125ca4483bfb5a4d19115a86686b6c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a55125ca4483bfb5a4d19115a86686b6c">NET_SV_NumClients</a> (void)</td></tr>
+<tr class="separator:a55125ca4483bfb5a4d19115a86686b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f30ae76bac4fb8dd55fd54dee99456"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#af6f30ae76bac4fb8dd55fd54dee99456">NET_SV_Controller</a> (void)</td></tr>
+<tr class="separator:af6f30ae76bac4fb8dd55fd54dee99456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a5c3ffa7daef6400acc6906dbe976d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#aa2a5c3ffa7daef6400acc6906dbe976d">NET_SV_SendWaitingData</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:aa2a5c3ffa7daef6400acc6906dbe976d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0ed31699517e440ba4ae1d1c9fef5"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a7ce0ed31699517e440ba4ae1d1c9fef5">NET_SV_LatestAcknowledged</a> (void)</td></tr>
+<tr class="separator:a7ce0ed31699517e440ba4ae1d1c9fef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af781237c363ea493fae68be275645459"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#af781237c363ea493fae68be275645459">NET_SV_AdvanceWindow</a> (void)</td></tr>
+<tr class="separator:af781237c363ea493fae68be275645459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27147f1978c48b52f0481696a271e7e1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a27147f1978c48b52f0481696a271e7e1">NET_SV_FindClient</a> (net_addr_t *addr)</td></tr>
+<tr class="separator:a27147f1978c48b52f0481696a271e7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94bfe53a6113514e0fb40c5ad06a4b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ac94bfe53a6113514e0fb40c5ad06a4b6">NET_SV_SendReject</a> (net_addr_t *addr, const char *msg)</td></tr>
+<tr class="separator:ac94bfe53a6113514e0fb40c5ad06a4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697226fb9e83919971062a04b2536d1b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a697226fb9e83919971062a04b2536d1b">NET_SV_InitNewClient</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client, net_addr_t *addr, net_protocol_t <a class="el" href="structrw_8c.html#ade36739c701ca04b722c2ece73175e64">protocol</a>)</td></tr>
+<tr class="separator:a697226fb9e83919971062a04b2536d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b92d0d2a81872497652fd45e4aa95e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a63b92d0d2a81872497652fd45e4aa95e">NET_SV_ParseSYN</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client, net_addr_t *addr)</td></tr>
+<tr class="separator:a63b92d0d2a81872497652fd45e4aa95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb1ea3eae3fb1f0c3dec2d0eb2c0613"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#addb1ea3eae3fb1f0c3dec2d0eb2c0613">NET_SV_ParseLaunch</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:addb1ea3eae3fb1f0c3dec2d0eb2c0613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c3cad3fec8a2f835ebb40eaafc1b64"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a08c3cad3fec8a2f835ebb40eaafc1b64">StartGame</a> (void)</td></tr>
+<tr class="separator:a08c3cad3fec8a2f835ebb40eaafc1b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f16f750c620b3b8c33e8d079373d92c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a7f16f750c620b3b8c33e8d079373d92c">AllNodesReady</a> (void)</td></tr>
+<tr class="separator:a7f16f750c620b3b8c33e8d079373d92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dec57a040863b68560fec38f41010fa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a7dec57a040863b68560fec38f41010fa">CheckStartGame</a> (void)</td></tr>
+<tr class="separator:a7dec57a040863b68560fec38f41010fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d5c8e636805a1b9f7bd2d22eb195e5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ac8d5c8e636805a1b9f7bd2d22eb195e5">SendAllWaitingData</a> (void)</td></tr>
+<tr class="separator:ac8d5c8e636805a1b9f7bd2d22eb195e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9840d3611631813a117bb6ef67de03"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#aeb9840d3611631813a117bb6ef67de03">NET_SV_ParseGameStart</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:aeb9840d3611631813a117bb6ef67de03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f629cb8984d120f0e47dfc7bca19b5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a11f629cb8984d120f0e47dfc7bca19b5">NET_SV_SendResendRequest</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client, int start, int end)</td></tr>
+<tr class="separator:a11f629cb8984d120f0e47dfc7bca19b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96b8770e88e9a5332a3602e2cbb5fac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ae96b8770e88e9a5332a3602e2cbb5fac">NET_SV_CheckResends</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:ae96b8770e88e9a5332a3602e2cbb5fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02499ba314f6ee358f5505c68428ba26"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a02499ba314f6ee358f5505c68428ba26">NET_SV_ParseGameData</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:a02499ba314f6ee358f5505c68428ba26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12cf895652801b113a61cf020081a9e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ad12cf895652801b113a61cf020081a9e">NET_SV_ParseGameDataACK</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:ad12cf895652801b113a61cf020081a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04769c90017f73f4e7da042bb5e7c442"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a04769c90017f73f4e7da042bb5e7c442">NET_SV_SendTics</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client, unsigned int start, unsigned int end)</td></tr>
+<tr class="separator:a04769c90017f73f4e7da042bb5e7c442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a72064fa4e8ad64c0cb86fcebffdaaa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a1a72064fa4e8ad64c0cb86fcebffdaaa">NET_SV_ParseResendRequest</a> (net_packet_t *packet, <a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:a1a72064fa4e8ad64c0cb86fcebffdaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8daf7579dc1dab8d34703f15ebcbbded"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a8daf7579dc1dab8d34703f15ebcbbded">NET_SV_SendQueryResponse</a> (net_addr_t *addr)</td></tr>
+<tr class="separator:a8daf7579dc1dab8d34703f15ebcbbded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe99c5688ff2df84bd773229b9cfb40"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#acfe99c5688ff2df84bd773229b9cfb40">NET_SV_ParseHolePunch</a> (net_packet_t *packet)</td></tr>
+<tr class="separator:acfe99c5688ff2df84bd773229b9cfb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9932fb5c74dc2a6ba6beb667165141"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a7c9932fb5c74dc2a6ba6beb667165141">NET_SV_MasterPacket</a> (net_packet_t *packet)</td></tr>
+<tr class="separator:a7c9932fb5c74dc2a6ba6beb667165141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755c1b5344509cbd02a3f3a83747f008"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a755c1b5344509cbd02a3f3a83747f008">NET_SV_Packet</a> (net_packet_t *packet, net_addr_t *addr)</td></tr>
+<tr class="separator:a755c1b5344509cbd02a3f3a83747f008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282908a8c3ddb69d5d3cfb8ba63e8d8d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a282908a8c3ddb69d5d3cfb8ba63e8d8d">NET_SV_PumpSendQueue</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:a282908a8c3ddb69d5d3cfb8ba63e8d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c74bedeb388c0f9076414c7a5836ae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a3c74bedeb388c0f9076414c7a5836ae9">NET_SV_CheckDeadlock</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:a3c74bedeb388c0f9076414c7a5836ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6bc0f79ea894c9aa6ff92bf6eebeac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a0b6bc0f79ea894c9aa6ff92bf6eebeac">NET_SV_GameEnded</a> (void)</td></tr>
+<tr class="separator:a0b6bc0f79ea894c9aa6ff92bf6eebeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1cae95711f02353a6315a09264a4ca3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ae1cae95711f02353a6315a09264a4ca3">NET_SV_RunClient</a> (<a class="el" href="structnet__client__t.html">net_client_t</a> *client)</td></tr>
+<tr class="separator:ae1cae95711f02353a6315a09264a4ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201c4373fc1bd659029953de2b1d7d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a201c4373fc1bd659029953de2b1d7d6b">NET_SV_AddModule</a> (net_module_t *module)</td></tr>
+<tr class="separator:a201c4373fc1bd659029953de2b1d7d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb41990d4947a0b733beb6d20e3b4fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#abbb41990d4947a0b733beb6d20e3b4fa">NET_SV_Init</a> (void)</td></tr>
+<tr class="separator:abbb41990d4947a0b733beb6d20e3b4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee148c6a3204ccaa89ec7c317e84560"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#acee148c6a3204ccaa89ec7c317e84560">UpdateMasterServer</a> (void)</td></tr>
+<tr class="separator:acee148c6a3204ccaa89ec7c317e84560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6128461d902498845e304c90976880a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ae6128461d902498845e304c90976880a">NET_SV_RegisterWithMaster</a> (void)</td></tr>
+<tr class="separator:ae6128461d902498845e304c90976880a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141c429d96d1a0bcc0564940ff59487f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a141c429d96d1a0bcc0564940ff59487f">NET_SV_Run</a> (void)</td></tr>
+<tr class="separator:a141c429d96d1a0bcc0564940ff59487f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c686d35264da69812c9fb4b2ddd51b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a8c686d35264da69812c9fb4b2ddd51b8">NET_SV_Shutdown</a> (void)</td></tr>
+<tr class="separator:a8c686d35264da69812c9fb4b2ddd51b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a23fa778abea6aff3ed2a517e370f54ca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="server_8c.html#a85b9f75392d42c8bdec0800a8adeea6b">net_server_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a23fa778abea6aff3ed2a517e370f54ca">server_state</a></td></tr>
+<tr class="separator:a23fa778abea6aff3ed2a517e370f54ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a213175372c234e12f69febec8d6861"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a9a213175372c234e12f69febec8d6861">server_initialized</a> = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
+<tr class="separator:a9a213175372c234e12f69febec8d6861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac279999e0a8256cd5a705a5643d14d3f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__t.html">net_client_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ac279999e0a8256cd5a705a5643d14d3f">clients</a> [MAXNETNODES]</td></tr>
+<tr class="separator:ac279999e0a8256cd5a705a5643d14d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00bb63558e68b68a3b5f681a16294f66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a00bb63558e68b68a3b5f681a16294f66">sv_players</a> [NET_MAXPLAYERS]</td></tr>
+<tr class="separator:a00bb63558e68b68a3b5f681a16294f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76267af2f64dd700499c31211e702432"><td class="memItemLeft" align="right" valign="top">static net_context_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a76267af2f64dd700499c31211e702432">server_context</a></td></tr>
+<tr class="separator:a76267af2f64dd700499c31211e702432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8588ec66ff8863dab70d404fe05c31c"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#ab8588ec66ff8863dab70d404fe05c31c">sv_gamemode</a></td></tr>
+<tr class="separator:ab8588ec66ff8863dab70d404fe05c31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a247e6d5e1e6c8372128f60730ee5fa5f"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a247e6d5e1e6c8372128f60730ee5fa5f">sv_gamemission</a></td></tr>
+<tr class="separator:a247e6d5e1e6c8372128f60730ee5fa5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea49ca6b252be4f055d9733c2fe790f"><td class="memItemLeft" align="right" valign="top">static net_gamesettings_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a2ea49ca6b252be4f055d9733c2fe790f">sv_settings</a></td></tr>
+<tr class="separator:a2ea49ca6b252be4f055d9733c2fe790f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9bd5f8e391fb3c82c2f4e2b578b42a"><td class="memItemLeft" align="right" valign="top">static net_addr_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#afa9bd5f8e391fb3c82c2f4e2b578b42a">master_server</a> = NULL</td></tr>
+<tr class="separator:afa9bd5f8e391fb3c82c2f4e2b578b42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee34f946baa7aa85a08da692617378b2"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#aee34f946baa7aa85a08da692617378b2">master_refresh_time</a></td></tr>
+<tr class="separator:aee34f946baa7aa85a08da692617378b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb35c8877fcca845e11ac9ee9d45331e"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#adb35c8877fcca845e11ac9ee9d45331e">master_resolve_time</a></td></tr>
+<tr class="separator:adb35c8877fcca845e11ac9ee9d45331e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfcdfacae4d67993d0e6a0141a0b0fae"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#abfcdfacae4d67993d0e6a0141a0b0fae">recvwindow_start</a></td></tr>
+<tr class="separator:abfcdfacae4d67993d0e6a0141a0b0fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206d7b46172b982cfdd7119579e7d567"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structnet__client__recv__t.html">net_client_recv_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8c.html#a206d7b46172b982cfdd7119579e7d567">recvwindow</a> [BACKUPTICS][NET_MAXPLAYERS]</td></tr>
+<tr class="separator:a206d7b46172b982cfdd7119579e7d567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a0a3bafd317729bb4fe83788b5fb8c9ac" name="a0a3bafd317729bb4fe83788b5fb8c9ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3bafd317729bb4fe83788b5fb8c9ac">&#9670;&#160;</a></span>MASTER_REFRESH_PERIOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MASTER_REFRESH_PERIOD&#160;&#160;&#160;30 /* twice per minute */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1bddeba3bfa194bfe53843617489efe5" name="a1bddeba3bfa194bfe53843617489efe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bddeba3bfa194bfe53843617489efe5">&#9670;&#160;</a></span>MASTER_RESOLVE_PERIOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MASTER_RESOLVE_PERIOD&#160;&#160;&#160;8 * 60 * 60 /* 8 hours */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ef701c2f4c9a912583a64f4c68fdeaf" name="a8ef701c2f4c9a912583a64f4c68fdeaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef701c2f4c9a912583a64f4c68fdeaf">&#9670;&#160;</a></span>NET_SV_ExpandTicNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_SV_ExpandTicNum</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="common_8c.html#a82a27dba8a2bf171d4e8a33d65676294">NET_ExpandTicNum</a>(<a class="el" href="client_8c.html#a275fbaf3d1ea4d1efaeb0f5d3938c982">recvwindow_start</a>, (b))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac73e6f903c16eca7710f92e36e1c6fbf" name="ac73e6f903c16eca7710f92e36e1c6fbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73e6f903c16eca7710f92e36e1c6fbf">&#9670;&#160;</a></span>PACKAGE_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PACKAGE_STRING&#160;&#160;&#160;&quot;littlehell&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a85b9f75392d42c8bdec0800a8adeea6b" name="a85b9f75392d42c8bdec0800a8adeea6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b9f75392d42c8bdec0800a8adeea6b">&#9670;&#160;</a></span>net_server_state_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="server_8c.html#a85b9f75392d42c8bdec0800a8adeea6b">net_server_state_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a85b9f75392d42c8bdec0800a8adeea6ba2bc1cc07dd9f6ff4936dc88edb4e6569" name="a85b9f75392d42c8bdec0800a8adeea6ba2bc1cc07dd9f6ff4936dc88edb4e6569"></a>SERVER_WAITING_LAUNCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85b9f75392d42c8bdec0800a8adeea6ba9b2ee81bbfc4da11d60ef3d2d0e1b74c" name="a85b9f75392d42c8bdec0800a8adeea6ba9b2ee81bbfc4da11d60ef3d2d0e1b74c"></a>SERVER_WAITING_START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85b9f75392d42c8bdec0800a8adeea6ba370f29f7ae5db312f522801fb4cf39c7" name="a85b9f75392d42c8bdec0800a8adeea6ba370f29f7ae5db312f522801fb4cf39c7"></a>SERVER_IN_GAME&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a7f16f750c620b3b8c33e8d079373d92c" name="a7f16f750c620b3b8c33e8d079373d92c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f16f750c620b3b8c33e8d079373d92c">&#9670;&#160;</a></span>AllNodesReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> AllNodesReady </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7dec57a040863b68560fec38f41010fa" name="a7dec57a040863b68560fec38f41010fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dec57a040863b68560fec38f41010fa">&#9670;&#160;</a></span>CheckStartGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CheckStartGame </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae114706f003987c89064cd2a8dc1d300" name="ae114706f003987c89064cd2a8dc1d300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae114706f003987c89064cd2a8dc1d300">&#9670;&#160;</a></span>ClientConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> ClientConnected </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a201c4373fc1bd659029953de2b1d7d6b" name="a201c4373fc1bd659029953de2b1d7d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201c4373fc1bd659029953de2b1d7d6b">&#9670;&#160;</a></span>NET_SV_AddModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_SV_AddModule </td>
+          <td>(</td>
+          <td class="paramtype">net_module_t *&#160;</td>
+          <td class="paramname"><em>module</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af781237c363ea493fae68be275645459" name="af781237c363ea493fae68be275645459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af781237c363ea493fae68be275645459">&#9670;&#160;</a></span>NET_SV_AdvanceWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_AdvanceWindow </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b55f5b4da962c3913e487d8776a40e3" name="a5b55f5b4da962c3913e487d8776a40e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b55f5b4da962c3913e487d8776a40e3">&#9670;&#160;</a></span>NET_SV_AssignPlayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_AssignPlayers </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3eb5233457ecfb52a644ca8ec2c6b911" name="a3eb5233457ecfb52a644ca8ec2c6b911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb5233457ecfb52a644ca8ec2c6b911">&#9670;&#160;</a></span>NET_SV_BroadcastMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void static void NET_SV_BroadcastMessage </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c74bedeb388c0f9076414c7a5836ae9" name="a3c74bedeb388c0f9076414c7a5836ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c74bedeb388c0f9076414c7a5836ae9">&#9670;&#160;</a></span>NET_SV_CheckDeadlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_SV_CheckDeadlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae96b8770e88e9a5332a3602e2cbb5fac" name="ae96b8770e88e9a5332a3602e2cbb5fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae96b8770e88e9a5332a3602e2cbb5fac">&#9670;&#160;</a></span>NET_SV_CheckResends()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_CheckResends </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6f30ae76bac4fb8dd55fd54dee99456" name="af6f30ae76bac4fb8dd55fd54dee99456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6f30ae76bac4fb8dd55fd54dee99456">&#9670;&#160;</a></span>NET_SV_Controller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structnet__client__t.html">net_client_t</a> * NET_SV_Controller </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf976d361a0d7cd3053f911b9bee4e38" name="aaf976d361a0d7cd3053f911b9bee4e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf976d361a0d7cd3053f911b9bee4e38">&#9670;&#160;</a></span>NET_SV_DisconnectClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_DisconnectClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27147f1978c48b52f0481696a271e7e1" name="a27147f1978c48b52f0481696a271e7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27147f1978c48b52f0481696a271e7e1">&#9670;&#160;</a></span>NET_SV_FindClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structnet__client__t.html">net_client_t</a> * NET_SV_FindClient </td>
+          <td>(</td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b6bc0f79ea894c9aa6ff92bf6eebeac" name="a0b6bc0f79ea894c9aa6ff92bf6eebeac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6bc0f79ea894c9aa6ff92bf6eebeac">&#9670;&#160;</a></span>NET_SV_GameEnded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_GameEnded </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbb41990d4947a0b733beb6d20e3b4fa" name="abbb41990d4947a0b733beb6d20e3b4fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb41990d4947a0b733beb6d20e3b4fa">&#9670;&#160;</a></span>NET_SV_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_SV_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a697226fb9e83919971062a04b2536d1b" name="a697226fb9e83919971062a04b2536d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a697226fb9e83919971062a04b2536d1b">&#9670;&#160;</a></span>NET_SV_InitNewClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_InitNewClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_protocol_t&#160;</td>
+          <td class="paramname"><em>protocol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ce0ed31699517e440ba4ae1d1c9fef5" name="a7ce0ed31699517e440ba4ae1d1c9fef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce0ed31699517e440ba4ae1d1c9fef5">&#9670;&#160;</a></span>NET_SV_LatestAcknowledged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int NET_SV_LatestAcknowledged </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c9932fb5c74dc2a6ba6beb667165141" name="a7c9932fb5c74dc2a6ba6beb667165141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c9932fb5c74dc2a6ba6beb667165141">&#9670;&#160;</a></span>NET_SV_MasterPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_MasterPacket </td>
+          <td>(</td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a252100819f8ef5bd1d5b6e5c75c77e77" name="a252100819f8ef5bd1d5b6e5c75c77e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a252100819f8ef5bd1d5b6e5c75c77e77">&#9670;&#160;</a></span>NET_SV_MaxPlayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int NET_SV_MaxPlayers </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55125ca4483bfb5a4d19115a86686b6c" name="a55125ca4483bfb5a4d19115a86686b6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55125ca4483bfb5a4d19115a86686b6c">&#9670;&#160;</a></span>NET_SV_NumClients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int NET_SV_NumClients </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80910478c5e8205b455812f294bb938a" name="a80910478c5e8205b455812f294bb938a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80910478c5e8205b455812f294bb938a">&#9670;&#160;</a></span>NET_SV_NumDrones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int NET_SV_NumDrones </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9ab5d801b9c77d26b42af609cf2bf1a" name="af9ab5d801b9c77d26b42af609cf2bf1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ab5d801b9c77d26b42af609cf2bf1a">&#9670;&#160;</a></span>NET_SV_NumPlayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int NET_SV_NumPlayers </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab51638eab27f18fd793233416d4f960e" name="ab51638eab27f18fd793233416d4f960e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab51638eab27f18fd793233416d4f960e">&#9670;&#160;</a></span>NET_SV_NumReadyPlayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int NET_SV_NumReadyPlayers </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a755c1b5344509cbd02a3f3a83747f008" name="a755c1b5344509cbd02a3f3a83747f008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a755c1b5344509cbd02a3f3a83747f008">&#9670;&#160;</a></span>NET_SV_Packet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_Packet </td>
+          <td>(</td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02499ba314f6ee358f5505c68428ba26" name="a02499ba314f6ee358f5505c68428ba26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02499ba314f6ee358f5505c68428ba26">&#9670;&#160;</a></span>NET_SV_ParseGameData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_ParseGameData </td>
+          <td>(</td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad12cf895652801b113a61cf020081a9e" name="ad12cf895652801b113a61cf020081a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad12cf895652801b113a61cf020081a9e">&#9670;&#160;</a></span>NET_SV_ParseGameDataACK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_ParseGameDataACK </td>
+          <td>(</td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb9840d3611631813a117bb6ef67de03" name="aeb9840d3611631813a117bb6ef67de03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9840d3611631813a117bb6ef67de03">&#9670;&#160;</a></span>NET_SV_ParseGameStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_ParseGameStart </td>
+          <td>(</td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfe99c5688ff2df84bd773229b9cfb40" name="acfe99c5688ff2df84bd773229b9cfb40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe99c5688ff2df84bd773229b9cfb40">&#9670;&#160;</a></span>NET_SV_ParseHolePunch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_ParseHolePunch </td>
+          <td>(</td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addb1ea3eae3fb1f0c3dec2d0eb2c0613" name="addb1ea3eae3fb1f0c3dec2d0eb2c0613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb1ea3eae3fb1f0c3dec2d0eb2c0613">&#9670;&#160;</a></span>NET_SV_ParseLaunch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_ParseLaunch </td>
+          <td>(</td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a72064fa4e8ad64c0cb86fcebffdaaa" name="a1a72064fa4e8ad64c0cb86fcebffdaaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a72064fa4e8ad64c0cb86fcebffdaaa">&#9670;&#160;</a></span>NET_SV_ParseResendRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_ParseResendRequest </td>
+          <td>(</td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63b92d0d2a81872497652fd45e4aa95e" name="a63b92d0d2a81872497652fd45e4aa95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b92d0d2a81872497652fd45e4aa95e">&#9670;&#160;</a></span>NET_SV_ParseSYN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_ParseSYN </td>
+          <td>(</td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a282908a8c3ddb69d5d3cfb8ba63e8d8d" name="a282908a8c3ddb69d5d3cfb8ba63e8d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a282908a8c3ddb69d5d3cfb8ba63e8d8d">&#9670;&#160;</a></span>NET_SV_PumpSendQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_PumpSendQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6128461d902498845e304c90976880a" name="ae6128461d902498845e304c90976880a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6128461d902498845e304c90976880a">&#9670;&#160;</a></span>NET_SV_RegisterWithMaster()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_SV_RegisterWithMaster </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a141c429d96d1a0bcc0564940ff59487f" name="a141c429d96d1a0bcc0564940ff59487f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a141c429d96d1a0bcc0564940ff59487f">&#9670;&#160;</a></span>NET_SV_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_SV_Run </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1cae95711f02353a6315a09264a4ca3" name="ae1cae95711f02353a6315a09264a4ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1cae95711f02353a6315a09264a4ca3">&#9670;&#160;</a></span>NET_SV_RunClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_RunClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88e23f9eb1a24d209212dbe011d24fc4" name="a88e23f9eb1a24d209212dbe011d24fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e23f9eb1a24d209212dbe011d24fc4">&#9670;&#160;</a></span>NET_SV_SendConsoleMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void static void NET_SV_SendConsoleMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8daf7579dc1dab8d34703f15ebcbbded" name="a8daf7579dc1dab8d34703f15ebcbbded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8daf7579dc1dab8d34703f15ebcbbded">&#9670;&#160;</a></span>NET_SV_SendQueryResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_SV_SendQueryResponse </td>
+          <td>(</td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac94bfe53a6113514e0fb40c5ad06a4b6" name="ac94bfe53a6113514e0fb40c5ad06a4b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94bfe53a6113514e0fb40c5ad06a4b6">&#9670;&#160;</a></span>NET_SV_SendReject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_SendReject </td>
+          <td>(</td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11f629cb8984d120f0e47dfc7bca19b5" name="a11f629cb8984d120f0e47dfc7bca19b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11f629cb8984d120f0e47dfc7bca19b5">&#9670;&#160;</a></span>NET_SV_SendResendRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_SendResendRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04769c90017f73f4e7da042bb5e7c442" name="a04769c90017f73f4e7da042bb5e7c442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04769c90017f73f4e7da042bb5e7c442">&#9670;&#160;</a></span>NET_SV_SendTics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_SendTics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2a5c3ffa7daef6400acc6906dbe976d" name="aa2a5c3ffa7daef6400acc6906dbe976d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2a5c3ffa7daef6400acc6906dbe976d">&#9670;&#160;</a></span>NET_SV_SendWaitingData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_SendWaitingData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__client__t.html">net_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c686d35264da69812c9fb4b2ddd51b8" name="a8c686d35264da69812c9fb4b2ddd51b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c686d35264da69812c9fb4b2ddd51b8">&#9670;&#160;</a></span>NET_SV_Shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_SV_Shutdown </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8d5c8e636805a1b9f7bd2d22eb195e5" name="ac8d5c8e636805a1b9f7bd2d22eb195e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d5c8e636805a1b9f7bd2d22eb195e5">&#9670;&#160;</a></span>SendAllWaitingData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SendAllWaitingData </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08c3cad3fec8a2f835ebb40eaafc1b64" name="a08c3cad3fec8a2f835ebb40eaafc1b64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c3cad3fec8a2f835ebb40eaafc1b64">&#9670;&#160;</a></span>StartGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void StartGame </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acee148c6a3204ccaa89ec7c317e84560" name="acee148c6a3204ccaa89ec7c317e84560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee148c6a3204ccaa89ec7c317e84560">&#9670;&#160;</a></span>UpdateMasterServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void UpdateMasterServer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ac279999e0a8256cd5a705a5643d14d3f" name="ac279999e0a8256cd5a705a5643d14d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac279999e0a8256cd5a705a5643d14d3f">&#9670;&#160;</a></span>clients</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnet__client__t.html">net_client_t</a> clients[MAXNETNODES]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee34f946baa7aa85a08da692617378b2" name="aee34f946baa7aa85a08da692617378b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee34f946baa7aa85a08da692617378b2">&#9670;&#160;</a></span>master_refresh_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int master_refresh_time</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb35c8877fcca845e11ac9ee9d45331e" name="adb35c8877fcca845e11ac9ee9d45331e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb35c8877fcca845e11ac9ee9d45331e">&#9670;&#160;</a></span>master_resolve_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int master_resolve_time</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa9bd5f8e391fb3c82c2f4e2b578b42a" name="afa9bd5f8e391fb3c82c2f4e2b578b42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9bd5f8e391fb3c82c2f4e2b578b42a">&#9670;&#160;</a></span>master_server</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">net_addr_t* master_server = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a206d7b46172b982cfdd7119579e7d567" name="a206d7b46172b982cfdd7119579e7d567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a206d7b46172b982cfdd7119579e7d567">&#9670;&#160;</a></span>recvwindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnet__client__recv__t.html">net_client_recv_t</a> recvwindow[BACKUPTICS][NET_MAXPLAYERS]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfcdfacae4d67993d0e6a0141a0b0fae" name="abfcdfacae4d67993d0e6a0141a0b0fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfcdfacae4d67993d0e6a0141a0b0fae">&#9670;&#160;</a></span>recvwindow_start</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int recvwindow_start</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76267af2f64dd700499c31211e702432" name="a76267af2f64dd700499c31211e702432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76267af2f64dd700499c31211e702432">&#9670;&#160;</a></span>server_context</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">net_context_t* server_context</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a213175372c234e12f69febec8d6861" name="a9a213175372c234e12f69febec8d6861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a213175372c234e12f69febec8d6861">&#9670;&#160;</a></span>server_initialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> server_initialized = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23fa778abea6aff3ed2a517e370f54ca" name="a23fa778abea6aff3ed2a517e370f54ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23fa778abea6aff3ed2a517e370f54ca">&#9670;&#160;</a></span>server_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="server_8c.html#a85b9f75392d42c8bdec0800a8adeea6b">net_server_state_t</a> server_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a247e6d5e1e6c8372128f60730ee5fa5f" name="a247e6d5e1e6c8372128f60730ee5fa5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a247e6d5e1e6c8372128f60730ee5fa5f">&#9670;&#160;</a></span>sv_gamemission</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int sv_gamemission</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8588ec66ff8863dab70d404fe05c31c" name="ab8588ec66ff8863dab70d404fe05c31c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8588ec66ff8863dab70d404fe05c31c">&#9670;&#160;</a></span>sv_gamemode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int sv_gamemode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00bb63558e68b68a3b5f681a16294f66" name="a00bb63558e68b68a3b5f681a16294f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00bb63558e68b68a3b5f681a16294f66">&#9670;&#160;</a></span>sv_players</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnet__client__t.html">net_client_t</a>* sv_players[NET_MAXPLAYERS]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ea49ca6b252be4f055d9733c2fe790f" name="a2ea49ca6b252be4f055d9733c2fe790f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea49ca6b252be4f055d9733c2fe790f">&#9670;&#160;</a></span>sv_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">net_gamesettings_t sv_settings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c72b25b75abe208498b36a3e44a3726c.html">net</a></li><li class="navelem"><a class="el" href="server_8c.html">server.c</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

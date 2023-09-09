@@ -1,0 +1,894 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell/engine/src/w_merge.c File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('w__merge_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">w_merge.c File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="doomtype_8h_source.html">doomtype.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__swap_8h_source.html">i_swap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__system_8h_source.html">i_system.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__misc_8h_source.html">m_misc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="w__merge_8h_source.html">w_merge.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="w__wad_8h_source.html">w_wad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="z__zone_8h_source.html">z_zone.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for w_merge.c:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsearchlist__t.html">searchlist_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsprite__frame__t.html">sprite_frame_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ae0680445b6052d4c06d2f86e90421084"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#ae0680445b6052d4c06d2f86e90421084">section_t</a> { <a class="el" href="w__merge_8c.html#ae0680445b6052d4c06d2f86e90421084a4373573e5177551075d23470c3cc3f45">SECTION_NORMAL</a>
+, <a class="el" href="w__merge_8c.html#ae0680445b6052d4c06d2f86e90421084abe005896d92ec7d8cf8d0ccce80fa604">SECTION_FLATS</a>
+, <a class="el" href="w__merge_8c.html#ae0680445b6052d4c06d2f86e90421084a71c77dbb37f54cafc51a315784d11963">SECTION_SPRITES</a>
+ }</td></tr>
+<tr class="separator:ae0680445b6052d4c06d2f86e90421084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1b3936ad6149e825e8cd5c46dc4e3dea"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a1b3936ad6149e825e8cd5c46dc4e3dea">FindInList</a> (<a class="el" href="structsearchlist__t.html">searchlist_t</a> *list, const char *<a class="el" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="separator:a1b3936ad6149e825e8cd5c46dc4e3dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7f087f3a8842bc3ae8c6d9c9d508cb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a5e7f087f3a8842bc3ae8c6d9c9d508cb">SetupList</a> (<a class="el" href="structsearchlist__t.html">searchlist_t</a> *list, <a class="el" href="structsearchlist__t.html">searchlist_t</a> *src_list, const char *startname, const char *endname, const char *startname2, const char *endname2)</td></tr>
+<tr class="separator:a5e7f087f3a8842bc3ae8c6d9c9d508cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187385ed4353022088a92e2849a3f069"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a187385ed4353022088a92e2849a3f069">SetupLists</a> (void)</td></tr>
+<tr class="separator:a187385ed4353022088a92e2849a3f069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add40d331e76dd421c5d0249fb7388f97"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#add40d331e76dd421c5d0249fb7388f97">InitSpriteList</a> (void)</td></tr>
+<tr class="separator:add40d331e76dd421c5d0249fb7388f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b7e9b03fb02627438a38414a9ec073"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#ab9b7e9b03fb02627438a38414a9ec073">ValidSpriteLumpName</a> (char *<a class="el" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="separator:ab9b7e9b03fb02627438a38414a9ec073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebbf6d35a143f8e33050f8893e7cd0b9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structsprite__frame__t.html">sprite_frame_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#aebbf6d35a143f8e33050f8893e7cd0b9">FindSpriteFrame</a> (char *<a class="el" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, int frame)</td></tr>
+<tr class="separator:aebbf6d35a143f8e33050f8893e7cd0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf77e6daddbf6fb3ed2e989b296ccf78"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#abf77e6daddbf6fb3ed2e989b296ccf78">SpriteLumpNeeded</a> (<a class="el" href="w__wad_8h.html#a18a38f805d0be1641ebaa9f13e770c69">lumpinfo_t</a> *lump)</td></tr>
+<tr class="separator:abf77e6daddbf6fb3ed2e989b296ccf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3415ec3be5c16ee74d2d40d3a829e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a0f3415ec3be5c16ee74d2d40d3a829e0">AddSpriteLump</a> (<a class="el" href="w__wad_8h.html#a18a38f805d0be1641ebaa9f13e770c69">lumpinfo_t</a> *lump)</td></tr>
+<tr class="separator:a0f3415ec3be5c16ee74d2d40d3a829e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43012202d28bbc2c7d118ef4356fd9a7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a43012202d28bbc2c7d118ef4356fd9a7">GenerateSpriteList</a> (void)</td></tr>
+<tr class="separator:a43012202d28bbc2c7d118ef4356fd9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eccfd2b82a412c51cb73a8e334c0ea4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a7eccfd2b82a412c51cb73a8e334c0ea4">DoMerge</a> (void)</td></tr>
+<tr class="separator:a7eccfd2b82a412c51cb73a8e334c0ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad464e2792859ce3e27842a3491253522"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#ad464e2792859ce3e27842a3491253522">W_PrintDirectory</a> (void)</td></tr>
+<tr class="separator:ad464e2792859ce3e27842a3491253522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ce912217c6fcfff1af41e530ff95b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a15ce912217c6fcfff1af41e530ff95b5">W_MergeFile</a> (const char *filename)</td></tr>
+<tr class="separator:a15ce912217c6fcfff1af41e530ff95b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dab6fc8ea25369682a92f53b39fb5cc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a5dab6fc8ea25369682a92f53b39fb5cc">W_NWTAddLumps</a> (<a class="el" href="structsearchlist__t.html">searchlist_t</a> *list)</td></tr>
+<tr class="separator:a5dab6fc8ea25369682a92f53b39fb5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80af28083661e7d676c34b0eb3a08e87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a80af28083661e7d676c34b0eb3a08e87">W_NWTMergeFile</a> (const char *filename, int flags)</td></tr>
+<tr class="separator:a80af28083661e7d676c34b0eb3a08e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb869e53eff185ef6c8696ea8a4fd51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a3cb869e53eff185ef6c8696ea8a4fd51">W_NWTDashMerge</a> (const char *filename)</td></tr>
+<tr class="separator:a3cb869e53eff185ef6c8696ea8a4fd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5feb4271f43995a6f04f171258b1021"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#ab5feb4271f43995a6f04f171258b1021">W_MergeDump</a> (const char *file)</td></tr>
+<tr class="separator:ab5feb4271f43995a6f04f171258b1021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac9235407c99253a48c8d98da4b939630"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structsearchlist__t.html">searchlist_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#ac9235407c99253a48c8d98da4b939630">iwad</a></td></tr>
+<tr class="separator:ac9235407c99253a48c8d98da4b939630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0239e2e0162653b28255ccdc4d3023"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structsearchlist__t.html">searchlist_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a8c0239e2e0162653b28255ccdc4d3023">iwad_sprites</a></td></tr>
+<tr class="separator:a8c0239e2e0162653b28255ccdc4d3023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e83913d9ba6bec1b4c5b310d2edcba"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structsearchlist__t.html">searchlist_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#ad6e83913d9ba6bec1b4c5b310d2edcba">pwad</a></td></tr>
+<tr class="separator:ad6e83913d9ba6bec1b4c5b310d2edcba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a187c1e4bb454ef4d474e1a8676cd5a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structsearchlist__t.html">searchlist_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a0a187c1e4bb454ef4d474e1a8676cd5a">iwad_flats</a></td></tr>
+<tr class="separator:a0a187c1e4bb454ef4d474e1a8676cd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40c13c0684c83fd3f7042136d2ed4ce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structsearchlist__t.html">searchlist_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#ac40c13c0684c83fd3f7042136d2ed4ce">pwad_sprites</a></td></tr>
+<tr class="separator:ac40c13c0684c83fd3f7042136d2ed4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0ae91b967de296ac3f0e034f54d5ca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structsearchlist__t.html">searchlist_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#afd0ae91b967de296ac3f0e034f54d5ca">pwad_flats</a></td></tr>
+<tr class="separator:afd0ae91b967de296ac3f0e034f54d5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfe735da88b964ed5e4424101e52280"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structsprite__frame__t.html">sprite_frame_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#abcfe735da88b964ed5e4424101e52280">sprite_frames</a></td></tr>
+<tr class="separator:abcfe735da88b964ed5e4424101e52280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2e73ceb5b0b77614465fbcb5e32135"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a9d2e73ceb5b0b77614465fbcb5e32135">num_sprite_frames</a></td></tr>
+<tr class="separator:a9d2e73ceb5b0b77614465fbcb5e32135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892451dc33330477882d6290e9daf705"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w__merge_8c.html#a892451dc33330477882d6290e9daf705">sprite_frames_alloced</a></td></tr>
+<tr class="separator:a892451dc33330477882d6290e9daf705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ae0680445b6052d4c06d2f86e90421084" name="ae0680445b6052d4c06d2f86e90421084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0680445b6052d4c06d2f86e90421084">&#9670;&#160;</a></span>section_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="w__merge_8c.html#ae0680445b6052d4c06d2f86e90421084">section_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae0680445b6052d4c06d2f86e90421084a4373573e5177551075d23470c3cc3f45" name="ae0680445b6052d4c06d2f86e90421084a4373573e5177551075d23470c3cc3f45"></a>SECTION_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae0680445b6052d4c06d2f86e90421084abe005896d92ec7d8cf8d0ccce80fa604" name="ae0680445b6052d4c06d2f86e90421084abe005896d92ec7d8cf8d0ccce80fa604"></a>SECTION_FLATS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae0680445b6052d4c06d2f86e90421084a71c77dbb37f54cafc51a315784d11963" name="ae0680445b6052d4c06d2f86e90421084a71c77dbb37f54cafc51a315784d11963"></a>SECTION_SPRITES&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a0f3415ec3be5c16ee74d2d40d3a829e0" name="a0f3415ec3be5c16ee74d2d40d3a829e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f3415ec3be5c16ee74d2d40d3a829e0">&#9670;&#160;</a></span>AddSpriteLump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AddSpriteLump </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="w__wad_8h.html#a18a38f805d0be1641ebaa9f13e770c69">lumpinfo_t</a> *&#160;</td>
+          <td class="paramname"><em>lump</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7eccfd2b82a412c51cb73a8e334c0ea4" name="a7eccfd2b82a412c51cb73a8e334c0ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eccfd2b82a412c51cb73a8e334c0ea4">&#9670;&#160;</a></span>DoMerge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void DoMerge </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b3936ad6149e825e8cd5c46dc4e3dea" name="a1b3936ad6149e825e8cd5c46dc4e3dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b3936ad6149e825e8cd5c46dc4e3dea">&#9670;&#160;</a></span>FindInList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int FindInList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsearchlist__t.html">searchlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebbf6d35a143f8e33050f8893e7cd0b9" name="aebbf6d35a143f8e33050f8893e7cd0b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebbf6d35a143f8e33050f8893e7cd0b9">&#9670;&#160;</a></span>FindSpriteFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structsprite__frame__t.html">sprite_frame_t</a> * FindSpriteFrame </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43012202d28bbc2c7d118ef4356fd9a7" name="a43012202d28bbc2c7d118ef4356fd9a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43012202d28bbc2c7d118ef4356fd9a7">&#9670;&#160;</a></span>GenerateSpriteList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GenerateSpriteList </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add40d331e76dd421c5d0249fb7388f97" name="add40d331e76dd421c5d0249fb7388f97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add40d331e76dd421c5d0249fb7388f97">&#9670;&#160;</a></span>InitSpriteList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void InitSpriteList </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e7f087f3a8842bc3ae8c6d9c9d508cb" name="a5e7f087f3a8842bc3ae8c6d9c9d508cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e7f087f3a8842bc3ae8c6d9c9d508cb">&#9670;&#160;</a></span>SetupList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> SetupList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsearchlist__t.html">searchlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsearchlist__t.html">searchlist_t</a> *&#160;</td>
+          <td class="paramname"><em>src_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>startname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>endname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>startname2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>endname2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a187385ed4353022088a92e2849a3f069" name="a187385ed4353022088a92e2849a3f069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a187385ed4353022088a92e2849a3f069">&#9670;&#160;</a></span>SetupLists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SetupLists </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf77e6daddbf6fb3ed2e989b296ccf78" name="abf77e6daddbf6fb3ed2e989b296ccf78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf77e6daddbf6fb3ed2e989b296ccf78">&#9670;&#160;</a></span>SpriteLumpNeeded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> SpriteLumpNeeded </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="w__wad_8h.html#a18a38f805d0be1641ebaa9f13e770c69">lumpinfo_t</a> *&#160;</td>
+          <td class="paramname"><em>lump</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9b7e9b03fb02627438a38414a9ec073" name="ab9b7e9b03fb02627438a38414a9ec073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b7e9b03fb02627438a38414a9ec073">&#9670;&#160;</a></span>ValidSpriteLumpName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> ValidSpriteLumpName </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5feb4271f43995a6f04f171258b1021" name="ab5feb4271f43995a6f04f171258b1021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5feb4271f43995a6f04f171258b1021">&#9670;&#160;</a></span>W_MergeDump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int W_MergeDump </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15ce912217c6fcfff1af41e530ff95b5" name="a15ce912217c6fcfff1af41e530ff95b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ce912217c6fcfff1af41e530ff95b5">&#9670;&#160;</a></span>W_MergeFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void W_MergeFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dab6fc8ea25369682a92f53b39fb5cc" name="a5dab6fc8ea25369682a92f53b39fb5cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dab6fc8ea25369682a92f53b39fb5cc">&#9670;&#160;</a></span>W_NWTAddLumps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void W_NWTAddLumps </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsearchlist__t.html">searchlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cb869e53eff185ef6c8696ea8a4fd51" name="a3cb869e53eff185ef6c8696ea8a4fd51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cb869e53eff185ef6c8696ea8a4fd51">&#9670;&#160;</a></span>W_NWTDashMerge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void W_NWTDashMerge </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80af28083661e7d676c34b0eb3a08e87" name="a80af28083661e7d676c34b0eb3a08e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80af28083661e7d676c34b0eb3a08e87">&#9670;&#160;</a></span>W_NWTMergeFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void W_NWTMergeFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad464e2792859ce3e27842a3491253522" name="ad464e2792859ce3e27842a3491253522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad464e2792859ce3e27842a3491253522">&#9670;&#160;</a></span>W_PrintDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void W_PrintDirectory </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ac9235407c99253a48c8d98da4b939630" name="ac9235407c99253a48c8d98da4b939630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9235407c99253a48c8d98da4b939630">&#9670;&#160;</a></span>iwad</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsearchlist__t.html">searchlist_t</a> iwad</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a187c1e4bb454ef4d474e1a8676cd5a" name="a0a187c1e4bb454ef4d474e1a8676cd5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a187c1e4bb454ef4d474e1a8676cd5a">&#9670;&#160;</a></span>iwad_flats</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsearchlist__t.html">searchlist_t</a> iwad_flats</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c0239e2e0162653b28255ccdc4d3023" name="a8c0239e2e0162653b28255ccdc4d3023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0239e2e0162653b28255ccdc4d3023">&#9670;&#160;</a></span>iwad_sprites</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsearchlist__t.html">searchlist_t</a> iwad_sprites</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d2e73ceb5b0b77614465fbcb5e32135" name="a9d2e73ceb5b0b77614465fbcb5e32135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d2e73ceb5b0b77614465fbcb5e32135">&#9670;&#160;</a></span>num_sprite_frames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int num_sprite_frames</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6e83913d9ba6bec1b4c5b310d2edcba" name="ad6e83913d9ba6bec1b4c5b310d2edcba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e83913d9ba6bec1b4c5b310d2edcba">&#9670;&#160;</a></span>pwad</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsearchlist__t.html">searchlist_t</a> pwad</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd0ae91b967de296ac3f0e034f54d5ca" name="afd0ae91b967de296ac3f0e034f54d5ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0ae91b967de296ac3f0e034f54d5ca">&#9670;&#160;</a></span>pwad_flats</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsearchlist__t.html">searchlist_t</a> pwad_flats</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac40c13c0684c83fd3f7042136d2ed4ce" name="ac40c13c0684c83fd3f7042136d2ed4ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40c13c0684c83fd3f7042136d2ed4ce">&#9670;&#160;</a></span>pwad_sprites</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsearchlist__t.html">searchlist_t</a> pwad_sprites</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcfe735da88b964ed5e4424101e52280" name="abcfe735da88b964ed5e4424101e52280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcfe735da88b964ed5e4424101e52280">&#9670;&#160;</a></span>sprite_frames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsprite__frame__t.html">sprite_frame_t</a>* sprite_frames</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a892451dc33330477882d6290e9daf705" name="a892451dc33330477882d6290e9daf705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892451dc33330477882d6290e9daf705">&#9670;&#160;</a></span>sprite_frames_alloced</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sprite_frames_alloced</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="w__merge_8c.html">w_merge.c</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

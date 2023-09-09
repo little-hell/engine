@@ -1,0 +1,911 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell/engine/src/net/loop.c File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('loop_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">loop.c File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="doomtype_8h_source.html">doomtype.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__system_8h_source.html">i_system.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__misc_8h_source.html">m_misc.h</a>&quot;</code><br />
+<code>#include &quot;littlehell/net/defs.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="loop_8h_source.html">net/loop.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="packet_8h_source.html">net/packet.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for loop.c:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpacket__queue__t.html">packet_queue_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a623ec78b7909090dbedac4af1d52abb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a623ec78b7909090dbedac4af1d52abb4">MAX_QUEUE_SIZE</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a623ec78b7909090dbedac4af1d52abb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ab967ca92991e9a216ac1dbc89336c15e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#ab967ca92991e9a216ac1dbc89336c15e">QueueInit</a> (<a class="el" href="structpacket__queue__t.html">packet_queue_t</a> *queue)</td></tr>
+<tr class="separator:ab967ca92991e9a216ac1dbc89336c15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9eae7ffa5432ff43a15046fca51bf4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a6a9eae7ffa5432ff43a15046fca51bf4">QueuePush</a> (<a class="el" href="structpacket__queue__t.html">packet_queue_t</a> *queue, net_packet_t *packet)</td></tr>
+<tr class="separator:a6a9eae7ffa5432ff43a15046fca51bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31502d5dc85c19e8e4fdee6b2e48f076"><td class="memItemLeft" align="right" valign="top">static net_packet_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a31502d5dc85c19e8e4fdee6b2e48f076">QueuePop</a> (<a class="el" href="structpacket__queue__t.html">packet_queue_t</a> *queue)</td></tr>
+<tr class="separator:a31502d5dc85c19e8e4fdee6b2e48f076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83af5b60536deb3ec1ec3d37e73a203"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#ad83af5b60536deb3ec1ec3d37e73a203">NET_CL_InitClient</a> (void)</td></tr>
+<tr class="separator:ad83af5b60536deb3ec1ec3d37e73a203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7786c285521e8843497ba4903a0b544"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#aa7786c285521e8843497ba4903a0b544">NET_CL_InitServer</a> (void)</td></tr>
+<tr class="separator:aa7786c285521e8843497ba4903a0b544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd67ba42d1251e16683b0a6566f6ba6c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#abd67ba42d1251e16683b0a6566f6ba6c">NET_CL_SendPacket</a> (net_addr_t *addr, net_packet_t *packet)</td></tr>
+<tr class="separator:abd67ba42d1251e16683b0a6566f6ba6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7497437e14c179631b2cd90cfc6beca3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a7497437e14c179631b2cd90cfc6beca3">NET_CL_RecvPacket</a> (net_addr_t **addr, net_packet_t **packet)</td></tr>
+<tr class="separator:a7497437e14c179631b2cd90cfc6beca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f28e3da0fa53478a00ba25664dead13"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a1f28e3da0fa53478a00ba25664dead13">NET_CL_AddrToString</a> (net_addr_t *addr, char *buffer, int buffer_len)</td></tr>
+<tr class="separator:a1f28e3da0fa53478a00ba25664dead13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81191e74a7d62d69a78247a1c6eaf159"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a81191e74a7d62d69a78247a1c6eaf159">NET_CL_FreeAddress</a> (net_addr_t *addr)</td></tr>
+<tr class="separator:a81191e74a7d62d69a78247a1c6eaf159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f0e07275e075231968e801163ea026"><td class="memItemLeft" align="right" valign="top">static net_addr_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a76f0e07275e075231968e801163ea026">NET_CL_ResolveAddress</a> (const char *address)</td></tr>
+<tr class="separator:a76f0e07275e075231968e801163ea026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af981fe28cd5e6a122de0966098186bd0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#af981fe28cd5e6a122de0966098186bd0">NET_SV_InitClient</a> (void)</td></tr>
+<tr class="separator:af981fe28cd5e6a122de0966098186bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6271ddb5b6d3d2f1156d1933005f05b1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a6271ddb5b6d3d2f1156d1933005f05b1">NET_SV_InitServer</a> (void)</td></tr>
+<tr class="separator:a6271ddb5b6d3d2f1156d1933005f05b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2364c0b1610d2a310dda4c33d41b463"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#ae2364c0b1610d2a310dda4c33d41b463">NET_SV_SendPacket</a> (net_addr_t *addr, net_packet_t *packet)</td></tr>
+<tr class="separator:ae2364c0b1610d2a310dda4c33d41b463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432484ffbcc45a6a1337078196b1f00e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a432484ffbcc45a6a1337078196b1f00e">NET_SV_RecvPacket</a> (net_addr_t **addr, net_packet_t **packet)</td></tr>
+<tr class="separator:a432484ffbcc45a6a1337078196b1f00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107706da57e5fbd6122294a15bbdbccc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a107706da57e5fbd6122294a15bbdbccc">NET_SV_AddrToString</a> (net_addr_t *addr, char *buffer, int buffer_len)</td></tr>
+<tr class="separator:a107706da57e5fbd6122294a15bbdbccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e7f7d5bb65242c367879dbd915d700"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a35e7f7d5bb65242c367879dbd915d700">NET_SV_FreeAddress</a> (net_addr_t *addr)</td></tr>
+<tr class="separator:a35e7f7d5bb65242c367879dbd915d700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6ea3e17defc1d546b02fd8ed1ced03"><td class="memItemLeft" align="right" valign="top">static net_addr_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a4a6ea3e17defc1d546b02fd8ed1ced03">NET_SV_ResolveAddress</a> (const char *address)</td></tr>
+<tr class="separator:a4a6ea3e17defc1d546b02fd8ed1ced03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac0e189550ab7ddb0012fd035d926adba"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structpacket__queue__t.html">packet_queue_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#ac0e189550ab7ddb0012fd035d926adba">client_queue</a></td></tr>
+<tr class="separator:ac0e189550ab7ddb0012fd035d926adba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe4048ff350e1868d14a7009cc7bbf0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structpacket__queue__t.html">packet_queue_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a7fe4048ff350e1868d14a7009cc7bbf0">server_queue</a></td></tr>
+<tr class="separator:a7fe4048ff350e1868d14a7009cc7bbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3660a928767dd01795376774a1ac8dcf"><td class="memItemLeft" align="right" valign="top">static net_addr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a3660a928767dd01795376774a1ac8dcf">client_addr</a></td></tr>
+<tr class="separator:a3660a928767dd01795376774a1ac8dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7260f2a8adc4719d55c05036fbd8ae3b"><td class="memItemLeft" align="right" valign="top">static net_addr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a7260f2a8adc4719d55c05036fbd8ae3b">server_addr</a></td></tr>
+<tr class="separator:a7260f2a8adc4719d55c05036fbd8ae3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8115790f14a77614982218e44e1d19bb"><td class="memItemLeft" align="right" valign="top">net_module_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a8115790f14a77614982218e44e1d19bb">net_loop_client_module</a></td></tr>
+<tr class="separator:a8115790f14a77614982218e44e1d19bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562a7f63aa345e0ab734307123e2429e"><td class="memItemLeft" align="right" valign="top">net_module_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loop_8c.html#a562a7f63aa345e0ab734307123e2429e">net_loop_server_module</a></td></tr>
+<tr class="separator:a562a7f63aa345e0ab734307123e2429e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a623ec78b7909090dbedac4af1d52abb4" name="a623ec78b7909090dbedac4af1d52abb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a623ec78b7909090dbedac4af1d52abb4">&#9670;&#160;</a></span>MAX_QUEUE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_QUEUE_SIZE&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a1f28e3da0fa53478a00ba25664dead13" name="a1f28e3da0fa53478a00ba25664dead13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f28e3da0fa53478a00ba25664dead13">&#9670;&#160;</a></span>NET_CL_AddrToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_CL_AddrToString </td>
+          <td>(</td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buffer_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81191e74a7d62d69a78247a1c6eaf159" name="a81191e74a7d62d69a78247a1c6eaf159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81191e74a7d62d69a78247a1c6eaf159">&#9670;&#160;</a></span>NET_CL_FreeAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_CL_FreeAddress </td>
+          <td>(</td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad83af5b60536deb3ec1ec3d37e73a203" name="ad83af5b60536deb3ec1ec3d37e73a203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83af5b60536deb3ec1ec3d37e73a203">&#9670;&#160;</a></span>NET_CL_InitClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> NET_CL_InitClient </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7786c285521e8843497ba4903a0b544" name="aa7786c285521e8843497ba4903a0b544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7786c285521e8843497ba4903a0b544">&#9670;&#160;</a></span>NET_CL_InitServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> NET_CL_InitServer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7497437e14c179631b2cd90cfc6beca3" name="a7497437e14c179631b2cd90cfc6beca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7497437e14c179631b2cd90cfc6beca3">&#9670;&#160;</a></span>NET_CL_RecvPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> NET_CL_RecvPacket </td>
+          <td>(</td>
+          <td class="paramtype">net_addr_t **&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_packet_t **&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76f0e07275e075231968e801163ea026" name="a76f0e07275e075231968e801163ea026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f0e07275e075231968e801163ea026">&#9670;&#160;</a></span>NET_CL_ResolveAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static net_addr_t * NET_CL_ResolveAddress </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd67ba42d1251e16683b0a6566f6ba6c" name="abd67ba42d1251e16683b0a6566f6ba6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd67ba42d1251e16683b0a6566f6ba6c">&#9670;&#160;</a></span>NET_CL_SendPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_CL_SendPacket </td>
+          <td>(</td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a107706da57e5fbd6122294a15bbdbccc" name="a107706da57e5fbd6122294a15bbdbccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a107706da57e5fbd6122294a15bbdbccc">&#9670;&#160;</a></span>NET_SV_AddrToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_AddrToString </td>
+          <td>(</td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buffer_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35e7f7d5bb65242c367879dbd915d700" name="a35e7f7d5bb65242c367879dbd915d700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35e7f7d5bb65242c367879dbd915d700">&#9670;&#160;</a></span>NET_SV_FreeAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_FreeAddress </td>
+          <td>(</td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af981fe28cd5e6a122de0966098186bd0" name="af981fe28cd5e6a122de0966098186bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af981fe28cd5e6a122de0966098186bd0">&#9670;&#160;</a></span>NET_SV_InitClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> NET_SV_InitClient </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6271ddb5b6d3d2f1156d1933005f05b1" name="a6271ddb5b6d3d2f1156d1933005f05b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6271ddb5b6d3d2f1156d1933005f05b1">&#9670;&#160;</a></span>NET_SV_InitServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> NET_SV_InitServer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a432484ffbcc45a6a1337078196b1f00e" name="a432484ffbcc45a6a1337078196b1f00e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432484ffbcc45a6a1337078196b1f00e">&#9670;&#160;</a></span>NET_SV_RecvPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> NET_SV_RecvPacket </td>
+          <td>(</td>
+          <td class="paramtype">net_addr_t **&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_packet_t **&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a6ea3e17defc1d546b02fd8ed1ced03" name="a4a6ea3e17defc1d546b02fd8ed1ced03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a6ea3e17defc1d546b02fd8ed1ced03">&#9670;&#160;</a></span>NET_SV_ResolveAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static net_addr_t * NET_SV_ResolveAddress </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2364c0b1610d2a310dda4c33d41b463" name="ae2364c0b1610d2a310dda4c33d41b463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2364c0b1610d2a310dda4c33d41b463">&#9670;&#160;</a></span>NET_SV_SendPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NET_SV_SendPacket </td>
+          <td>(</td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab967ca92991e9a216ac1dbc89336c15e" name="ab967ca92991e9a216ac1dbc89336c15e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab967ca92991e9a216ac1dbc89336c15e">&#9670;&#160;</a></span>QueueInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void QueueInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpacket__queue__t.html">packet_queue_t</a> *&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31502d5dc85c19e8e4fdee6b2e48f076" name="a31502d5dc85c19e8e4fdee6b2e48f076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31502d5dc85c19e8e4fdee6b2e48f076">&#9670;&#160;</a></span>QueuePop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static net_packet_t * QueuePop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpacket__queue__t.html">packet_queue_t</a> *&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a9eae7ffa5432ff43a15046fca51bf4" name="a6a9eae7ffa5432ff43a15046fca51bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a9eae7ffa5432ff43a15046fca51bf4">&#9670;&#160;</a></span>QueuePush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void QueuePush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpacket__queue__t.html">packet_queue_t</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a3660a928767dd01795376774a1ac8dcf" name="a3660a928767dd01795376774a1ac8dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3660a928767dd01795376774a1ac8dcf">&#9670;&#160;</a></span>client_addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">net_addr_t client_addr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0e189550ab7ddb0012fd035d926adba" name="ac0e189550ab7ddb0012fd035d926adba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e189550ab7ddb0012fd035d926adba">&#9670;&#160;</a></span>client_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpacket__queue__t.html">packet_queue_t</a> client_queue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8115790f14a77614982218e44e1d19bb" name="a8115790f14a77614982218e44e1d19bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8115790f14a77614982218e44e1d19bb">&#9670;&#160;</a></span>net_loop_client_module</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">net_module_t net_loop_client_module</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#ad83af5b60536deb3ec1ec3d37e73a203">NET_CL_InitClient</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#aa7786c285521e8843497ba4903a0b544">NET_CL_InitServer</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#abd67ba42d1251e16683b0a6566f6ba6c">NET_CL_SendPacket</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#a7497437e14c179631b2cd90cfc6beca3">NET_CL_RecvPacket</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#a1f28e3da0fa53478a00ba25664dead13">NET_CL_AddrToString</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#a81191e74a7d62d69a78247a1c6eaf159">NET_CL_FreeAddress</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#a76f0e07275e075231968e801163ea026">NET_CL_ResolveAddress</a>,</div>
+<div class="line">}</div>
+<div class="ttc" id="aloop_8c_html_a1f28e3da0fa53478a00ba25664dead13"><div class="ttname"><a href="loop_8c.html#a1f28e3da0fa53478a00ba25664dead13">NET_CL_AddrToString</a></div><div class="ttdeci">static void NET_CL_AddrToString(net_addr_t *addr, char *buffer, int buffer_len)</div><div class="ttdef"><b>Definition:</b> loop.c:124</div></div>
+<div class="ttc" id="aloop_8c_html_a7497437e14c179631b2cd90cfc6beca3"><div class="ttname"><a href="loop_8c.html#a7497437e14c179631b2cd90cfc6beca3">NET_CL_RecvPacket</a></div><div class="ttdeci">static boolean NET_CL_RecvPacket(net_addr_t **addr, net_packet_t **packet)</div><div class="ttdef"><b>Definition:</b> loop.c:106</div></div>
+<div class="ttc" id="aloop_8c_html_a76f0e07275e075231968e801163ea026"><div class="ttname"><a href="loop_8c.html#a76f0e07275e075231968e801163ea026">NET_CL_ResolveAddress</a></div><div class="ttdeci">static net_addr_t * NET_CL_ResolveAddress(const char *address)</div><div class="ttdef"><b>Definition:</b> loop.c:133</div></div>
+<div class="ttc" id="aloop_8c_html_a81191e74a7d62d69a78247a1c6eaf159"><div class="ttname"><a href="loop_8c.html#a81191e74a7d62d69a78247a1c6eaf159">NET_CL_FreeAddress</a></div><div class="ttdeci">static void NET_CL_FreeAddress(net_addr_t *addr)</div><div class="ttdef"><b>Definition:</b> loop.c:129</div></div>
+<div class="ttc" id="aloop_8c_html_aa7786c285521e8843497ba4903a0b544"><div class="ttname"><a href="loop_8c.html#aa7786c285521e8843497ba4903a0b544">NET_CL_InitServer</a></div><div class="ttdeci">static boolean NET_CL_InitServer(void)</div><div class="ttdef"><b>Definition:</b> loop.c:95</div></div>
+<div class="ttc" id="aloop_8c_html_abd67ba42d1251e16683b0a6566f6ba6c"><div class="ttname"><a href="loop_8c.html#abd67ba42d1251e16683b0a6566f6ba6c">NET_CL_SendPacket</a></div><div class="ttdeci">static void NET_CL_SendPacket(net_addr_t *addr, net_packet_t *packet)</div><div class="ttdef"><b>Definition:</b> loop.c:101</div></div>
+<div class="ttc" id="aloop_8c_html_ad83af5b60536deb3ec1ec3d37e73a203"><div class="ttname"><a href="loop_8c.html#ad83af5b60536deb3ec1ec3d37e73a203">NET_CL_InitClient</a></div><div class="ttdeci">static boolean NET_CL_InitClient(void)</div><div class="ttdef"><b>Definition:</b> loop.c:88</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a562a7f63aa345e0ab734307123e2429e" name="a562a7f63aa345e0ab734307123e2429e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a562a7f63aa345e0ab734307123e2429e">&#9670;&#160;</a></span>net_loop_server_module</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">net_module_t net_loop_server_module</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#af981fe28cd5e6a122de0966098186bd0">NET_SV_InitClient</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#a6271ddb5b6d3d2f1156d1933005f05b1">NET_SV_InitServer</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#ae2364c0b1610d2a310dda4c33d41b463">NET_SV_SendPacket</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#a432484ffbcc45a6a1337078196b1f00e">NET_SV_RecvPacket</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#a107706da57e5fbd6122294a15bbdbccc">NET_SV_AddrToString</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#a35e7f7d5bb65242c367879dbd915d700">NET_SV_FreeAddress</a>,</div>
+<div class="line">    <a class="code hl_function" href="loop_8c.html#a4a6ea3e17defc1d546b02fd8ed1ced03">NET_SV_ResolveAddress</a>,</div>
+<div class="line">}</div>
+<div class="ttc" id="aloop_8c_html_a107706da57e5fbd6122294a15bbdbccc"><div class="ttname"><a href="loop_8c.html#a107706da57e5fbd6122294a15bbdbccc">NET_SV_AddrToString</a></div><div class="ttdeci">static void NET_SV_AddrToString(net_addr_t *addr, char *buffer, int buffer_len)</div><div class="ttdef"><b>Definition:</b> loop.c:199</div></div>
+<div class="ttc" id="aloop_8c_html_a35e7f7d5bb65242c367879dbd915d700"><div class="ttname"><a href="loop_8c.html#a35e7f7d5bb65242c367879dbd915d700">NET_SV_FreeAddress</a></div><div class="ttdeci">static void NET_SV_FreeAddress(net_addr_t *addr)</div><div class="ttdef"><b>Definition:</b> loop.c:204</div></div>
+<div class="ttc" id="aloop_8c_html_a432484ffbcc45a6a1337078196b1f00e"><div class="ttname"><a href="loop_8c.html#a432484ffbcc45a6a1337078196b1f00e">NET_SV_RecvPacket</a></div><div class="ttdeci">static boolean NET_SV_RecvPacket(net_addr_t **addr, net_packet_t **packet)</div><div class="ttdef"><b>Definition:</b> loop.c:181</div></div>
+<div class="ttc" id="aloop_8c_html_a4a6ea3e17defc1d546b02fd8ed1ced03"><div class="ttname"><a href="loop_8c.html#a4a6ea3e17defc1d546b02fd8ed1ced03">NET_SV_ResolveAddress</a></div><div class="ttdeci">static net_addr_t * NET_SV_ResolveAddress(const char *address)</div><div class="ttdef"><b>Definition:</b> loop.c:208</div></div>
+<div class="ttc" id="aloop_8c_html_a6271ddb5b6d3d2f1156d1933005f05b1"><div class="ttname"><a href="loop_8c.html#a6271ddb5b6d3d2f1156d1933005f05b1">NET_SV_InitServer</a></div><div class="ttdeci">static boolean NET_SV_InitServer(void)</div><div class="ttdef"><b>Definition:</b> loop.c:169</div></div>
+<div class="ttc" id="aloop_8c_html_ae2364c0b1610d2a310dda4c33d41b463"><div class="ttname"><a href="loop_8c.html#ae2364c0b1610d2a310dda4c33d41b463">NET_SV_SendPacket</a></div><div class="ttdeci">static void NET_SV_SendPacket(net_addr_t *addr, net_packet_t *packet)</div><div class="ttdef"><b>Definition:</b> loop.c:176</div></div>
+<div class="ttc" id="aloop_8c_html_af981fe28cd5e6a122de0966098186bd0"><div class="ttname"><a href="loop_8c.html#af981fe28cd5e6a122de0966098186bd0">NET_SV_InitClient</a></div><div class="ttdeci">static boolean NET_SV_InitClient(void)</div><div class="ttdef"><b>Definition:</b> loop.c:163</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7260f2a8adc4719d55c05036fbd8ae3b" name="a7260f2a8adc4719d55c05036fbd8ae3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7260f2a8adc4719d55c05036fbd8ae3b">&#9670;&#160;</a></span>server_addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">net_addr_t server_addr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fe4048ff350e1868d14a7009cc7bbf0" name="a7fe4048ff350e1868d14a7009cc7bbf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe4048ff350e1868d14a7009cc7bbf0">&#9670;&#160;</a></span>server_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpacket__queue__t.html">packet_queue_t</a> server_queue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c72b25b75abe208498b36a3e44a3726c.html">net</a></li><li class="navelem"><a class="el" href="loop_8c.html">loop.c</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell/engine/src/i_joystick.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('i__joystick_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">i_joystick.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;SDL_gamecontroller.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for i_joystick.h:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
+</div>
+<p><a href="i__joystick_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab597a42fef94ebf83fd47bcb4a2317a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#ab597a42fef94ebf83fd47bcb4a2317a0">NUM_VIRTUAL_BUTTONS</a>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:ab597a42fef94ebf83fd47bcb4a2317a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ee4dc71027c7315a50019ece5eeb3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a06ee4dc71027c7315a50019ece5eeb3c">MAX_VIRTUAL_BUTTONS</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:a06ee4dc71027c7315a50019ece5eeb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ae8d0cb0e182fe35499396b9bde60f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a72ae8d0cb0e182fe35499396b9bde60f">BUTTON_AXIS</a>&#160;&#160;&#160;0x10000</td></tr>
+<tr class="separator:a72ae8d0cb0e182fe35499396b9bde60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4187b4f897f2d394414242528ece761a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a4187b4f897f2d394414242528ece761a">IS_BUTTON_AXIS</a>(axis)&#160;&#160;&#160;((axis) &gt;= 0 &amp;&amp; ((axis) &amp;<a class="el" href="i__joystick_8h.html#a72ae8d0cb0e182fe35499396b9bde60f">BUTTON_AXIS</a>) != 0)</td></tr>
+<tr class="separator:a4187b4f897f2d394414242528ece761a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25185fb2510404716cc9ed3c3e803d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#ab25185fb2510404716cc9ed3c3e803d3">BUTTON_AXIS_NEG</a>(axis)&#160;&#160;&#160;((axis) &amp;0xff)</td></tr>
+<tr class="separator:ab25185fb2510404716cc9ed3c3e803d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b40eb39025c607a44954a0e92311fe8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a2b40eb39025c607a44954a0e92311fe8">BUTTON_AXIS_POS</a>(axis)&#160;&#160;&#160;(((axis) &gt;&gt; 8) &amp; 0xff)</td></tr>
+<tr class="separator:a2b40eb39025c607a44954a0e92311fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d53fc238fc95fb91893bdad05e45862"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a3d53fc238fc95fb91893bdad05e45862">CREATE_BUTTON_AXIS</a>(neg,  pos)&#160;&#160;&#160;(<a class="el" href="i__joystick_8h.html#a72ae8d0cb0e182fe35499396b9bde60f">BUTTON_AXIS</a> | (neg) | ((pos) &lt;&lt; 8))</td></tr>
+<tr class="separator:a3d53fc238fc95fb91893bdad05e45862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2cf640425abff48f40914c7dcf031ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#ad2cf640425abff48f40914c7dcf031ab">HAT_AXIS</a>&#160;&#160;&#160;0x20000</td></tr>
+<tr class="separator:ad2cf640425abff48f40914c7dcf031ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03a082792d5686d6aefdaeabbcacab8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#af03a082792d5686d6aefdaeabbcacab8">IS_HAT_AXIS</a>(axis)&#160;&#160;&#160;((axis) &gt;= 0 &amp;&amp; ((axis) &amp;<a class="el" href="i__joystick_8h.html#ad2cf640425abff48f40914c7dcf031ab">HAT_AXIS</a>) != 0)</td></tr>
+<tr class="separator:af03a082792d5686d6aefdaeabbcacab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9e7c6b25d5a8d5335097585dc7a44a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a8b9e7c6b25d5a8d5335097585dc7a44a">HAT_AXIS_HAT</a>(axis)&#160;&#160;&#160;((axis) &amp;0xff)</td></tr>
+<tr class="separator:a8b9e7c6b25d5a8d5335097585dc7a44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505f4889d9950eb751c2494748734d66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a505f4889d9950eb751c2494748734d66">HAT_AXIS_DIRECTION</a>(axis)&#160;&#160;&#160;(((axis) &gt;&gt; 8) &amp; 0xff)</td></tr>
+<tr class="separator:a505f4889d9950eb751c2494748734d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbf07a7b16ae63fc970eb83407bb894"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a0cbf07a7b16ae63fc970eb83407bb894">CREATE_HAT_AXIS</a>(hat,  direction)&#160;&#160;&#160;(<a class="el" href="i__joystick_8h.html#ad2cf640425abff48f40914c7dcf031ab">HAT_AXIS</a> | (hat) | ((direction) &lt;&lt; 8))</td></tr>
+<tr class="separator:a0cbf07a7b16ae63fc970eb83407bb894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c9d89eb022845fed69005412fdfb6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a69c9d89eb022845fed69005412fdfb6c">HAT_AXIS_HORIZONTAL</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a69c9d89eb022845fed69005412fdfb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf94084dc8a8597e0f1e98b8dff676b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#adf94084dc8a8597e0f1e98b8dff676b5">HAT_AXIS_VERTICAL</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:adf94084dc8a8597e0f1e98b8dff676b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96f391f860836cedae761a35edd9ed5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#ad96f391f860836cedae761a35edd9ed5">TRIGGER_THRESHOLD</a>&#160;&#160;&#160;(30 * 32767 / 255)</td></tr>
+<tr class="separator:ad96f391f860836cedae761a35edd9ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a45af9d9731a32185b19f53cb1c0e5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a9a45af9d9731a32185b19f53cb1c0e5e">GUID_STRING_BUF_SIZE</a>&#160;&#160;&#160;33</td></tr>
+<tr class="separator:a9a45af9d9731a32185b19f53cb1c0e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:adb49720dc49f7d4e4cf9adbf2948e409"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="i__joystick_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a3ff78eb540266c3e0c7b6935afef3d49">GAMEPAD_BUTTON_TRIGGERLEFT</a> = SDL_CONTROLLER_BUTTON_MAX
+, <a class="el" href="i__joystick_8h.html#adb49720dc49f7d4e4cf9adbf2948e409aa6197c47911f714dec107c031e4ad43e">GAMEPAD_BUTTON_TRIGGERRIGHT</a>
+, <a class="el" href="i__joystick_8h.html#adb49720dc49f7d4e4cf9adbf2948e409aa612a5a7b14b145ac08f37e7420c8b1c">GAMEPAD_BUTTON_MAX</a>
+ }</td></tr>
+<tr class="separator:adb49720dc49f7d4e4cf9adbf2948e409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:afb8d4a415eccda004d6f057820d1bdac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#afb8d4a415eccda004d6f057820d1bdac">I_InitJoystick</a> (void)</td></tr>
+<tr class="separator:afb8d4a415eccda004d6f057820d1bdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cce7fa450e07784fe074760cf3212cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a2cce7fa450e07784fe074760cf3212cc">I_ShutdownJoystick</a> (void)</td></tr>
+<tr class="separator:a2cce7fa450e07784fe074760cf3212cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809adb5c1a445df2bfc2073102d279c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a809adb5c1a445df2bfc2073102d279c9">I_UpdateJoystick</a> (void)</td></tr>
+<tr class="separator:a809adb5c1a445df2bfc2073102d279c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b9c1b5bc23206aef51025d4f06b22d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__joystick_8h.html#a86b9c1b5bc23206aef51025d4f06b22d">I_BindJoystickVariables</a> (void)</td></tr>
+<tr class="separator:a86b9c1b5bc23206aef51025d4f06b22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a72ae8d0cb0e182fe35499396b9bde60f" name="a72ae8d0cb0e182fe35499396b9bde60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ae8d0cb0e182fe35499396b9bde60f">&#9670;&#160;</a></span>BUTTON_AXIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUTTON_AXIS&#160;&#160;&#160;0x10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab25185fb2510404716cc9ed3c3e803d3" name="ab25185fb2510404716cc9ed3c3e803d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25185fb2510404716cc9ed3c3e803d3">&#9670;&#160;</a></span>BUTTON_AXIS_NEG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUTTON_AXIS_NEG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">axis</td><td>)</td>
+          <td>&#160;&#160;&#160;((axis) &amp;0xff)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b40eb39025c607a44954a0e92311fe8" name="a2b40eb39025c607a44954a0e92311fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b40eb39025c607a44954a0e92311fe8">&#9670;&#160;</a></span>BUTTON_AXIS_POS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUTTON_AXIS_POS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">axis</td><td>)</td>
+          <td>&#160;&#160;&#160;(((axis) &gt;&gt; 8) &amp; 0xff)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d53fc238fc95fb91893bdad05e45862" name="a3d53fc238fc95fb91893bdad05e45862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d53fc238fc95fb91893bdad05e45862">&#9670;&#160;</a></span>CREATE_BUTTON_AXIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CREATE_BUTTON_AXIS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">neg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pos&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="i__joystick_8h.html#a72ae8d0cb0e182fe35499396b9bde60f">BUTTON_AXIS</a> | (neg) | ((pos) &lt;&lt; 8))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cbf07a7b16ae63fc970eb83407bb894" name="a0cbf07a7b16ae63fc970eb83407bb894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cbf07a7b16ae63fc970eb83407bb894">&#9670;&#160;</a></span>CREATE_HAT_AXIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CREATE_HAT_AXIS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">hat, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">direction&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="i__joystick_8h.html#ad2cf640425abff48f40914c7dcf031ab">HAT_AXIS</a> | (hat) | ((direction) &lt;&lt; 8))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a45af9d9731a32185b19f53cb1c0e5e" name="a9a45af9d9731a32185b19f53cb1c0e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a45af9d9731a32185b19f53cb1c0e5e">&#9670;&#160;</a></span>GUID_STRING_BUF_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GUID_STRING_BUF_SIZE&#160;&#160;&#160;33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2cf640425abff48f40914c7dcf031ab" name="ad2cf640425abff48f40914c7dcf031ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2cf640425abff48f40914c7dcf031ab">&#9670;&#160;</a></span>HAT_AXIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAT_AXIS&#160;&#160;&#160;0x20000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a505f4889d9950eb751c2494748734d66" name="a505f4889d9950eb751c2494748734d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a505f4889d9950eb751c2494748734d66">&#9670;&#160;</a></span>HAT_AXIS_DIRECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAT_AXIS_DIRECTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">axis</td><td>)</td>
+          <td>&#160;&#160;&#160;(((axis) &gt;&gt; 8) &amp; 0xff)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b9e7c6b25d5a8d5335097585dc7a44a" name="a8b9e7c6b25d5a8d5335097585dc7a44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b9e7c6b25d5a8d5335097585dc7a44a">&#9670;&#160;</a></span>HAT_AXIS_HAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAT_AXIS_HAT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">axis</td><td>)</td>
+          <td>&#160;&#160;&#160;((axis) &amp;0xff)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69c9d89eb022845fed69005412fdfb6c" name="a69c9d89eb022845fed69005412fdfb6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69c9d89eb022845fed69005412fdfb6c">&#9670;&#160;</a></span>HAT_AXIS_HORIZONTAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAT_AXIS_HORIZONTAL&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf94084dc8a8597e0f1e98b8dff676b5" name="adf94084dc8a8597e0f1e98b8dff676b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf94084dc8a8597e0f1e98b8dff676b5">&#9670;&#160;</a></span>HAT_AXIS_VERTICAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAT_AXIS_VERTICAL&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4187b4f897f2d394414242528ece761a" name="a4187b4f897f2d394414242528ece761a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4187b4f897f2d394414242528ece761a">&#9670;&#160;</a></span>IS_BUTTON_AXIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IS_BUTTON_AXIS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">axis</td><td>)</td>
+          <td>&#160;&#160;&#160;((axis) &gt;= 0 &amp;&amp; ((axis) &amp;<a class="el" href="i__joystick_8h.html#a72ae8d0cb0e182fe35499396b9bde60f">BUTTON_AXIS</a>) != 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af03a082792d5686d6aefdaeabbcacab8" name="af03a082792d5686d6aefdaeabbcacab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af03a082792d5686d6aefdaeabbcacab8">&#9670;&#160;</a></span>IS_HAT_AXIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IS_HAT_AXIS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">axis</td><td>)</td>
+          <td>&#160;&#160;&#160;((axis) &gt;= 0 &amp;&amp; ((axis) &amp;<a class="el" href="i__joystick_8h.html#ad2cf640425abff48f40914c7dcf031ab">HAT_AXIS</a>) != 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06ee4dc71027c7315a50019ece5eeb3c" name="a06ee4dc71027c7315a50019ece5eeb3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ee4dc71027c7315a50019ece5eeb3c">&#9670;&#160;</a></span>MAX_VIRTUAL_BUTTONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_VIRTUAL_BUTTONS&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab597a42fef94ebf83fd47bcb4a2317a0" name="ab597a42fef94ebf83fd47bcb4a2317a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab597a42fef94ebf83fd47bcb4a2317a0">&#9670;&#160;</a></span>NUM_VIRTUAL_BUTTONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUM_VIRTUAL_BUTTONS&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad96f391f860836cedae761a35edd9ed5" name="ad96f391f860836cedae761a35edd9ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad96f391f860836cedae761a35edd9ed5">&#9670;&#160;</a></span>TRIGGER_THRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIGGER_THRESHOLD&#160;&#160;&#160;(30 * 32767 / 255)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="adb49720dc49f7d4e4cf9adbf2948e409" name="adb49720dc49f7d4e4cf9adbf2948e409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb49720dc49f7d4e4cf9adbf2948e409">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adb49720dc49f7d4e4cf9adbf2948e409a3ff78eb540266c3e0c7b6935afef3d49" name="adb49720dc49f7d4e4cf9adbf2948e409a3ff78eb540266c3e0c7b6935afef3d49"></a>GAMEPAD_BUTTON_TRIGGERLEFT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adb49720dc49f7d4e4cf9adbf2948e409aa6197c47911f714dec107c031e4ad43e" name="adb49720dc49f7d4e4cf9adbf2948e409aa6197c47911f714dec107c031e4ad43e"></a>GAMEPAD_BUTTON_TRIGGERRIGHT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adb49720dc49f7d4e4cf9adbf2948e409aa612a5a7b14b145ac08f37e7420c8b1c" name="adb49720dc49f7d4e4cf9adbf2948e409aa612a5a7b14b145ac08f37e7420c8b1c"></a>GAMEPAD_BUTTON_MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a86b9c1b5bc23206aef51025d4f06b22d" name="a86b9c1b5bc23206aef51025d4f06b22d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b9c1b5bc23206aef51025d4f06b22d">&#9670;&#160;</a></span>I_BindJoystickVariables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_BindJoystickVariables </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb8d4a415eccda004d6f057820d1bdac" name="afb8d4a415eccda004d6f057820d1bdac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8d4a415eccda004d6f057820d1bdac">&#9670;&#160;</a></span>I_InitJoystick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_InitJoystick </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2cce7fa450e07784fe074760cf3212cc" name="a2cce7fa450e07784fe074760cf3212cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cce7fa450e07784fe074760cf3212cc">&#9670;&#160;</a></span>I_ShutdownJoystick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_ShutdownJoystick </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a809adb5c1a445df2bfc2073102d279c9" name="a809adb5c1a445df2bfc2073102d279c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a809adb5c1a445df2bfc2073102d279c9">&#9670;&#160;</a></span>I_UpdateJoystick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_UpdateJoystick </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="i__joystick_8h.html">i_joystick.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

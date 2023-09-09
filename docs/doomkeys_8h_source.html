@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell/engine/src/doomkeys.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('doomkeys_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">doomkeys.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="doomkeys_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright(C) 1993-1996 Id Software, Inc.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright(C) 2005-2014 Simon Howard</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// This program is free software; you can redistribute it and/or</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// modify it under the terms of the GNU General Public License</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// as published by the Free Software Foundation; either version 2</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// of the License, or (at your option) any later version.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// GNU General Public License for more details.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// DESCRIPTION:</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//       Key definitions</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef __DOOMKEYS__</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define __DOOMKEYS__</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// DOOM keyboard definition.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// This is the stuff configured by Setup.Exe.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Most key data are simple ascii (uppercased).</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a3934eb69773b60bd3757f18a182f1ac7">   27</a></span><span class="preprocessor">#define KEY_RIGHTARROW 0xae</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#abb07791e7dc3fb5cfe04bbfb316cb33f">   28</a></span><span class="preprocessor">#define KEY_LEFTARROW  0xac</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a9c6ef469dd196ca26acd145eac56aec6">   29</a></span><span class="preprocessor">#define KEY_UPARROW    0xad</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#aac36c19c90ede915c45f9193c8daa2ac">   30</a></span><span class="preprocessor">#define KEY_DOWNARROW  0xaf</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a6c8ee53908fc5d6df19f1da8502b38dc">   31</a></span><span class="preprocessor">#define KEY_ESCAPE     27</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#abaee5edb96e542206ae6c8102ac228af">   32</a></span><span class="preprocessor">#define KEY_ENTER      13</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a4fa9fbcc86d5ee884a821459a87f3a54">   33</a></span><span class="preprocessor">#define KEY_TAB        9</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a2772a1f7024ba1fd62e88ec1adb541f8">   34</a></span><span class="preprocessor">#define KEY_F1         (0x80 + 0x3b)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ae2e2edb31bb7796786da12f85f2d5cd1">   35</a></span><span class="preprocessor">#define KEY_F2         (0x80 + 0x3c)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a38ebe8e5c5f1d5727c9638bf79fc3952">   36</a></span><span class="preprocessor">#define KEY_F3         (0x80 + 0x3d)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ab99474b01ffcbc57d74b60a77895e5e8">   37</a></span><span class="preprocessor">#define KEY_F4         (0x80 + 0x3e)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a2a0aae1931111382ade29fd75ef64790">   38</a></span><span class="preprocessor">#define KEY_F5         (0x80 + 0x3f)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ad31281b771b8b85f4aa98bbd527d91a0">   39</a></span><span class="preprocessor">#define KEY_F6         (0x80 + 0x40)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a7eed6766ef9ddb721c6a2bce807fc9dc">   40</a></span><span class="preprocessor">#define KEY_F7         (0x80 + 0x41)</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a7a8ad03f07f2e4757a70385e88fbbe3c">   41</a></span><span class="preprocessor">#define KEY_F8         (0x80 + 0x42)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a417a382624f91fb0cdfdf1c33adc8c90">   42</a></span><span class="preprocessor">#define KEY_F9         (0x80 + 0x43)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ad37282615edb2c357149c2a1342b4a85">   43</a></span><span class="preprocessor">#define KEY_F10        (0x80 + 0x44)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#abd820bb8b4b2a47e4210401b13789106">   44</a></span><span class="preprocessor">#define KEY_F11        (0x80 + 0x57)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a0a3de83275f6bbc2b88692f947f0d595">   45</a></span><span class="preprocessor">#define KEY_F12        (0x80 + 0x58)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a1e9a449dee19c686a2af4edcdc1a1042">   47</a></span><span class="preprocessor">#define KEY_BACKSPACE 0x7f</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ae176aa9af3d2acaeba5b8453aff5bbbf">   48</a></span><span class="preprocessor">#define KEY_PAUSE     0xff</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a0375ea9035bf8ce39b90665c49d27f34">   50</a></span><span class="preprocessor">#define KEY_EQUALS 0x3d</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a3eefcaaf496c52c1c7283caa3d1dab99">   51</a></span><span class="preprocessor">#define KEY_MINUS  0x2d</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a5b52e8d492e96e2b4c21a94f50a689c5">   53</a></span><span class="preprocessor">#define KEY_RSHIFT (0x80 + 0x36)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a02d44d9c52e2d45f18ed4b89b4d6c459">   54</a></span><span class="preprocessor">#define KEY_RCTRL  (0x80 + 0x1d)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a9ec081e11253532b99061dd69312e5bd">   55</a></span><span class="preprocessor">#define KEY_RALT   (0x80 + 0x38)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a650e7f9f7cb284c1fd51466b12239bf8">   57</a></span><span class="preprocessor">#define KEY_LALT KEY_RALT</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// new keys:</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#af168e54444bdaff5f50f6f4734784762">   61</a></span><span class="preprocessor">#define KEY_CAPSLOCK (0x80 + 0x3a)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#aa9a01a8ed5fb358424866f4bc61d7c13">   62</a></span><span class="preprocessor">#define KEY_NUMLOCK  (0x80 + 0x45)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a644ba85228e305df54d57b71c30b2993">   63</a></span><span class="preprocessor">#define KEY_SCRLCK   (0x80 + 0x46)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ae082c0a43453deba725d645819ee37ed">   64</a></span><span class="preprocessor">#define KEY_PRTSCR   (0x80 + 0x59)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#af6806366178266b3eaf1fb16f991cbee">   66</a></span><span class="preprocessor">#define KEY_HOME (0x80 + 0x47)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a912861b945e779c29f718cdcd62be10c">   67</a></span><span class="preprocessor">#define KEY_END  (0x80 + 0x4f)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ac35c65d4a20c05b2cc7e1f3e40e13e79">   68</a></span><span class="preprocessor">#define KEY_PGUP (0x80 + 0x49)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a84a56bcd66075dce29dd77873006f33c">   69</a></span><span class="preprocessor">#define KEY_PGDN (0x80 + 0x51)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a4ea8f40f4220377b764d1b3b14807f2b">   70</a></span><span class="preprocessor">#define KEY_INS  (0x80 + 0x52)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ad06e66a899b065c65c2363233d8ebce2">   71</a></span><span class="preprocessor">#define KEY_DEL  (0x80 + 0x53)</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a342bfd02fd04abcbb451aba0e56486ff">   73</a></span><span class="preprocessor">#define KEYP_0 KEY_INS</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a64436917738474147381b718bcfdb9c4">   74</a></span><span class="preprocessor">#define KEYP_1 KEY_END</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a93a8350454ad9a9585dab8d20017297a">   75</a></span><span class="preprocessor">#define KEYP_2 KEY_DOWNARROW</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a48b719a9a094a2f60f842dba5f6ec59d">   76</a></span><span class="preprocessor">#define KEYP_3 KEY_PGDN</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a889a6f7e567cb2e8afe2ac7b5c2267d8">   77</a></span><span class="preprocessor">#define KEYP_4 KEY_LEFTARROW</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#aabb6de6b60a6151746a5620b2418d06a">   78</a></span><span class="preprocessor">#define KEYP_5 (0x80 + 0x4c)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#afbdf380eb7156d2ce2927e5d3b9d31e2">   79</a></span><span class="preprocessor">#define KEYP_6 KEY_RIGHTARROW</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ab509dc45c43ae0ed5e8895c744f19486">   80</a></span><span class="preprocessor">#define KEYP_7 KEY_HOME</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#af3b52864afa08703ee3717b494e1d5d2">   81</a></span><span class="preprocessor">#define KEYP_8 KEY_UPARROW</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a25294caae8927890e5c4137730e54ce0">   82</a></span><span class="preprocessor">#define KEYP_9 KEY_PGUP</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ac87408f79734a2de3428360d74a1ee23">   84</a></span><span class="preprocessor">#define KEYP_DIVIDE   &#39;/&#39;</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a2fca2c237bdcbba4e066b8754dc948ba">   85</a></span><span class="preprocessor">#define KEYP_PLUS     &#39;+&#39;</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a7ba27f6f585afb4b64b80b969f3137f6">   86</a></span><span class="preprocessor">#define KEYP_MINUS    &#39;-&#39;</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a786f8656eeacddeb1a384611a1a6e141">   87</a></span><span class="preprocessor">#define KEYP_MULTIPLY &#39;*&#39;</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ac7944d53b008c8dbef52096fb5f05c18">   88</a></span><span class="preprocessor">#define KEYP_PERIOD   0</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a4309d3ee06d88f23d5e03f47fcdfbb85">   89</a></span><span class="preprocessor">#define KEYP_EQUALS   KEY_EQUALS</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a218b30308e1b8fa0687a5025d460290d">   90</a></span><span class="preprocessor">#define KEYP_ENTER    KEY_ENTER</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#ab8e72d26e8bc8226bac65b66520cdf0a">   92</a></span><span class="preprocessor">#define SCANCODE_TO_KEYS_ARRAY                                                                     \</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">    {                                                                                              \</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">        0, 0, 0, 0, &#39;a&#39;,                                      </span><span class="comment">/* 0-9 */</span><span class="preprocessor">                            \</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">            &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;, &#39;g&#39;, &#39;h&#39;, &#39;i&#39;, &#39;j&#39;, &#39;k&#39;, </span><span class="comment">/* 10-19 */</span><span class="preprocessor">                          \</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">            &#39;l&#39;, &#39;m&#39;, &#39;n&#39;, &#39;o&#39;, &#39;p&#39;, &#39;q&#39;, &#39;r&#39;, &#39;s&#39;, &#39;t&#39;, &#39;u&#39;, </span><span class="comment">/* 20-29 */</span><span class="preprocessor">                          \</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">            &#39;v&#39;, &#39;w&#39;, &#39;x&#39;, &#39;y&#39;, &#39;z&#39;, &#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;, </span><span class="comment">/* 30-39 */</span><span class="preprocessor">                          \</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">            &#39;6&#39;, &#39;7&#39;, &#39;8&#39;, &#39;9&#39;, &#39;0&#39;, KEY_ENTER, KEY_ESCAPE, KEY_BACKSPACE, KEY_TAB,                \</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">            &#39; &#39;,                                                           </span><span class="comment">/* 40-49 */</span><span class="preprocessor">             \</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">            KEY_MINUS, KEY_EQUALS, &#39;[&#39;, &#39;]&#39;, &#39;\\&#39;, 0, &#39;;&#39;, &#39;\&#39;&#39;, &#39;`&#39;, &#39;,&#39;, </span><span class="comment">/* 50-59 */</span><span class="preprocessor">             \</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">            &#39;.&#39;, &#39;/&#39;, KEY_CAPSLOCK, KEY_F1, KEY_F2, KEY_F3, KEY_F4, KEY_F5, KEY_F6,                \</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">            KEY_F7, </span><span class="comment">/* 60-69 */</span><span class="preprocessor">                                                                    \</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">            KEY_F8, KEY_F9, KEY_F10, KEY_F11, KEY_F12, KEY_PRTSCR, KEY_SCRLCK, KEY_PAUSE, KEY_INS, \</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">            KEY_HOME, </span><span class="comment">/* 70-79 */</span><span class="preprocessor">                                                                  \</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">            KEY_PGUP, KEY_DEL, KEY_END, KEY_PGDN, KEY_RIGHTARROW, KEY_LEFTARROW, KEY_DOWNARROW,    \</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">            KEY_UPARROW, </span><span class="comment">/* 80-89 */</span><span class="preprocessor">                                                               \</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">            KEY_NUMLOCK, KEYP_DIVIDE, KEYP_MULTIPLY, KEYP_MINUS, KEYP_PLUS, KEYP_ENTER, KEYP_1,    \</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">            KEYP_2, KEYP_3, KEYP_4, KEYP_5, KEYP_6,                            </span><span class="comment">/* 90-99 */</span><span class="preprocessor">         \</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">            KEYP_7, KEYP_8, KEYP_9, KEYP_0, KEYP_PERIOD, 0, 0, 0, KEYP_EQUALS, </span><span class="comment">/* 100-103 */</span><span class="preprocessor">       \</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">    }</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">// Default names for keys, to use in English or as fallback.</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="doomkeys_8h.html#a25e1eb5f59e22780d835a77898a7fb4f">  113</a></span><span class="preprocessor">#define KEY_NAMES_ARRAY                                                                            \</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">    {                                                                                              \</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">        {KEY_BACKSPACE, &quot;BACKSP&quot;</span>}, {KEY_TAB, &quot;TAB&quot;}, {KEY_INS, &quot;INS&quot;}, {KEY_DEL, &quot;DEL&quot;},           \</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            {KEY_PGUP, &quot;PGUP&quot;}, {KEY_PGDN, &quot;PGDN&quot;}, {KEY_ENTER, &quot;ENTER&quot;}, {KEY_ESCAPE, &quot;ESC&quot;},     \</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            {KEY_F1, &quot;F1&quot;}, {KEY_F2, &quot;F2&quot;}, {KEY_F3, &quot;F3&quot;}, {KEY_F4, &quot;F4&quot;}, {KEY_F5, &quot;F5&quot;},        \</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            {KEY_F6, &quot;F6&quot;}, {KEY_F7, &quot;F7&quot;}, {KEY_F8, &quot;F8&quot;}, {KEY_F9, &quot;F9&quot;}, {KEY_F10, &quot;F10&quot;},      \</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            {KEY_F11, &quot;F11&quot;}, {KEY_F12, &quot;F12&quot;}, {KEY_HOME, &quot;HOME&quot;}, {KEY_END, &quot;END&quot;},              \</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            {KEY_MINUS, &quot;-&quot;}, {KEY_EQUALS, &quot;=&quot;}, {KEY_NUMLOCK, &quot;NUMLCK&quot;}, {KEY_SCRLCK, &quot;SCRLCK&quot;},  \</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            {KEY_PAUSE, &quot;PAUSE&quot;}, {KEY_PRTSCR, &quot;PRTSC&quot;}, {KEY_UPARROW, &quot;UP&quot;},                      \</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            {KEY_DOWNARROW, &quot;DOWN&quot;}, {KEY_LEFTARROW, &quot;LEFT&quot;}, {KEY_RIGHTARROW, &quot;RIGHT&quot;},           \</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            {KEY_RALT, &quot;ALT&quot;}, {KEY_LALT, &quot;ALT&quot;}, {KEY_RSHIFT, &quot;SHIFT&quot;}, {KEY_CAPSLOCK, &quot;CAPS&quot;},   \</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            {KEY_RCTRL, &quot;CTRL&quot;}, {KEYP_5, &quot;NUM5&quot;}, {&#39; &#39;, &quot;SPACE&quot;}, {&#39;a&#39;, &quot;A&quot;}, {&#39;b&#39;, &quot;B&quot;},         \</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            {&#39;c&#39;, &quot;C&quot;}, {&#39;d&#39;, &quot;D&quot;}, {&#39;e&#39;, &quot;E&quot;}, {&#39;f&#39;, &quot;F&quot;}, {&#39;g&#39;, &quot;G&quot;}, {&#39;h&#39;, &quot;H&quot;}, {&#39;i&#39;, &quot;I&quot;},    \</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            {&#39;j&#39;, &quot;J&quot;}, {&#39;k&#39;, &quot;K&quot;}, {&#39;l&#39;, &quot;L&quot;}, {&#39;m&#39;, &quot;M&quot;}, {&#39;n&#39;, &quot;N&quot;}, {&#39;o&#39;, &quot;O&quot;}, {&#39;p&#39;, &quot;P&quot;},    \</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            {&#39;q&#39;, &quot;Q&quot;}, {&#39;r&#39;, &quot;R&quot;}, {&#39;s&#39;, &quot;S&quot;}, {&#39;t&#39;, &quot;T&quot;}, {&#39;u&#39;, &quot;U&quot;}, {&#39;v&#39;, &quot;V&quot;}, {&#39;w&#39;, &quot;W&quot;},    \</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            {&#39;x&#39;, &quot;X&quot;}, {&#39;y&#39;, &quot;Y&quot;}, {&#39;z&#39;, &quot;Z&quot;}, {&#39;0&#39;, &quot;0&quot;}, {&#39;1&#39;, &quot;1&quot;}, {&#39;2&#39;, &quot;2&quot;}, {&#39;3&#39;, &quot;3&quot;},    \</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            {&#39;4&#39;, &quot;4&quot;}, {&#39;5&#39;, &quot;5&quot;}, {&#39;6&#39;, &quot;6&quot;}, {&#39;7&#39;, &quot;7&quot;}, {&#39;8&#39;, &quot;8&quot;}, {&#39;9&#39;, &quot;9&quot;}, {&#39;[&#39;, &quot;[&quot;},    \</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            {&#39;]&#39;, &quot;]&quot;}, {&#39;;&#39;, &quot;;&quot;}, {&#39;`&#39;, &quot;`&quot;}, {&#39;,&#39;, &quot;,&quot;}, {&#39;.&#39;, &quot;.&quot;}, {&#39;/&#39;, &quot;/&quot;}, {&#39;\\&#39;, &quot;\\&quot;},  \</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            {&#39;\&#39;&#39;, &quot;\&#39;&quot;},                                                                          \</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">#endif </span><span class="comment">// __DOOMKEYS__</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="doomkeys_8h.html">doomkeys.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>
