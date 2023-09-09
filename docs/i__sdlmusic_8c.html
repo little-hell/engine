@@ -1,0 +1,915 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell/engine/src/i_sdlmusic.c File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('i__sdlmusic_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">i_sdlmusic.c File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="sdl_8h_source.html">SDL.h</a>&quot;</code><br />
+<code>#include &quot;SDL_mixer.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="doomtype_8h_source.html">doomtype.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="memio_8h_source.html">memio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mus2mid_8h_source.html">mus2mid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gusconf_8h_source.html">gusconf.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__sound_8h_source.html">i_sound.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__system_8h_source.html">i_system.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__swap_8h_source.html">i_swap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__argv_8h_source.html">m_argv.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__config_8h_source.html">m_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__misc_8h_source.html">m_misc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sha1_8h_source.html">sha1.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="w__wad_8h_source.html">w_wad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="z__zone_8h_source.html">z_zone.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for i_sdlmusic.c:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a841d8aa34b3c427fdfbd8dd3e244ba6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a841d8aa34b3c427fdfbd8dd3e244ba6d">MAXMIDLENGTH</a>&#160;&#160;&#160;(96 * 1024)</td></tr>
+<tr class="separator:a841d8aa34b3c427fdfbd8dd3e244ba6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5aff1282a62aab02db0fa4a590effa0c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a5aff1282a62aab02db0fa4a590effa0c">WriteWrapperTimidityConfig</a> (char *write_path)</td></tr>
+<tr class="separator:a5aff1282a62aab02db0fa4a590effa0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a64d3ea1d6e8c4b26b30e7c115da8cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a3a64d3ea1d6e8c4b26b30e7c115da8cf">I_InitTimidityConfig</a> (void)</td></tr>
+<tr class="separator:a3a64d3ea1d6e8c4b26b30e7c115da8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf4cc339eaa159d7cd6f76ee484dbd7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#aadf4cc339eaa159d7cd6f76ee484dbd7">RemoveTimidityConfig</a> (void)</td></tr>
+<tr class="separator:aadf4cc339eaa159d7cd6f76ee484dbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5713db0c6646bdd9bc00fc3596e96beb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a5713db0c6646bdd9bc00fc3596e96beb">I_SDL_ShutdownMusic</a> (void)</td></tr>
+<tr class="separator:a5713db0c6646bdd9bc00fc3596e96beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11621ac88c8c8192d76bf39de022ac4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#ac11621ac88c8c8192d76bf39de022ac4">SDLIsInitialized</a> (void)</td></tr>
+<tr class="separator:ac11621ac88c8c8192d76bf39de022ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1030f4769dccaaf46bf7f5912d4750"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#ade1030f4769dccaaf46bf7f5912d4750">I_SDL_InitMusic</a> (void)</td></tr>
+<tr class="separator:ade1030f4769dccaaf46bf7f5912d4750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad271a8d9977b79ec0179d9d2e09202a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#ad271a8d9977b79ec0179d9d2e09202a6">UpdateMusicVolume</a> (void)</td></tr>
+<tr class="separator:ad271a8d9977b79ec0179d9d2e09202a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668fb34e6111bcc989874a00589a3c79"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a668fb34e6111bcc989874a00589a3c79">I_SDL_SetMusicVolume</a> (int volume)</td></tr>
+<tr class="separator:a668fb34e6111bcc989874a00589a3c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288317e3ff4b1482c425a7400ffd3a68"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a288317e3ff4b1482c425a7400ffd3a68">I_SDL_PlaySong</a> (void *handle, <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> looping)</td></tr>
+<tr class="separator:a288317e3ff4b1482c425a7400ffd3a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fda2a7fec97befe2a06c40f25f6f240"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a8fda2a7fec97befe2a06c40f25f6f240">I_SDL_PauseSong</a> (void)</td></tr>
+<tr class="separator:a8fda2a7fec97befe2a06c40f25f6f240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0089cd72f18457c8f93b7c5dd57ec2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#aad0089cd72f18457c8f93b7c5dd57ec2">I_SDL_ResumeSong</a> (void)</td></tr>
+<tr class="separator:aad0089cd72f18457c8f93b7c5dd57ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824fbc06b45ba400c4522785e60ec5c7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a824fbc06b45ba400c4522785e60ec5c7">I_SDL_StopSong</a> (void)</td></tr>
+<tr class="separator:a824fbc06b45ba400c4522785e60ec5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86618fbc3f085c19dd31da901da78b2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#aa86618fbc3f085c19dd31da901da78b2">I_SDL_UnRegisterSong</a> (void *handle)</td></tr>
+<tr class="separator:aa86618fbc3f085c19dd31da901da78b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f71552aedc67b73c033345d91658c5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a71f71552aedc67b73c033345d91658c5">ConvertMus</a> (<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *musdata, int len, const char *filename)</td></tr>
+<tr class="separator:a71f71552aedc67b73c033345d91658c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cf505389a34513db4e8263469d0435"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a38cf505389a34513db4e8263469d0435">I_SDL_RegisterSong</a> (void *data, int len)</td></tr>
+<tr class="separator:a38cf505389a34513db4e8263469d0435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac1709b61380b2464207e4446ccaf88"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#aeac1709b61380b2464207e4446ccaf88">I_SDL_MusicIsPlaying</a> (void)</td></tr>
+<tr class="separator:aeac1709b61380b2464207e4446ccaf88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a56ef1a46b19894edb7d0c1f78f540f12"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a56ef1a46b19894edb7d0c1f78f540f12">timidity_cfg_path</a> = &quot;&quot;</td></tr>
+<tr class="separator:a56ef1a46b19894edb7d0c1f78f540f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e08bc26252c3c164ff17641d565724"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a12e08bc26252c3c164ff17641d565724">temp_timidity_cfg</a> = NULL</td></tr>
+<tr class="separator:a12e08bc26252c3c164ff17641d565724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876fd2e51d71c0fe96c2b8b164cebea4"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a876fd2e51d71c0fe96c2b8b164cebea4">sdl_mixer_disable_fluidsynth</a> [] = &quot;SDL_MIXER_DISABLE_FLUIDSYNTH=1&quot;</td></tr>
+<tr class="separator:a876fd2e51d71c0fe96c2b8b164cebea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac966ef43b527feb4534a3ff4694ffe87"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#ac966ef43b527feb4534a3ff4694ffe87">music_initialized</a> = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
+<tr class="separator:ac966ef43b527feb4534a3ff4694ffe87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e25f2a4b58efb792c57be6692e70b56"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a1e25f2a4b58efb792c57be6692e70b56">sdl_was_initialized</a> = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
+<tr class="separator:a1e25f2a4b58efb792c57be6692e70b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385c4cd864b57a224535af48b19d2400"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a385c4cd864b57a224535af48b19d2400">musicpaused</a> = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
+<tr class="separator:a385c4cd864b57a224535af48b19d2400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44d95eca82d54247ad6924b29fc4df4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#ae44d95eca82d54247ad6924b29fc4df4">current_music_volume</a></td></tr>
+<tr class="separator:ae44d95eca82d54247ad6924b29fc4df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1d7eec0523fcc913306dc497152cac"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570dae">snddevice_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a5a1d7eec0523fcc913306dc497152cac">music_sdl_devices</a> []</td></tr>
+<tr class="separator:a5a1d7eec0523fcc913306dc497152cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29d3d528092bfc65d5c319a3297a3dc1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structmusic__module__t.html">music_module_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__sdlmusic_8c.html#a29d3d528092bfc65d5c319a3297a3dc1">music_sdl_module</a></td></tr>
+<tr class="separator:a29d3d528092bfc65d5c319a3297a3dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a841d8aa34b3c427fdfbd8dd3e244ba6d" name="a841d8aa34b3c427fdfbd8dd3e244ba6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841d8aa34b3c427fdfbd8dd3e244ba6d">&#9670;&#160;</a></span>MAXMIDLENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXMIDLENGTH&#160;&#160;&#160;(96 * 1024)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a71f71552aedc67b73c033345d91658c5" name="a71f71552aedc67b73c033345d91658c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f71552aedc67b73c033345d91658c5">&#9670;&#160;</a></span>ConvertMus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> ConvertMus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *&#160;</td>
+          <td class="paramname"><em>musdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a64d3ea1d6e8c4b26b30e7c115da8cf" name="a3a64d3ea1d6e8c4b26b30e7c115da8cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a64d3ea1d6e8c4b26b30e7c115da8cf">&#9670;&#160;</a></span>I_InitTimidityConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_InitTimidityConfig </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade1030f4769dccaaf46bf7f5912d4750" name="ade1030f4769dccaaf46bf7f5912d4750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1030f4769dccaaf46bf7f5912d4750">&#9670;&#160;</a></span>I_SDL_InitMusic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> I_SDL_InitMusic </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeac1709b61380b2464207e4446ccaf88" name="aeac1709b61380b2464207e4446ccaf88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac1709b61380b2464207e4446ccaf88">&#9670;&#160;</a></span>I_SDL_MusicIsPlaying()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> I_SDL_MusicIsPlaying </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fda2a7fec97befe2a06c40f25f6f240" name="a8fda2a7fec97befe2a06c40f25f6f240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fda2a7fec97befe2a06c40f25f6f240">&#9670;&#160;</a></span>I_SDL_PauseSong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_SDL_PauseSong </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a288317e3ff4b1482c425a7400ffd3a68" name="a288317e3ff4b1482c425a7400ffd3a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288317e3ff4b1482c425a7400ffd3a68">&#9670;&#160;</a></span>I_SDL_PlaySong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_SDL_PlaySong </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td>
+          <td class="paramname"><em>looping</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38cf505389a34513db4e8263469d0435" name="a38cf505389a34513db4e8263469d0435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cf505389a34513db4e8263469d0435">&#9670;&#160;</a></span>I_SDL_RegisterSong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void * I_SDL_RegisterSong </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad0089cd72f18457c8f93b7c5dd57ec2" name="aad0089cd72f18457c8f93b7c5dd57ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0089cd72f18457c8f93b7c5dd57ec2">&#9670;&#160;</a></span>I_SDL_ResumeSong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_SDL_ResumeSong </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a668fb34e6111bcc989874a00589a3c79" name="a668fb34e6111bcc989874a00589a3c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668fb34e6111bcc989874a00589a3c79">&#9670;&#160;</a></span>I_SDL_SetMusicVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_SDL_SetMusicVolume </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>volume</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5713db0c6646bdd9bc00fc3596e96beb" name="a5713db0c6646bdd9bc00fc3596e96beb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5713db0c6646bdd9bc00fc3596e96beb">&#9670;&#160;</a></span>I_SDL_ShutdownMusic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_SDL_ShutdownMusic </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a824fbc06b45ba400c4522785e60ec5c7" name="a824fbc06b45ba400c4522785e60ec5c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a824fbc06b45ba400c4522785e60ec5c7">&#9670;&#160;</a></span>I_SDL_StopSong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_SDL_StopSong </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa86618fbc3f085c19dd31da901da78b2" name="aa86618fbc3f085c19dd31da901da78b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa86618fbc3f085c19dd31da901da78b2">&#9670;&#160;</a></span>I_SDL_UnRegisterSong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_SDL_UnRegisterSong </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadf4cc339eaa159d7cd6f76ee484dbd7" name="aadf4cc339eaa159d7cd6f76ee484dbd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf4cc339eaa159d7cd6f76ee484dbd7">&#9670;&#160;</a></span>RemoveTimidityConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RemoveTimidityConfig </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac11621ac88c8c8192d76bf39de022ac4" name="ac11621ac88c8c8192d76bf39de022ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac11621ac88c8c8192d76bf39de022ac4">&#9670;&#160;</a></span>SDLIsInitialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> SDLIsInitialized </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad271a8d9977b79ec0179d9d2e09202a6" name="ad271a8d9977b79ec0179d9d2e09202a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad271a8d9977b79ec0179d9d2e09202a6">&#9670;&#160;</a></span>UpdateMusicVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void UpdateMusicVolume </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5aff1282a62aab02db0fa4a590effa0c" name="a5aff1282a62aab02db0fa4a590effa0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aff1282a62aab02db0fa4a590effa0c">&#9670;&#160;</a></span>WriteWrapperTimidityConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> WriteWrapperTimidityConfig </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>write_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ae44d95eca82d54247ad6924b29fc4df4" name="ae44d95eca82d54247ad6924b29fc4df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44d95eca82d54247ad6924b29fc4df4">&#9670;&#160;</a></span>current_music_volume</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int current_music_volume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac966ef43b527feb4534a3ff4694ffe87" name="ac966ef43b527feb4534a3ff4694ffe87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac966ef43b527feb4534a3ff4694ffe87">&#9670;&#160;</a></span>music_initialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> music_initialized = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a1d7eec0523fcc913306dc497152cac" name="a5a1d7eec0523fcc913306dc497152cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a1d7eec0523fcc913306dc497152cac">&#9670;&#160;</a></span>music_sdl_devices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570dae">snddevice_t</a> music_sdl_devices[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_enumvalue" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daeaeee209d37719330462690b3b2cce6e5c">SNDDEVICE_PAS</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daea2f0b0be52ca85c0d6e2eaa4f28baa3df">SNDDEVICE_GUS</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daea85239e5ae0a932af2d4d42e58abb6a46">SNDDEVICE_WAVEBLASTER</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daea447e2fed61e1b7ed0694a51706547420">SNDDEVICE_SOUNDCANVAS</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daea861729868f533d81603401929a8681b2">SNDDEVICE_GENMIDI</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daeac79588e03225e63818bc0ef7dca3ab60">SNDDEVICE_AWE32</a>,</div>
+<div class="line">}</div>
+<div class="ttc" id="ai__sound_8h_html_a36a8f7d6784e309bb5ca47d4bc570daea2f0b0be52ca85c0d6e2eaa4f28baa3df"><div class="ttname"><a href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daea2f0b0be52ca85c0d6e2eaa4f28baa3df">SNDDEVICE_GUS</a></div><div class="ttdeci">@ SNDDEVICE_GUS</div><div class="ttdef"><b>Definition:</b> i_sound.h:97</div></div>
+<div class="ttc" id="ai__sound_8h_html_a36a8f7d6784e309bb5ca47d4bc570daea447e2fed61e1b7ed0694a51706547420"><div class="ttname"><a href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daea447e2fed61e1b7ed0694a51706547420">SNDDEVICE_SOUNDCANVAS</a></div><div class="ttdeci">@ SNDDEVICE_SOUNDCANVAS</div><div class="ttdef"><b>Definition:</b> i_sound.h:99</div></div>
+<div class="ttc" id="ai__sound_8h_html_a36a8f7d6784e309bb5ca47d4bc570daea85239e5ae0a932af2d4d42e58abb6a46"><div class="ttname"><a href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daea85239e5ae0a932af2d4d42e58abb6a46">SNDDEVICE_WAVEBLASTER</a></div><div class="ttdeci">@ SNDDEVICE_WAVEBLASTER</div><div class="ttdef"><b>Definition:</b> i_sound.h:98</div></div>
+<div class="ttc" id="ai__sound_8h_html_a36a8f7d6784e309bb5ca47d4bc570daea861729868f533d81603401929a8681b2"><div class="ttname"><a href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daea861729868f533d81603401929a8681b2">SNDDEVICE_GENMIDI</a></div><div class="ttdeci">@ SNDDEVICE_GENMIDI</div><div class="ttdef"><b>Definition:</b> i_sound.h:100</div></div>
+<div class="ttc" id="ai__sound_8h_html_a36a8f7d6784e309bb5ca47d4bc570daeac79588e03225e63818bc0ef7dca3ab60"><div class="ttname"><a href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daeac79588e03225e63818bc0ef7dca3ab60">SNDDEVICE_AWE32</a></div><div class="ttdeci">@ SNDDEVICE_AWE32</div><div class="ttdef"><b>Definition:</b> i_sound.h:101</div></div>
+<div class="ttc" id="ai__sound_8h_html_a36a8f7d6784e309bb5ca47d4bc570daeaeee209d37719330462690b3b2cce6e5c"><div class="ttname"><a href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daeaeee209d37719330462690b3b2cce6e5c">SNDDEVICE_PAS</a></div><div class="ttdeci">@ SNDDEVICE_PAS</div><div class="ttdef"><b>Definition:</b> i_sound.h:96</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a29d3d528092bfc65d5c319a3297a3dc1" name="a29d3d528092bfc65d5c319a3297a3dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29d3d528092bfc65d5c319a3297a3dc1">&#9670;&#160;</a></span>music_sdl_module</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structmusic__module__t.html">music_module_t</a> music_sdl_module</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_variable" href="i__sdlmusic_8c.html#a5a1d7eec0523fcc913306dc497152cac">music_sdl_devices</a>,</div>
+<div class="line">    <a class="code hl_define" href="doomtype_8h.html#aa2cb1b34aa6df268c499d3d415aa75d3">arrlen</a>(<a class="code hl_variable" href="i__sdlmusic_8c.html#a5a1d7eec0523fcc913306dc497152cac">music_sdl_devices</a>),</div>
+<div class="line">    <a class="code hl_function" href="i__sdlmusic_8c.html#ade1030f4769dccaaf46bf7f5912d4750">I_SDL_InitMusic</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__sdlmusic_8c.html#a5713db0c6646bdd9bc00fc3596e96beb">I_SDL_ShutdownMusic</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__sdlmusic_8c.html#a668fb34e6111bcc989874a00589a3c79">I_SDL_SetMusicVolume</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__sdlmusic_8c.html#a8fda2a7fec97befe2a06c40f25f6f240">I_SDL_PauseSong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__sdlmusic_8c.html#aad0089cd72f18457c8f93b7c5dd57ec2">I_SDL_ResumeSong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__sdlmusic_8c.html#a38cf505389a34513db4e8263469d0435">I_SDL_RegisterSong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__sdlmusic_8c.html#aa86618fbc3f085c19dd31da901da78b2">I_SDL_UnRegisterSong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__sdlmusic_8c.html#a288317e3ff4b1482c425a7400ffd3a68">I_SDL_PlaySong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__sdlmusic_8c.html#a824fbc06b45ba400c4522785e60ec5c7">I_SDL_StopSong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__sdlmusic_8c.html#aeac1709b61380b2464207e4446ccaf88">I_SDL_MusicIsPlaying</a>,</div>
+<div class="line">    NULL, </div>
+<div class="line">}</div>
+<div class="ttc" id="adoomtype_8h_html_aa2cb1b34aa6df268c499d3d415aa75d3"><div class="ttname"><a href="doomtype_8h.html#aa2cb1b34aa6df268c499d3d415aa75d3">arrlen</a></div><div class="ttdeci">#define arrlen(array)</div><div class="ttdef"><b>Definition:</b> doomtype.h:133</div></div>
+<div class="ttc" id="ai__sdlmusic_8c_html_a288317e3ff4b1482c425a7400ffd3a68"><div class="ttname"><a href="i__sdlmusic_8c.html#a288317e3ff4b1482c425a7400ffd3a68">I_SDL_PlaySong</a></div><div class="ttdeci">static void I_SDL_PlaySong(void *handle, boolean looping)</div><div class="ttdef"><b>Definition:</b> i_sdlmusic.c:263</div></div>
+<div class="ttc" id="ai__sdlmusic_8c_html_a38cf505389a34513db4e8263469d0435"><div class="ttname"><a href="i__sdlmusic_8c.html#a38cf505389a34513db4e8263469d0435">I_SDL_RegisterSong</a></div><div class="ttdeci">static void * I_SDL_RegisterSong(void *data, int len)</div><div class="ttdef"><b>Definition:</b> i_sdlmusic.c:364</div></div>
+<div class="ttc" id="ai__sdlmusic_8c_html_a5713db0c6646bdd9bc00fc3596e96beb"><div class="ttname"><a href="i__sdlmusic_8c.html#a5713db0c6646bdd9bc00fc3596e96beb">I_SDL_ShutdownMusic</a></div><div class="ttdeci">static void I_SDL_ShutdownMusic(void)</div><div class="ttdef"><b>Definition:</b> i_sdlmusic.c:153</div></div>
+<div class="ttc" id="ai__sdlmusic_8c_html_a5a1d7eec0523fcc913306dc497152cac"><div class="ttname"><a href="i__sdlmusic_8c.html#a5a1d7eec0523fcc913306dc497152cac">music_sdl_devices</a></div><div class="ttdeci">static const snddevice_t music_sdl_devices[]</div><div class="ttdef"><b>Definition:</b> i_sdlmusic.c:433</div></div>
+<div class="ttc" id="ai__sdlmusic_8c_html_a668fb34e6111bcc989874a00589a3c79"><div class="ttname"><a href="i__sdlmusic_8c.html#a668fb34e6111bcc989874a00589a3c79">I_SDL_SetMusicVolume</a></div><div class="ttdeci">static void I_SDL_SetMusicVolume(int volume)</div><div class="ttdef"><b>Definition:</b> i_sdlmusic.c:253</div></div>
+<div class="ttc" id="ai__sdlmusic_8c_html_a824fbc06b45ba400c4522785e60ec5c7"><div class="ttname"><a href="i__sdlmusic_8c.html#a824fbc06b45ba400c4522785e60ec5c7">I_SDL_StopSong</a></div><div class="ttdeci">static void I_SDL_StopSong(void)</div><div class="ttdef"><b>Definition:</b> i_sdlmusic.c:313</div></div>
+<div class="ttc" id="ai__sdlmusic_8c_html_a8fda2a7fec97befe2a06c40f25f6f240"><div class="ttname"><a href="i__sdlmusic_8c.html#a8fda2a7fec97befe2a06c40f25f6f240">I_SDL_PauseSong</a></div><div class="ttdeci">static void I_SDL_PauseSong(void)</div><div class="ttdef"><b>Definition:</b> i_sdlmusic.c:289</div></div>
+<div class="ttc" id="ai__sdlmusic_8c_html_aa86618fbc3f085c19dd31da901da78b2"><div class="ttname"><a href="i__sdlmusic_8c.html#aa86618fbc3f085c19dd31da901da78b2">I_SDL_UnRegisterSong</a></div><div class="ttdeci">static void I_SDL_UnRegisterSong(void *handle)</div><div class="ttdef"><b>Definition:</b> i_sdlmusic.c:323</div></div>
+<div class="ttc" id="ai__sdlmusic_8c_html_aad0089cd72f18457c8f93b7c5dd57ec2"><div class="ttname"><a href="i__sdlmusic_8c.html#aad0089cd72f18457c8f93b7c5dd57ec2">I_SDL_ResumeSong</a></div><div class="ttdeci">static void I_SDL_ResumeSong(void)</div><div class="ttdef"><b>Definition:</b> i_sdlmusic.c:301</div></div>
+<div class="ttc" id="ai__sdlmusic_8c_html_ade1030f4769dccaaf46bf7f5912d4750"><div class="ttname"><a href="i__sdlmusic_8c.html#ade1030f4769dccaaf46bf7f5912d4750">I_SDL_InitMusic</a></div><div class="ttdeci">static boolean I_SDL_InitMusic(void)</div><div class="ttdef"><b>Definition:</b> i_sdlmusic.c:178</div></div>
+<div class="ttc" id="ai__sdlmusic_8c_html_aeac1709b61380b2464207e4446ccaf88"><div class="ttname"><a href="i__sdlmusic_8c.html#aeac1709b61380b2464207e4446ccaf88">I_SDL_MusicIsPlaying</a></div><div class="ttdeci">static boolean I_SDL_MusicIsPlaying(void)</div><div class="ttdef"><b>Definition:</b> i_sdlmusic.c:423</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a385c4cd864b57a224535af48b19d2400" name="a385c4cd864b57a224535af48b19d2400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a385c4cd864b57a224535af48b19d2400">&#9670;&#160;</a></span>musicpaused</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> musicpaused = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a876fd2e51d71c0fe96c2b8b164cebea4" name="a876fd2e51d71c0fe96c2b8b164cebea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876fd2e51d71c0fe96c2b8b164cebea4">&#9670;&#160;</a></span>sdl_mixer_disable_fluidsynth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char sdl_mixer_disable_fluidsynth[] = &quot;SDL_MIXER_DISABLE_FLUIDSYNTH=1&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e25f2a4b58efb792c57be6692e70b56" name="a1e25f2a4b58efb792c57be6692e70b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e25f2a4b58efb792c57be6692e70b56">&#9670;&#160;</a></span>sdl_was_initialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> sdl_was_initialized = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12e08bc26252c3c164ff17641d565724" name="a12e08bc26252c3c164ff17641d565724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e08bc26252c3c164ff17641d565724">&#9670;&#160;</a></span>temp_timidity_cfg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* temp_timidity_cfg = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56ef1a46b19894edb7d0c1f78f540f12" name="a56ef1a46b19894edb7d0c1f78f540f12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56ef1a46b19894edb7d0c1f78f540f12">&#9670;&#160;</a></span>timidity_cfg_path</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* timidity_cfg_path = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="i__sdlmusic_8c.html">i_sdlmusic.c</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

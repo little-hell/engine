@@ -1,7 +1,4 @@
-# little-hell
-
-
-
+# Little Hell Engine 
 
 ## Building
 
@@ -29,7 +26,9 @@ This will allow you to simultaneously obtain all the dependencies _and_ launch a
 
 From the project root:
 
-```nix-shell shell.nix```
+```
+nix-shell shell.nix
+```
 
 Now the project dependencies are installed, and you're dropped into an environment primed and ready to [compile the project](#compiling).
 
@@ -47,8 +46,6 @@ Choose the **MSYS2 UCRT64** terminal and enter the following:
 ``` 
 pacman -S mingw-w64-ucrt-x86_64-meson mingw-w64-ucrt-x86_64-SDL2 mingw-w64-ucrt-x86_64-SDL2_mixer mingw-w64-ucrt-x86_64-SDL2_net mingw-w64-ucrt-x86_64-ninja mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-gcc
 ```
-
-<!-- pacman -S mingw-w64-x86_64-SDL2_mixer mingw-w64-x86_64-meson mingw-w64-x86_64-ninja mingw-w64-x86_64-python3 mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_net mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake -->
 
 Now you're ready to [compile the project](#compiling).
 
