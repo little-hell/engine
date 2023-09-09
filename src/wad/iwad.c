@@ -22,12 +22,12 @@
 #include <string.h>
 
 #include "doomkeys.h"
-#include "d_iwad.h"
+#include "littlehell/wad/iwad.h"
 #include "i_system.h"
 #include "m_argv.h"
 #include "m_config.h"
 #include "m_misc.h"
-#include "w_wad.h"
+#include "littlehell/wad/wad.h"
 #include "z_zone.h"
 
 static const iwad_t iwads[] = {

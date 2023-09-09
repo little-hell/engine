@@ -34,11 +34,14 @@ engine_source_files = files(
     src_dir / 'd_event.c',
     src_dir / 'doomtype.h',
     src_dir / 'd_mode.c',
-    src_dir / 'd_iwad.c',
     src_dir / 'd_loop.c',
 
     src_dir / 'input' / 'input.c',
     src_dir / 'input' / 'joystick.c',
+    
+    src_dir / 'wad' / 'iwad.c',
+    src_dir / 'wad' / 'wad.c',
+    src_dir / 'wad' / 'merge.c',
 
     src_dir / 'gusconf.c',
 
@@ -92,8 +95,6 @@ engine_source_files = files(
     src_dir / 'v_trans.c',
     src_dir / 'w_checksum.c',
     src_dir / 'w_main.c',
-    src_dir / 'w_merge.c',
-    src_dir / 'w_wad.c',
     src_dir / 'w_file.c',
     src_dir / 'w_file_stdc.c',
     src_dir / 'w_file_posix.c',

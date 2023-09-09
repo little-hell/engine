@@ -832,7 +832,7 @@ void D_RegisterLoopCallbacks(loop_interface_t *i)
 
 // TODO: Move nonvanilla demo functions into a dedicated file.
 #include "m_misc.h"
-#include "w_wad.h"
+#include "littlehell/wad/wad.h"
 
 static boolean StrictDemos(void)
 {

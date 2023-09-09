@@ -33,7 +33,7 @@
 #include "i_swap.h"
 #include "m_argv.h"
 #include "m_misc.h"
-#include "w_wad.h"
+#include "littlehell/wad/wad.h"
 #include "z_zone.h"
 
 #include "doomtype.h"

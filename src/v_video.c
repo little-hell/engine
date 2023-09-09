@@ -31,6 +31,7 @@
 #include "doomtype.h"
 
 #include "littlehell/input/input.h"
+#include "littlehell/wad/wad.h"
 
 #include "i_swap.h"
 #include "i_video.h"
@@ -40,7 +41,6 @@
 #include "v_trans.h"
 #endif
 #include "v_video.h"
-#include "w_wad.h"
 #include "z_zone.h"
 #include "crispy.h"
 

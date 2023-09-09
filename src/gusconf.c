@@ -27,7 +27,7 @@
 #include <ctype.h>
 
 #include "m_misc.h"
-#include "w_wad.h"
+#include "littlehell/wad/wad.h"
 #include "z_zone.h"
 
 #define MAX_INSTRUMENTS 256

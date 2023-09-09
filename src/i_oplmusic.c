@@ -27,7 +27,7 @@
 #include "i_sound.h"
 #include "i_swap.h"
 #include "m_misc.h"
-#include "w_wad.h"
+#include "littlehell/wad/wad.h"
 #include "z_zone.h"
 
 #include "libs/opl/opl.h"

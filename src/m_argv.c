@@ -24,7 +24,7 @@
 #include "SDL_stdinc.h"
 
 #include "doomtype.h"
-#include "d_iwad.h"
+#include "littlehell/wad/iwad.h"
 #include "i_system.h"
 #include "m_misc.h"
 #include "m_argv.h" // haleyjd 20110212: warning fix
