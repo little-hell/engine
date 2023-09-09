@@ -1,0 +1,760 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell/engine/src/net/gui.c File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('gui_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">gui.c File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="doomkeys_8h_source.html">doomkeys.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__system_8h_source.html">i_system.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__timer_8h_source.html">i_timer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__video_8h_source.html">i_video.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__argv_8h_source.html">m_argv.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__misc_8h_source.html">m_misc.h</a>&quot;</code><br />
+<code>#include &quot;littlehell/net/client.h&quot;</code><br />
+<code>#include &quot;littlehell/net/query.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="gui_8h_source.html">net/gui.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="server_8h_source.html">net/server.h</a>&quot;</code><br />
+<code>#include &quot;libs/textscreen/textscreen.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for gui.c:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a29cff07de7be37cda262e3067ce51a02"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a29cff07de7be37cda262e3067ce51a02">EscapePressed</a> (TXT_UNCAST_ARG(widget), void *unused)</td></tr>
+<tr class="separator:a29cff07de7be37cda262e3067ce51a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09677e17d307d9afbcc507a42386b84f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a09677e17d307d9afbcc507a42386b84f">StartGame</a> (TXT_UNCAST_ARG(widget), TXT_UNCAST_ARG(unused))</td></tr>
+<tr class="separator:a09677e17d307d9afbcc507a42386b84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9422ab26511d33e3dd2f218a01ddfaef"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a9422ab26511d33e3dd2f218a01ddfaef">OpenWaitDialog</a> (void)</td></tr>
+<tr class="separator:a9422ab26511d33e3dd2f218a01ddfaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6395baf10e715edca5c62e5d0053b9f9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a6395baf10e715edca5c62e5d0053b9f9">BuildWindow</a> (void)</td></tr>
+<tr class="separator:a6395baf10e715edca5c62e5d0053b9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4528d71cb815f941ac340f834a31df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a7d4528d71cb815f941ac340f834a31df">UpdateGUI</a> (void)</td></tr>
+<tr class="separator:a7d4528d71cb815f941ac340f834a31df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325a6cb1a6693fdcb468d80cfddc6f32"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a325a6cb1a6693fdcb468d80cfddc6f32">BuildMasterStatusWindow</a> (void)</td></tr>
+<tr class="separator:a325a6cb1a6693fdcb468d80cfddc6f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e28eb5a133c905605350491ed8341d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#af1e28eb5a133c905605350491ed8341d">CheckMasterStatus</a> (void)</td></tr>
+<tr class="separator:af1e28eb5a133c905605350491ed8341d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e83b772c252258d7c522a1bf488742d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a9e83b772c252258d7c522a1bf488742d">PrintSHA1Digest</a> (const char *s, const <a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *digest)</td></tr>
+<tr class="separator:a9e83b772c252258d7c522a1bf488742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d7ea2c73186c4d4ca72c6277e7c821"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a79d7ea2c73186c4d4ca72c6277e7c821">CloseWindow</a> (TXT_UNCAST_ARG(widget), TXT_UNCAST_ARG(<a class="el" href="gui_8c.html#a5274463027e7bb8273c0b3f4ed1a3471">window</a>))</td></tr>
+<tr class="separator:a79d7ea2c73186c4d4ca72c6277e7c821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fcb8e738f2a5ddf74adf10ca87ef9ad"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a0fcb8e738f2a5ddf74adf10ca87ef9ad">CheckSHA1Sums</a> (void)</td></tr>
+<tr class="separator:a0fcb8e738f2a5ddf74adf10ca87ef9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c66e8334d2f54fe4265330438d8911b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a8c66e8334d2f54fe4265330438d8911b">ParseCommandLineArgs</a> (void)</td></tr>
+<tr class="separator:a8c66e8334d2f54fe4265330438d8911b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889d8d410783a53edc87e41b306bc1ed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a889d8d410783a53edc87e41b306bc1ed">CheckAutoLaunch</a> (void)</td></tr>
+<tr class="separator:a889d8d410783a53edc87e41b306bc1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966b06a2ccfe3fdc7f002642117140b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a966b06a2ccfe3fdc7f002642117140b9">NET_WaitForLaunch</a> (void)</td></tr>
+<tr class="separator:a966b06a2ccfe3fdc7f002642117140b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5274463027e7bb8273c0b3f4ed1a3471"><td class="memItemLeft" align="right" valign="top">static txt_window_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a5274463027e7bb8273c0b3f4ed1a3471">window</a></td></tr>
+<tr class="separator:a5274463027e7bb8273c0b3f4ed1a3471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26cff2cc2ea43a54e748d9596b60bfad"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a26cff2cc2ea43a54e748d9596b60bfad">old_max_players</a></td></tr>
+<tr class="separator:a26cff2cc2ea43a54e748d9596b60bfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff5ef1ba0dba7082d49e74cff859c32"><td class="memItemLeft" align="right" valign="top">static txt_label_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a8ff5ef1ba0dba7082d49e74cff859c32">player_labels</a> [NET_MAXPLAYERS]</td></tr>
+<tr class="separator:a8ff5ef1ba0dba7082d49e74cff859c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa85b90f53f79d05897b1aa6d34c423"><td class="memItemLeft" align="right" valign="top">static txt_label_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a1aa85b90f53f79d05897b1aa6d34c423">ip_labels</a> [NET_MAXPLAYERS]</td></tr>
+<tr class="separator:a1aa85b90f53f79d05897b1aa6d34c423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883d2be11d82d76d78c05b52e0e7db0c"><td class="memItemLeft" align="right" valign="top">static txt_label_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a883d2be11d82d76d78c05b52e0e7db0c">drone_label</a></td></tr>
+<tr class="separator:a883d2be11d82d76d78c05b52e0e7db0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9628422ab99232f9c9489b28e2f472fe"><td class="memItemLeft" align="right" valign="top">static txt_label_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a9628422ab99232f9c9489b28e2f472fe">master_msg_label</a></td></tr>
+<tr class="separator:a9628422ab99232f9c9489b28e2f472fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9cb92f1501868b09ee2f34337f0b73"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#a8d9cb92f1501868b09ee2f34337f0b73">had_warning</a></td></tr>
+<tr class="separator:a8d9cb92f1501868b09ee2f34337f0b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa211199df44b07cd2ad88280992ae79d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#aa211199df44b07cd2ad88280992ae79d">expected_nodes</a></td></tr>
+<tr class="separator:aa211199df44b07cd2ad88280992ae79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a325a6cb1a6693fdcb468d80cfddc6f32" name="a325a6cb1a6693fdcb468d80cfddc6f32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325a6cb1a6693fdcb468d80cfddc6f32">&#9670;&#160;</a></span>BuildMasterStatusWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BuildMasterStatusWindow </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6395baf10e715edca5c62e5d0053b9f9" name="a6395baf10e715edca5c62e5d0053b9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6395baf10e715edca5c62e5d0053b9f9">&#9670;&#160;</a></span>BuildWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BuildWindow </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a889d8d410783a53edc87e41b306bc1ed" name="a889d8d410783a53edc87e41b306bc1ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889d8d410783a53edc87e41b306bc1ed">&#9670;&#160;</a></span>CheckAutoLaunch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CheckAutoLaunch </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1e28eb5a133c905605350491ed8341d" name="af1e28eb5a133c905605350491ed8341d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e28eb5a133c905605350491ed8341d">&#9670;&#160;</a></span>CheckMasterStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CheckMasterStatus </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fcb8e738f2a5ddf74adf10ca87ef9ad" name="a0fcb8e738f2a5ddf74adf10ca87ef9ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fcb8e738f2a5ddf74adf10ca87ef9ad">&#9670;&#160;</a></span>CheckSHA1Sums()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CheckSHA1Sums </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79d7ea2c73186c4d4ca72c6277e7c821" name="a79d7ea2c73186c4d4ca72c6277e7c821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79d7ea2c73186c4d4ca72c6277e7c821">&#9670;&#160;</a></span>CloseWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CloseWindow </td>
+          <td>(</td>
+          <td class="paramtype">TXT_UNCAST_ARG(widget)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TXT_UNCAST_ARG(<a class="el" href="gui_8c.html#a5274463027e7bb8273c0b3f4ed1a3471">window</a>)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29cff07de7be37cda262e3067ce51a02" name="a29cff07de7be37cda262e3067ce51a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29cff07de7be37cda262e3067ce51a02">&#9670;&#160;</a></span>EscapePressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void EscapePressed </td>
+          <td>(</td>
+          <td class="paramtype">TXT_UNCAST_ARG(widget)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>unused</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a966b06a2ccfe3fdc7f002642117140b9" name="a966b06a2ccfe3fdc7f002642117140b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a966b06a2ccfe3fdc7f002642117140b9">&#9670;&#160;</a></span>NET_WaitForLaunch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_WaitForLaunch </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9422ab26511d33e3dd2f218a01ddfaef" name="a9422ab26511d33e3dd2f218a01ddfaef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9422ab26511d33e3dd2f218a01ddfaef">&#9670;&#160;</a></span>OpenWaitDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void OpenWaitDialog </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c66e8334d2f54fe4265330438d8911b" name="a8c66e8334d2f54fe4265330438d8911b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c66e8334d2f54fe4265330438d8911b">&#9670;&#160;</a></span>ParseCommandLineArgs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ParseCommandLineArgs </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e83b772c252258d7c522a1bf488742d" name="a9e83b772c252258d7c522a1bf488742d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e83b772c252258d7c522a1bf488742d">&#9670;&#160;</a></span>PrintSHA1Digest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void PrintSHA1Digest </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *&#160;</td>
+          <td class="paramname"><em>digest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09677e17d307d9afbcc507a42386b84f" name="a09677e17d307d9afbcc507a42386b84f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09677e17d307d9afbcc507a42386b84f">&#9670;&#160;</a></span>StartGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void StartGame </td>
+          <td>(</td>
+          <td class="paramtype">TXT_UNCAST_ARG(widget)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TXT_UNCAST_ARG(unused)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d4528d71cb815f941ac340f834a31df" name="a7d4528d71cb815f941ac340f834a31df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4528d71cb815f941ac340f834a31df">&#9670;&#160;</a></span>UpdateGUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void UpdateGUI </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a883d2be11d82d76d78c05b52e0e7db0c" name="a883d2be11d82d76d78c05b52e0e7db0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a883d2be11d82d76d78c05b52e0e7db0c">&#9670;&#160;</a></span>drone_label</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">txt_label_t* drone_label</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa211199df44b07cd2ad88280992ae79d" name="aa211199df44b07cd2ad88280992ae79d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa211199df44b07cd2ad88280992ae79d">&#9670;&#160;</a></span>expected_nodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int expected_nodes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d9cb92f1501868b09ee2f34337f0b73" name="a8d9cb92f1501868b09ee2f34337f0b73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d9cb92f1501868b09ee2f34337f0b73">&#9670;&#160;</a></span>had_warning</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> had_warning</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1aa85b90f53f79d05897b1aa6d34c423" name="a1aa85b90f53f79d05897b1aa6d34c423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aa85b90f53f79d05897b1aa6d34c423">&#9670;&#160;</a></span>ip_labels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">txt_label_t* ip_labels[NET_MAXPLAYERS]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9628422ab99232f9c9489b28e2f472fe" name="a9628422ab99232f9c9489b28e2f472fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9628422ab99232f9c9489b28e2f472fe">&#9670;&#160;</a></span>master_msg_label</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">txt_label_t* master_msg_label</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26cff2cc2ea43a54e748d9596b60bfad" name="a26cff2cc2ea43a54e748d9596b60bfad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26cff2cc2ea43a54e748d9596b60bfad">&#9670;&#160;</a></span>old_max_players</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int old_max_players</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ff5ef1ba0dba7082d49e74cff859c32" name="a8ff5ef1ba0dba7082d49e74cff859c32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff5ef1ba0dba7082d49e74cff859c32">&#9670;&#160;</a></span>player_labels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">txt_label_t* player_labels[NET_MAXPLAYERS]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5274463027e7bb8273c0b3f4ed1a3471" name="a5274463027e7bb8273c0b3f4ed1a3471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5274463027e7bb8273c0b3f4ed1a3471">&#9670;&#160;</a></span>window</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">txt_window_t* window</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c72b25b75abe208498b36a3e44a3726c.html">net</a></li><li class="navelem"><a class="el" href="gui_8c.html">gui.c</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

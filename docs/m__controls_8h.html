@@ -1,0 +1,3862 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell/engine/src/m_controls.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('m__controls_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">m_controls.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="m__controls_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a691ef341de503bbc55aafd5d8804b2b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a691ef341de503bbc55aafd5d8804b2b5">M_BindBaseControls</a> (void)</td></tr>
+<tr class="separator:a691ef341de503bbc55aafd5d8804b2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e06420b03e931e0848d984665d7f8d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a2e06420b03e931e0848d984665d7f8d2">M_BindHereticControls</a> (void)</td></tr>
+<tr class="separator:a2e06420b03e931e0848d984665d7f8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62663ee6cea085df21053dde37906aa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a62663ee6cea085df21053dde37906aa3">M_BindHexenControls</a> (void)</td></tr>
+<tr class="separator:a62663ee6cea085df21053dde37906aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5caa05e6d6b5335750ce2148a7b8bdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#af5caa05e6d6b5335750ce2148a7b8bdd">M_BindStrifeControls</a> (void)</td></tr>
+<tr class="separator:af5caa05e6d6b5335750ce2148a7b8bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f39ba4968ac86845bbd741c3e682d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a47f39ba4968ac86845bbd741c3e682d2">M_BindWeaponControls</a> (void)</td></tr>
+<tr class="separator:a47f39ba4968ac86845bbd741c3e682d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89141a8eb9f8255711fb3ddf828a6b24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a89141a8eb9f8255711fb3ddf828a6b24">M_BindMapControls</a> (void)</td></tr>
+<tr class="separator:a89141a8eb9f8255711fb3ddf828a6b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0712a000e87135a71b6c37e1548fef6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a0712a000e87135a71b6c37e1548fef6c">M_BindMenuControls</a> (void)</td></tr>
+<tr class="separator:a0712a000e87135a71b6c37e1548fef6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282695ea74af7209d87e09e659d9cd8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a282695ea74af7209d87e09e659d9cd8c">M_BindChatControls</a> (unsigned int num_players)</td></tr>
+<tr class="separator:a282695ea74af7209d87e09e659d9cd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2373b17be6b6e858d7e5be98e7b2f923"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a2373b17be6b6e858d7e5be98e7b2f923">M_ApplyPlatformDefaults</a> (void)</td></tr>
+<tr class="separator:a2373b17be6b6e858d7e5be98e7b2f923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af929151dd14c88998cfe0eb78d0dc0a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#af929151dd14c88998cfe0eb78d0dc0a3">key_right</a></td></tr>
+<tr class="separator:af929151dd14c88998cfe0eb78d0dc0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10cd65003a356e086d2c9ca76b1a9d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ac10cd65003a356e086d2c9ca76b1a9d1">key_left</a></td></tr>
+<tr class="separator:ac10cd65003a356e086d2c9ca76b1a9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7232a73e429fcce9693bf0ac402eb240"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a7232a73e429fcce9693bf0ac402eb240">key_reverse</a></td></tr>
+<tr class="separator:a7232a73e429fcce9693bf0ac402eb240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c650232521010da69bb82f93ebcd495"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a1c650232521010da69bb82f93ebcd495">key_up</a></td></tr>
+<tr class="separator:a1c650232521010da69bb82f93ebcd495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9517a2084bcd2e3a31311e64454855"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#afb9517a2084bcd2e3a31311e64454855">key_alt_up</a></td></tr>
+<tr class="separator:afb9517a2084bcd2e3a31311e64454855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98550f2222a6d450fc03453bf71b8991"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a98550f2222a6d450fc03453bf71b8991">key_down</a></td></tr>
+<tr class="separator:a98550f2222a6d450fc03453bf71b8991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee013360abdda07a788e9cdb796a1080"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#aee013360abdda07a788e9cdb796a1080">key_alt_down</a></td></tr>
+<tr class="separator:aee013360abdda07a788e9cdb796a1080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e11e77f07ad35ed5b4742da90910e62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a7e11e77f07ad35ed5b4742da90910e62">key_strafeleft</a></td></tr>
+<tr class="separator:a7e11e77f07ad35ed5b4742da90910e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c820ae5a94c3aa599907ec93ccb41c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a9c820ae5a94c3aa599907ec93ccb41c8">key_alt_strafeleft</a></td></tr>
+<tr class="separator:a9c820ae5a94c3aa599907ec93ccb41c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc767725303d464e1b446acbd7f510a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a4dc767725303d464e1b446acbd7f510a">key_straferight</a></td></tr>
+<tr class="separator:a4dc767725303d464e1b446acbd7f510a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4f5d14df2c7c6c4341f4032dd903d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a2a4f5d14df2c7c6c4341f4032dd903d6">key_alt_straferight</a></td></tr>
+<tr class="separator:a2a4f5d14df2c7c6c4341f4032dd903d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d064e9fa0ad3d6b2a22d6d3795cb78a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a8d064e9fa0ad3d6b2a22d6d3795cb78a">key_fire</a></td></tr>
+<tr class="separator:a8d064e9fa0ad3d6b2a22d6d3795cb78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e5c87bbde58789a6efeb459bc96d01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a94e5c87bbde58789a6efeb459bc96d01">key_use</a></td></tr>
+<tr class="separator:a94e5c87bbde58789a6efeb459bc96d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e09523252ac939254d2fc7c02f58d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#af3e09523252ac939254d2fc7c02f58d6">key_strafe</a></td></tr>
+<tr class="separator:af3e09523252ac939254d2fc7c02f58d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9911b02971f517e118b4988c0e8840e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a9911b02971f517e118b4988c0e8840e4">key_speed</a></td></tr>
+<tr class="separator:a9911b02971f517e118b4988c0e8840e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae270e7d1ed6cb731727cc9917ee30683"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ae270e7d1ed6cb731727cc9917ee30683">key_demospeed</a></td></tr>
+<tr class="separator:ae270e7d1ed6cb731727cc9917ee30683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2816b608f47f5ec5eb44a51fa600a2fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a2816b608f47f5ec5eb44a51fa600a2fc">key_jump</a></td></tr>
+<tr class="separator:a2816b608f47f5ec5eb44a51fa600a2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51615f03cca2948b3e47b10a84437afd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a51615f03cca2948b3e47b10a84437afd">key_toggleautorun</a></td></tr>
+<tr class="separator:a51615f03cca2948b3e47b10a84437afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a23f9f9472e814c59a7b8f5c09bfb3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a3a23f9f9472e814c59a7b8f5c09bfb3d">key_togglenovert</a></td></tr>
+<tr class="separator:a3a23f9f9472e814c59a7b8f5c09bfb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcfad3a7e8a4773a5f8718708168d84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a2fcfad3a7e8a4773a5f8718708168d84">key_flyup</a></td></tr>
+<tr class="separator:a2fcfad3a7e8a4773a5f8718708168d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe58aeabbd2f29be14940d7ab2907b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a6fe58aeabbd2f29be14940d7ab2907b8">key_flydown</a></td></tr>
+<tr class="separator:a6fe58aeabbd2f29be14940d7ab2907b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba979db473394deaeeb1a7a86bef5b9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#aba979db473394deaeeb1a7a86bef5b9e">key_flycenter</a></td></tr>
+<tr class="separator:aba979db473394deaeeb1a7a86bef5b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ae1d3f8e25eaf3d8788157c431674c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a23ae1d3f8e25eaf3d8788157c431674c">key_lookup</a></td></tr>
+<tr class="separator:a23ae1d3f8e25eaf3d8788157c431674c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ccfc9d80fd24ea0940bf51bf6d5569b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a0ccfc9d80fd24ea0940bf51bf6d5569b">key_lookdown</a></td></tr>
+<tr class="separator:a0ccfc9d80fd24ea0940bf51bf6d5569b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bcd8591aab25e193efcbdb965e01d59"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a3bcd8591aab25e193efcbdb965e01d59">key_lookcenter</a></td></tr>
+<tr class="separator:a3bcd8591aab25e193efcbdb965e01d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e276753d6edfa8d11ca273b1e28ad2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#aa2e276753d6edfa8d11ca273b1e28ad2">key_invleft</a></td></tr>
+<tr class="separator:aa2e276753d6edfa8d11ca273b1e28ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab825e8cc790b8a11580a002353c21b00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab825e8cc790b8a11580a002353c21b00">key_invright</a></td></tr>
+<tr class="separator:ab825e8cc790b8a11580a002353c21b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9c928ffbe9c902211d68efd15db1d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a0b9c928ffbe9c902211d68efd15db1d3">key_useartifact</a></td></tr>
+<tr class="separator:a0b9c928ffbe9c902211d68efd15db1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac092fb37c90df7fa29f8a09ec870ceb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#aac092fb37c90df7fa29f8a09ec870ceb">key_usehealth</a></td></tr>
+<tr class="separator:aac092fb37c90df7fa29f8a09ec870ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace982104a94a6cff371d13470cd539ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ace982104a94a6cff371d13470cd539ce">key_invquery</a></td></tr>
+<tr class="separator:ace982104a94a6cff371d13470cd539ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfa84b4509cc2dd79b549fffc2f2c46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#abdfa84b4509cc2dd79b549fffc2f2c46">key_mission</a></td></tr>
+<tr class="separator:abdfa84b4509cc2dd79b549fffc2f2c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a3bd944b02fbb048a4ce24239311a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab3a3bd944b02fbb048a4ce24239311a8">key_invpop</a></td></tr>
+<tr class="separator:ab3a3bd944b02fbb048a4ce24239311a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3666f203bc2df35cbcca52e9daa739b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a3666f203bc2df35cbcca52e9daa739b3">key_invkey</a></td></tr>
+<tr class="separator:a3666f203bc2df35cbcca52e9daa739b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dfe5d7ac692bce219bd37fe1988ee30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a2dfe5d7ac692bce219bd37fe1988ee30">key_invhome</a></td></tr>
+<tr class="separator:a2dfe5d7ac692bce219bd37fe1988ee30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7b76068a7640824402babe5020f50a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a8f7b76068a7640824402babe5020f50a">key_invend</a></td></tr>
+<tr class="separator:a8f7b76068a7640824402babe5020f50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5012590c70735854ee989d2fc4488f67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a5012590c70735854ee989d2fc4488f67">key_invuse</a></td></tr>
+<tr class="separator:a5012590c70735854ee989d2fc4488f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4960c383549d0caf54680188ca5e411"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#af4960c383549d0caf54680188ca5e411">key_invdrop</a></td></tr>
+<tr class="separator:af4960c383549d0caf54680188ca5e411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14850e3a81b17632cbe484cd81beaba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ae14850e3a81b17632cbe484cd81beaba">key_message_refresh</a></td></tr>
+<tr class="separator:ae14850e3a81b17632cbe484cd81beaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391c8cb7483652c9efe121501924fc96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a391c8cb7483652c9efe121501924fc96">key_pause</a></td></tr>
+<tr class="separator:a391c8cb7483652c9efe121501924fc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a4103a4dafafae45d932a1a8991dfe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a26a4103a4dafafae45d932a1a8991dfe">key_multi_msg</a></td></tr>
+<tr class="separator:a26a4103a4dafafae45d932a1a8991dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad498850a3b9c88833f8d1d6193618f08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ad498850a3b9c88833f8d1d6193618f08">key_multi_msgplayer</a> [8]</td></tr>
+<tr class="separator:ad498850a3b9c88833f8d1d6193618f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77b89e226ea217fe12dedbc32c59415"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ae77b89e226ea217fe12dedbc32c59415">key_weapon1</a></td></tr>
+<tr class="separator:ae77b89e226ea217fe12dedbc32c59415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2254b31caa35af38e8a7b8e447d06ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#af2254b31caa35af38e8a7b8e447d06ad">key_weapon2</a></td></tr>
+<tr class="separator:af2254b31caa35af38e8a7b8e447d06ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c4370fbcb46ec203176343b0c4dc8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a10c4370fbcb46ec203176343b0c4dc8b">key_weapon3</a></td></tr>
+<tr class="separator:a10c4370fbcb46ec203176343b0c4dc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cd739e91db8e2dad2b7b4e0d9f7820"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab0cd739e91db8e2dad2b7b4e0d9f7820">key_weapon4</a></td></tr>
+<tr class="separator:ab0cd739e91db8e2dad2b7b4e0d9f7820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f5f0ac6b7152b13d2da8721875b1a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a36f5f0ac6b7152b13d2da8721875b1a2">key_weapon5</a></td></tr>
+<tr class="separator:a36f5f0ac6b7152b13d2da8721875b1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae53b24b3a48f8a4fee0b3a31d4d6805"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#aae53b24b3a48f8a4fee0b3a31d4d6805">key_weapon6</a></td></tr>
+<tr class="separator:aae53b24b3a48f8a4fee0b3a31d4d6805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7edf23a6e8d03bece7920a38ba4bc7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#aa7edf23a6e8d03bece7920a38ba4bc7c">key_weapon7</a></td></tr>
+<tr class="separator:aa7edf23a6e8d03bece7920a38ba4bc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dedcb7e5a83a1f33b966dabc344ac02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a8dedcb7e5a83a1f33b966dabc344ac02">key_weapon8</a></td></tr>
+<tr class="separator:a8dedcb7e5a83a1f33b966dabc344ac02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4971bac8a51d373af4dc9865b3f99177"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a4971bac8a51d373af4dc9865b3f99177">key_arti_quartz</a></td></tr>
+<tr class="separator:a4971bac8a51d373af4dc9865b3f99177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a365b0992851f40ad62745e96e1aa4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab0a365b0992851f40ad62745e96e1aa4">key_arti_urn</a></td></tr>
+<tr class="separator:ab0a365b0992851f40ad62745e96e1aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6de22cbaae35802b8de5d61e047af13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ad6de22cbaae35802b8de5d61e047af13">key_arti_bomb</a></td></tr>
+<tr class="separator:ad6de22cbaae35802b8de5d61e047af13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb5d7b07f5761f021a42b554329dffd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a4eb5d7b07f5761f021a42b554329dffd">key_arti_tome</a></td></tr>
+<tr class="separator:a4eb5d7b07f5761f021a42b554329dffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4446f843598b70deace12482a37c5d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ae4446f843598b70deace12482a37c5d7">key_arti_ring</a></td></tr>
+<tr class="separator:ae4446f843598b70deace12482a37c5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9525ddd1a5d7ff782ba5a4254f6c9d56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a9525ddd1a5d7ff782ba5a4254f6c9d56">key_arti_chaosdevice</a></td></tr>
+<tr class="separator:a9525ddd1a5d7ff782ba5a4254f6c9d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6445b955daa4c3c0573004fafd66b211"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a6445b955daa4c3c0573004fafd66b211">key_arti_shadowsphere</a></td></tr>
+<tr class="separator:a6445b955daa4c3c0573004fafd66b211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08e3bfdc3653092595351692c6a2390f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a08e3bfdc3653092595351692c6a2390f">key_arti_wings</a></td></tr>
+<tr class="separator:a08e3bfdc3653092595351692c6a2390f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47608e7b5b765a31a5331997fe3f5371"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a47608e7b5b765a31a5331997fe3f5371">key_arti_torch</a></td></tr>
+<tr class="separator:a47608e7b5b765a31a5331997fe3f5371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3d8893651f7f3b3cf4dece5361d896"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a9c3d8893651f7f3b3cf4dece5361d896">key_arti_morph</a></td></tr>
+<tr class="separator:a9c3d8893651f7f3b3cf4dece5361d896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a09cbe68bd35cc6c35ac64e7379235"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab0a09cbe68bd35cc6c35ac64e7379235">key_arti_all</a></td></tr>
+<tr class="separator:ab0a09cbe68bd35cc6c35ac64e7379235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8557f7de0b1cfce4b31ead7b8cd6b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ada8557f7de0b1cfce4b31ead7b8cd6b4">key_arti_health</a></td></tr>
+<tr class="separator:ada8557f7de0b1cfce4b31ead7b8cd6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b88077b9bac910f76652c1e79f98b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#af7b88077b9bac910f76652c1e79f98b0">key_arti_poisonbag</a></td></tr>
+<tr class="separator:af7b88077b9bac910f76652c1e79f98b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65529987f8137d087be67c9121bcba58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a65529987f8137d087be67c9121bcba58">key_arti_blastradius</a></td></tr>
+<tr class="separator:a65529987f8137d087be67c9121bcba58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaeb8c68793a1719a67c331244675166"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#adaeb8c68793a1719a67c331244675166">key_arti_teleport</a></td></tr>
+<tr class="separator:adaeb8c68793a1719a67c331244675166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ff08dff58bb44d287d096518e62477"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a26ff08dff58bb44d287d096518e62477">key_arti_teleportother</a></td></tr>
+<tr class="separator:a26ff08dff58bb44d287d096518e62477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569042658f31acefdc9f88c5e4052dc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a569042658f31acefdc9f88c5e4052dc4">key_arti_egg</a></td></tr>
+<tr class="separator:a569042658f31acefdc9f88c5e4052dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1289542c65b053993012d98f4e43c183"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a1289542c65b053993012d98f4e43c183">key_arti_invulnerability</a></td></tr>
+<tr class="separator:a1289542c65b053993012d98f4e43c183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4c1260afa59d8b9e865c423735ab43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#afa4c1260afa59d8b9e865c423735ab43">key_demo_quit</a></td></tr>
+<tr class="separator:afa4c1260afa59d8b9e865c423735ab43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a149efecb652dd0f89b6bec3fd17d37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a3a149efecb652dd0f89b6bec3fd17d37">key_spy</a></td></tr>
+<tr class="separator:a3a149efecb652dd0f89b6bec3fd17d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af1bd5c26b84dd34f403eff68e8c7bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a2af1bd5c26b84dd34f403eff68e8c7bc">key_prevweapon</a></td></tr>
+<tr class="separator:a2af1bd5c26b84dd34f403eff68e8c7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f5d9e162c0b97ff895a6cdb04f789f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a14f5d9e162c0b97ff895a6cdb04f789f">key_nextweapon</a></td></tr>
+<tr class="separator:a14f5d9e162c0b97ff895a6cdb04f789f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da0c433ff0d4db96b6c7ef8293ff647"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a8da0c433ff0d4db96b6c7ef8293ff647">key_map_north</a></td></tr>
+<tr class="separator:a8da0c433ff0d4db96b6c7ef8293ff647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8417f20aa4e9c10bff8ce989d6b2b5f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a8417f20aa4e9c10bff8ce989d6b2b5f1">key_map_south</a></td></tr>
+<tr class="separator:a8417f20aa4e9c10bff8ce989d6b2b5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfec8ae46eb79ab6cd42417a1a432254"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#acfec8ae46eb79ab6cd42417a1a432254">key_map_east</a></td></tr>
+<tr class="separator:acfec8ae46eb79ab6cd42417a1a432254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af244737c2513e3681f73f955347747ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#af244737c2513e3681f73f955347747ae">key_map_west</a></td></tr>
+<tr class="separator:af244737c2513e3681f73f955347747ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03cb845187ab83b5baa470b186fb9c96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a03cb845187ab83b5baa470b186fb9c96">key_map_zoomin</a></td></tr>
+<tr class="separator:a03cb845187ab83b5baa470b186fb9c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948009f974cb1ef4e94cc036f974dbda"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a948009f974cb1ef4e94cc036f974dbda">key_map_zoomout</a></td></tr>
+<tr class="separator:a948009f974cb1ef4e94cc036f974dbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084709f24557c3de70f9162219d1fd6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a084709f24557c3de70f9162219d1fd6a">key_map_toggle</a></td></tr>
+<tr class="separator:a084709f24557c3de70f9162219d1fd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c17026a5d4dea805db0a5f48134678"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a91c17026a5d4dea805db0a5f48134678">key_map_maxzoom</a></td></tr>
+<tr class="separator:a91c17026a5d4dea805db0a5f48134678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff91dc7ff419260c077cf61c132e4800"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#aff91dc7ff419260c077cf61c132e4800">key_map_follow</a></td></tr>
+<tr class="separator:aff91dc7ff419260c077cf61c132e4800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c60f1d8bce764a3a788bdad45751f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a12c60f1d8bce764a3a788bdad45751f4">key_map_grid</a></td></tr>
+<tr class="separator:a12c60f1d8bce764a3a788bdad45751f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a317fb5b58750992d6a95c5628bb8b816"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a317fb5b58750992d6a95c5628bb8b816">key_map_mark</a></td></tr>
+<tr class="separator:a317fb5b58750992d6a95c5628bb8b816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99409eb80622a9b225cf435739964c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ac99409eb80622a9b225cf435739964c6">key_map_clearmark</a></td></tr>
+<tr class="separator:ac99409eb80622a9b225cf435739964c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afadae6bce68ff2dd6ebeacb710ec926c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#afadae6bce68ff2dd6ebeacb710ec926c">key_map_overlay</a></td></tr>
+<tr class="separator:afadae6bce68ff2dd6ebeacb710ec926c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4beaaaeab68b500c74f05602a1919c69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a4beaaaeab68b500c74f05602a1919c69">key_map_rotate</a></td></tr>
+<tr class="separator:a4beaaaeab68b500c74f05602a1919c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad364ba0676f784bf59cf8eaf6f543a68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ad364ba0676f784bf59cf8eaf6f543a68">key_menu_activate</a></td></tr>
+<tr class="separator:ad364ba0676f784bf59cf8eaf6f543a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c7f2e16f0e06c7fa298c7391f5e5d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab8c7f2e16f0e06c7fa298c7391f5e5d2">key_menu_up</a></td></tr>
+<tr class="separator:ab8c7f2e16f0e06c7fa298c7391f5e5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43333b75d61c9a21136a6903238a359"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#af43333b75d61c9a21136a6903238a359">key_menu_down</a></td></tr>
+<tr class="separator:af43333b75d61c9a21136a6903238a359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e1815ba7a4ff96f5fbac9c1e97df1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab4e1815ba7a4ff96f5fbac9c1e97df1e">key_menu_left</a></td></tr>
+<tr class="separator:ab4e1815ba7a4ff96f5fbac9c1e97df1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa43a24a243f0ccd7b41ddcdfb355cf28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#aa43a24a243f0ccd7b41ddcdfb355cf28">key_menu_right</a></td></tr>
+<tr class="separator:aa43a24a243f0ccd7b41ddcdfb355cf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d6086003c6f853fd4fd2bf8ecf88e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a15d6086003c6f853fd4fd2bf8ecf88e6">key_menu_back</a></td></tr>
+<tr class="separator:a15d6086003c6f853fd4fd2bf8ecf88e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e50511977bc94c22d6eb48b87d204d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a8e50511977bc94c22d6eb48b87d204d9">key_menu_forward</a></td></tr>
+<tr class="separator:a8e50511977bc94c22d6eb48b87d204d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e00b7f5a95de79ecf4387324cc17739"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a0e00b7f5a95de79ecf4387324cc17739">key_menu_confirm</a></td></tr>
+<tr class="separator:a0e00b7f5a95de79ecf4387324cc17739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f91b9949537f9fd4623de5da6d97a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a54f91b9949537f9fd4623de5da6d97a4">key_menu_abort</a></td></tr>
+<tr class="separator:a54f91b9949537f9fd4623de5da6d97a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6d886814bb34da9ea720a4f391d2df9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#af6d886814bb34da9ea720a4f391d2df9">key_menu_help</a></td></tr>
+<tr class="separator:af6d886814bb34da9ea720a4f391d2df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a2073daa7c1be05f0f055f1f3a1c3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab4a2073daa7c1be05f0f055f1f3a1c3c">key_menu_save</a></td></tr>
+<tr class="separator:ab4a2073daa7c1be05f0f055f1f3a1c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0f091c97a79c248699b470e15d2447"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#aba0f091c97a79c248699b470e15d2447">key_menu_load</a></td></tr>
+<tr class="separator:aba0f091c97a79c248699b470e15d2447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d52c6daf0b54e5ff3a68e0126314a49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a0d52c6daf0b54e5ff3a68e0126314a49">key_menu_volume</a></td></tr>
+<tr class="separator:a0d52c6daf0b54e5ff3a68e0126314a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63956e78605f8da7a0336db80460e7f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a63956e78605f8da7a0336db80460e7f3">key_menu_detail</a></td></tr>
+<tr class="separator:a63956e78605f8da7a0336db80460e7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077c4bac05587b762c9e0a99fdb46f48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a077c4bac05587b762c9e0a99fdb46f48">key_menu_qsave</a></td></tr>
+<tr class="separator:a077c4bac05587b762c9e0a99fdb46f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d804884578c95077f7e96ea6fa31f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ad5d804884578c95077f7e96ea6fa31f4">key_menu_endgame</a></td></tr>
+<tr class="separator:ad5d804884578c95077f7e96ea6fa31f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179488e1c78047dee70ae6ab8e7c5642"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a179488e1c78047dee70ae6ab8e7c5642">key_menu_messages</a></td></tr>
+<tr class="separator:a179488e1c78047dee70ae6ab8e7c5642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaddc54534b2b59659776ff877b3430d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#aaddc54534b2b59659776ff877b3430d5">key_menu_qload</a></td></tr>
+<tr class="separator:aaddc54534b2b59659776ff877b3430d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff13d9e153ca604fc6b940e7ee9899a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a3ff13d9e153ca604fc6b940e7ee9899a">key_menu_quit</a></td></tr>
+<tr class="separator:a3ff13d9e153ca604fc6b940e7ee9899a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5dbd584c595ea8c12c3823260d4b35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a3c5dbd584c595ea8c12c3823260d4b35">key_menu_gamma</a></td></tr>
+<tr class="separator:a3c5dbd584c595ea8c12c3823260d4b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a901f7c02ef5e49a6ede4b45255df6403"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a901f7c02ef5e49a6ede4b45255df6403">key_menu_incscreen</a></td></tr>
+<tr class="separator:a901f7c02ef5e49a6ede4b45255df6403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6a16a8b3c6758a38e1cde50cc05cc2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#adc6a16a8b3c6758a38e1cde50cc05cc2">key_menu_decscreen</a></td></tr>
+<tr class="separator:adc6a16a8b3c6758a38e1cde50cc05cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5e0784410e43cfe7afc4d40aa7a59d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a2b5e0784410e43cfe7afc4d40aa7a59d">key_menu_screenshot</a></td></tr>
+<tr class="separator:a2b5e0784410e43cfe7afc4d40aa7a59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a570f9c7de6707f62978b4970f9d28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab1a570f9c7de6707f62978b4970f9d28">key_menu_cleanscreenshot</a></td></tr>
+<tr class="separator:ab1a570f9c7de6707f62978b4970f9d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1885bba2f489800ba6267917cf1d39a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a1885bba2f489800ba6267917cf1d39a9">key_menu_del</a></td></tr>
+<tr class="separator:a1885bba2f489800ba6267917cf1d39a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974c59898f041bd300196b0af98d08b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a974c59898f041bd300196b0af98d08b4">key_menu_nextlevel</a></td></tr>
+<tr class="separator:a974c59898f041bd300196b0af98d08b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db5b40cf7dd29695611a68c2d18b365"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a6db5b40cf7dd29695611a68c2d18b365">key_menu_reloadlevel</a></td></tr>
+<tr class="separator:a6db5b40cf7dd29695611a68c2d18b365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89be532a9636474f0c662cc41730f35f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a89be532a9636474f0c662cc41730f35f">mousebfire</a></td></tr>
+<tr class="separator:a89be532a9636474f0c662cc41730f35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763eb8adf50739ed54b1c5b7b7fdb1e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a763eb8adf50739ed54b1c5b7b7fdb1e7">mousebstrafe</a></td></tr>
+<tr class="separator:a763eb8adf50739ed54b1c5b7b7fdb1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abe38b8c777bced3a93be69c2433457"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a2abe38b8c777bced3a93be69c2433457">mousebforward</a></td></tr>
+<tr class="separator:a2abe38b8c777bced3a93be69c2433457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0393a55962e4c4fa56db01dc48a067"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a5b0393a55962e4c4fa56db01dc48a067">mousebspeed</a></td></tr>
+<tr class="separator:a5b0393a55962e4c4fa56db01dc48a067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0479b42a9b2f68a128fcdb8d1bd09f92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a0479b42a9b2f68a128fcdb8d1bd09f92">mousebjump</a></td></tr>
+<tr class="separator:a0479b42a9b2f68a128fcdb8d1bd09f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68f843e81e1b4493f5fbe9c23829292"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab68f843e81e1b4493f5fbe9c23829292">mousebstrafeleft</a></td></tr>
+<tr class="separator:ab68f843e81e1b4493f5fbe9c23829292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4357bfb2ba6b42729d34535d11704a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ad4357bfb2ba6b42729d34535d11704a0">mousebstraferight</a></td></tr>
+<tr class="separator:ad4357bfb2ba6b42729d34535d11704a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8528f7442b4956c43d61d387668989e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a8528f7442b4956c43d61d387668989e4">mousebturnleft</a></td></tr>
+<tr class="separator:a8528f7442b4956c43d61d387668989e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f3916704a18d099b8aba31ef917b0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a12f3916704a18d099b8aba31ef917b0a">mousebturnright</a></td></tr>
+<tr class="separator:a12f3916704a18d099b8aba31ef917b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb138c14889db8f53c519d56a61f39e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#aeb138c14889db8f53c519d56a61f39e6">mousebbackward</a></td></tr>
+<tr class="separator:aeb138c14889db8f53c519d56a61f39e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24571f78655df6a6cfaa43b4312889d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ae24571f78655df6a6cfaa43b4312889d">mousebuse</a></td></tr>
+<tr class="separator:ae24571f78655df6a6cfaa43b4312889d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a064546190314a34933ff47dc0469e7c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a064546190314a34933ff47dc0469e7c7">mousebmouselook</a></td></tr>
+<tr class="separator:a064546190314a34933ff47dc0469e7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11448a7f65421b58a9c146feeb6b873"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab11448a7f65421b58a9c146feeb6b873">mousebreverse</a></td></tr>
+<tr class="separator:ab11448a7f65421b58a9c146feeb6b873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7523943eef76515d3802e8c263eec333"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a7523943eef76515d3802e8c263eec333">mousebprevweapon</a></td></tr>
+<tr class="separator:a7523943eef76515d3802e8c263eec333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6898c476bcb8761d3b64087ed617085"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ac6898c476bcb8761d3b64087ed617085">mousebnextweapon</a></td></tr>
+<tr class="separator:ac6898c476bcb8761d3b64087ed617085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87986820acb09cb6fd7833137948cf28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a87986820acb09cb6fd7833137948cf28">mousebinvleft</a></td></tr>
+<tr class="separator:a87986820acb09cb6fd7833137948cf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c6fa39a4387fa93c79b9a135ebf73c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a09c6fa39a4387fa93c79b9a135ebf73c">mousebinvright</a></td></tr>
+<tr class="separator:a09c6fa39a4387fa93c79b9a135ebf73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add77d932f3c4e5f63d7138eb6c8e4c51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#add77d932f3c4e5f63d7138eb6c8e4c51">mousebuseartifact</a></td></tr>
+<tr class="separator:add77d932f3c4e5f63d7138eb6c8e4c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d59f879e92bedc4b9b37935caf78164"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a8d59f879e92bedc4b9b37935caf78164">mousebinvuse</a></td></tr>
+<tr class="separator:a8d59f879e92bedc4b9b37935caf78164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a23281eda624832a38120c3653667b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a9a23281eda624832a38120c3653667b5">mousebmapzoomin</a></td></tr>
+<tr class="separator:a9a23281eda624832a38120c3653667b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464db02e914d22b7b697364a58ddaa42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a464db02e914d22b7b697364a58ddaa42">mousebmapzoomout</a></td></tr>
+<tr class="separator:a464db02e914d22b7b697364a58ddaa42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab16a2585599423676fcf7a122611376e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab16a2585599423676fcf7a122611376e">mousebmapmaxzoom</a></td></tr>
+<tr class="separator:ab16a2585599423676fcf7a122611376e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e1ef1edea64c440331b37c288155f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#af9e1ef1edea64c440331b37c288155f5">mousebmapfollow</a></td></tr>
+<tr class="separator:af9e1ef1edea64c440331b37c288155f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977268cbb9fbac75daa8f979b5cecaaf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a977268cbb9fbac75daa8f979b5cecaaf">joybfire</a></td></tr>
+<tr class="separator:a977268cbb9fbac75daa8f979b5cecaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557d2da028c08a1f20e9ce9b8d66c9fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a557d2da028c08a1f20e9ce9b8d66c9fa">joybstrafe</a></td></tr>
+<tr class="separator:a557d2da028c08a1f20e9ce9b8d66c9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa30c9959c8509275aeafb4119acdf6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a7fa30c9959c8509275aeafb4119acdf6">joybuse</a></td></tr>
+<tr class="separator:a7fa30c9959c8509275aeafb4119acdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27c5dc10909c4c9d7126a8e6f4b3ef7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ad27c5dc10909c4c9d7126a8e6f4b3ef7">joybspeed</a></td></tr>
+<tr class="separator:ad27c5dc10909c4c9d7126a8e6f4b3ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c1e5c42586a6ce56f228215e3bbd2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#af2c1e5c42586a6ce56f228215e3bbd2d">joybjump</a></td></tr>
+<tr class="separator:af2c1e5c42586a6ce56f228215e3bbd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2451c3a7e5fd5a9701839abece07b66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ad2451c3a7e5fd5a9701839abece07b66">joybstrafeleft</a></td></tr>
+<tr class="separator:ad2451c3a7e5fd5a9701839abece07b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e546bc23792e7608866458fea480637"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a2e546bc23792e7608866458fea480637">joybstraferight</a></td></tr>
+<tr class="separator:a2e546bc23792e7608866458fea480637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad245bf89214be351699d7aa7e32fad0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ad245bf89214be351699d7aa7e32fad0a">joybprevweapon</a></td></tr>
+<tr class="separator:ad245bf89214be351699d7aa7e32fad0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4957e86dd2e8be34a59a6f229c8449e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a4957e86dd2e8be34a59a6f229c8449e6">joybnextweapon</a></td></tr>
+<tr class="separator:a4957e86dd2e8be34a59a6f229c8449e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb835d69c48a7fce531fe9ecee3c1ca6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#adb835d69c48a7fce531fe9ecee3c1ca6">joybmenu</a></td></tr>
+<tr class="separator:adb835d69c48a7fce531fe9ecee3c1ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba96a5ae488e2a61a0cbb4b073a1028"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#a1ba96a5ae488e2a61a0cbb4b073a1028">joybautomap</a></td></tr>
+<tr class="separator:a1ba96a5ae488e2a61a0cbb4b073a1028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2664c806fc773a4daba9e925c6becac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__controls_8h.html#ab2664c806fc773a4daba9e925c6becac">dclick_use</a></td></tr>
+<tr class="separator:ab2664c806fc773a4daba9e925c6becac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a2373b17be6b6e858d7e5be98e7b2f923" name="a2373b17be6b6e858d7e5be98e7b2f923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2373b17be6b6e858d7e5be98e7b2f923">&#9670;&#160;</a></span>M_ApplyPlatformDefaults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_ApplyPlatformDefaults </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a691ef341de503bbc55aafd5d8804b2b5" name="a691ef341de503bbc55aafd5d8804b2b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691ef341de503bbc55aafd5d8804b2b5">&#9670;&#160;</a></span>M_BindBaseControls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_BindBaseControls </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a282695ea74af7209d87e09e659d9cd8c" name="a282695ea74af7209d87e09e659d9cd8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a282695ea74af7209d87e09e659d9cd8c">&#9670;&#160;</a></span>M_BindChatControls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_BindChatControls </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>num_players</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e06420b03e931e0848d984665d7f8d2" name="a2e06420b03e931e0848d984665d7f8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e06420b03e931e0848d984665d7f8d2">&#9670;&#160;</a></span>M_BindHereticControls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_BindHereticControls </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62663ee6cea085df21053dde37906aa3" name="a62663ee6cea085df21053dde37906aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62663ee6cea085df21053dde37906aa3">&#9670;&#160;</a></span>M_BindHexenControls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_BindHexenControls </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89141a8eb9f8255711fb3ddf828a6b24" name="a89141a8eb9f8255711fb3ddf828a6b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89141a8eb9f8255711fb3ddf828a6b24">&#9670;&#160;</a></span>M_BindMapControls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_BindMapControls </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0712a000e87135a71b6c37e1548fef6c" name="a0712a000e87135a71b6c37e1548fef6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0712a000e87135a71b6c37e1548fef6c">&#9670;&#160;</a></span>M_BindMenuControls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_BindMenuControls </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5caa05e6d6b5335750ce2148a7b8bdd" name="af5caa05e6d6b5335750ce2148a7b8bdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5caa05e6d6b5335750ce2148a7b8bdd">&#9670;&#160;</a></span>M_BindStrifeControls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_BindStrifeControls </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47f39ba4968ac86845bbd741c3e682d2" name="a47f39ba4968ac86845bbd741c3e682d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f39ba4968ac86845bbd741c3e682d2">&#9670;&#160;</a></span>M_BindWeaponControls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_BindWeaponControls </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ab2664c806fc773a4daba9e925c6becac" name="ab2664c806fc773a4daba9e925c6becac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2664c806fc773a4daba9e925c6becac">&#9670;&#160;</a></span>dclick_use</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dclick_use</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ba96a5ae488e2a61a0cbb4b073a1028" name="a1ba96a5ae488e2a61a0cbb4b073a1028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba96a5ae488e2a61a0cbb4b073a1028">&#9670;&#160;</a></span>joybautomap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int joybautomap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a977268cbb9fbac75daa8f979b5cecaaf" name="a977268cbb9fbac75daa8f979b5cecaaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977268cbb9fbac75daa8f979b5cecaaf">&#9670;&#160;</a></span>joybfire</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int joybfire</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2c1e5c42586a6ce56f228215e3bbd2d" name="af2c1e5c42586a6ce56f228215e3bbd2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c1e5c42586a6ce56f228215e3bbd2d">&#9670;&#160;</a></span>joybjump</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int joybjump</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb835d69c48a7fce531fe9ecee3c1ca6" name="adb835d69c48a7fce531fe9ecee3c1ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb835d69c48a7fce531fe9ecee3c1ca6">&#9670;&#160;</a></span>joybmenu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int joybmenu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4957e86dd2e8be34a59a6f229c8449e6" name="a4957e86dd2e8be34a59a6f229c8449e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4957e86dd2e8be34a59a6f229c8449e6">&#9670;&#160;</a></span>joybnextweapon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int joybnextweapon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad245bf89214be351699d7aa7e32fad0a" name="ad245bf89214be351699d7aa7e32fad0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad245bf89214be351699d7aa7e32fad0a">&#9670;&#160;</a></span>joybprevweapon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int joybprevweapon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad27c5dc10909c4c9d7126a8e6f4b3ef7" name="ad27c5dc10909c4c9d7126a8e6f4b3ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad27c5dc10909c4c9d7126a8e6f4b3ef7">&#9670;&#160;</a></span>joybspeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int joybspeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a557d2da028c08a1f20e9ce9b8d66c9fa" name="a557d2da028c08a1f20e9ce9b8d66c9fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557d2da028c08a1f20e9ce9b8d66c9fa">&#9670;&#160;</a></span>joybstrafe</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int joybstrafe</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2451c3a7e5fd5a9701839abece07b66" name="ad2451c3a7e5fd5a9701839abece07b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2451c3a7e5fd5a9701839abece07b66">&#9670;&#160;</a></span>joybstrafeleft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int joybstrafeleft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e546bc23792e7608866458fea480637" name="a2e546bc23792e7608866458fea480637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e546bc23792e7608866458fea480637">&#9670;&#160;</a></span>joybstraferight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int joybstraferight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fa30c9959c8509275aeafb4119acdf6" name="a7fa30c9959c8509275aeafb4119acdf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa30c9959c8509275aeafb4119acdf6">&#9670;&#160;</a></span>joybuse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int joybuse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee013360abdda07a788e9cdb796a1080" name="aee013360abdda07a788e9cdb796a1080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee013360abdda07a788e9cdb796a1080">&#9670;&#160;</a></span>key_alt_down</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_alt_down</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c820ae5a94c3aa599907ec93ccb41c8" name="a9c820ae5a94c3aa599907ec93ccb41c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c820ae5a94c3aa599907ec93ccb41c8">&#9670;&#160;</a></span>key_alt_strafeleft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_alt_strafeleft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a4f5d14df2c7c6c4341f4032dd903d6" name="a2a4f5d14df2c7c6c4341f4032dd903d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a4f5d14df2c7c6c4341f4032dd903d6">&#9670;&#160;</a></span>key_alt_straferight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_alt_straferight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb9517a2084bcd2e3a31311e64454855" name="afb9517a2084bcd2e3a31311e64454855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9517a2084bcd2e3a31311e64454855">&#9670;&#160;</a></span>key_alt_up</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_alt_up</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0a09cbe68bd35cc6c35ac64e7379235" name="ab0a09cbe68bd35cc6c35ac64e7379235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0a09cbe68bd35cc6c35ac64e7379235">&#9670;&#160;</a></span>key_arti_all</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_all</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65529987f8137d087be67c9121bcba58" name="a65529987f8137d087be67c9121bcba58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65529987f8137d087be67c9121bcba58">&#9670;&#160;</a></span>key_arti_blastradius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_blastradius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6de22cbaae35802b8de5d61e047af13" name="ad6de22cbaae35802b8de5d61e047af13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6de22cbaae35802b8de5d61e047af13">&#9670;&#160;</a></span>key_arti_bomb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_bomb</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9525ddd1a5d7ff782ba5a4254f6c9d56" name="a9525ddd1a5d7ff782ba5a4254f6c9d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9525ddd1a5d7ff782ba5a4254f6c9d56">&#9670;&#160;</a></span>key_arti_chaosdevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_chaosdevice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a569042658f31acefdc9f88c5e4052dc4" name="a569042658f31acefdc9f88c5e4052dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569042658f31acefdc9f88c5e4052dc4">&#9670;&#160;</a></span>key_arti_egg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_egg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada8557f7de0b1cfce4b31ead7b8cd6b4" name="ada8557f7de0b1cfce4b31ead7b8cd6b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada8557f7de0b1cfce4b31ead7b8cd6b4">&#9670;&#160;</a></span>key_arti_health</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_health</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1289542c65b053993012d98f4e43c183" name="a1289542c65b053993012d98f4e43c183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1289542c65b053993012d98f4e43c183">&#9670;&#160;</a></span>key_arti_invulnerability</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_invulnerability</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c3d8893651f7f3b3cf4dece5361d896" name="a9c3d8893651f7f3b3cf4dece5361d896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3d8893651f7f3b3cf4dece5361d896">&#9670;&#160;</a></span>key_arti_morph</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_morph</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7b88077b9bac910f76652c1e79f98b0" name="af7b88077b9bac910f76652c1e79f98b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b88077b9bac910f76652c1e79f98b0">&#9670;&#160;</a></span>key_arti_poisonbag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_poisonbag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4971bac8a51d373af4dc9865b3f99177" name="a4971bac8a51d373af4dc9865b3f99177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4971bac8a51d373af4dc9865b3f99177">&#9670;&#160;</a></span>key_arti_quartz</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_quartz</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4446f843598b70deace12482a37c5d7" name="ae4446f843598b70deace12482a37c5d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4446f843598b70deace12482a37c5d7">&#9670;&#160;</a></span>key_arti_ring</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_ring</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6445b955daa4c3c0573004fafd66b211" name="a6445b955daa4c3c0573004fafd66b211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6445b955daa4c3c0573004fafd66b211">&#9670;&#160;</a></span>key_arti_shadowsphere</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_shadowsphere</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adaeb8c68793a1719a67c331244675166" name="adaeb8c68793a1719a67c331244675166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaeb8c68793a1719a67c331244675166">&#9670;&#160;</a></span>key_arti_teleport</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_teleport</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26ff08dff58bb44d287d096518e62477" name="a26ff08dff58bb44d287d096518e62477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ff08dff58bb44d287d096518e62477">&#9670;&#160;</a></span>key_arti_teleportother</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_teleportother</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4eb5d7b07f5761f021a42b554329dffd" name="a4eb5d7b07f5761f021a42b554329dffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eb5d7b07f5761f021a42b554329dffd">&#9670;&#160;</a></span>key_arti_tome</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_tome</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47608e7b5b765a31a5331997fe3f5371" name="a47608e7b5b765a31a5331997fe3f5371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47608e7b5b765a31a5331997fe3f5371">&#9670;&#160;</a></span>key_arti_torch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_torch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0a365b0992851f40ad62745e96e1aa4" name="ab0a365b0992851f40ad62745e96e1aa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0a365b0992851f40ad62745e96e1aa4">&#9670;&#160;</a></span>key_arti_urn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_urn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08e3bfdc3653092595351692c6a2390f" name="a08e3bfdc3653092595351692c6a2390f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08e3bfdc3653092595351692c6a2390f">&#9670;&#160;</a></span>key_arti_wings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_arti_wings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa4c1260afa59d8b9e865c423735ab43" name="afa4c1260afa59d8b9e865c423735ab43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4c1260afa59d8b9e865c423735ab43">&#9670;&#160;</a></span>key_demo_quit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_demo_quit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae270e7d1ed6cb731727cc9917ee30683" name="ae270e7d1ed6cb731727cc9917ee30683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae270e7d1ed6cb731727cc9917ee30683">&#9670;&#160;</a></span>key_demospeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_demospeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98550f2222a6d450fc03453bf71b8991" name="a98550f2222a6d450fc03453bf71b8991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98550f2222a6d450fc03453bf71b8991">&#9670;&#160;</a></span>key_down</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_down</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d064e9fa0ad3d6b2a22d6d3795cb78a" name="a8d064e9fa0ad3d6b2a22d6d3795cb78a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d064e9fa0ad3d6b2a22d6d3795cb78a">&#9670;&#160;</a></span>key_fire</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_fire</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba979db473394deaeeb1a7a86bef5b9e" name="aba979db473394deaeeb1a7a86bef5b9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba979db473394deaeeb1a7a86bef5b9e">&#9670;&#160;</a></span>key_flycenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_flycenter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fe58aeabbd2f29be14940d7ab2907b8" name="a6fe58aeabbd2f29be14940d7ab2907b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe58aeabbd2f29be14940d7ab2907b8">&#9670;&#160;</a></span>key_flydown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_flydown</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fcfad3a7e8a4773a5f8718708168d84" name="a2fcfad3a7e8a4773a5f8718708168d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcfad3a7e8a4773a5f8718708168d84">&#9670;&#160;</a></span>key_flyup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_flyup</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4960c383549d0caf54680188ca5e411" name="af4960c383549d0caf54680188ca5e411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4960c383549d0caf54680188ca5e411">&#9670;&#160;</a></span>key_invdrop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_invdrop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f7b76068a7640824402babe5020f50a" name="a8f7b76068a7640824402babe5020f50a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7b76068a7640824402babe5020f50a">&#9670;&#160;</a></span>key_invend</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_invend</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2dfe5d7ac692bce219bd37fe1988ee30" name="a2dfe5d7ac692bce219bd37fe1988ee30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dfe5d7ac692bce219bd37fe1988ee30">&#9670;&#160;</a></span>key_invhome</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_invhome</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3666f203bc2df35cbcca52e9daa739b3" name="a3666f203bc2df35cbcca52e9daa739b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3666f203bc2df35cbcca52e9daa739b3">&#9670;&#160;</a></span>key_invkey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_invkey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2e276753d6edfa8d11ca273b1e28ad2" name="aa2e276753d6edfa8d11ca273b1e28ad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e276753d6edfa8d11ca273b1e28ad2">&#9670;&#160;</a></span>key_invleft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_invleft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3a3bd944b02fbb048a4ce24239311a8" name="ab3a3bd944b02fbb048a4ce24239311a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a3bd944b02fbb048a4ce24239311a8">&#9670;&#160;</a></span>key_invpop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_invpop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace982104a94a6cff371d13470cd539ce" name="ace982104a94a6cff371d13470cd539ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace982104a94a6cff371d13470cd539ce">&#9670;&#160;</a></span>key_invquery</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_invquery</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab825e8cc790b8a11580a002353c21b00" name="ab825e8cc790b8a11580a002353c21b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab825e8cc790b8a11580a002353c21b00">&#9670;&#160;</a></span>key_invright</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_invright</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5012590c70735854ee989d2fc4488f67" name="a5012590c70735854ee989d2fc4488f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5012590c70735854ee989d2fc4488f67">&#9670;&#160;</a></span>key_invuse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_invuse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2816b608f47f5ec5eb44a51fa600a2fc" name="a2816b608f47f5ec5eb44a51fa600a2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2816b608f47f5ec5eb44a51fa600a2fc">&#9670;&#160;</a></span>key_jump</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_jump</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac10cd65003a356e086d2c9ca76b1a9d1" name="ac10cd65003a356e086d2c9ca76b1a9d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac10cd65003a356e086d2c9ca76b1a9d1">&#9670;&#160;</a></span>key_left</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_left</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bcd8591aab25e193efcbdb965e01d59" name="a3bcd8591aab25e193efcbdb965e01d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bcd8591aab25e193efcbdb965e01d59">&#9670;&#160;</a></span>key_lookcenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_lookcenter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ccfc9d80fd24ea0940bf51bf6d5569b" name="a0ccfc9d80fd24ea0940bf51bf6d5569b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ccfc9d80fd24ea0940bf51bf6d5569b">&#9670;&#160;</a></span>key_lookdown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_lookdown</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23ae1d3f8e25eaf3d8788157c431674c" name="a23ae1d3f8e25eaf3d8788157c431674c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ae1d3f8e25eaf3d8788157c431674c">&#9670;&#160;</a></span>key_lookup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_lookup</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac99409eb80622a9b225cf435739964c6" name="ac99409eb80622a9b225cf435739964c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac99409eb80622a9b225cf435739964c6">&#9670;&#160;</a></span>key_map_clearmark</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_clearmark</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfec8ae46eb79ab6cd42417a1a432254" name="acfec8ae46eb79ab6cd42417a1a432254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfec8ae46eb79ab6cd42417a1a432254">&#9670;&#160;</a></span>key_map_east</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_east</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff91dc7ff419260c077cf61c132e4800" name="aff91dc7ff419260c077cf61c132e4800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff91dc7ff419260c077cf61c132e4800">&#9670;&#160;</a></span>key_map_follow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_follow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12c60f1d8bce764a3a788bdad45751f4" name="a12c60f1d8bce764a3a788bdad45751f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c60f1d8bce764a3a788bdad45751f4">&#9670;&#160;</a></span>key_map_grid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_grid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a317fb5b58750992d6a95c5628bb8b816" name="a317fb5b58750992d6a95c5628bb8b816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a317fb5b58750992d6a95c5628bb8b816">&#9670;&#160;</a></span>key_map_mark</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_mark</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91c17026a5d4dea805db0a5f48134678" name="a91c17026a5d4dea805db0a5f48134678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c17026a5d4dea805db0a5f48134678">&#9670;&#160;</a></span>key_map_maxzoom</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_maxzoom</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8da0c433ff0d4db96b6c7ef8293ff647" name="a8da0c433ff0d4db96b6c7ef8293ff647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da0c433ff0d4db96b6c7ef8293ff647">&#9670;&#160;</a></span>key_map_north</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_north</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afadae6bce68ff2dd6ebeacb710ec926c" name="afadae6bce68ff2dd6ebeacb710ec926c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afadae6bce68ff2dd6ebeacb710ec926c">&#9670;&#160;</a></span>key_map_overlay</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_overlay</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4beaaaeab68b500c74f05602a1919c69" name="a4beaaaeab68b500c74f05602a1919c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4beaaaeab68b500c74f05602a1919c69">&#9670;&#160;</a></span>key_map_rotate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_rotate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8417f20aa4e9c10bff8ce989d6b2b5f1" name="a8417f20aa4e9c10bff8ce989d6b2b5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8417f20aa4e9c10bff8ce989d6b2b5f1">&#9670;&#160;</a></span>key_map_south</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_south</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a084709f24557c3de70f9162219d1fd6a" name="a084709f24557c3de70f9162219d1fd6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084709f24557c3de70f9162219d1fd6a">&#9670;&#160;</a></span>key_map_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af244737c2513e3681f73f955347747ae" name="af244737c2513e3681f73f955347747ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af244737c2513e3681f73f955347747ae">&#9670;&#160;</a></span>key_map_west</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_west</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03cb845187ab83b5baa470b186fb9c96" name="a03cb845187ab83b5baa470b186fb9c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03cb845187ab83b5baa470b186fb9c96">&#9670;&#160;</a></span>key_map_zoomin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_zoomin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a948009f974cb1ef4e94cc036f974dbda" name="a948009f974cb1ef4e94cc036f974dbda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a948009f974cb1ef4e94cc036f974dbda">&#9670;&#160;</a></span>key_map_zoomout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_map_zoomout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54f91b9949537f9fd4623de5da6d97a4" name="a54f91b9949537f9fd4623de5da6d97a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f91b9949537f9fd4623de5da6d97a4">&#9670;&#160;</a></span>key_menu_abort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_abort</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad364ba0676f784bf59cf8eaf6f543a68" name="ad364ba0676f784bf59cf8eaf6f543a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad364ba0676f784bf59cf8eaf6f543a68">&#9670;&#160;</a></span>key_menu_activate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_activate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15d6086003c6f853fd4fd2bf8ecf88e6" name="a15d6086003c6f853fd4fd2bf8ecf88e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d6086003c6f853fd4fd2bf8ecf88e6">&#9670;&#160;</a></span>key_menu_back</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_back</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1a570f9c7de6707f62978b4970f9d28" name="ab1a570f9c7de6707f62978b4970f9d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a570f9c7de6707f62978b4970f9d28">&#9670;&#160;</a></span>key_menu_cleanscreenshot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_cleanscreenshot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e00b7f5a95de79ecf4387324cc17739" name="a0e00b7f5a95de79ecf4387324cc17739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e00b7f5a95de79ecf4387324cc17739">&#9670;&#160;</a></span>key_menu_confirm</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_confirm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc6a16a8b3c6758a38e1cde50cc05cc2" name="adc6a16a8b3c6758a38e1cde50cc05cc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6a16a8b3c6758a38e1cde50cc05cc2">&#9670;&#160;</a></span>key_menu_decscreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_decscreen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1885bba2f489800ba6267917cf1d39a9" name="a1885bba2f489800ba6267917cf1d39a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1885bba2f489800ba6267917cf1d39a9">&#9670;&#160;</a></span>key_menu_del</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_del</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63956e78605f8da7a0336db80460e7f3" name="a63956e78605f8da7a0336db80460e7f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63956e78605f8da7a0336db80460e7f3">&#9670;&#160;</a></span>key_menu_detail</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_detail</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af43333b75d61c9a21136a6903238a359" name="af43333b75d61c9a21136a6903238a359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af43333b75d61c9a21136a6903238a359">&#9670;&#160;</a></span>key_menu_down</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_down</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5d804884578c95077f7e96ea6fa31f4" name="ad5d804884578c95077f7e96ea6fa31f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d804884578c95077f7e96ea6fa31f4">&#9670;&#160;</a></span>key_menu_endgame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_endgame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e50511977bc94c22d6eb48b87d204d9" name="a8e50511977bc94c22d6eb48b87d204d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e50511977bc94c22d6eb48b87d204d9">&#9670;&#160;</a></span>key_menu_forward</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_forward</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c5dbd584c595ea8c12c3823260d4b35" name="a3c5dbd584c595ea8c12c3823260d4b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5dbd584c595ea8c12c3823260d4b35">&#9670;&#160;</a></span>key_menu_gamma</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_gamma</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6d886814bb34da9ea720a4f391d2df9" name="af6d886814bb34da9ea720a4f391d2df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6d886814bb34da9ea720a4f391d2df9">&#9670;&#160;</a></span>key_menu_help</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_help</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a901f7c02ef5e49a6ede4b45255df6403" name="a901f7c02ef5e49a6ede4b45255df6403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901f7c02ef5e49a6ede4b45255df6403">&#9670;&#160;</a></span>key_menu_incscreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_incscreen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4e1815ba7a4ff96f5fbac9c1e97df1e" name="ab4e1815ba7a4ff96f5fbac9c1e97df1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e1815ba7a4ff96f5fbac9c1e97df1e">&#9670;&#160;</a></span>key_menu_left</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_left</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba0f091c97a79c248699b470e15d2447" name="aba0f091c97a79c248699b470e15d2447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0f091c97a79c248699b470e15d2447">&#9670;&#160;</a></span>key_menu_load</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_load</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a179488e1c78047dee70ae6ab8e7c5642" name="a179488e1c78047dee70ae6ab8e7c5642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a179488e1c78047dee70ae6ab8e7c5642">&#9670;&#160;</a></span>key_menu_messages</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_messages</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a974c59898f041bd300196b0af98d08b4" name="a974c59898f041bd300196b0af98d08b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a974c59898f041bd300196b0af98d08b4">&#9670;&#160;</a></span>key_menu_nextlevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_nextlevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaddc54534b2b59659776ff877b3430d5" name="aaddc54534b2b59659776ff877b3430d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaddc54534b2b59659776ff877b3430d5">&#9670;&#160;</a></span>key_menu_qload</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_qload</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a077c4bac05587b762c9e0a99fdb46f48" name="a077c4bac05587b762c9e0a99fdb46f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077c4bac05587b762c9e0a99fdb46f48">&#9670;&#160;</a></span>key_menu_qsave</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_qsave</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ff13d9e153ca604fc6b940e7ee9899a" name="a3ff13d9e153ca604fc6b940e7ee9899a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff13d9e153ca604fc6b940e7ee9899a">&#9670;&#160;</a></span>key_menu_quit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_quit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6db5b40cf7dd29695611a68c2d18b365" name="a6db5b40cf7dd29695611a68c2d18b365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db5b40cf7dd29695611a68c2d18b365">&#9670;&#160;</a></span>key_menu_reloadlevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_reloadlevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa43a24a243f0ccd7b41ddcdfb355cf28" name="aa43a24a243f0ccd7b41ddcdfb355cf28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa43a24a243f0ccd7b41ddcdfb355cf28">&#9670;&#160;</a></span>key_menu_right</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_right</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4a2073daa7c1be05f0f055f1f3a1c3c" name="ab4a2073daa7c1be05f0f055f1f3a1c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a2073daa7c1be05f0f055f1f3a1c3c">&#9670;&#160;</a></span>key_menu_save</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_save</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b5e0784410e43cfe7afc4d40aa7a59d" name="a2b5e0784410e43cfe7afc4d40aa7a59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b5e0784410e43cfe7afc4d40aa7a59d">&#9670;&#160;</a></span>key_menu_screenshot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_screenshot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8c7f2e16f0e06c7fa298c7391f5e5d2" name="ab8c7f2e16f0e06c7fa298c7391f5e5d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c7f2e16f0e06c7fa298c7391f5e5d2">&#9670;&#160;</a></span>key_menu_up</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_up</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d52c6daf0b54e5ff3a68e0126314a49" name="a0d52c6daf0b54e5ff3a68e0126314a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d52c6daf0b54e5ff3a68e0126314a49">&#9670;&#160;</a></span>key_menu_volume</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_menu_volume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae14850e3a81b17632cbe484cd81beaba" name="ae14850e3a81b17632cbe484cd81beaba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae14850e3a81b17632cbe484cd81beaba">&#9670;&#160;</a></span>key_message_refresh</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_message_refresh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abdfa84b4509cc2dd79b549fffc2f2c46" name="abdfa84b4509cc2dd79b549fffc2f2c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdfa84b4509cc2dd79b549fffc2f2c46">&#9670;&#160;</a></span>key_mission</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_mission</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26a4103a4dafafae45d932a1a8991dfe" name="a26a4103a4dafafae45d932a1a8991dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a4103a4dafafae45d932a1a8991dfe">&#9670;&#160;</a></span>key_multi_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_multi_msg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad498850a3b9c88833f8d1d6193618f08" name="ad498850a3b9c88833f8d1d6193618f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad498850a3b9c88833f8d1d6193618f08">&#9670;&#160;</a></span>key_multi_msgplayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_multi_msgplayer[8]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14f5d9e162c0b97ff895a6cdb04f789f" name="a14f5d9e162c0b97ff895a6cdb04f789f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f5d9e162c0b97ff895a6cdb04f789f">&#9670;&#160;</a></span>key_nextweapon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_nextweapon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a391c8cb7483652c9efe121501924fc96" name="a391c8cb7483652c9efe121501924fc96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a391c8cb7483652c9efe121501924fc96">&#9670;&#160;</a></span>key_pause</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_pause</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2af1bd5c26b84dd34f403eff68e8c7bc" name="a2af1bd5c26b84dd34f403eff68e8c7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af1bd5c26b84dd34f403eff68e8c7bc">&#9670;&#160;</a></span>key_prevweapon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_prevweapon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7232a73e429fcce9693bf0ac402eb240" name="a7232a73e429fcce9693bf0ac402eb240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7232a73e429fcce9693bf0ac402eb240">&#9670;&#160;</a></span>key_reverse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_reverse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af929151dd14c88998cfe0eb78d0dc0a3" name="af929151dd14c88998cfe0eb78d0dc0a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af929151dd14c88998cfe0eb78d0dc0a3">&#9670;&#160;</a></span>key_right</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_right</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9911b02971f517e118b4988c0e8840e4" name="a9911b02971f517e118b4988c0e8840e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9911b02971f517e118b4988c0e8840e4">&#9670;&#160;</a></span>key_speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_speed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a149efecb652dd0f89b6bec3fd17d37" name="a3a149efecb652dd0f89b6bec3fd17d37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a149efecb652dd0f89b6bec3fd17d37">&#9670;&#160;</a></span>key_spy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_spy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3e09523252ac939254d2fc7c02f58d6" name="af3e09523252ac939254d2fc7c02f58d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e09523252ac939254d2fc7c02f58d6">&#9670;&#160;</a></span>key_strafe</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_strafe</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e11e77f07ad35ed5b4742da90910e62" name="a7e11e77f07ad35ed5b4742da90910e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e11e77f07ad35ed5b4742da90910e62">&#9670;&#160;</a></span>key_strafeleft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_strafeleft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4dc767725303d464e1b446acbd7f510a" name="a4dc767725303d464e1b446acbd7f510a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc767725303d464e1b446acbd7f510a">&#9670;&#160;</a></span>key_straferight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_straferight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51615f03cca2948b3e47b10a84437afd" name="a51615f03cca2948b3e47b10a84437afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51615f03cca2948b3e47b10a84437afd">&#9670;&#160;</a></span>key_toggleautorun</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_toggleautorun</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a23f9f9472e814c59a7b8f5c09bfb3d" name="a3a23f9f9472e814c59a7b8f5c09bfb3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a23f9f9472e814c59a7b8f5c09bfb3d">&#9670;&#160;</a></span>key_togglenovert</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_togglenovert</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c650232521010da69bb82f93ebcd495" name="a1c650232521010da69bb82f93ebcd495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c650232521010da69bb82f93ebcd495">&#9670;&#160;</a></span>key_up</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_up</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94e5c87bbde58789a6efeb459bc96d01" name="a94e5c87bbde58789a6efeb459bc96d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e5c87bbde58789a6efeb459bc96d01">&#9670;&#160;</a></span>key_use</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_use</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b9c928ffbe9c902211d68efd15db1d3" name="a0b9c928ffbe9c902211d68efd15db1d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b9c928ffbe9c902211d68efd15db1d3">&#9670;&#160;</a></span>key_useartifact</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_useartifact</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac092fb37c90df7fa29f8a09ec870ceb" name="aac092fb37c90df7fa29f8a09ec870ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac092fb37c90df7fa29f8a09ec870ceb">&#9670;&#160;</a></span>key_usehealth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_usehealth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae77b89e226ea217fe12dedbc32c59415" name="ae77b89e226ea217fe12dedbc32c59415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77b89e226ea217fe12dedbc32c59415">&#9670;&#160;</a></span>key_weapon1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_weapon1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2254b31caa35af38e8a7b8e447d06ad" name="af2254b31caa35af38e8a7b8e447d06ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2254b31caa35af38e8a7b8e447d06ad">&#9670;&#160;</a></span>key_weapon2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_weapon2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10c4370fbcb46ec203176343b0c4dc8b" name="a10c4370fbcb46ec203176343b0c4dc8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c4370fbcb46ec203176343b0c4dc8b">&#9670;&#160;</a></span>key_weapon3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_weapon3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0cd739e91db8e2dad2b7b4e0d9f7820" name="ab0cd739e91db8e2dad2b7b4e0d9f7820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0cd739e91db8e2dad2b7b4e0d9f7820">&#9670;&#160;</a></span>key_weapon4</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_weapon4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36f5f0ac6b7152b13d2da8721875b1a2" name="a36f5f0ac6b7152b13d2da8721875b1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f5f0ac6b7152b13d2da8721875b1a2">&#9670;&#160;</a></span>key_weapon5</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_weapon5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae53b24b3a48f8a4fee0b3a31d4d6805" name="aae53b24b3a48f8a4fee0b3a31d4d6805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae53b24b3a48f8a4fee0b3a31d4d6805">&#9670;&#160;</a></span>key_weapon6</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_weapon6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7edf23a6e8d03bece7920a38ba4bc7c" name="aa7edf23a6e8d03bece7920a38ba4bc7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7edf23a6e8d03bece7920a38ba4bc7c">&#9670;&#160;</a></span>key_weapon7</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_weapon7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8dedcb7e5a83a1f33b966dabc344ac02" name="a8dedcb7e5a83a1f33b966dabc344ac02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dedcb7e5a83a1f33b966dabc344ac02">&#9670;&#160;</a></span>key_weapon8</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int key_weapon8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb138c14889db8f53c519d56a61f39e6" name="aeb138c14889db8f53c519d56a61f39e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb138c14889db8f53c519d56a61f39e6">&#9670;&#160;</a></span>mousebbackward</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebbackward</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89be532a9636474f0c662cc41730f35f" name="a89be532a9636474f0c662cc41730f35f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89be532a9636474f0c662cc41730f35f">&#9670;&#160;</a></span>mousebfire</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebfire</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2abe38b8c777bced3a93be69c2433457" name="a2abe38b8c777bced3a93be69c2433457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2abe38b8c777bced3a93be69c2433457">&#9670;&#160;</a></span>mousebforward</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebforward</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87986820acb09cb6fd7833137948cf28" name="a87986820acb09cb6fd7833137948cf28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87986820acb09cb6fd7833137948cf28">&#9670;&#160;</a></span>mousebinvleft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebinvleft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09c6fa39a4387fa93c79b9a135ebf73c" name="a09c6fa39a4387fa93c79b9a135ebf73c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c6fa39a4387fa93c79b9a135ebf73c">&#9670;&#160;</a></span>mousebinvright</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebinvright</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d59f879e92bedc4b9b37935caf78164" name="a8d59f879e92bedc4b9b37935caf78164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d59f879e92bedc4b9b37935caf78164">&#9670;&#160;</a></span>mousebinvuse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebinvuse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0479b42a9b2f68a128fcdb8d1bd09f92" name="a0479b42a9b2f68a128fcdb8d1bd09f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0479b42a9b2f68a128fcdb8d1bd09f92">&#9670;&#160;</a></span>mousebjump</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebjump</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9e1ef1edea64c440331b37c288155f5" name="af9e1ef1edea64c440331b37c288155f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e1ef1edea64c440331b37c288155f5">&#9670;&#160;</a></span>mousebmapfollow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebmapfollow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab16a2585599423676fcf7a122611376e" name="ab16a2585599423676fcf7a122611376e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab16a2585599423676fcf7a122611376e">&#9670;&#160;</a></span>mousebmapmaxzoom</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebmapmaxzoom</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a23281eda624832a38120c3653667b5" name="a9a23281eda624832a38120c3653667b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a23281eda624832a38120c3653667b5">&#9670;&#160;</a></span>mousebmapzoomin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebmapzoomin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a464db02e914d22b7b697364a58ddaa42" name="a464db02e914d22b7b697364a58ddaa42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a464db02e914d22b7b697364a58ddaa42">&#9670;&#160;</a></span>mousebmapzoomout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebmapzoomout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a064546190314a34933ff47dc0469e7c7" name="a064546190314a34933ff47dc0469e7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a064546190314a34933ff47dc0469e7c7">&#9670;&#160;</a></span>mousebmouselook</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebmouselook</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6898c476bcb8761d3b64087ed617085" name="ac6898c476bcb8761d3b64087ed617085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6898c476bcb8761d3b64087ed617085">&#9670;&#160;</a></span>mousebnextweapon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebnextweapon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7523943eef76515d3802e8c263eec333" name="a7523943eef76515d3802e8c263eec333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7523943eef76515d3802e8c263eec333">&#9670;&#160;</a></span>mousebprevweapon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebprevweapon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab11448a7f65421b58a9c146feeb6b873" name="ab11448a7f65421b58a9c146feeb6b873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11448a7f65421b58a9c146feeb6b873">&#9670;&#160;</a></span>mousebreverse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebreverse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b0393a55962e4c4fa56db01dc48a067" name="a5b0393a55962e4c4fa56db01dc48a067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b0393a55962e4c4fa56db01dc48a067">&#9670;&#160;</a></span>mousebspeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebspeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a763eb8adf50739ed54b1c5b7b7fdb1e7" name="a763eb8adf50739ed54b1c5b7b7fdb1e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a763eb8adf50739ed54b1c5b7b7fdb1e7">&#9670;&#160;</a></span>mousebstrafe</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebstrafe</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab68f843e81e1b4493f5fbe9c23829292" name="ab68f843e81e1b4493f5fbe9c23829292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68f843e81e1b4493f5fbe9c23829292">&#9670;&#160;</a></span>mousebstrafeleft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebstrafeleft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4357bfb2ba6b42729d34535d11704a0" name="ad4357bfb2ba6b42729d34535d11704a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4357bfb2ba6b42729d34535d11704a0">&#9670;&#160;</a></span>mousebstraferight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebstraferight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8528f7442b4956c43d61d387668989e4" name="a8528f7442b4956c43d61d387668989e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8528f7442b4956c43d61d387668989e4">&#9670;&#160;</a></span>mousebturnleft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebturnleft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12f3916704a18d099b8aba31ef917b0a" name="a12f3916704a18d099b8aba31ef917b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f3916704a18d099b8aba31ef917b0a">&#9670;&#160;</a></span>mousebturnright</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebturnright</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae24571f78655df6a6cfaa43b4312889d" name="ae24571f78655df6a6cfaa43b4312889d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24571f78655df6a6cfaa43b4312889d">&#9670;&#160;</a></span>mousebuse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebuse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add77d932f3c4e5f63d7138eb6c8e4c51" name="add77d932f3c4e5f63d7138eb6c8e4c51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add77d932f3c4e5f63d7138eb6c8e4c51">&#9670;&#160;</a></span>mousebuseartifact</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mousebuseartifact</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="m__controls_8h.html">m_controls.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>
