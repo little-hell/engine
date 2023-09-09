@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell-crispy/subprojects/little-hell-engine/src/net/common.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('common_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">common.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="d__mode_8h_source.html">d_mode.h</a>&quot;</code><br />
+<code>#include &quot;littlehell/net/defs.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="packet_8h_source.html">net/packet.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for common.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="common_8h__incl.svg" width="380" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="common_8h__dep__incl.svg" width="1156" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div>
+<p><a href="common_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnet__connection__t.html">net_connection_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aecf13b8dc783db2202ca5c34fe117fc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#aecf13b8dc783db2202ca5c34fe117fc3">MAX_RETRIES</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:aecf13b8dc783db2202ca5c34fe117fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:afeeec35a58c09424bfca6cde89e69e39"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structnet__reliable__packet__s.html">net_reliable_packet_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#afeeec35a58c09424bfca6cde89e69e39">net_reliable_packet_t</a></td></tr>
+<tr class="separator:afeeec35a58c09424bfca6cde89e69e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a56ed3e0f4ff35d399bddb1566a98000f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a56ed3e0f4ff35d399bddb1566a98000f">net_connstate_t</a> { <br />
+&#160;&#160;<a class="el" href="common_8h.html#a56ed3e0f4ff35d399bddb1566a98000fa30039462c41971138fc2315740550e67">NET_CONN_STATE_CONNECTING</a>
+, <a class="el" href="common_8h.html#a56ed3e0f4ff35d399bddb1566a98000fac3f15f3049de887f589a0d7d1df519b4">NET_CONN_STATE_CONNECTED</a>
+, <a class="el" href="common_8h.html#a56ed3e0f4ff35d399bddb1566a98000fa744ae5fe9968f65ac4c708c4eadd1584">NET_CONN_STATE_DISCONNECTING</a>
+, <a class="el" href="common_8h.html#a56ed3e0f4ff35d399bddb1566a98000fadb43e35cbb8a1f582cfc6909888df07a">NET_CONN_STATE_DISCONNECTED</a>
+, <br />
+&#160;&#160;<a class="el" href="common_8h.html#a56ed3e0f4ff35d399bddb1566a98000fab00676a6f0e37cc06025aae836149075">NET_CONN_STATE_DISCONNECTED_SLEEP</a>
+<br />
+ }</td></tr>
+<tr class="separator:a56ed3e0f4ff35d399bddb1566a98000f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f86cb4877bda6cbb99f4aa9aaa7871"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ae7f86cb4877bda6cbb99f4aa9aaa7871">net_disconnect_reason_t</a> { <a class="el" href="common_8h.html#ae7f86cb4877bda6cbb99f4aa9aaa7871a7d407c5ee7bffbd39b6883f0b8052a78">NET_DISCONNECT_LOCAL</a>
+, <a class="el" href="common_8h.html#ae7f86cb4877bda6cbb99f4aa9aaa7871af9065651edba59498daaeb0da5dc2d3e">NET_DISCONNECT_REMOTE</a>
+, <a class="el" href="common_8h.html#ae7f86cb4877bda6cbb99f4aa9aaa7871a824c572b2525462c893b05227b0f81e6">NET_DISCONNECT_TIMEOUT</a>
+ }</td></tr>
+<tr class="separator:ae7f86cb4877bda6cbb99f4aa9aaa7871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a39247525ddf3dc526ae5cae0ccde56b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a39247525ddf3dc526ae5cae0ccde56b8">NET_Conn_SendPacket</a> (<a class="el" href="structnet__connection__t.html">net_connection_t</a> *conn, net_packet_t *packet)</td></tr>
+<tr class="separator:a39247525ddf3dc526ae5cae0ccde56b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af80f498af9b256c6912425e31a24f966"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#af80f498af9b256c6912425e31a24f966">NET_Conn_InitClient</a> (<a class="el" href="structnet__connection__t.html">net_connection_t</a> *conn, net_addr_t *addr, net_protocol_t <a class="el" href="structrw_8c.html#ade36739c701ca04b722c2ece73175e64">protocol</a>)</td></tr>
+<tr class="separator:af80f498af9b256c6912425e31a24f966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6351a077a5b6386f95cbed6259fa6b3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a6351a077a5b6386f95cbed6259fa6b3d">NET_Conn_InitServer</a> (<a class="el" href="structnet__connection__t.html">net_connection_t</a> *conn, net_addr_t *addr, net_protocol_t <a class="el" href="structrw_8c.html#ade36739c701ca04b722c2ece73175e64">protocol</a>)</td></tr>
+<tr class="separator:a6351a077a5b6386f95cbed6259fa6b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff0fe5035f42504f5b15ef9f289866e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#aff0fe5035f42504f5b15ef9f289866e3">NET_Conn_Packet</a> (<a class="el" href="structnet__connection__t.html">net_connection_t</a> *conn, net_packet_t *packet, unsigned int *packet_type)</td></tr>
+<tr class="separator:aff0fe5035f42504f5b15ef9f289866e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907367a8d5386e5a04cd9e383922e207"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a907367a8d5386e5a04cd9e383922e207">NET_Conn_Disconnect</a> (<a class="el" href="structnet__connection__t.html">net_connection_t</a> *conn)</td></tr>
+<tr class="separator:a907367a8d5386e5a04cd9e383922e207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737cc52fe12e7329fc7dd4fa7f37e0b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a737cc52fe12e7329fc7dd4fa7f37e0b1">NET_Conn_Run</a> (<a class="el" href="structnet__connection__t.html">net_connection_t</a> *conn)</td></tr>
+<tr class="separator:a737cc52fe12e7329fc7dd4fa7f37e0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c480b8432dadfe671e821d939d0cfd3"><td class="memItemLeft" align="right" valign="top">net_packet_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a0c480b8432dadfe671e821d939d0cfd3">NET_Conn_NewReliable</a> (<a class="el" href="structnet__connection__t.html">net_connection_t</a> *conn, int packet_type)</td></tr>
+<tr class="separator:a0c480b8432dadfe671e821d939d0cfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a27dba8a2bf171d4e8a33d65676294"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a82a27dba8a2bf171d4e8a33d65676294">NET_ExpandTicNum</a> (unsigned int relative, unsigned int b)</td></tr>
+<tr class="separator:a82a27dba8a2bf171d4e8a33d65676294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7168bcc8af46c9aa5fed77eb36fdcc01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a7168bcc8af46c9aa5fed77eb36fdcc01">NET_ValidGameSettings</a> (<a class="el" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4e">GameMode_t</a> <a class="el" href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a>, <a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a> <a class="el" href="d__mode_8c.html#aae28f7dd7422ed5ee5c7b7a67f2dad44">mission</a>, net_gamesettings_t *<a class="el" href="client_8c.html#a2e073605e669e967ffb90e9d649e53c4">settings</a>)</td></tr>
+<tr class="separator:a7168bcc8af46c9aa5fed77eb36fdcc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ff49f843fddf20b14931b2a484c0b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ad7ff49f843fddf20b14931b2a484c0b6">NET_OpenLog</a> (void)</td></tr>
+<tr class="separator:ad7ff49f843fddf20b14931b2a484c0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda97036d4b7b40a48f55d2a2167ddff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#adda97036d4b7b40a48f55d2a2167ddff">NET_Log</a> (const char *fmt,...)</td></tr>
+<tr class="separator:adda97036d4b7b40a48f55d2a2167ddff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65a13509eb7dabf1a46ca14838d1006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#aa65a13509eb7dabf1a46ca14838d1006">NET_LogPacket</a> (net_packet_t *packet)</td></tr>
+<tr class="separator:aa65a13509eb7dabf1a46ca14838d1006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aecf13b8dc783db2202ca5c34fe117fc3" name="aecf13b8dc783db2202ca5c34fe117fc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf13b8dc783db2202ca5c34fe117fc3">&#9670;&#160;</a></span>MAX_RETRIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_RETRIES&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="afeeec35a58c09424bfca6cde89e69e39" name="afeeec35a58c09424bfca6cde89e69e39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeeec35a58c09424bfca6cde89e69e39">&#9670;&#160;</a></span>net_reliable_packet_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structnet__reliable__packet__s.html">net_reliable_packet_s</a> <a class="el" href="common_8h.html#afeeec35a58c09424bfca6cde89e69e39">net_reliable_packet_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a56ed3e0f4ff35d399bddb1566a98000f" name="a56ed3e0f4ff35d399bddb1566a98000f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56ed3e0f4ff35d399bddb1566a98000f">&#9670;&#160;</a></span>net_connstate_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="common_8h.html#a56ed3e0f4ff35d399bddb1566a98000f">net_connstate_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a56ed3e0f4ff35d399bddb1566a98000fa30039462c41971138fc2315740550e67" name="a56ed3e0f4ff35d399bddb1566a98000fa30039462c41971138fc2315740550e67"></a>NET_CONN_STATE_CONNECTING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a56ed3e0f4ff35d399bddb1566a98000fac3f15f3049de887f589a0d7d1df519b4" name="a56ed3e0f4ff35d399bddb1566a98000fac3f15f3049de887f589a0d7d1df519b4"></a>NET_CONN_STATE_CONNECTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a56ed3e0f4ff35d399bddb1566a98000fa744ae5fe9968f65ac4c708c4eadd1584" name="a56ed3e0f4ff35d399bddb1566a98000fa744ae5fe9968f65ac4c708c4eadd1584"></a>NET_CONN_STATE_DISCONNECTING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a56ed3e0f4ff35d399bddb1566a98000fadb43e35cbb8a1f582cfc6909888df07a" name="a56ed3e0f4ff35d399bddb1566a98000fadb43e35cbb8a1f582cfc6909888df07a"></a>NET_CONN_STATE_DISCONNECTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a56ed3e0f4ff35d399bddb1566a98000fab00676a6f0e37cc06025aae836149075" name="a56ed3e0f4ff35d399bddb1566a98000fab00676a6f0e37cc06025aae836149075"></a>NET_CONN_STATE_DISCONNECTED_SLEEP&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae7f86cb4877bda6cbb99f4aa9aaa7871" name="ae7f86cb4877bda6cbb99f4aa9aaa7871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f86cb4877bda6cbb99f4aa9aaa7871">&#9670;&#160;</a></span>net_disconnect_reason_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="common_8h.html#ae7f86cb4877bda6cbb99f4aa9aaa7871">net_disconnect_reason_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae7f86cb4877bda6cbb99f4aa9aaa7871a7d407c5ee7bffbd39b6883f0b8052a78" name="ae7f86cb4877bda6cbb99f4aa9aaa7871a7d407c5ee7bffbd39b6883f0b8052a78"></a>NET_DISCONNECT_LOCAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae7f86cb4877bda6cbb99f4aa9aaa7871af9065651edba59498daaeb0da5dc2d3e" name="ae7f86cb4877bda6cbb99f4aa9aaa7871af9065651edba59498daaeb0da5dc2d3e"></a>NET_DISCONNECT_REMOTE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae7f86cb4877bda6cbb99f4aa9aaa7871a824c572b2525462c893b05227b0f81e6" name="ae7f86cb4877bda6cbb99f4aa9aaa7871a824c572b2525462c893b05227b0f81e6"></a>NET_DISCONNECT_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a907367a8d5386e5a04cd9e383922e207" name="a907367a8d5386e5a04cd9e383922e207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907367a8d5386e5a04cd9e383922e207">&#9670;&#160;</a></span>NET_Conn_Disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_Conn_Disconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__connection__t.html">net_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af80f498af9b256c6912425e31a24f966" name="af80f498af9b256c6912425e31a24f966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af80f498af9b256c6912425e31a24f966">&#9670;&#160;</a></span>NET_Conn_InitClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_Conn_InitClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__connection__t.html">net_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_protocol_t&#160;</td>
+          <td class="paramname"><em>protocol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6351a077a5b6386f95cbed6259fa6b3d" name="a6351a077a5b6386f95cbed6259fa6b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6351a077a5b6386f95cbed6259fa6b3d">&#9670;&#160;</a></span>NET_Conn_InitServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_Conn_InitServer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__connection__t.html">net_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_addr_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_protocol_t&#160;</td>
+          <td class="paramname"><em>protocol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c480b8432dadfe671e821d939d0cfd3" name="a0c480b8432dadfe671e821d939d0cfd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c480b8432dadfe671e821d939d0cfd3">&#9670;&#160;</a></span>NET_Conn_NewReliable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">net_packet_t * NET_Conn_NewReliable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__connection__t.html">net_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>packet_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff0fe5035f42504f5b15ef9f289866e3" name="aff0fe5035f42504f5b15ef9f289866e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff0fe5035f42504f5b15ef9f289866e3">&#9670;&#160;</a></span>NET_Conn_Packet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> NET_Conn_Packet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__connection__t.html">net_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>packet_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a737cc52fe12e7329fc7dd4fa7f37e0b1" name="a737cc52fe12e7329fc7dd4fa7f37e0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737cc52fe12e7329fc7dd4fa7f37e0b1">&#9670;&#160;</a></span>NET_Conn_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_Conn_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__connection__t.html">net_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39247525ddf3dc526ae5cae0ccde56b8" name="a39247525ddf3dc526ae5cae0ccde56b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39247525ddf3dc526ae5cae0ccde56b8">&#9670;&#160;</a></span>NET_Conn_SendPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_Conn_SendPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnet__connection__t.html">net_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82a27dba8a2bf171d4e8a33d65676294" name="a82a27dba8a2bf171d4e8a33d65676294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a27dba8a2bf171d4e8a33d65676294">&#9670;&#160;</a></span>NET_ExpandTicNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int NET_ExpandTicNum </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>relative</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adda97036d4b7b40a48f55d2a2167ddff" name="adda97036d4b7b40a48f55d2a2167ddff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda97036d4b7b40a48f55d2a2167ddff">&#9670;&#160;</a></span>NET_Log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_Log </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa65a13509eb7dabf1a46ca14838d1006" name="aa65a13509eb7dabf1a46ca14838d1006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa65a13509eb7dabf1a46ca14838d1006">&#9670;&#160;</a></span>NET_LogPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_LogPacket </td>
+          <td>(</td>
+          <td class="paramtype">net_packet_t *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7ff49f843fddf20b14931b2a484c0b6" name="ad7ff49f843fddf20b14931b2a484c0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ff49f843fddf20b14931b2a484c0b6">&#9670;&#160;</a></span>NET_OpenLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NET_OpenLog </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7168bcc8af46c9aa5fed77eb36fdcc01" name="a7168bcc8af46c9aa5fed77eb36fdcc01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7168bcc8af46c9aa5fed77eb36fdcc01">&#9670;&#160;</a></span>NET_ValidGameSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> NET_ValidGameSettings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4e">GameMode_t</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a>&#160;</td>
+          <td class="paramname"><em>mission</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">net_gamesettings_t *&#160;</td>
+          <td class="paramname"><em>settings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c72b25b75abe208498b36a3e44a3726c.html">net</a></li><li class="navelem"><a class="el" href="common_8h.html">common.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell-crispy/subprojects/little-hell-engine/src/d_iwad.c File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d__iwad_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">d_iwad.c File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="doomkeys_8h_source.html">doomkeys.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__iwad_8h_source.html">d_iwad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__system_8h_source.html">i_system.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__argv_8h_source.html">m_argv.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__config_8h_source.html">m_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__misc_8h_source.html">m_misc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="w__wad_8h_source.html">w_wad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="z__zone_8h_source.html">z_zone.h</a>&quot;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for d_iwad.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="d__iwad_8c__incl.svg" width="1202" height="374"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregistry__value__t.html">registry_value_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aeae76031c94329691e35b3b720587033"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#aeae76031c94329691e35b3b720587033">MAX_IWAD_DIRS</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:aeae76031c94329691e35b3b720587033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7bef5d85e3dcd73eef56ad39ffc84a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#ac7bef5d85e3dcd73eef56ad39ffc84a9">WIN32_LEAN_AND_MEAN</a></td></tr>
+<tr class="separator:ac7bef5d85e3dcd73eef56ad39ffc84a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db20ee7411af64d00e250f4c16b9338"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a4db20ee7411af64d00e250f4c16b9338">UNINSTALLER_STRING</a>&#160;&#160;&#160;&quot;\\uninstl.exe /S &quot;</td></tr>
+<tr class="separator:a4db20ee7411af64d00e250f4c16b9338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a8f8320bac42ae15a3ae7de3f99822"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#ad1a8f8320bac42ae15a3ae7de3f99822">SOFTWARE_KEY</a>&#160;&#160;&#160;&quot;Software&quot;</td></tr>
+<tr class="separator:ad1a8f8320bac42ae15a3ae7de3f99822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67debffb8ab045734342f6fc5effd762"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a67debffb8ab045734342f6fc5effd762">STEAM_BFG_GUS_PATCHES</a>&#160;&#160;&#160;    &quot;steamapps\\common\\DOOM 3 BFG Edition\\base\\classicmusic\\instruments&quot;</td></tr>
+<tr class="separator:a67debffb8ab045734342f6fc5effd762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2da97a921d34942d8deaf2d7affc5b99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a2da97a921d34942d8deaf2d7affc5b99">D_IsIWADName</a> (const char *<a class="el" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="separator:a2da97a921d34942d8deaf2d7affc5b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ba735d14c0e04d3c123b013dae9f53"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a62ba735d14c0e04d3c123b013dae9f53">AddIWADDir</a> (const char *dir)</td></tr>
+<tr class="separator:a62ba735d14c0e04d3c123b013dae9f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7402a307ac7b24ecdccc9df32a57e09"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#ac7402a307ac7b24ecdccc9df32a57e09">GetRegistryString</a> (<a class="el" href="structregistry__value__t.html">registry_value_t</a> *reg_val)</td></tr>
+<tr class="separator:ac7402a307ac7b24ecdccc9df32a57e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a264d8c04940c89f40b4b23a600e7f1e1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a264d8c04940c89f40b4b23a600e7f1e1">CheckUninstallStrings</a> (void)</td></tr>
+<tr class="separator:a264d8c04940c89f40b4b23a600e7f1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9714512595378db9dfa555c39a655da9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a9714512595378db9dfa555c39a655da9">CheckInstallRootPaths</a> (void)</td></tr>
+<tr class="separator:a9714512595378db9dfa555c39a655da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a2220a0fe2f93a4419772e5c061b26c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a6a2220a0fe2f93a4419772e5c061b26c">CheckSteamEdition</a> (void)</td></tr>
+<tr class="separator:a6a2220a0fe2f93a4419772e5c061b26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268dc565c046a06913611b61f37df4c9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a268dc565c046a06913611b61f37df4c9">CheckSteamGUSPatches</a> (void)</td></tr>
+<tr class="separator:a268dc565c046a06913611b61f37df4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d300e9072e4600b9b7ca6f95540950c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a2d300e9072e4600b9b7ca6f95540950c">CheckDOSDefaults</a> (void)</td></tr>
+<tr class="separator:a2d300e9072e4600b9b7ca6f95540950c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f8e3f5516c82865a6b34ac7b27cbef"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a25f8e3f5516c82865a6b34ac7b27cbef">DirIsFile</a> (const char *path, const char *filename)</td></tr>
+<tr class="separator:a25f8e3f5516c82865a6b34ac7b27cbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50140f6cc903d2bc8d5ba50773cf70f8"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a50140f6cc903d2bc8d5ba50773cf70f8">CheckDirectoryHasIWAD</a> (const char *dir, const char *iwadname)</td></tr>
+<tr class="separator:a50140f6cc903d2bc8d5ba50773cf70f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3405ea5b107a58e33e2a504ea528ed03"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a3405ea5b107a58e33e2a504ea528ed03">SearchDirectoryForIWAD</a> (const char *dir, int mask, <a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a> *<a class="el" href="d__mode_8c.html#aae28f7dd7422ed5ee5c7b7a67f2dad44">mission</a>)</td></tr>
+<tr class="separator:a3405ea5b107a58e33e2a504ea528ed03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab216317af51096d451d8a10765c87b96"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#ab216317af51096d451d8a10765c87b96">IdentifyIWADByName</a> (const char *<a class="el" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, int mask)</td></tr>
+<tr class="separator:ab216317af51096d451d8a10765c87b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac96fe16cd3811140f040009e81b01f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#aeac96fe16cd3811140f040009e81b01f">AddIWADPath</a> (const char *path, const char *suffix)</td></tr>
+<tr class="separator:aeac96fe16cd3811140f040009e81b01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41fb0cd88224f40d7eb244d0b57f1f2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#aa41fb0cd88224f40d7eb244d0b57f1f2">BuildIWADDirList</a> (void)</td></tr>
+<tr class="separator:aa41fb0cd88224f40d7eb244d0b57f1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d552f6624eecafe51e11fe0098c2a9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a04d552f6624eecafe51e11fe0098c2a9">D_FindWADByName</a> (const char *<a class="el" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="separator:a04d552f6624eecafe51e11fe0098c2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a289c7b902a2360eeedd635f14d288334"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a289c7b902a2360eeedd635f14d288334">D_TryFindWADByName</a> (const char *filename)</td></tr>
+<tr class="separator:a289c7b902a2360eeedd635f14d288334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55bc1851bd6b492328aa540035ccd3b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#ac55bc1851bd6b492328aa540035ccd3b">D_FindIWAD</a> (int mask, <a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a> *<a class="el" href="d__mode_8c.html#aae28f7dd7422ed5ee5c7b7a67f2dad44">mission</a>)</td></tr>
+<tr class="separator:ac55bc1851bd6b492328aa540035ccd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c2f30f06550683935b93e6389c5955"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structiwad__t.html">iwad_t</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#ad0c2f30f06550683935b93e6389c5955">D_FindAllIWADs</a> (int mask)</td></tr>
+<tr class="separator:ad0c2f30f06550683935b93e6389c5955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e89769f00a74aad94349e709aad2827"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a1e89769f00a74aad94349e709aad2827">D_SaveGameIWADName</a> (<a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a> gamemission, <a class="el" href="d__mode_8h.html#a4fbe435edbbfddc7f19f48ebc70d4725">GameVariant_t</a> gamevariant)</td></tr>
+<tr class="separator:a1e89769f00a74aad94349e709aad2827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94c4776cd3ea82d32b17fb8fc697826"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#ab94c4776cd3ea82d32b17fb8fc697826">D_SuggestIWADName</a> (<a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a> <a class="el" href="d__mode_8c.html#aae28f7dd7422ed5ee5c7b7a67f2dad44">mission</a>, <a class="el" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4e">GameMode_t</a> <a class="el" href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a>)</td></tr>
+<tr class="separator:ab94c4776cd3ea82d32b17fb8fc697826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1700a85e83e9ed76331d08c9f36d1d0d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a1700a85e83e9ed76331d08c9f36d1d0d">D_SuggestGameName</a> (<a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a> <a class="el" href="d__mode_8c.html#aae28f7dd7422ed5ee5c7b7a67f2dad44">mission</a>, <a class="el" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4e">GameMode_t</a> <a class="el" href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a>)</td></tr>
+<tr class="separator:a1700a85e83e9ed76331d08c9f36d1d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a0c4ac7044884a6da2e5b364fc1f29363"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="structiwad__t.html">iwad_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a0c4ac7044884a6da2e5b364fc1f29363">iwads</a> []</td></tr>
+<tr class="separator:a0c4ac7044884a6da2e5b364fc1f29363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ff75681399aff051eca7daf05ca82e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a91ff75681399aff051eca7daf05ca82e">iwad_dirs_built</a> = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
+<tr class="separator:a91ff75681399aff051eca7daf05ca82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa36b41e5fc4dc1ae7a160310a1baab9a"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#aa36b41e5fc4dc1ae7a160310a1baab9a">iwad_dirs</a> [<a class="el" href="d__iwad_8c.html#aeae76031c94329691e35b3b720587033">MAX_IWAD_DIRS</a>]</td></tr>
+<tr class="separator:aa36b41e5fc4dc1ae7a160310a1baab9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a8248e49db81e8c5b0c9678059c8b5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#aa4a8248e49db81e8c5b0c9678059c8b5">num_iwad_dirs</a> = 0</td></tr>
+<tr class="separator:aa4a8248e49db81e8c5b0c9678059c8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2c299b0f1d4feeaff4d81d564b28c9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structregistry__value__t.html">registry_value_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a2d2c299b0f1d4feeaff4d81d564b28c9">uninstall_values</a> []</td></tr>
+<tr class="separator:a2d2c299b0f1d4feeaff4d81d564b28c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3fd7316724155be53f7e4637140f5e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structregistry__value__t.html">registry_value_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a7f3fd7316724155be53f7e4637140f5e">root_path_keys</a> []</td></tr>
+<tr class="separator:a7f3fd7316724155be53f7e4637140f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ff42755635e32f8d966d2bc8570bea"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#a01ff42755635e32f8d966d2bc8570bea">root_path_subdirs</a> []</td></tr>
+<tr class="separator:a01ff42755635e32f8d966d2bc8570bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f2b6fbbb7e0cda4a389fb978871b1d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structregistry__value__t.html">registry_value_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#ae5f2b6fbbb7e0cda4a389fb978871b1d">steam_install_location</a></td></tr>
+<tr class="separator:ae5f2b6fbbb7e0cda4a389fb978871b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11408f64bf7f56dc462cfc0a26a99bd"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__iwad_8c.html#ae11408f64bf7f56dc462cfc0a26a99bd">steam_install_subdirs</a> []</td></tr>
+<tr class="separator:ae11408f64bf7f56dc462cfc0a26a99bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aeae76031c94329691e35b3b720587033" name="aeae76031c94329691e35b3b720587033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae76031c94329691e35b3b720587033">&#9670;&#160;</a></span>MAX_IWAD_DIRS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_IWAD_DIRS&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1a8f8320bac42ae15a3ae7de3f99822" name="ad1a8f8320bac42ae15a3ae7de3f99822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a8f8320bac42ae15a3ae7de3f99822">&#9670;&#160;</a></span>SOFTWARE_KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOFTWARE_KEY&#160;&#160;&#160;&quot;Software&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67debffb8ab045734342f6fc5effd762" name="a67debffb8ab045734342f6fc5effd762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67debffb8ab045734342f6fc5effd762">&#9670;&#160;</a></span>STEAM_BFG_GUS_PATCHES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STEAM_BFG_GUS_PATCHES&#160;&#160;&#160;    &quot;steamapps\\common\\DOOM 3 BFG Edition\\base\\classicmusic\\instruments&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4db20ee7411af64d00e250f4c16b9338" name="a4db20ee7411af64d00e250f4c16b9338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db20ee7411af64d00e250f4c16b9338">&#9670;&#160;</a></span>UNINSTALLER_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNINSTALLER_STRING&#160;&#160;&#160;&quot;\\uninstl.exe /S &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7bef5d85e3dcd73eef56ad39ffc84a9" name="ac7bef5d85e3dcd73eef56ad39ffc84a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7bef5d85e3dcd73eef56ad39ffc84a9">&#9670;&#160;</a></span>WIN32_LEAN_AND_MEAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WIN32_LEAN_AND_MEAN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a62ba735d14c0e04d3c123b013dae9f53" name="a62ba735d14c0e04d3c123b013dae9f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ba735d14c0e04d3c123b013dae9f53">&#9670;&#160;</a></span>AddIWADDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AddIWADDir </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeac96fe16cd3811140f040009e81b01f" name="aeac96fe16cd3811140f040009e81b01f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac96fe16cd3811140f040009e81b01f">&#9670;&#160;</a></span>AddIWADPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AddIWADPath </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>suffix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa41fb0cd88224f40d7eb244d0b57f1f2" name="aa41fb0cd88224f40d7eb244d0b57f1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa41fb0cd88224f40d7eb244d0b57f1f2">&#9670;&#160;</a></span>BuildIWADDirList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BuildIWADDirList </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50140f6cc903d2bc8d5ba50773cf70f8" name="a50140f6cc903d2bc8d5ba50773cf70f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50140f6cc903d2bc8d5ba50773cf70f8">&#9670;&#160;</a></span>CheckDirectoryHasIWAD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char * CheckDirectoryHasIWAD </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>iwadname</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d300e9072e4600b9b7ca6f95540950c" name="a2d300e9072e4600b9b7ca6f95540950c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d300e9072e4600b9b7ca6f95540950c">&#9670;&#160;</a></span>CheckDOSDefaults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CheckDOSDefaults </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9714512595378db9dfa555c39a655da9" name="a9714512595378db9dfa555c39a655da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9714512595378db9dfa555c39a655da9">&#9670;&#160;</a></span>CheckInstallRootPaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CheckInstallRootPaths </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a2220a0fe2f93a4419772e5c061b26c" name="a6a2220a0fe2f93a4419772e5c061b26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a2220a0fe2f93a4419772e5c061b26c">&#9670;&#160;</a></span>CheckSteamEdition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CheckSteamEdition </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a268dc565c046a06913611b61f37df4c9" name="a268dc565c046a06913611b61f37df4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a268dc565c046a06913611b61f37df4c9">&#9670;&#160;</a></span>CheckSteamGUSPatches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CheckSteamGUSPatches </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a264d8c04940c89f40b4b23a600e7f1e1" name="a264d8c04940c89f40b4b23a600e7f1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a264d8c04940c89f40b4b23a600e7f1e1">&#9670;&#160;</a></span>CheckUninstallStrings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CheckUninstallStrings </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0c2f30f06550683935b93e6389c5955" name="ad0c2f30f06550683935b93e6389c5955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0c2f30f06550683935b93e6389c5955">&#9670;&#160;</a></span>D_FindAllIWADs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structiwad__t.html">iwad_t</a> ** D_FindAllIWADs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac55bc1851bd6b492328aa540035ccd3b" name="ac55bc1851bd6b492328aa540035ccd3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55bc1851bd6b492328aa540035ccd3b">&#9670;&#160;</a></span>D_FindIWAD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * D_FindIWAD </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a> *&#160;</td>
+          <td class="paramname"><em>mission</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04d552f6624eecafe51e11fe0098c2a9" name="a04d552f6624eecafe51e11fe0098c2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d552f6624eecafe51e11fe0098c2a9">&#9670;&#160;</a></span>D_FindWADByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * D_FindWADByName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2da97a921d34942d8deaf2d7affc5b99" name="a2da97a921d34942d8deaf2d7affc5b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da97a921d34942d8deaf2d7affc5b99">&#9670;&#160;</a></span>D_IsIWADName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> D_IsIWADName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e89769f00a74aad94349e709aad2827" name="a1e89769f00a74aad94349e709aad2827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e89769f00a74aad94349e709aad2827">&#9670;&#160;</a></span>D_SaveGameIWADName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * D_SaveGameIWADName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a>&#160;</td>
+          <td class="paramname"><em>gamemission</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="d__mode_8h.html#a4fbe435edbbfddc7f19f48ebc70d4725">GameVariant_t</a>&#160;</td>
+          <td class="paramname"><em>gamevariant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1700a85e83e9ed76331d08c9f36d1d0d" name="a1700a85e83e9ed76331d08c9f36d1d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1700a85e83e9ed76331d08c9f36d1d0d">&#9670;&#160;</a></span>D_SuggestGameName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * D_SuggestGameName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a>&#160;</td>
+          <td class="paramname"><em>mission</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4e">GameMode_t</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab94c4776cd3ea82d32b17fb8fc697826" name="ab94c4776cd3ea82d32b17fb8fc697826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab94c4776cd3ea82d32b17fb8fc697826">&#9670;&#160;</a></span>D_SuggestIWADName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * D_SuggestIWADName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a>&#160;</td>
+          <td class="paramname"><em>mission</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4e">GameMode_t</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a289c7b902a2360eeedd635f14d288334" name="a289c7b902a2360eeedd635f14d288334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a289c7b902a2360eeedd635f14d288334">&#9670;&#160;</a></span>D_TryFindWADByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * D_TryFindWADByName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25f8e3f5516c82865a6b34ac7b27cbef" name="a25f8e3f5516c82865a6b34ac7b27cbef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f8e3f5516c82865a6b34ac7b27cbef">&#9670;&#160;</a></span>DirIsFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> DirIsFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7402a307ac7b24ecdccc9df32a57e09" name="ac7402a307ac7b24ecdccc9df32a57e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7402a307ac7b24ecdccc9df32a57e09">&#9670;&#160;</a></span>GetRegistryString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char * GetRegistryString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structregistry__value__t.html">registry_value_t</a> *&#160;</td>
+          <td class="paramname"><em>reg_val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab216317af51096d451d8a10765c87b96" name="ab216317af51096d451d8a10765c87b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab216317af51096d451d8a10765c87b96">&#9670;&#160;</a></span>IdentifyIWADByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a> IdentifyIWADByName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3405ea5b107a58e33e2a504ea528ed03" name="a3405ea5b107a58e33e2a504ea528ed03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3405ea5b107a58e33e2a504ea528ed03">&#9670;&#160;</a></span>SearchDirectoryForIWAD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char * SearchDirectoryForIWAD </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031">GameMission_t</a> *&#160;</td>
+          <td class="paramname"><em>mission</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa36b41e5fc4dc1ae7a160310a1baab9a" name="aa36b41e5fc4dc1ae7a160310a1baab9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa36b41e5fc4dc1ae7a160310a1baab9a">&#9670;&#160;</a></span>iwad_dirs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* iwad_dirs[<a class="el" href="d__iwad_8c.html#aeae76031c94329691e35b3b720587033">MAX_IWAD_DIRS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91ff75681399aff051eca7daf05ca82e" name="a91ff75681399aff051eca7daf05ca82e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ff75681399aff051eca7daf05ca82e">&#9670;&#160;</a></span>iwad_dirs_built</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> iwad_dirs_built = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c4ac7044884a6da2e5b364fc1f29363" name="a0c4ac7044884a6da2e5b364fc1f29363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c4ac7044884a6da2e5b364fc1f29363">&#9670;&#160;</a></span>iwads</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structiwad__t.html">iwad_t</a> iwads[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {<span class="stringliteral">&quot;doom2.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031ac9576c2c91b5bb1fd56a6f387a08bbdf">doom2</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea90d070b07e496aedf470b7311d97b6b5">commercial</a>, <span class="stringliteral">&quot;Doom II&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;plutonia.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a9c9e00059bfd74e65d95aeaaff009993">pack_plut</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea90d070b07e496aedf470b7311d97b6b5">commercial</a>, <span class="stringliteral">&quot;Final Doom: Plutonia Experiment&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;tnt.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a1df26f7e77181531455e6747d482022c">pack_tnt</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea90d070b07e496aedf470b7311d97b6b5">commercial</a>, <span class="stringliteral">&quot;Final Doom: TNT: Evilution&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;doom.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a7303923b914ddea6698ecf3c7a5f5f34">doom</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea364a46b92d54ceec4628a312be5c6592">retail</a>, <span class="stringliteral">&quot;Doom&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;doom1.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a7303923b914ddea6698ecf3c7a5f5f34">doom</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea9f334a2ccb70a041fbd4aa18a7076873">shareware</a>, <span class="stringliteral">&quot;Doom Shareware&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;doom2f.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031ac9576c2c91b5bb1fd56a6f387a08bbdf">doom2</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea90d070b07e496aedf470b7311d97b6b5">commercial</a>, <span class="stringliteral">&quot;Doom II: L&#39;Enfer sur Terre&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;chex.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a21ea970a4ce91f25a96453a01fe3a7e5">pack_chex</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea364a46b92d54ceec4628a312be5c6592">retail</a>, <span class="stringliteral">&quot;Chex Quest&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;hacx.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031ae59ed432dbaa2dfbb3e0cded82e898ff">pack_hacx</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea90d070b07e496aedf470b7311d97b6b5">commercial</a>, <span class="stringliteral">&quot;Hacx&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;freedoom2.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031ac9576c2c91b5bb1fd56a6f387a08bbdf">doom2</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea90d070b07e496aedf470b7311d97b6b5">commercial</a>, <span class="stringliteral">&quot;Freedoom: Phase 2&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;freedoom1.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a7303923b914ddea6698ecf3c7a5f5f34">doom</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea364a46b92d54ceec4628a312be5c6592">retail</a>, <span class="stringliteral">&quot;Freedoom: Phase 1&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;freedm.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031ac9576c2c91b5bb1fd56a6f387a08bbdf">doom2</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea90d070b07e496aedf470b7311d97b6b5">commercial</a>, <span class="stringliteral">&quot;FreeDM&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;rekkrsa.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a7303923b914ddea6698ecf3c7a5f5f34">doom</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea364a46b92d54ceec4628a312be5c6592">retail</a>, <span class="stringliteral">&quot;REKKR&quot;</span>}, </div>
+<div class="line">    {<span class="stringliteral">&quot;rekkrsl.wad&quot;</span>,</div>
+<div class="line">     <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a7303923b914ddea6698ecf3c7a5f5f34">doom</a>,</div>
+<div class="line">     <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea364a46b92d54ceec4628a312be5c6592">retail</a>,</div>
+<div class="line">     <span class="stringliteral">&quot;REKKR: Sunken Land&quot;</span>}, </div>
+<div class="line">    {<span class="stringliteral">&quot;heretic.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a8fdcfc4eaa38ca4e2ceede79939126a6">heretic</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea364a46b92d54ceec4628a312be5c6592">retail</a>, <span class="stringliteral">&quot;Heretic&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;heretic1.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a8fdcfc4eaa38ca4e2ceede79939126a6">heretic</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea9f334a2ccb70a041fbd4aa18a7076873">shareware</a>, <span class="stringliteral">&quot;Heretic Shareware&quot;</span>},</div>
+<div class="line">    {<span class="stringliteral">&quot;hexen.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031ac1d95711e16169062cf6973def53b8d2">hexen</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea90d070b07e496aedf470b7311d97b6b5">commercial</a>, <span class="stringliteral">&quot;Hexen&quot;</span>},</div>
+<div class="line">    </div>
+<div class="line">    {<span class="stringliteral">&quot;strife1.wad&quot;</span>, <a class="code hl_enumvalue" href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a2e18c1e3afe75344ce044c8fbffee94d">strife</a>, <a class="code hl_enumvalue" href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea90d070b07e496aedf470b7311d97b6b5">commercial</a>, <span class="stringliteral">&quot;Strife&quot;</span>},</div>
+<div class="line">}</div>
+<div class="ttc" id="ad__mode_8h_html_a4eb6fbd03f97172d747b60e89ed39031a1df26f7e77181531455e6747d482022c"><div class="ttname"><a href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a1df26f7e77181531455e6747d482022c">pack_tnt</a></div><div class="ttdeci">@ pack_tnt</div><div class="ttdef"><b>Definition:</b> d_mode.h:31</div></div>
+<div class="ttc" id="ad__mode_8h_html_a4eb6fbd03f97172d747b60e89ed39031a21ea970a4ce91f25a96453a01fe3a7e5"><div class="ttname"><a href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a21ea970a4ce91f25a96453a01fe3a7e5">pack_chex</a></div><div class="ttdeci">@ pack_chex</div><div class="ttdef"><b>Definition:</b> d_mode.h:33</div></div>
+<div class="ttc" id="ad__mode_8h_html_a4eb6fbd03f97172d747b60e89ed39031a2e18c1e3afe75344ce044c8fbffee94d"><div class="ttname"><a href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a2e18c1e3afe75344ce044c8fbffee94d">strife</a></div><div class="ttdeci">@ strife</div><div class="ttdef"><b>Definition:</b> d_mode.h:37</div></div>
+<div class="ttc" id="ad__mode_8h_html_a4eb6fbd03f97172d747b60e89ed39031a7303923b914ddea6698ecf3c7a5f5f34"><div class="ttname"><a href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a7303923b914ddea6698ecf3c7a5f5f34">doom</a></div><div class="ttdeci">@ doom</div><div class="ttdef"><b>Definition:</b> d_mode.h:29</div></div>
+<div class="ttc" id="ad__mode_8h_html_a4eb6fbd03f97172d747b60e89ed39031a8fdcfc4eaa38ca4e2ceede79939126a6"><div class="ttname"><a href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a8fdcfc4eaa38ca4e2ceede79939126a6">heretic</a></div><div class="ttdeci">@ heretic</div><div class="ttdef"><b>Definition:</b> d_mode.h:35</div></div>
+<div class="ttc" id="ad__mode_8h_html_a4eb6fbd03f97172d747b60e89ed39031a9c9e00059bfd74e65d95aeaaff009993"><div class="ttname"><a href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031a9c9e00059bfd74e65d95aeaaff009993">pack_plut</a></div><div class="ttdeci">@ pack_plut</div><div class="ttdef"><b>Definition:</b> d_mode.h:32</div></div>
+<div class="ttc" id="ad__mode_8h_html_a4eb6fbd03f97172d747b60e89ed39031ac1d95711e16169062cf6973def53b8d2"><div class="ttname"><a href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031ac1d95711e16169062cf6973def53b8d2">hexen</a></div><div class="ttdeci">@ hexen</div><div class="ttdef"><b>Definition:</b> d_mode.h:36</div></div>
+<div class="ttc" id="ad__mode_8h_html_a4eb6fbd03f97172d747b60e89ed39031ac9576c2c91b5bb1fd56a6f387a08bbdf"><div class="ttname"><a href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031ac9576c2c91b5bb1fd56a6f387a08bbdf">doom2</a></div><div class="ttdeci">@ doom2</div><div class="ttdef"><b>Definition:</b> d_mode.h:30</div></div>
+<div class="ttc" id="ad__mode_8h_html_a4eb6fbd03f97172d747b60e89ed39031ae59ed432dbaa2dfbb3e0cded82e898ff"><div class="ttname"><a href="d__mode_8h.html#a4eb6fbd03f97172d747b60e89ed39031ae59ed432dbaa2dfbb3e0cded82e898ff">pack_hacx</a></div><div class="ttdeci">@ pack_hacx</div><div class="ttdef"><b>Definition:</b> d_mode.h:34</div></div>
+<div class="ttc" id="ad__mode_8h_html_aa62c3eee8472daa45bbb9e1482b49f4ea364a46b92d54ceec4628a312be5c6592"><div class="ttname"><a href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea364a46b92d54ceec4628a312be5c6592">retail</a></div><div class="ttdeci">@ retail</div><div class="ttdef"><b>Definition:</b> d_mode.h:54</div></div>
+<div class="ttc" id="ad__mode_8h_html_aa62c3eee8472daa45bbb9e1482b49f4ea90d070b07e496aedf470b7311d97b6b5"><div class="ttname"><a href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea90d070b07e496aedf470b7311d97b6b5">commercial</a></div><div class="ttdeci">@ commercial</div><div class="ttdef"><b>Definition:</b> d_mode.h:53</div></div>
+<div class="ttc" id="ad__mode_8h_html_aa62c3eee8472daa45bbb9e1482b49f4ea9f334a2ccb70a041fbd4aa18a7076873"><div class="ttname"><a href="d__mode_8h.html#aa62c3eee8472daa45bbb9e1482b49f4ea9f334a2ccb70a041fbd4aa18a7076873">shareware</a></div><div class="ttdeci">@ shareware</div><div class="ttdef"><b>Definition:</b> d_mode.h:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa4a8248e49db81e8c5b0c9678059c8b5" name="aa4a8248e49db81e8c5b0c9678059c8b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a8248e49db81e8c5b0c9678059c8b5">&#9670;&#160;</a></span>num_iwad_dirs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int num_iwad_dirs = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f3fd7316724155be53f7e4637140f5e" name="a7f3fd7316724155be53f7e4637140f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3fd7316724155be53f7e4637140f5e">&#9670;&#160;</a></span>root_path_keys</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structregistry__value__t.html">registry_value_t</a> root_path_keys[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01ff42755635e32f8d966d2bc8570bea" name="a01ff42755635e32f8d966d2bc8570bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ff42755635e32f8d966d2bc8570bea">&#9670;&#160;</a></span>root_path_subdirs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* root_path_subdirs[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <span class="stringliteral">&quot;.&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Doom2&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Final Doom&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Ultimate Doom&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Plutonia&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;TNT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;base\\wads&quot;</span>,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae5f2b6fbbb7e0cda4a389fb978871b1d" name="ae5f2b6fbbb7e0cda4a389fb978871b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f2b6fbbb7e0cda4a389fb978871b1d">&#9670;&#160;</a></span>steam_install_location</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structregistry__value__t.html">registry_value_t</a> steam_install_location</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    HKEY_LOCAL_MACHINE,</div>
+<div class="line">    <a class="code hl_define" href="d__iwad_8c.html#ad1a8f8320bac42ae15a3ae7de3f99822">SOFTWARE_KEY</a> <span class="stringliteral">&quot;\\Valve\\Steam&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;InstallPath&quot;</span>,</div>
+<div class="line">}</div>
+<div class="ttc" id="ad__iwad_8c_html_ad1a8f8320bac42ae15a3ae7de3f99822"><div class="ttname"><a href="d__iwad_8c.html#ad1a8f8320bac42ae15a3ae7de3f99822">SOFTWARE_KEY</a></div><div class="ttdeci">#define SOFTWARE_KEY</div><div class="ttdef"><b>Definition:</b> d_iwad.c:122</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae11408f64bf7f56dc462cfc0a26a99bd" name="ae11408f64bf7f56dc462cfc0a26a99bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11408f64bf7f56dc462cfc0a26a99bd">&#9670;&#160;</a></span>steam_install_subdirs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* steam_install_subdirs[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <span class="stringliteral">&quot;steamapps\\common\\doom 2\\base&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;steamapps\\common\\doom 2\\finaldoombase&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;steamapps\\common\\final doom\\base&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;steamapps\\common\\ultimate doom\\base&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;steamapps\\common\\heretic shadow of the serpent riders\\base&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;steamapps\\common\\hexen\\base&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;steamapps\\common\\hexen deathkings of the dark citadel\\base&quot;</span>,</div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    <span class="stringliteral">&quot;steamapps\\common\\DOOM 3 BFG Edition\\base\\wads&quot;</span>,</div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    <span class="stringliteral">&quot;steamapps\\common\\Strife&quot;</span>,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2d2c299b0f1d4feeaff4d81d564b28c9" name="a2d2c299b0f1d4feeaff4d81d564b28c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d2c299b0f1d4feeaff4d81d564b28c9">&#9670;&#160;</a></span>uninstall_values</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structregistry__value__t.html">registry_value_t</a> uninstall_values[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="d__iwad_8c.html">d_iwad.c</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

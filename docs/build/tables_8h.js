@@ -1,0 +1,25 @@
+var tables_8h =
+[
+    [ "ANG1", "tables_8h.html#a17fbdc1c6dc4bed8e8d80f3f24c765ab", null ],
+    [ "ANG180", "tables_8h.html#a93be06a50858f61f623d8409d526cea6", null ],
+    [ "ANG1_X", "tables_8h.html#a6898673e10f1b33a1d5183015d3173c0", null ],
+    [ "ANG270", "tables_8h.html#a3c1e7faea96e870ade747ba6af50e3f8", null ],
+    [ "ANG45", "tables_8h.html#a1b49b14c588777e043e3098b81775ce0", null ],
+    [ "ANG60", "tables_8h.html#a9189235444115471253aa6a41739208b", null ],
+    [ "ANG90", "tables_8h.html#a8300a35b0193fbca6e7b9bf85f99dac5", null ],
+    [ "ANG_MAX", "tables_8h.html#a732ec98285f7c4bed08a6b95e533f5ce", null ],
+    [ "ANGLETOFINESHIFT", "tables_8h.html#a188a78691fc3077e1b7c799b2db09517", null ],
+    [ "DBITS", "tables_8h.html#ae705e19e3cd0e816b04d9fadce0314f9", null ],
+    [ "FINEANGLES", "tables_8h.html#a2523e17800c29479c8bfdcf35fa2ec08", null ],
+    [ "FINEMASK", "tables_8h.html#a756a6adae5a394da728e359a3f559360", null ],
+    [ "SLOPEBITS", "tables_8h.html#a021d088de44dae3638dee95e338a2595", null ],
+    [ "SLOPERANGE", "tables_8h.html#a4732a44221ef7fb330905c0127e1d48c", null ],
+    [ "angle_t", "tables_8h.html#a7923b3a77708c9b7a32dcd83a6ac4679", null ],
+    [ "SlopeDiv", "tables_8h.html#a639951be557dd22da13681d3b54775d3", null ],
+    [ "SlopeDivCrispy", "tables_8h.html#a8c6ce804857078f7be5cd09c5f77f76b", null ],
+    [ "finecosine", "tables_8h.html#a4fb334df4aa5ca3cc862d2a2f8748434", null ],
+    [ "finesine", "tables_8h.html#af53ea8694f1382d349c8d5276a8dc5e4", null ],
+    [ "finetangent", "tables_8h.html#a3637af16df33e3afdd8b9caf4a07cacc", null ],
+    [ "gammatable", "tables_8h.html#aa6d3b83afbdc922e909d242a02a115d9", null ],
+    [ "tantoangle", "tables_8h.html#acfb83dc6e6814215194cc969820c4271", null ]
+];

@@ -1,0 +1,2740 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell-crispy/subprojects/little-hell-engine/src/i_oplmusic.c File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('i__oplmusic_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">i_oplmusic.c File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="memio_8h_source.html">memio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mus2mid_8h_source.html">mus2mid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__sound_8h_source.html">i_sound.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__swap_8h_source.html">i_swap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__misc_8h_source.html">m_misc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="w__wad_8h_source.html">w_wad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="z__zone_8h_source.html">z_zone.h</a>&quot;</code><br />
+<code>#include &quot;libs/opl/opl.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="midifile_8h_source.html">midifile.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for i_oplmusic.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="i__oplmusic_8c__incl.svg" width="1000" height="374"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopl__track__data__t.html">opl_track_data_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopl__voice__s.html">opl_voice_s</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a841d8aa34b3c427fdfbd8dd3e244ba6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a841d8aa34b3c427fdfbd8dd3e244ba6d">MAXMIDLENGTH</a>&#160;&#160;&#160;(96 * 1024)</td></tr>
+<tr class="separator:a841d8aa34b3c427fdfbd8dd3e244ba6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d767c69f1dead7c32842c434ccf28ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a1d767c69f1dead7c32842c434ccf28ec">GENMIDI_NUM_INSTRS</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:a1d767c69f1dead7c32842c434ccf28ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c891c184a1c962c974898995589734"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a76c891c184a1c962c974898995589734">GENMIDI_NUM_PERCUSSION</a>&#160;&#160;&#160;47</td></tr>
+<tr class="separator:a76c891c184a1c962c974898995589734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb0392f3f7902d95a13f05bb315cfc36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#acb0392f3f7902d95a13f05bb315cfc36">GENMIDI_HEADER</a>&#160;&#160;&#160;&quot;#OPL_II#&quot;</td></tr>
+<tr class="separator:acb0392f3f7902d95a13f05bb315cfc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4edb3380eddcda50dcbbe097a0d8e145"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a4edb3380eddcda50dcbbe097a0d8e145">GENMIDI_FLAG_FIXED</a>&#160;&#160;&#160;0x0001 /* fixed pitch */</td></tr>
+<tr class="separator:a4edb3380eddcda50dcbbe097a0d8e145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9edb902989ee81c9e5680900490d7213"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a9edb902989ee81c9e5680900490d7213">GENMIDI_FLAG_2VOICE</a>&#160;&#160;&#160;0x0004 /* double voice (OPL3) */</td></tr>
+<tr class="separator:a9edb902989ee81c9e5680900490d7213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87941f30ada13eaa7a8cbf07455d1ac7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a87941f30ada13eaa7a8cbf07455d1ac7">PERCUSSION_LOG_LEN</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a87941f30ada13eaa7a8cbf07455d1ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a63dc39d880109cea6ef44a3a8f9931e5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structopl__voice__s.html">opl_voice_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a></td></tr>
+<tr class="separator:a63dc39d880109cea6ef44a3a8f9931e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abe5a53424f56d2132349cb5a595bb054"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#abe5a53424f56d2132349cb5a595bb054">PACKED_STRUCT</a> ({ <a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> tremolo;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> attack;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> sustain;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> waveform;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> scale;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> level;})</td></tr>
+<tr class="separator:abe5a53424f56d2132349cb5a595bb054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5e5ee15e2a8f23c67fdbdf196e348d"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#afb5e5ee15e2a8f23c67fdbdf196e348d">PACKED_STRUCT</a> ({ unsigned short flags;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> fine_tuning;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> fixed_note;<a class="el" href="i__oplmusic_8c.html#a9adc34661fe47cf8c69112338c127ba4">genmidi_voice_t</a> <a class="el" href="i__oplmusic_8c.html#a9dcafdad3648a2f311a07930b59c3f76">voices</a>[2];})</td></tr>
+<tr class="separator:afb5e5ee15e2a8f23c67fdbdf196e348d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1aa551e1aa718a63681c653e6664db3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#af1aa551e1aa718a63681c653e6664db3">LoadInstrumentTable</a> (void)</td></tr>
+<tr class="separator:af1aa551e1aa718a63681c653e6664db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a089d05b7054179860a51ac4d8230c1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a8a089d05b7054179860a51ac4d8230c1">GetFreeVoice</a> (void)</td></tr>
+<tr class="separator:a8a089d05b7054179860a51ac4d8230c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad909c620083fb4aa3a3b22db07e7a09a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ad909c620083fb4aa3a3b22db07e7a09a">VoiceKeyOff</a> (<a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *voice)</td></tr>
+<tr class="separator:ad909c620083fb4aa3a3b22db07e7a09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391d43bfd7af50295ace5c0d65fcf53f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a391d43bfd7af50295ace5c0d65fcf53f">ReleaseVoice</a> (int index)</td></tr>
+<tr class="separator:a391d43bfd7af50295ace5c0d65fcf53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdab69db263dd5e94ef31fa0980519ce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#afdab69db263dd5e94ef31fa0980519ce">LoadOperatorData</a> (int operator, genmidi_op_t *data, <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> max_level, unsigned int *volume)</td></tr>
+<tr class="separator:afdab69db263dd5e94ef31fa0980519ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9bb59cd76e5cb457c5a6cd03bde1db"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a5d9bb59cd76e5cb457c5a6cd03bde1db">SetVoiceInstrument</a> (<a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *voice, genmidi_instr_t *instr, unsigned int instr_voice)</td></tr>
+<tr class="separator:a5d9bb59cd76e5cb457c5a6cd03bde1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9277a8bf95e15b89042cf878a9cd6c4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ab9277a8bf95e15b89042cf878a9cd6c4">SetVoiceVolume</a> (<a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *voice, unsigned int volume)</td></tr>
+<tr class="separator:ab9277a8bf95e15b89042cf878a9cd6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f6e7956a9dbde0fc551e7b625a60ea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#aa7f6e7956a9dbde0fc551e7b625a60ea">SetVoicePan</a> (<a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *voice, unsigned int pan)</td></tr>
+<tr class="separator:aa7f6e7956a9dbde0fc551e7b625a60ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8f0969ecc4fa31cfe9a4ee76d7045c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#aba8f0969ecc4fa31cfe9a4ee76d7045c">InitVoices</a> (void)</td></tr>
+<tr class="separator:aba8f0969ecc4fa31cfe9a4ee76d7045c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858bfb14c4618bc4995fb8766459fce1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a858bfb14c4618bc4995fb8766459fce1">SetChannelVolume</a> (<a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *channel, unsigned int volume, <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> clip_start)</td></tr>
+<tr class="separator:a858bfb14c4618bc4995fb8766459fce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362356fc33a6e0bea386f09f813f6c38"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a362356fc33a6e0bea386f09f813f6c38">I_OPL_SetMusicVolume</a> (int volume)</td></tr>
+<tr class="separator:a362356fc33a6e0bea386f09f813f6c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b3cb643b7a207d0213b787dbcf0238"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a05b3cb643b7a207d0213b787dbcf0238">TrackChannelForEvent</a> (<a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *track, <a class="el" href="structmidi__event__t.html">midi_event_t</a> *event)</td></tr>
+<tr class="separator:a05b3cb643b7a207d0213b787dbcf0238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ab7c5823fa63b5ce16178c5b24e095"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a94ab7c5823fa63b5ce16178c5b24e095">KeyOffEvent</a> (<a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *track, <a class="el" href="structmidi__event__t.html">midi_event_t</a> *event)</td></tr>
+<tr class="separator:a94ab7c5823fa63b5ce16178c5b24e095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f64807de5d9bc97c38c5e0288cb7cdc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a6f64807de5d9bc97c38c5e0288cb7cdc">ReplaceExistingVoice</a> (void)</td></tr>
+<tr class="separator:a6f64807de5d9bc97c38c5e0288cb7cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f6befba86a38ae003316909f6c06fd5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a7f6befba86a38ae003316909f6c06fd5">ReplaceExistingVoiceDoom1</a> (void)</td></tr>
+<tr class="separator:a7f6befba86a38ae003316909f6c06fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf3aacbb3f742556b6756b3e7874e9a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#afdf3aacbb3f742556b6756b3e7874e9a">ReplaceExistingVoiceDoom2</a> (<a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *channel)</td></tr>
+<tr class="separator:afdf3aacbb3f742556b6756b3e7874e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25457cca6572cc38c63e6d93ca5fb5b1"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a25457cca6572cc38c63e6d93ca5fb5b1">FrequencyForVoice</a> (<a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *voice)</td></tr>
+<tr class="separator:a25457cca6572cc38c63e6d93ca5fb5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6263a7be6622950d8a7675290dc919b9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a6263a7be6622950d8a7675290dc919b9">UpdateVoiceFrequency</a> (<a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *voice)</td></tr>
+<tr class="separator:a6263a7be6622950d8a7675290dc919b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe7b0770bf7946c4cdcaa06b67893b5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a7fe7b0770bf7946c4cdcaa06b67893b5">VoiceKeyOn</a> (<a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *channel, genmidi_instr_t *instrument, unsigned int instrument_voice, unsigned int note, unsigned int key, unsigned int volume)</td></tr>
+<tr class="separator:a7fe7b0770bf7946c4cdcaa06b67893b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9aa0209b6f715322c2560c651aab9cb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ae9aa0209b6f715322c2560c651aab9cb">KeyOnEvent</a> (<a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *track, <a class="el" href="structmidi__event__t.html">midi_event_t</a> *event)</td></tr>
+<tr class="separator:ae9aa0209b6f715322c2560c651aab9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310fb2b30d1d7c29d73e54284f3226ea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a310fb2b30d1d7c29d73e54284f3226ea">ProgramChangeEvent</a> (<a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *track, <a class="el" href="structmidi__event__t.html">midi_event_t</a> *event)</td></tr>
+<tr class="separator:a310fb2b30d1d7c29d73e54284f3226ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415f884b5357d96cf843b92acc53a66f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a415f884b5357d96cf843b92acc53a66f">SetChannelPan</a> (<a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *channel, unsigned int pan)</td></tr>
+<tr class="separator:a415f884b5357d96cf843b92acc53a66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce4909df0c28afdc3db2013857d1008"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#adce4909df0c28afdc3db2013857d1008">AllNotesOff</a> (<a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *channel, unsigned int param)</td></tr>
+<tr class="separator:adce4909df0c28afdc3db2013857d1008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462172b456fdc3724007906d03702e81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a462172b456fdc3724007906d03702e81">ControllerEvent</a> (<a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *track, <a class="el" href="structmidi__event__t.html">midi_event_t</a> *event)</td></tr>
+<tr class="separator:a462172b456fdc3724007906d03702e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f833d1d1ad10220ceffeb05cfe575fb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a0f833d1d1ad10220ceffeb05cfe575fb">PitchBendEvent</a> (<a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *track, <a class="el" href="structmidi__event__t.html">midi_event_t</a> *event)</td></tr>
+<tr class="separator:a0f833d1d1ad10220ceffeb05cfe575fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac3857a5a1ad64d2cf53b9103a26b2e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a3ac3857a5a1ad64d2cf53b9103a26b2e">MetaSetTempo</a> (unsigned int tempo)</td></tr>
+<tr class="separator:a3ac3857a5a1ad64d2cf53b9103a26b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea79a56a9533712d400b013a007c03c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#afea79a56a9533712d400b013a007c03c">MetaEvent</a> (<a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *track, <a class="el" href="structmidi__event__t.html">midi_event_t</a> *event)</td></tr>
+<tr class="separator:afea79a56a9533712d400b013a007c03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a129315fc5cebb625b4b4d82366a3dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a7a129315fc5cebb625b4b4d82366a3dc">ProcessEvent</a> (<a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *track, <a class="el" href="structmidi__event__t.html">midi_event_t</a> *event)</td></tr>
+<tr class="separator:a7a129315fc5cebb625b4b4d82366a3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b770dc6d81e75d5c257de300f66cc6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a52b770dc6d81e75d5c257de300f66cc6">ScheduleTrack</a> (<a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *track)</td></tr>
+<tr class="separator:a52b770dc6d81e75d5c257de300f66cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16ace565a0d8e3ac1b86f9d4e24a2de"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ad16ace565a0d8e3ac1b86f9d4e24a2de">InitChannel</a> (<a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *channel)</td></tr>
+<tr class="separator:ad16ace565a0d8e3ac1b86f9d4e24a2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5bd79638ab25777afe1772242a1fd5a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#aa5bd79638ab25777afe1772242a1fd5a">RestartSong</a> (void *unused)</td></tr>
+<tr class="separator:aa5bd79638ab25777afe1772242a1fd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aaef69e2f0bee6cd86f9ff2cbf123b4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a5aaef69e2f0bee6cd86f9ff2cbf123b4">TrackTimerCallback</a> (void *arg)</td></tr>
+<tr class="separator:a5aaef69e2f0bee6cd86f9ff2cbf123b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ad4867e45cf5c887338eb9b817a676"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ac5ad4867e45cf5c887338eb9b817a676">StartTrack</a> (<a class="el" href="midifile_8h.html#a157ed2b8e4be5bde084cb00a9430acdf">midi_file_t</a> *file, unsigned int track_num)</td></tr>
+<tr class="separator:ac5ad4867e45cf5c887338eb9b817a676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9e5c69225e9affe95698f9e448783e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a9e9e5c69225e9affe95698f9e448783e">I_OPL_PlaySong</a> (void *handle, <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> looping)</td></tr>
+<tr class="separator:a9e9e5c69225e9affe95698f9e448783e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c16268418fd076b13d505edf50f202a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a9c16268418fd076b13d505edf50f202a">I_OPL_PauseSong</a> (void)</td></tr>
+<tr class="separator:a9c16268418fd076b13d505edf50f202a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b114620297fe5c93fc37eedcb52abf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a51b114620297fe5c93fc37eedcb52abf">I_OPL_ResumeSong</a> (void)</td></tr>
+<tr class="separator:a51b114620297fe5c93fc37eedcb52abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0db50600ac91c283583214abf8f61f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a2c0db50600ac91c283583214abf8f61f">I_OPL_StopSong</a> (void)</td></tr>
+<tr class="separator:a2c0db50600ac91c283583214abf8f61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38402458ebf9e62f883dfcb08bce1ce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ad38402458ebf9e62f883dfcb08bce1ce">I_OPL_UnRegisterSong</a> (void *handle)</td></tr>
+<tr class="separator:ad38402458ebf9e62f883dfcb08bce1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215dae1dd04eb8f204fe5e948e502ebf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a215dae1dd04eb8f204fe5e948e502ebf">ConvertMus</a> (<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *musdata, int len, char *filename)</td></tr>
+<tr class="separator:a215dae1dd04eb8f204fe5e948e502ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595d501c462b59d8736d6f0531c8b148"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a595d501c462b59d8736d6f0531c8b148">I_OPL_RegisterSong</a> (void *data, int len)</td></tr>
+<tr class="separator:a595d501c462b59d8736d6f0531c8b148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9234b5602777dca281241b5cfa01d677"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a9234b5602777dca281241b5cfa01d677">I_OPL_MusicIsPlaying</a> (void)</td></tr>
+<tr class="separator:a9234b5602777dca281241b5cfa01d677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69aa0d9309dd91d3a5a5c5aed521ba1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a69aa0d9309dd91d3a5a5c5aed521ba1e">I_OPL_ShutdownMusic</a> (void)</td></tr>
+<tr class="separator:a69aa0d9309dd91d3a5a5c5aed521ba1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922dbeaa5904ad9b022afdc96c584ffc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a922dbeaa5904ad9b022afdc96c584ffc">I_OPL_InitMusic</a> (void)</td></tr>
+<tr class="separator:a922dbeaa5904ad9b022afdc96c584ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5192d693dfa5545c9f62d1ba43edd59e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a5192d693dfa5545c9f62d1ba43edd59e">I_SetOPLDriverVer</a> (<a class="el" href="i__sound_8h.html#ad3f775d6ce04221c0de9aee4b389d0ab">opl_driver_ver_t</a> ver)</td></tr>
+<tr class="separator:a5192d693dfa5545c9f62d1ba43edd59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4e5afc36c92a2673d91309a9ca6f24"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a7c4e5afc36c92a2673d91309a9ca6f24">NumActiveChannels</a> (void)</td></tr>
+<tr class="separator:a7c4e5afc36c92a2673d91309a9ca6f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b940a746849739a95d21106c515f1f7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a7b940a746849739a95d21106c515f1f7">ChannelInUse</a> (<a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *channel)</td></tr>
+<tr class="separator:a7b940a746849739a95d21106c515f1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a408d20d014a12febba9fb600d6b8e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a9a408d20d014a12febba9fb600d6b8e9">I_OPL_DevMessages</a> (char *result, size_t result_len)</td></tr>
+<tr class="separator:a9a408d20d014a12febba9fb600d6b8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9adc34661fe47cf8c69112338c127ba4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a9adc34661fe47cf8c69112338c127ba4">genmidi_voice_t</a></td></tr>
+<tr class="separator:a9adc34661fe47cf8c69112338c127ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7f28e722ff6f809cc390e3f6f554d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a></td></tr>
+<tr class="separator:abd7f28e722ff6f809cc390e3f6f554d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc2bd2520b9dd868bc4ac5a7ca03334f"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#acc2bd2520b9dd868bc4ac5a7ca03334f">voice_operators</a> [2][OPL_NUM_VOICES]</td></tr>
+<tr class="separator:acc2bd2520b9dd868bc4ac5a7ca03334f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bca881954a80f43f9ce2ad9c4bc32c4"><td class="memItemLeft" align="right" valign="top">static const unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a2bca881954a80f43f9ce2ad9c4bc32c4">frequency_curve</a> []</td></tr>
+<tr class="separator:a2bca881954a80f43f9ce2ad9c4bc32c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4358b10a967a1a0e26ac96a923d242d"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#aa4358b10a967a1a0e26ac96a923d242d">volume_mapping_table</a> []</td></tr>
+<tr class="separator:aa4358b10a967a1a0e26ac96a923d242d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66a014f672c10c2537971aa80dd49eb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="i__sound_8h.html#ad3f775d6ce04221c0de9aee4b389d0ab">opl_driver_ver_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ab66a014f672c10c2537971aa80dd49eb">opl_drv_ver</a> = <a class="el" href="i__sound_8h.html#ad3f775d6ce04221c0de9aee4b389d0aba5f4867e04ec3756cd3e19ca3493f1fc2">opl_doom_1_9</a></td></tr>
+<tr class="separator:ab66a014f672c10c2537971aa80dd49eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac966ef43b527feb4534a3ff4694ffe87"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ac966ef43b527feb4534a3ff4694ffe87">music_initialized</a> = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
+<tr class="separator:ac966ef43b527feb4534a3ff4694ffe87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d73adcd5df24572544fced9773dc0d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ad2d73adcd5df24572544fced9773dc0d">start_music_volume</a></td></tr>
+<tr class="separator:ad2d73adcd5df24572544fced9773dc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44d95eca82d54247ad6924b29fc4df4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ae44d95eca82d54247ad6924b29fc4df4">current_music_volume</a></td></tr>
+<tr class="separator:ae44d95eca82d54247ad6924b29fc4df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3372f5c3dde57a790c9d0f32dca59e9"><td class="memItemLeft" align="right" valign="top">static genmidi_instr_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#af3372f5c3dde57a790c9d0f32dca59e9">main_instrs</a></td></tr>
+<tr class="separator:af3372f5c3dde57a790c9d0f32dca59e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca86799b157def66f47e9794d987ef7"><td class="memItemLeft" align="right" valign="top">static genmidi_instr_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a4ca86799b157def66f47e9794d987ef7">percussion_instrs</a></td></tr>
+<tr class="separator:a4ca86799b157def66f47e9794d987ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5a6026019eb6cc92b56680a328eacb"><td class="memItemLeft" align="right" valign="top">static char(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a5c5a6026019eb6cc92b56680a328eacb">main_instr_names</a> )[32]</td></tr>
+<tr class="separator:a5c5a6026019eb6cc92b56680a328eacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d031665cf46aa9410cf9b92cd9cc66"><td class="memItemLeft" align="right" valign="top">static char(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a59d031665cf46aa9410cf9b92cd9cc66">percussion_names</a> )[32]</td></tr>
+<tr class="separator:a59d031665cf46aa9410cf9b92cd9cc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dcafdad3648a2f311a07930b59c3f76"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a9dcafdad3648a2f311a07930b59c3f76">voices</a> [OPL_NUM_VOICES *2]</td></tr>
+<tr class="separator:a9dcafdad3648a2f311a07930b59c3f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac242f2341cc56fbeccdd63400e9aec99"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ac242f2341cc56fbeccdd63400e9aec99">voice_free_list</a> [OPL_NUM_VOICES *2]</td></tr>
+<tr class="separator:ac242f2341cc56fbeccdd63400e9aec99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fba539a9515af88cf85838276082ed3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a9fba539a9515af88cf85838276082ed3">voice_alloced_list</a> [OPL_NUM_VOICES *2]</td></tr>
+<tr class="separator:a9fba539a9515af88cf85838276082ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81459cd3a2bb02a9d0a6f68212423da1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a81459cd3a2bb02a9d0a6f68212423da1">voice_free_num</a></td></tr>
+<tr class="separator:a81459cd3a2bb02a9d0a6f68212423da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a401d4b36ac3292523f9f0d40d05d2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a64a401d4b36ac3292523f9f0d40d05d2">voice_alloced_num</a></td></tr>
+<tr class="separator:a64a401d4b36ac3292523f9f0d40d05d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7207bb9894dc3014e6c6142c5f8d45e1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a7207bb9894dc3014e6c6142c5f8d45e1">opl_opl3mode</a></td></tr>
+<tr class="separator:a7207bb9894dc3014e6c6142c5f8d45e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc843dbbbff3f047a06ed3b1e1e10ae"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a9fc843dbbbff3f047a06ed3b1e1e10ae">num_opl_voices</a></td></tr>
+<tr class="separator:a9fc843dbbbff3f047a06ed3b1e1e10ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932915da56b96715e0176e8ad1ba1e75"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a932915da56b96715e0176e8ad1ba1e75">channels</a> [<a class="el" href="midifile_8h.html#a53664a946f054713c40eb8c84e12dbfc">MIDI_CHANNELS_PER_TRACK</a>]</td></tr>
+<tr class="separator:a932915da56b96715e0176e8ad1ba1e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536f83b59f3ccab03b67c645ecb37ddb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a536f83b59f3ccab03b67c645ecb37ddb">tracks</a></td></tr>
+<tr class="separator:a536f83b59f3ccab03b67c645ecb37ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9d612f53fa15bb1987f3d12104b20c"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a3b9d612f53fa15bb1987f3d12104b20c">num_tracks</a> = 0</td></tr>
+<tr class="separator:a3b9d612f53fa15bb1987f3d12104b20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5ef541d55fd0cda00f062268bde92e"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a8e5ef541d55fd0cda00f062268bde92e">running_tracks</a> = 0</td></tr>
+<tr class="separator:a8e5ef541d55fd0cda00f062268bde92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5c0c86896171a149465da4fee9eb68"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#adb5c0c86896171a149465da4fee9eb68">song_looping</a></td></tr>
+<tr class="separator:adb5c0c86896171a149465da4fee9eb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332f6a56e44f14ee900cc3acf079dec4"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a332f6a56e44f14ee900cc3acf079dec4">ticks_per_beat</a></td></tr>
+<tr class="separator:a332f6a56e44f14ee900cc3acf079dec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3428f3c0e2ee1003b5fc5456700350"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a0a3428f3c0e2ee1003b5fc5456700350">us_per_beat</a></td></tr>
+<tr class="separator:a0a3428f3c0e2ee1003b5fc5456700350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743cd7d51a245f05436e0fc52e41889e"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a743cd7d51a245f05436e0fc52e41889e">last_perc</a> [<a class="el" href="i__oplmusic_8c.html#a87941f30ada13eaa7a8cbf07455d1ac7">PERCUSSION_LOG_LEN</a>]</td></tr>
+<tr class="separator:a743cd7d51a245f05436e0fc52e41889e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d14286f449721c26ebdfe60607a7432"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a5d14286f449721c26ebdfe60607a7432">last_perc_count</a></td></tr>
+<tr class="separator:a5d14286f449721c26ebdfe60607a7432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1633475c4aa5521d4fab52639d0a710c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a1633475c4aa5521d4fab52639d0a710c">snd_dmxoption</a> = &quot;-opl3&quot;</td></tr>
+<tr class="separator:a1633475c4aa5521d4fab52639d0a710c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6796ca4b8c363c1077e883a5424fac8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a6796ca4b8c363c1077e883a5424fac8a">opl_io_port</a> = 0x388</td></tr>
+<tr class="separator:a6796ca4b8c363c1077e883a5424fac8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5492589605ce6dc74a2b96c6dd438f6b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a5492589605ce6dc74a2b96c6dd438f6b">opl_stereo_correct</a> = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
+<tr class="separator:a5492589605ce6dc74a2b96c6dd438f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e51687c75059a949d7c1fa2460926f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570dae">snddevice_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#a30e51687c75059a949d7c1fa2460926f">music_opl_devices</a> []</td></tr>
+<tr class="separator:a30e51687c75059a949d7c1fa2460926f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac846ac44a135ad04f99799cfab943408"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structmusic__module__t.html">music_module_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__oplmusic_8c.html#ac846ac44a135ad04f99799cfab943408">music_opl_module</a></td></tr>
+<tr class="separator:ac846ac44a135ad04f99799cfab943408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a9edb902989ee81c9e5680900490d7213" name="a9edb902989ee81c9e5680900490d7213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9edb902989ee81c9e5680900490d7213">&#9670;&#160;</a></span>GENMIDI_FLAG_2VOICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENMIDI_FLAG_2VOICE&#160;&#160;&#160;0x0004 /* double voice (OPL3) */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4edb3380eddcda50dcbbe097a0d8e145" name="a4edb3380eddcda50dcbbe097a0d8e145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4edb3380eddcda50dcbbe097a0d8e145">&#9670;&#160;</a></span>GENMIDI_FLAG_FIXED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENMIDI_FLAG_FIXED&#160;&#160;&#160;0x0001 /* fixed pitch */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb0392f3f7902d95a13f05bb315cfc36" name="acb0392f3f7902d95a13f05bb315cfc36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb0392f3f7902d95a13f05bb315cfc36">&#9670;&#160;</a></span>GENMIDI_HEADER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENMIDI_HEADER&#160;&#160;&#160;&quot;#OPL_II#&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d767c69f1dead7c32842c434ccf28ec" name="a1d767c69f1dead7c32842c434ccf28ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d767c69f1dead7c32842c434ccf28ec">&#9670;&#160;</a></span>GENMIDI_NUM_INSTRS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENMIDI_NUM_INSTRS&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76c891c184a1c962c974898995589734" name="a76c891c184a1c962c974898995589734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c891c184a1c962c974898995589734">&#9670;&#160;</a></span>GENMIDI_NUM_PERCUSSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENMIDI_NUM_PERCUSSION&#160;&#160;&#160;47</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a841d8aa34b3c427fdfbd8dd3e244ba6d" name="a841d8aa34b3c427fdfbd8dd3e244ba6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841d8aa34b3c427fdfbd8dd3e244ba6d">&#9670;&#160;</a></span>MAXMIDLENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXMIDLENGTH&#160;&#160;&#160;(96 * 1024)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87941f30ada13eaa7a8cbf07455d1ac7" name="a87941f30ada13eaa7a8cbf07455d1ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87941f30ada13eaa7a8cbf07455d1ac7">&#9670;&#160;</a></span>PERCUSSION_LOG_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PERCUSSION_LOG_LEN&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a63dc39d880109cea6ef44a3a8f9931e5" name="a63dc39d880109cea6ef44a3a8f9931e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63dc39d880109cea6ef44a3a8f9931e5">&#9670;&#160;</a></span>opl_voice_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structopl__voice__s.html">opl_voice_s</a> <a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="adce4909df0c28afdc3db2013857d1008" name="adce4909df0c28afdc3db2013857d1008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adce4909df0c28afdc3db2013857d1008">&#9670;&#160;</a></span>AllNotesOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AllNotesOff </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b940a746849739a95d21106c515f1f7" name="a7b940a746849739a95d21106c515f1f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b940a746849739a95d21106c515f1f7">&#9670;&#160;</a></span>ChannelInUse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ChannelInUse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a462172b456fdc3724007906d03702e81" name="a462172b456fdc3724007906d03702e81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462172b456fdc3724007906d03702e81">&#9670;&#160;</a></span>ControllerEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ControllerEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *&#160;</td>
+          <td class="paramname"><em>track</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmidi__event__t.html">midi_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a215dae1dd04eb8f204fe5e948e502ebf" name="a215dae1dd04eb8f204fe5e948e502ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215dae1dd04eb8f204fe5e948e502ebf">&#9670;&#160;</a></span>ConvertMus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> ConvertMus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *&#160;</td>
+          <td class="paramname"><em>musdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25457cca6572cc38c63e6d93ca5fb5b1" name="a25457cca6572cc38c63e6d93ca5fb5b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25457cca6572cc38c63e6d93ca5fb5b1">&#9670;&#160;</a></span>FrequencyForVoice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int FrequencyForVoice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *&#160;</td>
+          <td class="paramname"><em>voice</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a089d05b7054179860a51ac4d8230c1" name="a8a089d05b7054179860a51ac4d8230c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a089d05b7054179860a51ac4d8230c1">&#9670;&#160;</a></span>GetFreeVoice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> * GetFreeVoice </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a408d20d014a12febba9fb600d6b8e9" name="a9a408d20d014a12febba9fb600d6b8e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a408d20d014a12febba9fb600d6b8e9">&#9670;&#160;</a></span>I_OPL_DevMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_OPL_DevMessages </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>result_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a922dbeaa5904ad9b022afdc96c584ffc" name="a922dbeaa5904ad9b022afdc96c584ffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a922dbeaa5904ad9b022afdc96c584ffc">&#9670;&#160;</a></span>I_OPL_InitMusic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> I_OPL_InitMusic </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9234b5602777dca281241b5cfa01d677" name="a9234b5602777dca281241b5cfa01d677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9234b5602777dca281241b5cfa01d677">&#9670;&#160;</a></span>I_OPL_MusicIsPlaying()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> I_OPL_MusicIsPlaying </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c16268418fd076b13d505edf50f202a" name="a9c16268418fd076b13d505edf50f202a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c16268418fd076b13d505edf50f202a">&#9670;&#160;</a></span>I_OPL_PauseSong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_OPL_PauseSong </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e9e5c69225e9affe95698f9e448783e" name="a9e9e5c69225e9affe95698f9e448783e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e9e5c69225e9affe95698f9e448783e">&#9670;&#160;</a></span>I_OPL_PlaySong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_OPL_PlaySong </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td>
+          <td class="paramname"><em>looping</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a595d501c462b59d8736d6f0531c8b148" name="a595d501c462b59d8736d6f0531c8b148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a595d501c462b59d8736d6f0531c8b148">&#9670;&#160;</a></span>I_OPL_RegisterSong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void * I_OPL_RegisterSong </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51b114620297fe5c93fc37eedcb52abf" name="a51b114620297fe5c93fc37eedcb52abf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b114620297fe5c93fc37eedcb52abf">&#9670;&#160;</a></span>I_OPL_ResumeSong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_OPL_ResumeSong </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a362356fc33a6e0bea386f09f813f6c38" name="a362356fc33a6e0bea386f09f813f6c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362356fc33a6e0bea386f09f813f6c38">&#9670;&#160;</a></span>I_OPL_SetMusicVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_OPL_SetMusicVolume </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>volume</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69aa0d9309dd91d3a5a5c5aed521ba1e" name="a69aa0d9309dd91d3a5a5c5aed521ba1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69aa0d9309dd91d3a5a5c5aed521ba1e">&#9670;&#160;</a></span>I_OPL_ShutdownMusic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_OPL_ShutdownMusic </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c0db50600ac91c283583214abf8f61f" name="a2c0db50600ac91c283583214abf8f61f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0db50600ac91c283583214abf8f61f">&#9670;&#160;</a></span>I_OPL_StopSong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_OPL_StopSong </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad38402458ebf9e62f883dfcb08bce1ce" name="ad38402458ebf9e62f883dfcb08bce1ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad38402458ebf9e62f883dfcb08bce1ce">&#9670;&#160;</a></span>I_OPL_UnRegisterSong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I_OPL_UnRegisterSong </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5192d693dfa5545c9f62d1ba43edd59e" name="a5192d693dfa5545c9f62d1ba43edd59e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5192d693dfa5545c9f62d1ba43edd59e">&#9670;&#160;</a></span>I_SetOPLDriverVer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_SetOPLDriverVer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__sound_8h.html#ad3f775d6ce04221c0de9aee4b389d0ab">opl_driver_ver_t</a>&#160;</td>
+          <td class="paramname"><em>ver</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad16ace565a0d8e3ac1b86f9d4e24a2de" name="ad16ace565a0d8e3ac1b86f9d4e24a2de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad16ace565a0d8e3ac1b86f9d4e24a2de">&#9670;&#160;</a></span>InitChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void InitChannel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba8f0969ecc4fa31cfe9a4ee76d7045c" name="aba8f0969ecc4fa31cfe9a4ee76d7045c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba8f0969ecc4fa31cfe9a4ee76d7045c">&#9670;&#160;</a></span>InitVoices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void InitVoices </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94ab7c5823fa63b5ce16178c5b24e095" name="a94ab7c5823fa63b5ce16178c5b24e095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94ab7c5823fa63b5ce16178c5b24e095">&#9670;&#160;</a></span>KeyOffEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void KeyOffEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *&#160;</td>
+          <td class="paramname"><em>track</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmidi__event__t.html">midi_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9aa0209b6f715322c2560c651aab9cb" name="ae9aa0209b6f715322c2560c651aab9cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9aa0209b6f715322c2560c651aab9cb">&#9670;&#160;</a></span>KeyOnEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void KeyOnEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *&#160;</td>
+          <td class="paramname"><em>track</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmidi__event__t.html">midi_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1aa551e1aa718a63681c653e6664db3" name="af1aa551e1aa718a63681c653e6664db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1aa551e1aa718a63681c653e6664db3">&#9670;&#160;</a></span>LoadInstrumentTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> LoadInstrumentTable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdab69db263dd5e94ef31fa0980519ce" name="afdab69db263dd5e94ef31fa0980519ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdab69db263dd5e94ef31fa0980519ce">&#9670;&#160;</a></span>LoadOperatorData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void LoadOperatorData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>operator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">genmidi_op_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td>
+          <td class="paramname"><em>max_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>volume</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afea79a56a9533712d400b013a007c03c" name="afea79a56a9533712d400b013a007c03c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea79a56a9533712d400b013a007c03c">&#9670;&#160;</a></span>MetaEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void MetaEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *&#160;</td>
+          <td class="paramname"><em>track</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmidi__event__t.html">midi_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ac3857a5a1ad64d2cf53b9103a26b2e" name="a3ac3857a5a1ad64d2cf53b9103a26b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac3857a5a1ad64d2cf53b9103a26b2e">&#9670;&#160;</a></span>MetaSetTempo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void MetaSetTempo </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>tempo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c4e5afc36c92a2673d91309a9ca6f24" name="a7c4e5afc36c92a2673d91309a9ca6f24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4e5afc36c92a2673d91309a9ca6f24">&#9670;&#160;</a></span>NumActiveChannels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int NumActiveChannels </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe5a53424f56d2132349cb5a595bb054" name="abe5a53424f56d2132349cb5a595bb054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe5a53424f56d2132349cb5a595bb054">&#9670;&#160;</a></span>PACKED_STRUCT() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef PACKED_STRUCT </td>
+          <td>(</td>
+          <td class="paramtype">{ <a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> tremolo;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> attack;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> sustain;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> waveform;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> scale;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> level;}&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb5e5ee15e2a8f23c67fdbdf196e348d" name="afb5e5ee15e2a8f23c67fdbdf196e348d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5e5ee15e2a8f23c67fdbdf196e348d">&#9670;&#160;</a></span>PACKED_STRUCT() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef PACKED_STRUCT </td>
+          <td>(</td>
+          <td class="paramtype">{ unsigned short flags;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> fine_tuning;<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> fixed_note;<a class="el" href="i__oplmusic_8c.html#a9adc34661fe47cf8c69112338c127ba4">genmidi_voice_t</a> <a class="el" href="i__oplmusic_8c.html#a9dcafdad3648a2f311a07930b59c3f76">voices</a>[2];}&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f833d1d1ad10220ceffeb05cfe575fb" name="a0f833d1d1ad10220ceffeb05cfe575fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f833d1d1ad10220ceffeb05cfe575fb">&#9670;&#160;</a></span>PitchBendEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void PitchBendEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *&#160;</td>
+          <td class="paramname"><em>track</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmidi__event__t.html">midi_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a129315fc5cebb625b4b4d82366a3dc" name="a7a129315fc5cebb625b4b4d82366a3dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a129315fc5cebb625b4b4d82366a3dc">&#9670;&#160;</a></span>ProcessEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProcessEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *&#160;</td>
+          <td class="paramname"><em>track</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmidi__event__t.html">midi_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a310fb2b30d1d7c29d73e54284f3226ea" name="a310fb2b30d1d7c29d73e54284f3226ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310fb2b30d1d7c29d73e54284f3226ea">&#9670;&#160;</a></span>ProgramChangeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProgramChangeEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *&#160;</td>
+          <td class="paramname"><em>track</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmidi__event__t.html">midi_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a391d43bfd7af50295ace5c0d65fcf53f" name="a391d43bfd7af50295ace5c0d65fcf53f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a391d43bfd7af50295ace5c0d65fcf53f">&#9670;&#160;</a></span>ReleaseVoice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ReleaseVoice </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f64807de5d9bc97c38c5e0288cb7cdc" name="a6f64807de5d9bc97c38c5e0288cb7cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f64807de5d9bc97c38c5e0288cb7cdc">&#9670;&#160;</a></span>ReplaceExistingVoice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ReplaceExistingVoice </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f6befba86a38ae003316909f6c06fd5" name="a7f6befba86a38ae003316909f6c06fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f6befba86a38ae003316909f6c06fd5">&#9670;&#160;</a></span>ReplaceExistingVoiceDoom1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ReplaceExistingVoiceDoom1 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdf3aacbb3f742556b6756b3e7874e9a" name="afdf3aacbb3f742556b6756b3e7874e9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf3aacbb3f742556b6756b3e7874e9a">&#9670;&#160;</a></span>ReplaceExistingVoiceDoom2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ReplaceExistingVoiceDoom2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5bd79638ab25777afe1772242a1fd5a" name="aa5bd79638ab25777afe1772242a1fd5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5bd79638ab25777afe1772242a1fd5a">&#9670;&#160;</a></span>RestartSong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RestartSong </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>unused</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52b770dc6d81e75d5c257de300f66cc6" name="a52b770dc6d81e75d5c257de300f66cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52b770dc6d81e75d5c257de300f66cc6">&#9670;&#160;</a></span>ScheduleTrack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ScheduleTrack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *&#160;</td>
+          <td class="paramname"><em>track</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a415f884b5357d96cf843b92acc53a66f" name="a415f884b5357d96cf843b92acc53a66f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415f884b5357d96cf843b92acc53a66f">&#9670;&#160;</a></span>SetChannelPan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SetChannelPan </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>pan</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a858bfb14c4618bc4995fb8766459fce1" name="a858bfb14c4618bc4995fb8766459fce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858bfb14c4618bc4995fb8766459fce1">&#9670;&#160;</a></span>SetChannelVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SetChannelVolume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td>
+          <td class="paramname"><em>clip_start</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d9bb59cd76e5cb457c5a6cd03bde1db" name="a5d9bb59cd76e5cb457c5a6cd03bde1db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9bb59cd76e5cb457c5a6cd03bde1db">&#9670;&#160;</a></span>SetVoiceInstrument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SetVoiceInstrument </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *&#160;</td>
+          <td class="paramname"><em>voice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">genmidi_instr_t *&#160;</td>
+          <td class="paramname"><em>instr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>instr_voice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7f6e7956a9dbde0fc551e7b625a60ea" name="aa7f6e7956a9dbde0fc551e7b625a60ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f6e7956a9dbde0fc551e7b625a60ea">&#9670;&#160;</a></span>SetVoicePan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SetVoicePan </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *&#160;</td>
+          <td class="paramname"><em>voice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>pan</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9277a8bf95e15b89042cf878a9cd6c4" name="ab9277a8bf95e15b89042cf878a9cd6c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9277a8bf95e15b89042cf878a9cd6c4">&#9670;&#160;</a></span>SetVoiceVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SetVoiceVolume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *&#160;</td>
+          <td class="paramname"><em>voice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>volume</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5ad4867e45cf5c887338eb9b817a676" name="ac5ad4867e45cf5c887338eb9b817a676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ad4867e45cf5c887338eb9b817a676">&#9670;&#160;</a></span>StartTrack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void StartTrack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="midifile_8h.html#a157ed2b8e4be5bde084cb00a9430acdf">midi_file_t</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>track_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05b3cb643b7a207d0213b787dbcf0238" name="a05b3cb643b7a207d0213b787dbcf0238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b3cb643b7a207d0213b787dbcf0238">&#9670;&#160;</a></span>TrackChannelForEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> * TrackChannelForEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structopl__track__data__t.html">opl_track_data_t</a> *&#160;</td>
+          <td class="paramname"><em>track</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmidi__event__t.html">midi_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5aaef69e2f0bee6cd86f9ff2cbf123b4" name="a5aaef69e2f0bee6cd86f9ff2cbf123b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aaef69e2f0bee6cd86f9ff2cbf123b4">&#9670;&#160;</a></span>TrackTimerCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void TrackTimerCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6263a7be6622950d8a7675290dc919b9" name="a6263a7be6622950d8a7675290dc919b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6263a7be6622950d8a7675290dc919b9">&#9670;&#160;</a></span>UpdateVoiceFrequency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void UpdateVoiceFrequency </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *&#160;</td>
+          <td class="paramname"><em>voice</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad909c620083fb4aa3a3b22db07e7a09a" name="ad909c620083fb4aa3a3b22db07e7a09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad909c620083fb4aa3a3b22db07e7a09a">&#9670;&#160;</a></span>VoiceKeyOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void VoiceKeyOff </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> *&#160;</td>
+          <td class="paramname"><em>voice</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fe7b0770bf7946c4cdcaa06b67893b5" name="a7fe7b0770bf7946c4cdcaa06b67893b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe7b0770bf7946c4cdcaa06b67893b5">&#9670;&#160;</a></span>VoiceKeyOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void VoiceKeyOn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">genmidi_instr_t *&#160;</td>
+          <td class="paramname"><em>instrument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>instrument_voice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>note</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>volume</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a932915da56b96715e0176e8ad1ba1e75" name="a932915da56b96715e0176e8ad1ba1e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932915da56b96715e0176e8ad1ba1e75">&#9670;&#160;</a></span>channels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="i__oplmusic_8c.html#abd7f28e722ff6f809cc390e3f6f554d3">opl_channel_data_t</a> channels[<a class="el" href="midifile_8h.html#a53664a946f054713c40eb8c84e12dbfc">MIDI_CHANNELS_PER_TRACK</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae44d95eca82d54247ad6924b29fc4df4" name="ae44d95eca82d54247ad6924b29fc4df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44d95eca82d54247ad6924b29fc4df4">&#9670;&#160;</a></span>current_music_volume</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int current_music_volume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2bca881954a80f43f9ce2ad9c4bc32c4" name="a2bca881954a80f43f9ce2ad9c4bc32c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bca881954a80f43f9ce2ad9c4bc32c4">&#9670;&#160;</a></span>frequency_curve</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned short frequency_curve[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9adc34661fe47cf8c69112338c127ba4" name="a9adc34661fe47cf8c69112338c127ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9adc34661fe47cf8c69112338c127ba4">&#9670;&#160;</a></span>genmidi_voice_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">genmidi_voice_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a743cd7d51a245f05436e0fc52e41889e" name="a743cd7d51a245f05436e0fc52e41889e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743cd7d51a245f05436e0fc52e41889e">&#9670;&#160;</a></span>last_perc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t last_perc[<a class="el" href="i__oplmusic_8c.html#a87941f30ada13eaa7a8cbf07455d1ac7">PERCUSSION_LOG_LEN</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d14286f449721c26ebdfe60607a7432" name="a5d14286f449721c26ebdfe60607a7432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d14286f449721c26ebdfe60607a7432">&#9670;&#160;</a></span>last_perc_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int last_perc_count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c5a6026019eb6cc92b56680a328eacb" name="a5c5a6026019eb6cc92b56680a328eacb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c5a6026019eb6cc92b56680a328eacb">&#9670;&#160;</a></span>main_instr_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char(* main_instr_names)[32]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3372f5c3dde57a790c9d0f32dca59e9" name="af3372f5c3dde57a790c9d0f32dca59e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3372f5c3dde57a790c9d0f32dca59e9">&#9670;&#160;</a></span>main_instrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">genmidi_instr_t* main_instrs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac966ef43b527feb4534a3ff4694ffe87" name="ac966ef43b527feb4534a3ff4694ffe87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac966ef43b527feb4534a3ff4694ffe87">&#9670;&#160;</a></span>music_initialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> music_initialized = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30e51687c75059a949d7c1fa2460926f" name="a30e51687c75059a949d7c1fa2460926f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30e51687c75059a949d7c1fa2460926f">&#9670;&#160;</a></span>music_opl_devices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570dae">snddevice_t</a> music_opl_devices[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_enumvalue" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daea4e85768e20e1c97c7fc5cec28d7ad942">SNDDEVICE_ADLIB</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daeaf74cd5351e3e31b5cc0ee20a005b7b39">SNDDEVICE_SB</a>,</div>
+<div class="line">}</div>
+<div class="ttc" id="ai__sound_8h_html_a36a8f7d6784e309bb5ca47d4bc570daea4e85768e20e1c97c7fc5cec28d7ad942"><div class="ttname"><a href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daea4e85768e20e1c97c7fc5cec28d7ad942">SNDDEVICE_ADLIB</a></div><div class="ttdeci">@ SNDDEVICE_ADLIB</div><div class="ttdef"><b>Definition:</b> i_sound.h:94</div></div>
+<div class="ttc" id="ai__sound_8h_html_a36a8f7d6784e309bb5ca47d4bc570daeaf74cd5351e3e31b5cc0ee20a005b7b39"><div class="ttname"><a href="i__sound_8h.html#a36a8f7d6784e309bb5ca47d4bc570daeaf74cd5351e3e31b5cc0ee20a005b7b39">SNDDEVICE_SB</a></div><div class="ttdeci">@ SNDDEVICE_SB</div><div class="ttdef"><b>Definition:</b> i_sound.h:95</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac846ac44a135ad04f99799cfab943408" name="ac846ac44a135ad04f99799cfab943408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac846ac44a135ad04f99799cfab943408">&#9670;&#160;</a></span>music_opl_module</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structmusic__module__t.html">music_module_t</a> music_opl_module</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_variable" href="i__oplmusic_8c.html#a30e51687c75059a949d7c1fa2460926f">music_opl_devices</a>,</div>
+<div class="line">    <a class="code hl_define" href="doomtype_8h.html#aa2cb1b34aa6df268c499d3d415aa75d3">arrlen</a>(<a class="code hl_variable" href="i__oplmusic_8c.html#a30e51687c75059a949d7c1fa2460926f">music_opl_devices</a>),</div>
+<div class="line">    <a class="code hl_function" href="i__oplmusic_8c.html#a922dbeaa5904ad9b022afdc96c584ffc">I_OPL_InitMusic</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__oplmusic_8c.html#a69aa0d9309dd91d3a5a5c5aed521ba1e">I_OPL_ShutdownMusic</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__oplmusic_8c.html#a362356fc33a6e0bea386f09f813f6c38">I_OPL_SetMusicVolume</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__oplmusic_8c.html#a9c16268418fd076b13d505edf50f202a">I_OPL_PauseSong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__oplmusic_8c.html#a51b114620297fe5c93fc37eedcb52abf">I_OPL_ResumeSong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__oplmusic_8c.html#a595d501c462b59d8736d6f0531c8b148">I_OPL_RegisterSong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__oplmusic_8c.html#ad38402458ebf9e62f883dfcb08bce1ce">I_OPL_UnRegisterSong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__oplmusic_8c.html#a9e9e5c69225e9affe95698f9e448783e">I_OPL_PlaySong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__oplmusic_8c.html#a2c0db50600ac91c283583214abf8f61f">I_OPL_StopSong</a>,</div>
+<div class="line">    <a class="code hl_function" href="i__oplmusic_8c.html#a9234b5602777dca281241b5cfa01d677">I_OPL_MusicIsPlaying</a>,</div>
+<div class="line">    NULL, </div>
+<div class="line">}</div>
+<div class="ttc" id="adoomtype_8h_html_aa2cb1b34aa6df268c499d3d415aa75d3"><div class="ttname"><a href="doomtype_8h.html#aa2cb1b34aa6df268c499d3d415aa75d3">arrlen</a></div><div class="ttdeci">#define arrlen(array)</div><div class="ttdef"><b>Definition:</b> doomtype.h:133</div></div>
+<div class="ttc" id="ai__oplmusic_8c_html_a2c0db50600ac91c283583214abf8f61f"><div class="ttname"><a href="i__oplmusic_8c.html#a2c0db50600ac91c283583214abf8f61f">I_OPL_StopSong</a></div><div class="ttdeci">static void I_OPL_StopSong(void)</div><div class="ttdef"><b>Definition:</b> i_oplmusic.c:2104</div></div>
+<div class="ttc" id="ai__oplmusic_8c_html_a30e51687c75059a949d7c1fa2460926f"><div class="ttname"><a href="i__oplmusic_8c.html#a30e51687c75059a949d7c1fa2460926f">music_opl_devices</a></div><div class="ttdeci">static const snddevice_t music_opl_devices[]</div><div class="ttdef"><b>Definition:</b> i_oplmusic.c:2314</div></div>
+<div class="ttc" id="ai__oplmusic_8c_html_a362356fc33a6e0bea386f09f813f6c38"><div class="ttname"><a href="i__oplmusic_8c.html#a362356fc33a6e0bea386f09f813f6c38">I_OPL_SetMusicVolume</a></div><div class="ttdeci">static void I_OPL_SetMusicVolume(int volume)</div><div class="ttdef"><b>Definition:</b> i_oplmusic.c:1195</div></div>
+<div class="ttc" id="ai__oplmusic_8c_html_a51b114620297fe5c93fc37eedcb52abf"><div class="ttname"><a href="i__oplmusic_8c.html#a51b114620297fe5c93fc37eedcb52abf">I_OPL_ResumeSong</a></div><div class="ttdeci">static void I_OPL_ResumeSong(void)</div><div class="ttdef"><b>Definition:</b> i_oplmusic.c:2094</div></div>
+<div class="ttc" id="ai__oplmusic_8c_html_a595d501c462b59d8736d6f0531c8b148"><div class="ttname"><a href="i__oplmusic_8c.html#a595d501c462b59d8736d6f0531c8b148">I_OPL_RegisterSong</a></div><div class="ttdeci">static void * I_OPL_RegisterSong(void *data, int len)</div><div class="ttdef"><b>Definition:</b> i_oplmusic.c:2180</div></div>
+<div class="ttc" id="ai__oplmusic_8c_html_a69aa0d9309dd91d3a5a5c5aed521ba1e"><div class="ttname"><a href="i__oplmusic_8c.html#a69aa0d9309dd91d3a5a5c5aed521ba1e">I_OPL_ShutdownMusic</a></div><div class="ttdeci">static void I_OPL_ShutdownMusic(void)</div><div class="ttdef"><b>Definition:</b> i_oplmusic.c:2236</div></div>
+<div class="ttc" id="ai__oplmusic_8c_html_a922dbeaa5904ad9b022afdc96c584ffc"><div class="ttname"><a href="i__oplmusic_8c.html#a922dbeaa5904ad9b022afdc96c584ffc">I_OPL_InitMusic</a></div><div class="ttdeci">static boolean I_OPL_InitMusic(void)</div><div class="ttdef"><b>Definition:</b> i_oplmusic.c:2256</div></div>
+<div class="ttc" id="ai__oplmusic_8c_html_a9234b5602777dca281241b5cfa01d677"><div class="ttname"><a href="i__oplmusic_8c.html#a9234b5602777dca281241b5cfa01d677">I_OPL_MusicIsPlaying</a></div><div class="ttdeci">static boolean I_OPL_MusicIsPlaying(void)</div><div class="ttdef"><b>Definition:</b> i_oplmusic.c:2224</div></div>
+<div class="ttc" id="ai__oplmusic_8c_html_a9c16268418fd076b13d505edf50f202a"><div class="ttname"><a href="i__oplmusic_8c.html#a9c16268418fd076b13d505edf50f202a">I_OPL_PauseSong</a></div><div class="ttdeci">static void I_OPL_PauseSong(void)</div><div class="ttdef"><b>Definition:</b> i_oplmusic.c:2069</div></div>
+<div class="ttc" id="ai__oplmusic_8c_html_a9e9e5c69225e9affe95698f9e448783e"><div class="ttname"><a href="i__oplmusic_8c.html#a9e9e5c69225e9affe95698f9e448783e">I_OPL_PlaySong</a></div><div class="ttdeci">static void I_OPL_PlaySong(void *handle, boolean looping)</div><div class="ttdef"><b>Definition:</b> i_oplmusic.c:2023</div></div>
+<div class="ttc" id="ai__oplmusic_8c_html_ad38402458ebf9e62f883dfcb08bce1ce"><div class="ttname"><a href="i__oplmusic_8c.html#ad38402458ebf9e62f883dfcb08bce1ce">I_OPL_UnRegisterSong</a></div><div class="ttdeci">static void I_OPL_UnRegisterSong(void *handle)</div><div class="ttdef"><b>Definition:</b> i_oplmusic.c:2141</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9fc843dbbbff3f047a06ed3b1e1e10ae" name="a9fc843dbbbff3f047a06ed3b1e1e10ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc843dbbbff3f047a06ed3b1e1e10ae">&#9670;&#160;</a></span>num_opl_voices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int num_opl_voices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b9d612f53fa15bb1987f3d12104b20c" name="a3b9d612f53fa15bb1987f3d12104b20c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9d612f53fa15bb1987f3d12104b20c">&#9670;&#160;</a></span>num_tracks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int num_tracks = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd7f28e722ff6f809cc390e3f6f554d3" name="abd7f28e722ff6f809cc390e3f6f554d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd7f28e722ff6f809cc390e3f6f554d3">&#9670;&#160;</a></span>opl_channel_data_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">opl_channel_data_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab66a014f672c10c2537971aa80dd49eb" name="ab66a014f672c10c2537971aa80dd49eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66a014f672c10c2537971aa80dd49eb">&#9670;&#160;</a></span>opl_drv_ver</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="i__sound_8h.html#ad3f775d6ce04221c0de9aee4b389d0ab">opl_driver_ver_t</a> opl_drv_ver = <a class="el" href="i__sound_8h.html#ad3f775d6ce04221c0de9aee4b389d0aba5f4867e04ec3756cd3e19ca3493f1fc2">opl_doom_1_9</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6796ca4b8c363c1077e883a5424fac8a" name="a6796ca4b8c363c1077e883a5424fac8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6796ca4b8c363c1077e883a5424fac8a">&#9670;&#160;</a></span>opl_io_port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int opl_io_port = 0x388</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7207bb9894dc3014e6c6142c5f8d45e1" name="a7207bb9894dc3014e6c6142c5f8d45e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7207bb9894dc3014e6c6142c5f8d45e1">&#9670;&#160;</a></span>opl_opl3mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int opl_opl3mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5492589605ce6dc74a2b96c6dd438f6b" name="a5492589605ce6dc74a2b96c6dd438f6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5492589605ce6dc74a2b96c6dd438f6b">&#9670;&#160;</a></span>opl_stereo_correct</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> opl_stereo_correct = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ca86799b157def66f47e9794d987ef7" name="a4ca86799b157def66f47e9794d987ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca86799b157def66f47e9794d987ef7">&#9670;&#160;</a></span>percussion_instrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">genmidi_instr_t* percussion_instrs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59d031665cf46aa9410cf9b92cd9cc66" name="a59d031665cf46aa9410cf9b92cd9cc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d031665cf46aa9410cf9b92cd9cc66">&#9670;&#160;</a></span>percussion_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char(* percussion_names)[32]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e5ef541d55fd0cda00f062268bde92e" name="a8e5ef541d55fd0cda00f062268bde92e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e5ef541d55fd0cda00f062268bde92e">&#9670;&#160;</a></span>running_tracks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int running_tracks = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1633475c4aa5521d4fab52639d0a710c" name="a1633475c4aa5521d4fab52639d0a710c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1633475c4aa5521d4fab52639d0a710c">&#9670;&#160;</a></span>snd_dmxoption</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* snd_dmxoption = &quot;-opl3&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb5c0c86896171a149465da4fee9eb68" name="adb5c0c86896171a149465da4fee9eb68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5c0c86896171a149465da4fee9eb68">&#9670;&#160;</a></span>song_looping</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> song_looping</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2d73adcd5df24572544fced9773dc0d" name="ad2d73adcd5df24572544fced9773dc0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d73adcd5df24572544fced9773dc0d">&#9670;&#160;</a></span>start_music_volume</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int start_music_volume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a332f6a56e44f14ee900cc3acf079dec4" name="a332f6a56e44f14ee900cc3acf079dec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332f6a56e44f14ee900cc3acf079dec4">&#9670;&#160;</a></span>ticks_per_beat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ticks_per_beat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a536f83b59f3ccab03b67c645ecb37ddb" name="a536f83b59f3ccab03b67c645ecb37ddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a536f83b59f3ccab03b67c645ecb37ddb">&#9670;&#160;</a></span>tracks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structopl__track__data__t.html">opl_track_data_t</a>* tracks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a3428f3c0e2ee1003b5fc5456700350" name="a0a3428f3c0e2ee1003b5fc5456700350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3428f3c0e2ee1003b5fc5456700350">&#9670;&#160;</a></span>us_per_beat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int us_per_beat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fba539a9515af88cf85838276082ed3" name="a9fba539a9515af88cf85838276082ed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fba539a9515af88cf85838276082ed3">&#9670;&#160;</a></span>voice_alloced_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a>* voice_alloced_list[OPL_NUM_VOICES *2]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64a401d4b36ac3292523f9f0d40d05d2" name="a64a401d4b36ac3292523f9f0d40d05d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a401d4b36ac3292523f9f0d40d05d2">&#9670;&#160;</a></span>voice_alloced_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int voice_alloced_num</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac242f2341cc56fbeccdd63400e9aec99" name="ac242f2341cc56fbeccdd63400e9aec99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac242f2341cc56fbeccdd63400e9aec99">&#9670;&#160;</a></span>voice_free_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a>* voice_free_list[OPL_NUM_VOICES *2]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81459cd3a2bb02a9d0a6f68212423da1" name="a81459cd3a2bb02a9d0a6f68212423da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81459cd3a2bb02a9d0a6f68212423da1">&#9670;&#160;</a></span>voice_free_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int voice_free_num</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc2bd2520b9dd868bc4ac5a7ca03334f" name="acc2bd2520b9dd868bc4ac5a7ca03334f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc2bd2520b9dd868bc4ac5a7ca03334f">&#9670;&#160;</a></span>voice_operators</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int voice_operators[2][OPL_NUM_VOICES]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {0x00, 0x01, 0x02, 0x08, 0x09, 0x0a, 0x10, 0x11, 0x12},</div>
+<div class="line">    {0x03, 0x04, 0x05, 0x0b, 0x0c, 0x0d, 0x13, 0x14, 0x15}}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9dcafdad3648a2f311a07930b59c3f76" name="a9dcafdad3648a2f311a07930b59c3f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dcafdad3648a2f311a07930b59c3f76">&#9670;&#160;</a></span>voices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="i__oplmusic_8c.html#a63dc39d880109cea6ef44a3a8f9931e5">opl_voice_t</a> voices[OPL_NUM_VOICES *2]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4358b10a967a1a0e26ac96a923d242d" name="aa4358b10a967a1a0e26ac96a923d242d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4358b10a967a1a0e26ac96a923d242d">&#9670;&#160;</a></span>volume_mapping_table</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int volume_mapping_table[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0,   1,   3,   5,   6,   8,   10,  11,  13,  14,  16,  17,  19,  20,  22,  23,  25,  26,  27,</div>
+<div class="line">    29,  30,  32,  33,  34,  36,  37,  39,  41,  43,  45,  47,  49,  50,  52,  54,  55,  57,  59,</div>
+<div class="line">    60,  61,  63,  64,  66,  67,  68,  69,  71,  72,  73,  74,  75,  76,  77,  79,  80,  81,  82,</div>
+<div class="line">    83,  84,  84,  85,  86,  87,  88,  89,  90,  91,  92,  92,  93,  94,  95,  96,  96,  97,  98,</div>
+<div class="line">    99,  99,  100, 101, 101, 102, 103, 103, 104, 105, 105, 106, 107, 107, 108, 109, 109, 110, 110,</div>
+<div class="line">    111, 112, 112, 113, 113, 114, 114, 115, 115, 116, 117, 117, 118, 118, 119, 119, 120, 120, 121,</div>
+<div class="line">    121, 122, 122, 123, 123, 123, 124, 124, 125, 125, 126, 126, 127, 127}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="i__oplmusic_8c.html">i_oplmusic.c</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell-crispy/subprojects/little-hell-engine/src/v_video.c File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('v__video_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">v_video.c File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;SDL_version.h&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="i__system_8h_source.html">i_system.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="doomtype_8h_source.html">doomtype.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__input_8h_source.html">i_input.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__swap_8h_source.html">i_swap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i__video_8h_source.html">i_video.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__bbox_8h_source.html">m_bbox.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__misc_8h_source.html">m_misc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="v__video_8h_source.html">v_video.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="w__wad_8h_source.html">w_wad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="z__zone_8h_source.html">z_zone.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crispy_8h_source.html">crispy.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for v_video.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="v__video_8c__incl.svg" width="1415" height="447"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a2048ff016ead40ec67b54ebd4176b513"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a2048ff016ead40ec67b54ebd4176b513">RANGECHECK</a></td></tr>
+<tr class="separator:a2048ff016ead40ec67b54ebd4176b513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba647aa70fcf8b143726089201bb6e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#acba647aa70fcf8b143726089201bb6e2">MOUSE_SPEED_BOX_WIDTH</a>&#160;&#160;&#160;120</td></tr>
+<tr class="separator:acba647aa70fcf8b143726089201bb6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4c9b63ca0284c2ae84e7c134c3b88f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#aaa4c9b63ca0284c2ae84e7c134c3b88f">MOUSE_SPEED_BOX_HEIGHT</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:aaa4c9b63ca0284c2ae84e7c134c3b88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9922cfe5382e6b1a777f41a844dcef0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#af9922cfe5382e6b1a777f41a844dcef0">MOUSE_SPEED_BOX_X</a>&#160;&#160;&#160;(<a class="el" href="i__video_8c.html#a20adb9647727e647ce6ba07898877a7d">SCREENWIDTH</a> - <a class="el" href="v__video_8c.html#acba647aa70fcf8b143726089201bb6e2">MOUSE_SPEED_BOX_WIDTH</a> - 10)</td></tr>
+<tr class="separator:af9922cfe5382e6b1a777f41a844dcef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8623c5ea3ba40a5a8f832bd51d2784b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a8623c5ea3ba40a5a8f832bd51d2784b5">MOUSE_SPEED_BOX_Y</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:a8623c5ea3ba40a5a8f832bd51d2784b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a262b9e28280110c6371d28c352762334"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a262b9e28280110c6371d28c352762334">drawpatchpx_t</a>(const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> dest, const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> source)</td></tr>
+<tr class="separator:a262b9e28280110c6371d28c352762334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a89ee4f844089eb3e4bb16c97fcb5f057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a89ee4f844089eb3e4bb16c97fcb5f057">V_MarkRect</a> (int x, int y, int width, int height)</td></tr>
+<tr class="separator:a89ee4f844089eb3e4bb16c97fcb5f057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76f7fa6f3bb489abbc4e9f5d61b1e03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#aa76f7fa6f3bb489abbc4e9f5d61b1e03">V_CopyRect</a> (int srcx, int srcy, <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *source, int width, int height, int destx, int desty)</td></tr>
+<tr class="separator:aa76f7fa6f3bb489abbc4e9f5d61b1e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3389b05235eab9fb54f68dc5304c2675"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a3389b05235eab9fb54f68dc5304c2675">V_SetPatchClipCallback</a> (<a class="el" href="v__video_8h.html#ae89892b58e5dafdbb0fc289d490a24c4">vpatchclipfunc_t</a> func)</td></tr>
+<tr class="separator:a3389b05235eab9fb54f68dc5304c2675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a88672a4cfd0217261599ecb9e5fba"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a53a88672a4cfd0217261599ecb9e5fba">drawpatchpx00</a> (const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> dest, const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> source)</td></tr>
+<tr class="separator:a53a88672a4cfd0217261599ecb9e5fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda3677b3668506eb287df03103024ef"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#adda3677b3668506eb287df03103024ef">drawpatchpx01</a> (const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> dest, const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> source)</td></tr>
+<tr class="separator:adda3677b3668506eb287df03103024ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362b8c3c13d6a466a44ad7c0af499036"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a362b8c3c13d6a466a44ad7c0af499036">drawpatchpx10</a> (const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> dest, const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> source)</td></tr>
+<tr class="separator:a362b8c3c13d6a466a44ad7c0af499036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9eed63c63ca7bbcf781c3fe19fc002c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#aa9eed63c63ca7bbcf781c3fe19fc002c">drawpatchpx11</a> (const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> dest, const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> source)</td></tr>
+<tr class="separator:aa9eed63c63ca7bbcf781c3fe19fc002c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac9b4631eb89f8fbaa331bc1537ab8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#afac9b4631eb89f8fbaa331bc1537ab8f">V_DrawPatch</a> (int x, int y, patch_t *patch)</td></tr>
+<tr class="separator:afac9b4631eb89f8fbaa331bc1537ab8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b88445b661a6b7aa42275da526562f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a49b88445b661a6b7aa42275da526562f">V_DrawPatchFullScreen</a> (patch_t *patch, <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> flipped)</td></tr>
+<tr class="separator:a49b88445b661a6b7aa42275da526562f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2a0fd8cfc882e3e36fd102a1031153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a8e2a0fd8cfc882e3e36fd102a1031153">V_DrawPatchFlipped</a> (int x, int y, patch_t *patch)</td></tr>
+<tr class="separator:a8e2a0fd8cfc882e3e36fd102a1031153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183a97a83375566eda14e2df29209f86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a183a97a83375566eda14e2df29209f86">V_DrawPatchDirect</a> (int x, int y, patch_t *patch)</td></tr>
+<tr class="separator:a183a97a83375566eda14e2df29209f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5c80a506ab71c858d5845326482b6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a0a5c80a506ab71c858d5845326482b6f">V_DrawTLPatch</a> (int x, int y, patch_t *patch)</td></tr>
+<tr class="separator:a0a5c80a506ab71c858d5845326482b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad590556d64a7d048f28e0ce5f0d395c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ad590556d64a7d048f28e0ce5f0d395c7">V_DrawXlaPatch</a> (int x, int y, patch_t *patch)</td></tr>
+<tr class="separator:ad590556d64a7d048f28e0ce5f0d395c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2fef75f347122d138803bce7ec004c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ada2fef75f347122d138803bce7ec004c">V_DrawAltTLPatch</a> (int x, int y, patch_t *patch)</td></tr>
+<tr class="separator:ada2fef75f347122d138803bce7ec004c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7714cb7e0bc014619765993c5d3c3635"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a7714cb7e0bc014619765993c5d3c3635">V_DrawShadowedPatch</a> (int x, int y, patch_t *patch)</td></tr>
+<tr class="separator:a7714cb7e0bc014619765993c5d3c3635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab646ef8d90590f2fc1bce498cf3689ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ab646ef8d90590f2fc1bce498cf3689ca">V_LoadTintTable</a> (void)</td></tr>
+<tr class="separator:ab646ef8d90590f2fc1bce498cf3689ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456ef738f167096d2b5549cf2b38a622"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a456ef738f167096d2b5549cf2b38a622">V_LoadXlaTable</a> (void)</td></tr>
+<tr class="separator:a456ef738f167096d2b5549cf2b38a622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3358e44593f5060f52b7d87b0c8fa7d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a3358e44593f5060f52b7d87b0c8fa7d0">V_DrawBlock</a> (int x, int y, int width, int height, <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *src)</td></tr>
+<tr class="separator:a3358e44593f5060f52b7d87b0c8fa7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad2032447d046d59f2f460bc0cc216e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#aad2032447d046d59f2f460bc0cc216e8">V_DrawScaledBlock</a> (int x, int y, int width, int height, <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *src)</td></tr>
+<tr class="separator:aad2032447d046d59f2f460bc0cc216e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581d79ef5e502725006e89335000839e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a581d79ef5e502725006e89335000839e">V_DrawFilledBox</a> (int x, int y, int w, int h, int c)</td></tr>
+<tr class="separator:a581d79ef5e502725006e89335000839e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80a126a9b4602b71a141d0900a304db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#aa80a126a9b4602b71a141d0900a304db">V_DrawHorizLine</a> (int x, int y, int w, int c)</td></tr>
+<tr class="separator:aa80a126a9b4602b71a141d0900a304db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2e188a567813fec8f198510e8add1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a7e2e188a567813fec8f198510e8add1b">V_DrawVertLine</a> (int x, int y, int h, int c)</td></tr>
+<tr class="separator:a7e2e188a567813fec8f198510e8add1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb1f43da424953db749e929b0188704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#aafb1f43da424953db749e929b0188704">V_DrawBox</a> (int x, int y, int w, int h, int c)</td></tr>
+<tr class="separator:aafb1f43da424953db749e929b0188704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affad4dc810b1d4f03ddb2c46e60c0158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#affad4dc810b1d4f03ddb2c46e60c0158">V_CopyScaledBuffer</a> (<a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *dest, <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *src, size_t size)</td></tr>
+<tr class="separator:affad4dc810b1d4f03ddb2c46e60c0158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7acf0eea18357b4f42c24bb3f3b30e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ad7acf0eea18357b4f42c24bb3f3b30e8">V_DrawRawScreen</a> (<a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *raw)</td></tr>
+<tr class="separator:ad7acf0eea18357b4f42c24bb3f3b30e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae48de21213e50836e0a129e42b0f15bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ae48de21213e50836e0a129e42b0f15bf">V_DrawFullscreenRawOrPatch</a> (<a class="el" href="w__wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> index)</td></tr>
+<tr class="separator:ae48de21213e50836e0a129e42b0f15bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c89d97d81b9fbcc4058631c2ac449e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a97c89d97d81b9fbcc4058631c2ac449e">V_Init</a> (void)</td></tr>
+<tr class="separator:a97c89d97d81b9fbcc4058631c2ac449e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88aa8778652f032671812478a0e9e201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a88aa8778652f032671812478a0e9e201">V_UseBuffer</a> (<a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *buffer)</td></tr>
+<tr class="separator:a88aa8778652f032671812478a0e9e201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af413d6ec2ab4fc8e787657135080de04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#af413d6ec2ab4fc8e787657135080de04">V_RestoreBuffer</a> (void)</td></tr>
+<tr class="separator:af413d6ec2ab4fc8e787657135080de04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4271031c5603ca0347e5feb947d422"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a8f4271031c5603ca0347e5feb947d422">PACKED_STRUCT</a> ({ char manufacturer;char <a class="el" href="d__mode_8c.html#aa577d1fcf565b5fce7f696ad477b777b">version</a>;char encoding;char bits_per_pixel;unsigned short xmin;unsigned short ymin;unsigned short xmax;unsigned short ymax;unsigned short hres;unsigned short vres;unsigned char <a class="el" href="i__video_8c.html#ac289aa1a25ae7602765bc84ebdf926d4">palette</a>[48];char reserved;char color_planes;unsigned short bytes_per_line;unsigned short palette_type;char filler[58];unsigned char data;})</td></tr>
+<tr class="separator:a8f4271031c5603ca0347e5feb947d422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68cdd84f557fdf89ba067486a80fd139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a68cdd84f557fdf89ba067486a80fd139">V_ScreenShot</a> (const char *format)</td></tr>
+<tr class="separator:a68cdd84f557fdf89ba067486a80fd139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9841eda53fd7b8750700d344b0ebeff"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ac9841eda53fd7b8750700d344b0ebeff">DrawAcceleratingBox</a> (int speed)</td></tr>
+<tr class="separator:ac9841eda53fd7b8750700d344b0ebeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af45c953af439be374c5b0d3da354a389"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#af45c953af439be374c5b0d3da354a389">DrawNonAcceleratingBox</a> (int speed)</td></tr>
+<tr class="separator:af45c953af439be374c5b0d3da354a389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e820f569a5ed6160fdf9a9ee29d8159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a5e820f569a5ed6160fdf9a9ee29d8159">V_DrawMouseSpeedBox</a> (int speed)</td></tr>
+<tr class="separator:a5e820f569a5ed6160fdf9a9ee29d8159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae697cf110a4c05923a368285a69d72a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ae697cf110a4c05923a368285a69d72a2">tinttable</a> = NULL</td></tr>
+<tr class="separator:ae697cf110a4c05923a368285a69d72a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148b6da468b833853b9559276a500ce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a148b6da468b833853b9559276a500ce4">tranmap</a> = NULL</td></tr>
+<tr class="separator:a148b6da468b833853b9559276a500ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad148791edccca295a3d173f94ee61c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#adad148791edccca295a3d173f94ee61c">dp_translation</a> = NULL</td></tr>
+<tr class="separator:adad148791edccca295a3d173f94ee61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf547c981a55968fdaf5c9466028c6b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#acf547c981a55968fdaf5c9466028c6b4">dp_translucent</a> = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td></tr>
+<tr class="separator:acf547c981a55968fdaf5c9466028c6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c3bad4c854912ac526493fcfae160dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a8c3bad4c854912ac526493fcfae160dc">xlatab</a> = NULL</td></tr>
+<tr class="separator:a8c3bad4c854912ac526493fcfae160dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344e7579caafae5d881e4f28a5f0ce48"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a344e7579caafae5d881e4f28a5f0ce48">dest_screen</a> = NULL</td></tr>
+<tr class="separator:a344e7579caafae5d881e4f28a5f0ce48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b32400d34d99a93bd8dc6c6a42217c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a64b32400d34d99a93bd8dc6c6a42217c">dirtybox</a> [4]</td></tr>
+<tr class="separator:a64b32400d34d99a93bd8dc6c6a42217c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19bbf8828c1e528ca506274034ed4eab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="v__video_8h.html#ae89892b58e5dafdbb0fc289d490a24c4">vpatchclipfunc_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a19bbf8828c1e528ca506274034ed4eab">patchclip_callback</a> = NULL</td></tr>
+<tr class="separator:a19bbf8828c1e528ca506274034ed4eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2007fa590ba309aff1f11b7b03b54a1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="v__video_8c.html#a262b9e28280110c6371d28c352762334">drawpatchpx_t</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#aa2007fa590ba309aff1f11b7b03b54a1">drawpatchpx_a</a> [2][2]</td></tr>
+<tr class="separator:aa2007fa590ba309aff1f11b7b03b54a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e50f37982ca55e80207f6cb2cd9b144"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="m__fixed_8h.html#a7fdea216e6bec468d1569e8ab1bd469b">fixed_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a3e50f37982ca55e80207f6cb2cd9b144">dx</a></td></tr>
+<tr class="separator:a3e50f37982ca55e80207f6cb2cd9b144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae41edec51266be206e0f2f16c697cd01"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="m__fixed_8h.html#a7fdea216e6bec468d1569e8ab1bd469b">fixed_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ae41edec51266be206e0f2f16c697cd01">dxi</a></td></tr>
+<tr class="separator:ae41edec51266be206e0f2f16c697cd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e7775251189f711501595fe04b8ffd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="m__fixed_8h.html#a7fdea216e6bec468d1569e8ab1bd469b">fixed_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#ac4e7775251189f711501595fe04b8ffd">dy</a></td></tr>
+<tr class="separator:ac4e7775251189f711501595fe04b8ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3040e577a91bd7b55f9d83b5d53413c6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="m__fixed_8h.html#a7fdea216e6bec468d1569e8ab1bd469b">fixed_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a3040e577a91bd7b55f9d83b5d53413c6">dyi</a></td></tr>
+<tr class="separator:a3040e577a91bd7b55f9d83b5d53413c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65204acedf07136965a6c063f96a9010"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__video_8c.html#a65204acedf07136965a6c063f96a9010">max_seen_speed</a> = <a class="el" href="v__video_8c.html#acba647aa70fcf8b143726089201bb6e2">MOUSE_SPEED_BOX_WIDTH</a> - 1</td></tr>
+<tr class="separator:a65204acedf07136965a6c063f96a9010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aaa4c9b63ca0284c2ae84e7c134c3b88f" name="aaa4c9b63ca0284c2ae84e7c134c3b88f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4c9b63ca0284c2ae84e7c134c3b88f">&#9670;&#160;</a></span>MOUSE_SPEED_BOX_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOUSE_SPEED_BOX_HEIGHT&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acba647aa70fcf8b143726089201bb6e2" name="acba647aa70fcf8b143726089201bb6e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba647aa70fcf8b143726089201bb6e2">&#9670;&#160;</a></span>MOUSE_SPEED_BOX_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOUSE_SPEED_BOX_WIDTH&#160;&#160;&#160;120</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9922cfe5382e6b1a777f41a844dcef0" name="af9922cfe5382e6b1a777f41a844dcef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9922cfe5382e6b1a777f41a844dcef0">&#9670;&#160;</a></span>MOUSE_SPEED_BOX_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOUSE_SPEED_BOX_X&#160;&#160;&#160;(<a class="el" href="i__video_8c.html#a20adb9647727e647ce6ba07898877a7d">SCREENWIDTH</a> - <a class="el" href="v__video_8c.html#acba647aa70fcf8b143726089201bb6e2">MOUSE_SPEED_BOX_WIDTH</a> - 10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8623c5ea3ba40a5a8f832bd51d2784b5" name="a8623c5ea3ba40a5a8f832bd51d2784b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8623c5ea3ba40a5a8f832bd51d2784b5">&#9670;&#160;</a></span>MOUSE_SPEED_BOX_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOUSE_SPEED_BOX_Y&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2048ff016ead40ec67b54ebd4176b513" name="a2048ff016ead40ec67b54ebd4176b513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2048ff016ead40ec67b54ebd4176b513">&#9670;&#160;</a></span>RANGECHECK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RANGECHECK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a262b9e28280110c6371d28c352762334" name="a262b9e28280110c6371d28c352762334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a262b9e28280110c6371d28c352762334">&#9670;&#160;</a></span>drawpatchpx_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> drawpatchpx_t(const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> dest, const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> source)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac9841eda53fd7b8750700d344b0ebeff" name="ac9841eda53fd7b8750700d344b0ebeff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9841eda53fd7b8750700d344b0ebeff">&#9670;&#160;</a></span>DrawAcceleratingBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void DrawAcceleratingBox </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af45c953af439be374c5b0d3da354a389" name="af45c953af439be374c5b0d3da354a389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af45c953af439be374c5b0d3da354a389">&#9670;&#160;</a></span>DrawNonAcceleratingBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void DrawNonAcceleratingBox </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53a88672a4cfd0217261599ecb9e5fba" name="a53a88672a4cfd0217261599ecb9e5fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a88672a4cfd0217261599ecb9e5fba">&#9670;&#160;</a></span>drawpatchpx00()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> drawpatchpx00 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adda3677b3668506eb287df03103024ef" name="adda3677b3668506eb287df03103024ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda3677b3668506eb287df03103024ef">&#9670;&#160;</a></span>drawpatchpx01()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> drawpatchpx01 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a362b8c3c13d6a466a44ad7c0af499036" name="a362b8c3c13d6a466a44ad7c0af499036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362b8c3c13d6a466a44ad7c0af499036">&#9670;&#160;</a></span>drawpatchpx10()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> drawpatchpx10 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9eed63c63ca7bbcf781c3fe19fc002c" name="aa9eed63c63ca7bbcf781c3fe19fc002c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9eed63c63ca7bbcf781c3fe19fc002c">&#9670;&#160;</a></span>drawpatchpx11()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> drawpatchpx11 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f4271031c5603ca0347e5feb947d422" name="a8f4271031c5603ca0347e5feb947d422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f4271031c5603ca0347e5feb947d422">&#9670;&#160;</a></span>PACKED_STRUCT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef PACKED_STRUCT </td>
+          <td>(</td>
+          <td class="paramtype">{ char manufacturer;char <a class="el" href="d__mode_8c.html#aa577d1fcf565b5fce7f696ad477b777b">version</a>;char encoding;char bits_per_pixel;unsigned short xmin;unsigned short ymin;unsigned short xmax;unsigned short ymax;unsigned short hres;unsigned short vres;unsigned char <a class="el" href="i__video_8c.html#ac289aa1a25ae7602765bc84ebdf926d4">palette</a>[48];char reserved;char color_planes;unsigned short bytes_per_line;unsigned short palette_type;char filler[58];unsigned char data;}&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa76f7fa6f3bb489abbc4e9f5d61b1e03" name="aa76f7fa6f3bb489abbc4e9f5d61b1e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa76f7fa6f3bb489abbc4e9f5d61b1e03">&#9670;&#160;</a></span>V_CopyRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_CopyRect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affad4dc810b1d4f03ddb2c46e60c0158" name="affad4dc810b1d4f03ddb2c46e60c0158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affad4dc810b1d4f03ddb2c46e60c0158">&#9670;&#160;</a></span>V_CopyScaledBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_CopyScaledBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada2fef75f347122d138803bce7ec004c" name="ada2fef75f347122d138803bce7ec004c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada2fef75f347122d138803bce7ec004c">&#9670;&#160;</a></span>V_DrawAltTLPatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawAltTLPatch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">patch_t *&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3358e44593f5060f52b7d87b0c8fa7d0" name="a3358e44593f5060f52b7d87b0c8fa7d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3358e44593f5060f52b7d87b0c8fa7d0">&#9670;&#160;</a></span>V_DrawBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawBlock </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aafb1f43da424953db749e929b0188704" name="aafb1f43da424953db749e929b0188704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb1f43da424953db749e929b0188704">&#9670;&#160;</a></span>V_DrawBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawBox </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a581d79ef5e502725006e89335000839e" name="a581d79ef5e502725006e89335000839e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581d79ef5e502725006e89335000839e">&#9670;&#160;</a></span>V_DrawFilledBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawFilledBox </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae48de21213e50836e0a129e42b0f15bf" name="ae48de21213e50836e0a129e42b0f15bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae48de21213e50836e0a129e42b0f15bf">&#9670;&#160;</a></span>V_DrawFullscreenRawOrPatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawFullscreenRawOrPatch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="w__wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa80a126a9b4602b71a141d0900a304db" name="aa80a126a9b4602b71a141d0900a304db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa80a126a9b4602b71a141d0900a304db">&#9670;&#160;</a></span>V_DrawHorizLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawHorizLine </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e820f569a5ed6160fdf9a9ee29d8159" name="a5e820f569a5ed6160fdf9a9ee29d8159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e820f569a5ed6160fdf9a9ee29d8159">&#9670;&#160;</a></span>V_DrawMouseSpeedBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawMouseSpeedBox </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afac9b4631eb89f8fbaa331bc1537ab8f" name="afac9b4631eb89f8fbaa331bc1537ab8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afac9b4631eb89f8fbaa331bc1537ab8f">&#9670;&#160;</a></span>V_DrawPatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawPatch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">patch_t *&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a183a97a83375566eda14e2df29209f86" name="a183a97a83375566eda14e2df29209f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a183a97a83375566eda14e2df29209f86">&#9670;&#160;</a></span>V_DrawPatchDirect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawPatchDirect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">patch_t *&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e2a0fd8cfc882e3e36fd102a1031153" name="a8e2a0fd8cfc882e3e36fd102a1031153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2a0fd8cfc882e3e36fd102a1031153">&#9670;&#160;</a></span>V_DrawPatchFlipped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawPatchFlipped </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">patch_t *&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49b88445b661a6b7aa42275da526562f" name="a49b88445b661a6b7aa42275da526562f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49b88445b661a6b7aa42275da526562f">&#9670;&#160;</a></span>V_DrawPatchFullScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawPatchFullScreen </td>
+          <td>(</td>
+          <td class="paramtype">patch_t *&#160;</td>
+          <td class="paramname"><em>patch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td>
+          <td class="paramname"><em>flipped</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7acf0eea18357b4f42c24bb3f3b30e8" name="ad7acf0eea18357b4f42c24bb3f3b30e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7acf0eea18357b4f42c24bb3f3b30e8">&#9670;&#160;</a></span>V_DrawRawScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawRawScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *&#160;</td>
+          <td class="paramname"><em>raw</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad2032447d046d59f2f460bc0cc216e8" name="aad2032447d046d59f2f460bc0cc216e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad2032447d046d59f2f460bc0cc216e8">&#9670;&#160;</a></span>V_DrawScaledBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawScaledBlock </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7714cb7e0bc014619765993c5d3c3635" name="a7714cb7e0bc014619765993c5d3c3635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7714cb7e0bc014619765993c5d3c3635">&#9670;&#160;</a></span>V_DrawShadowedPatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawShadowedPatch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">patch_t *&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a5c80a506ab71c858d5845326482b6f" name="a0a5c80a506ab71c858d5845326482b6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a5c80a506ab71c858d5845326482b6f">&#9670;&#160;</a></span>V_DrawTLPatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawTLPatch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">patch_t *&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e2e188a567813fec8f198510e8add1b" name="a7e2e188a567813fec8f198510e8add1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2e188a567813fec8f198510e8add1b">&#9670;&#160;</a></span>V_DrawVertLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawVertLine </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad590556d64a7d048f28e0ce5f0d395c7" name="ad590556d64a7d048f28e0ce5f0d395c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad590556d64a7d048f28e0ce5f0d395c7">&#9670;&#160;</a></span>V_DrawXlaPatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_DrawXlaPatch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">patch_t *&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97c89d97d81b9fbcc4058631c2ac449e" name="a97c89d97d81b9fbcc4058631c2ac449e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c89d97d81b9fbcc4058631c2ac449e">&#9670;&#160;</a></span>V_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab646ef8d90590f2fc1bce498cf3689ca" name="ab646ef8d90590f2fc1bce498cf3689ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab646ef8d90590f2fc1bce498cf3689ca">&#9670;&#160;</a></span>V_LoadTintTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_LoadTintTable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a456ef738f167096d2b5549cf2b38a622" name="a456ef738f167096d2b5549cf2b38a622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456ef738f167096d2b5549cf2b38a622">&#9670;&#160;</a></span>V_LoadXlaTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_LoadXlaTable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89ee4f844089eb3e4bb16c97fcb5f057" name="a89ee4f844089eb3e4bb16c97fcb5f057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89ee4f844089eb3e4bb16c97fcb5f057">&#9670;&#160;</a></span>V_MarkRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_MarkRect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af413d6ec2ab4fc8e787657135080de04" name="af413d6ec2ab4fc8e787657135080de04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af413d6ec2ab4fc8e787657135080de04">&#9670;&#160;</a></span>V_RestoreBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_RestoreBuffer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68cdd84f557fdf89ba067486a80fd139" name="a68cdd84f557fdf89ba067486a80fd139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68cdd84f557fdf89ba067486a80fd139">&#9670;&#160;</a></span>V_ScreenShot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_ScreenShot </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3389b05235eab9fb54f68dc5304c2675" name="a3389b05235eab9fb54f68dc5304c2675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3389b05235eab9fb54f68dc5304c2675">&#9670;&#160;</a></span>V_SetPatchClipCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_SetPatchClipCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="v__video_8h.html#ae89892b58e5dafdbb0fc289d490a24c4">vpatchclipfunc_t</a>&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88aa8778652f032671812478a0e9e201" name="a88aa8778652f032671812478a0e9e201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88aa8778652f032671812478a0e9e201">&#9670;&#160;</a></span>V_UseBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void V_UseBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a344e7579caafae5d881e4f28a5f0ce48" name="a344e7579caafae5d881e4f28a5f0ce48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a344e7579caafae5d881e4f28a5f0ce48">&#9670;&#160;</a></span>dest_screen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>* dest_screen = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64b32400d34d99a93bd8dc6c6a42217c" name="a64b32400d34d99a93bd8dc6c6a42217c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b32400d34d99a93bd8dc6c6a42217c">&#9670;&#160;</a></span>dirtybox</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dirtybox[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adad148791edccca295a3d173f94ee61c" name="adad148791edccca295a3d173f94ee61c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adad148791edccca295a3d173f94ee61c">&#9670;&#160;</a></span>dp_translation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>* dp_translation = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf547c981a55968fdaf5c9466028c6b4" name="acf547c981a55968fdaf5c9466028c6b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf547c981a55968fdaf5c9466028c6b4">&#9670;&#160;</a></span>dp_translucent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> dp_translucent = <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275edae9de385ef6fe9bf3360d1038396b884c">false</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2007fa590ba309aff1f11b7b03b54a1" name="aa2007fa590ba309aff1f11b7b03b54a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2007fa590ba309aff1f11b7b03b54a1">&#9670;&#160;</a></span>drawpatchpx_a</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="v__video_8c.html#a262b9e28280110c6371d28c352762334">drawpatchpx_t</a>* const drawpatchpx_a[2][2]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {<a class="code hl_function" href="v__video_8c.html#aa9eed63c63ca7bbcf781c3fe19fc002c">drawpatchpx11</a>, <a class="code hl_function" href="v__video_8c.html#a362b8c3c13d6a466a44ad7c0af499036">drawpatchpx10</a>}, {<a class="code hl_function" href="v__video_8c.html#adda3677b3668506eb287df03103024ef">drawpatchpx01</a>, <a class="code hl_function" href="v__video_8c.html#a53a88672a4cfd0217261599ecb9e5fba">drawpatchpx00</a>}}</div>
+<div class="ttc" id="av__video_8c_html_a362b8c3c13d6a466a44ad7c0af499036"><div class="ttname"><a href="v__video_8c.html#a362b8c3c13d6a466a44ad7c0af499036">drawpatchpx10</a></div><div class="ttdeci">static const pixel_t drawpatchpx10(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:182</div></div>
+<div class="ttc" id="av__video_8c_html_a53a88672a4cfd0217261599ecb9e5fba"><div class="ttname"><a href="v__video_8c.html#a53a88672a4cfd0217261599ecb9e5fba">drawpatchpx00</a></div><div class="ttdeci">static const pixel_t drawpatchpx00(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:160</div></div>
+<div class="ttc" id="av__video_8c_html_aa9eed63c63ca7bbcf781c3fe19fc002c"><div class="ttname"><a href="v__video_8c.html#aa9eed63c63ca7bbcf781c3fe19fc002c">drawpatchpx11</a></div><div class="ttdeci">static const pixel_t drawpatchpx11(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:193</div></div>
+<div class="ttc" id="av__video_8c_html_adda3677b3668506eb287df03103024ef"><div class="ttname"><a href="v__video_8c.html#adda3677b3668506eb287df03103024ef">drawpatchpx01</a></div><div class="ttdeci">static const pixel_t drawpatchpx01(const pixel_t dest, const pixel_t source)</div><div class="ttdef"><b>Definition:</b> v_video.c:171</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3e50f37982ca55e80207f6cb2cd9b144" name="a3e50f37982ca55e80207f6cb2cd9b144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e50f37982ca55e80207f6cb2cd9b144">&#9670;&#160;</a></span>dx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="m__fixed_8h.html#a7fdea216e6bec468d1569e8ab1bd469b">fixed_t</a> dx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae41edec51266be206e0f2f16c697cd01" name="ae41edec51266be206e0f2f16c697cd01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae41edec51266be206e0f2f16c697cd01">&#9670;&#160;</a></span>dxi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="m__fixed_8h.html#a7fdea216e6bec468d1569e8ab1bd469b">fixed_t</a> dxi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4e7775251189f711501595fe04b8ffd" name="ac4e7775251189f711501595fe04b8ffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e7775251189f711501595fe04b8ffd">&#9670;&#160;</a></span>dy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="m__fixed_8h.html#a7fdea216e6bec468d1569e8ab1bd469b">fixed_t</a> dy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3040e577a91bd7b55f9d83b5d53413c6" name="a3040e577a91bd7b55f9d83b5d53413c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3040e577a91bd7b55f9d83b5d53413c6">&#9670;&#160;</a></span>dyi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="m__fixed_8h.html#a7fdea216e6bec468d1569e8ab1bd469b">fixed_t</a> dyi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65204acedf07136965a6c063f96a9010" name="a65204acedf07136965a6c063f96a9010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65204acedf07136965a6c063f96a9010">&#9670;&#160;</a></span>max_seen_speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int max_seen_speed = <a class="el" href="v__video_8c.html#acba647aa70fcf8b143726089201bb6e2">MOUSE_SPEED_BOX_WIDTH</a> - 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19bbf8828c1e528ca506274034ed4eab" name="a19bbf8828c1e528ca506274034ed4eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19bbf8828c1e528ca506274034ed4eab">&#9670;&#160;</a></span>patchclip_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="v__video_8h.html#ae89892b58e5dafdbb0fc289d490a24c4">vpatchclipfunc_t</a> patchclip_callback = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae697cf110a4c05923a368285a69d72a2" name="ae697cf110a4c05923a368285a69d72a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae697cf110a4c05923a368285a69d72a2">&#9670;&#160;</a></span>tinttable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>* tinttable = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a148b6da468b833853b9559276a500ce4" name="a148b6da468b833853b9559276a500ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148b6da468b833853b9559276a500ce4">&#9670;&#160;</a></span>tranmap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>* tranmap = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c3bad4c854912ac526493fcfae160dc" name="a8c3bad4c854912ac526493fcfae160dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c3bad4c854912ac526493fcfae160dc">&#9670;&#160;</a></span>xlatab</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a>* xlatab = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="v__video_8c.html">v_video.c</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>
