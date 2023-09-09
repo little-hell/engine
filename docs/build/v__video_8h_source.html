@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell-crispy/subprojects/little-hell-engine/src/v_video.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('v__video_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">v_video.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="v__video_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright(C) 1993-1996 Id Software, Inc.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright(C) 2005-2014 Simon Howard</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// This program is free software; you can redistribute it and/or</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// modify it under the terms of the GNU General Public License</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// as published by the Free Software Foundation; either version 2</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// of the License, or (at your option) any later version.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// GNU General Public License for more details.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// DESCRIPTION:</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//  Gamma correction LUT.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//  Functions to draw patches (by post) directly to screen.</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//  Functions to blit a block to the screen.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#ifndef __V_VIDEO__</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define __V_VIDEO__</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="doomtype_8h.html">doomtype.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Needed because we are refering to patches.</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="v__patch_8h.html">v_patch.h</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="w__wad_8h.html">w_wad.h</a>&quot;</span> <span class="comment">// [crispy] for lumpindex_t</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">//</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// VIDEO</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">//</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="v__video_8h.html#a2e0f444d088b7109d7761f15d6cbdb2e">   36</a></span><span class="preprocessor">#define CENTERY (SCREENHEIGHT / 2)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="v__video_8h.html#a64b32400d34d99a93bd8dc6c6a42217c">dirtybox</a>[4];</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">extern</span> <span class="keywordtype">byte</span> *<a class="code hl_variable" href="v__video_8h.html#ae697cf110a4c05923a368285a69d72a2">tinttable</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">extern</span> <span class="keywordtype">byte</span> *<a class="code hl_variable" href="v__video_8h.html#adad148791edccca295a3d173f94ee61c">dp_translation</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">extern</span> <span class="keywordtype">boolean</span> <a class="code hl_variable" href="v__video_8h.html#acf547c981a55968fdaf5c9466028c6b4">dp_translucent</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// haleyjd 08/28/10: implemented for Strife support</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// haleyjd 08/28/10: Patch clipping callback, implemented to support Choco</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// Strife.</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="v__video_8h.html#ae89892b58e5dafdbb0fc289d490a24c4">   48</a></span><span class="keyword">typedef</span> <a class="code hl_enumeration" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> (*<a class="code hl_typedef" href="v__video_8h.html#ae89892b58e5dafdbb0fc289d490a24c4">vpatchclipfunc_t</a>)(patch_t *, int, int);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a3389b05235eab9fb54f68dc5304c2675">V_SetPatchClipCallback</a>(<a class="code hl_typedef" href="v__video_8h.html#ae89892b58e5dafdbb0fc289d490a24c4">vpatchclipfunc_t</a> func);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// Allocates buffer screens, call before R_Init.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a97c89d97d81b9fbcc4058631c2ac449e">V_Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// Draw a block from the specified source screen to the screen.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#aa76f7fa6f3bb489abbc4e9f5d61b1e03">V_CopyRect</a>(<span class="keywordtype">int</span> srcx, <span class="keywordtype">int</span> srcy, <a class="code hl_typedef" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *source, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> destx, <span class="keywordtype">int</span> desty);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#afac9b4631eb89f8fbaa331bc1537ab8f">V_DrawPatch</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, patch_t *patch);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a8e2a0fd8cfc882e3e36fd102a1031153">V_DrawPatchFlipped</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, patch_t *patch);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a0a5c80a506ab71c858d5845326482b6f">V_DrawTLPatch</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, patch_t *patch);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#ada2fef75f347122d138803bce7ec004c">V_DrawAltTLPatch</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, patch_t *patch);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a7714cb7e0bc014619765993c5d3c3635">V_DrawShadowedPatch</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, patch_t *patch);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#ad590556d64a7d048f28e0ce5f0d395c7">V_DrawXlaPatch</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, patch_t *patch); <span class="comment">// villsa [STRIFE]</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a183a97a83375566eda14e2df29209f86">V_DrawPatchDirect</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, patch_t *patch);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a49b88445b661a6b7aa42275da526562f">V_DrawPatchFullScreen</a>(patch_t *patch, <span class="keywordtype">boolean</span> flipped);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// Draw a linear block of pixels into the view buffer.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a3358e44593f5060f52b7d87b0c8fa7d0">V_DrawBlock</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <a class="code hl_typedef" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *src);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#aad2032447d046d59f2f460bc0cc216e8">V_DrawScaledBlock</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <a class="code hl_typedef" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *src);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a89ee4f844089eb3e4bb16c97fcb5f057">V_MarkRect</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a581d79ef5e502725006e89335000839e">V_DrawFilledBox</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> c);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#aa80a126a9b4602b71a141d0900a304db">V_DrawHorizLine</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> c);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a7e2e188a567813fec8f198510e8add1b">V_DrawVertLine</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> c);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#aafb1f43da424953db749e929b0188704">V_DrawBox</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> c);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#affad4dc810b1d4f03ddb2c46e60c0158">V_CopyScaledBuffer</a>(<a class="code hl_typedef" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *dest, <a class="code hl_typedef" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *src, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// Draw a raw screen lump</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#ad7acf0eea18357b4f42c24bb3f3b30e8">V_DrawRawScreen</a>(<a class="code hl_typedef" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *raw);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// Temporarily switch to using a different buffer to draw graphics, etc.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#ae48de21213e50836e0a129e42b0f15bf">V_DrawFullscreenRawOrPatch</a>(<a class="code hl_typedef" href="w__wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a> index); <span class="comment">// [crispy]</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a88aa8778652f032671812478a0e9e201">V_UseBuffer</a>(<a class="code hl_typedef" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *buffer);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// Return to using the normal screen buffer to draw graphics.</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#af413d6ec2ab4fc8e787657135080de04">V_RestoreBuffer</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// Save a screenshot of the current screen to a file, named in the</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// format described in the string passed to the function, eg.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">// &quot;DOOM%02i.pcx&quot;</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a68cdd84f557fdf89ba067486a80fd139">V_ScreenShot</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *format);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// Load the lookup table for translucency calculations from the TINTTAB</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">// lump.</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#ab646ef8d90590f2fc1bce498cf3689ca">V_LoadTintTable</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">// villsa [STRIFE]</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">// Load the lookup table for translucency calculations from the XLATAB</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">// lump.</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a456ef738f167096d2b5549cf2b38a622">V_LoadXlaTable</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keywordtype">void</span> <a class="code hl_function" href="v__video_8h.html#a5e820f569a5ed6160fdf9a9ee29d8159">V_DrawMouseSpeedBox</a>(<span class="keywordtype">int</span> speed);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="adoomtype_8h_html"><div class="ttname"><a href="doomtype_8h.html">doomtype.h</a></div></div>
+<div class="ttc" id="adoomtype_8h_html_a7c6368b321bd9acd0149b030bb8275ed"><div class="ttname"><a href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a></div><div class="ttdeci">boolean</div><div class="ttdef"><b>Definition:</b> doomtype.h:101</div></div>
+<div class="ttc" id="adoomtype_8h_html_ae35c9633c3609802dd539953d6bff262"><div class="ttname"><a href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a></div><div class="ttdeci">uint8_t pixel_t</div><div class="ttdef"><b>Definition:</b> doomtype.h:110</div></div>
+<div class="ttc" id="av__patch_8h_html"><div class="ttname"><a href="v__patch_8h.html">v_patch.h</a></div></div>
+<div class="ttc" id="av__video_8h_html_a0a5c80a506ab71c858d5845326482b6f"><div class="ttname"><a href="v__video_8h.html#a0a5c80a506ab71c858d5845326482b6f">V_DrawTLPatch</a></div><div class="ttdeci">void V_DrawTLPatch(int x, int y, patch_t *patch)</div><div class="ttdef"><b>Definition:</b> v_video.c:477</div></div>
+<div class="ttc" id="av__video_8h_html_a183a97a83375566eda14e2df29209f86"><div class="ttname"><a href="v__video_8h.html#a183a97a83375566eda14e2df29209f86">V_DrawPatchDirect</a></div><div class="ttdeci">void V_DrawPatchDirect(int x, int y, patch_t *patch)</div><div class="ttdef"><b>Definition:</b> v_video.c:466</div></div>
+<div class="ttc" id="av__video_8h_html_a3358e44593f5060f52b7d87b0c8fa7d0"><div class="ttname"><a href="v__video_8h.html#a3358e44593f5060f52b7d87b0c8fa7d0">V_DrawBlock</a></div><div class="ttdeci">void V_DrawBlock(int x, int y, int width, int height, pixel_t *src)</div><div class="ttdef"><b>Definition:</b> v_video.c:712</div></div>
+<div class="ttc" id="av__video_8h_html_a3389b05235eab9fb54f68dc5304c2675"><div class="ttname"><a href="v__video_8h.html#a3389b05235eab9fb54f68dc5304c2675">V_SetPatchClipCallback</a></div><div class="ttdeci">void V_SetPatchClipCallback(vpatchclipfunc_t func)</div><div class="ttdef"><b>Definition:</b> v_video.c:147</div></div>
+<div class="ttc" id="av__video_8h_html_a456ef738f167096d2b5549cf2b38a622"><div class="ttname"><a href="v__video_8h.html#a456ef738f167096d2b5549cf2b38a622">V_LoadXlaTable</a></div><div class="ttdeci">void V_LoadXlaTable(void)</div><div class="ttdef"><b>Definition:</b> v_video.c:702</div></div>
+<div class="ttc" id="av__video_8h_html_a49b88445b661a6b7aa42275da526562f"><div class="ttname"><a href="v__video_8h.html#a49b88445b661a6b7aa42275da526562f">V_DrawPatchFullScreen</a></div><div class="ttdeci">void V_DrawPatchFullScreen(patch_t *patch, boolean flipped)</div><div class="ttdef"><b>Definition:</b> v_video.c:317</div></div>
+<div class="ttc" id="av__video_8h_html_a581d79ef5e502725006e89335000839e"><div class="ttname"><a href="v__video_8h.html#a581d79ef5e502725006e89335000839e">V_DrawFilledBox</a></div><div class="ttdeci">void V_DrawFilledBox(int x, int y, int w, int h, int c)</div><div class="ttdef"><b>Definition:</b> v_video.c:764</div></div>
+<div class="ttc" id="av__video_8h_html_a5e820f569a5ed6160fdf9a9ee29d8159"><div class="ttname"><a href="v__video_8h.html#a5e820f569a5ed6160fdf9a9ee29d8159">V_DrawMouseSpeedBox</a></div><div class="ttdeci">void V_DrawMouseSpeedBox(int speed)</div><div class="ttdef"><b>Definition:</b> v_video.c:1348</div></div>
+<div class="ttc" id="av__video_8h_html_a64b32400d34d99a93bd8dc6c6a42217c"><div class="ttname"><a href="v__video_8h.html#a64b32400d34d99a93bd8dc6c6a42217c">dirtybox</a></div><div class="ttdeci">int dirtybox[4]</div><div class="ttdef"><b>Definition:</b> v_video.c:72</div></div>
+<div class="ttc" id="av__video_8h_html_a68cdd84f557fdf89ba067486a80fd139"><div class="ttname"><a href="v__video_8h.html#a68cdd84f557fdf89ba067486a80fd139">V_ScreenShot</a></div><div class="ttdeci">void V_ScreenShot(const char *format)</div><div class="ttdef"><b>Definition:</b> v_video.c:1179</div></div>
+<div class="ttc" id="av__video_8h_html_a7714cb7e0bc014619765993c5d3c3635"><div class="ttname"><a href="v__video_8h.html#a7714cb7e0bc014619765993c5d3c3635">V_DrawShadowedPatch</a></div><div class="ttdeci">void V_DrawShadowedPatch(int x, int y, patch_t *patch)</div><div class="ttdef"><b>Definition:</b> v_video.c:635</div></div>
+<div class="ttc" id="av__video_8h_html_a7e2e188a567813fec8f198510e8add1b"><div class="ttname"><a href="v__video_8h.html#a7e2e188a567813fec8f198510e8add1b">V_DrawVertLine</a></div><div class="ttdeci">void V_DrawVertLine(int x, int y, int h, int c)</div><div class="ttdef"><b>Definition:</b> v_video.c:801</div></div>
+<div class="ttc" id="av__video_8h_html_a88aa8778652f032671812478a0e9e201"><div class="ttname"><a href="v__video_8h.html#a88aa8778652f032671812478a0e9e201">V_UseBuffer</a></div><div class="ttdeci">void V_UseBuffer(pixel_t *buffer)</div><div class="ttdef"><b>Definition:</b> v_video.c:928</div></div>
+<div class="ttc" id="av__video_8h_html_a89ee4f844089eb3e4bb16c97fcb5f057"><div class="ttname"><a href="v__video_8h.html#a89ee4f844089eb3e4bb16c97fcb5f057">V_MarkRect</a></div><div class="ttdeci">void V_MarkRect(int x, int y, int width, int height)</div><div class="ttdef"><b>Definition:</b> v_video.c:81</div></div>
+<div class="ttc" id="av__video_8h_html_a8e2a0fd8cfc882e3e36fd102a1031153"><div class="ttname"><a href="v__video_8h.html#a8e2a0fd8cfc882e3e36fd102a1031153">V_DrawPatchFlipped</a></div><div class="ttdeci">void V_DrawPatchFlipped(int x, int y, patch_t *patch)</div><div class="ttdef"><b>Definition:</b> v_video.c:346</div></div>
+<div class="ttc" id="av__video_8h_html_a97c89d97d81b9fbcc4058631c2ac449e"><div class="ttname"><a href="v__video_8h.html#a97c89d97d81b9fbcc4058631c2ac449e">V_Init</a></div><div class="ttdeci">void V_Init(void)</div><div class="ttdef"><b>Definition:</b> v_video.c:911</div></div>
+<div class="ttc" id="av__video_8h_html_aa76f7fa6f3bb489abbc4e9f5d61b1e03"><div class="ttname"><a href="v__video_8h.html#aa76f7fa6f3bb489abbc4e9f5d61b1e03">V_CopyRect</a></div><div class="ttdeci">void V_CopyRect(int srcx, int srcy, pixel_t *source, int width, int height, int destx, int desty)</div><div class="ttdef"><b>Definition:</b> v_video.c:97</div></div>
+<div class="ttc" id="av__video_8h_html_aa80a126a9b4602b71a141d0900a304db"><div class="ttname"><a href="v__video_8h.html#aa80a126a9b4602b71a141d0900a304db">V_DrawHorizLine</a></div><div class="ttdeci">void V_DrawHorizLine(int x, int y, int w, int c)</div><div class="ttdef"><b>Definition:</b> v_video.c:784</div></div>
+<div class="ttc" id="av__video_8h_html_aad2032447d046d59f2f460bc0cc216e8"><div class="ttname"><a href="v__video_8h.html#aad2032447d046d59f2f460bc0cc216e8">V_DrawScaledBlock</a></div><div class="ttdeci">void V_DrawScaledBlock(int x, int y, int width, int height, pixel_t *src)</div><div class="ttdef"><b>Definition:</b> v_video.c:736</div></div>
+<div class="ttc" id="av__video_8h_html_aafb1f43da424953db749e929b0188704"><div class="ttname"><a href="v__video_8h.html#aafb1f43da424953db749e929b0188704">V_DrawBox</a></div><div class="ttdeci">void V_DrawBox(int x, int y, int w, int h, int c)</div><div class="ttdef"><b>Definition:</b> v_video.c:815</div></div>
+<div class="ttc" id="av__video_8h_html_ab646ef8d90590f2fc1bce498cf3689ca"><div class="ttname"><a href="v__video_8h.html#ab646ef8d90590f2fc1bce498cf3689ca">V_LoadTintTable</a></div><div class="ttdeci">void V_LoadTintTable(void)</div><div class="ttdef"><b>Definition:</b> v_video.c:691</div></div>
+<div class="ttc" id="av__video_8h_html_acf547c981a55968fdaf5c9466028c6b4"><div class="ttname"><a href="v__video_8h.html#acf547c981a55968fdaf5c9466028c6b4">dp_translucent</a></div><div class="ttdeci">boolean dp_translucent</div><div class="ttdef"><b>Definition:</b> v_video.c:60</div></div>
+<div class="ttc" id="av__video_8h_html_ad590556d64a7d048f28e0ce5f0d395c7"><div class="ttname"><a href="v__video_8h.html#ad590556d64a7d048f28e0ce5f0d395c7">V_DrawXlaPatch</a></div><div class="ttdeci">void V_DrawXlaPatch(int x, int y, patch_t *patch)</div><div class="ttdef"><b>Definition:</b> v_video.c:529</div></div>
+<div class="ttc" id="av__video_8h_html_ad7acf0eea18357b4f42c24bb3f3b30e8"><div class="ttname"><a href="v__video_8h.html#ad7acf0eea18357b4f42c24bb3f3b30e8">V_DrawRawScreen</a></div><div class="ttdeci">void V_DrawRawScreen(pixel_t *raw)</div><div class="ttdef"><b>Definition:</b> v_video.c:881</div></div>
+<div class="ttc" id="av__video_8h_html_ada2fef75f347122d138803bce7ec004c"><div class="ttname"><a href="v__video_8h.html#ada2fef75f347122d138803bce7ec004c">V_DrawAltTLPatch</a></div><div class="ttdeci">void V_DrawAltTLPatch(int x, int y, patch_t *patch)</div><div class="ttdef"><b>Definition:</b> v_video.c:583</div></div>
+<div class="ttc" id="av__video_8h_html_adad148791edccca295a3d173f94ee61c"><div class="ttname"><a href="v__video_8h.html#adad148791edccca295a3d173f94ee61c">dp_translation</a></div><div class="ttdeci">byte * dp_translation</div><div class="ttdef"><b>Definition:</b> v_video.c:59</div></div>
+<div class="ttc" id="av__video_8h_html_ae48de21213e50836e0a129e42b0f15bf"><div class="ttname"><a href="v__video_8h.html#ae48de21213e50836e0a129e42b0f15bf">V_DrawFullscreenRawOrPatch</a></div><div class="ttdeci">void V_DrawFullscreenRawOrPatch(lumpindex_t index)</div><div class="ttdef"><b>Definition:</b> v_video.c:889</div></div>
+<div class="ttc" id="av__video_8h_html_ae697cf110a4c05923a368285a69d72a2"><div class="ttname"><a href="v__video_8h.html#ae697cf110a4c05923a368285a69d72a2">tinttable</a></div><div class="ttdeci">byte * tinttable</div><div class="ttdef"><b>Definition:</b> v_video.c:57</div></div>
+<div class="ttc" id="av__video_8h_html_ae89892b58e5dafdbb0fc289d490a24c4"><div class="ttname"><a href="v__video_8h.html#ae89892b58e5dafdbb0fc289d490a24c4">vpatchclipfunc_t</a></div><div class="ttdeci">boolean(* vpatchclipfunc_t)(patch_t *, int, int)</div><div class="ttdef"><b>Definition:</b> v_video.h:48</div></div>
+<div class="ttc" id="av__video_8h_html_af413d6ec2ab4fc8e787657135080de04"><div class="ttname"><a href="v__video_8h.html#af413d6ec2ab4fc8e787657135080de04">V_RestoreBuffer</a></div><div class="ttdeci">void V_RestoreBuffer(void)</div><div class="ttdef"><b>Definition:</b> v_video.c:935</div></div>
+<div class="ttc" id="av__video_8h_html_afac9b4631eb89f8fbaa331bc1537ab8f"><div class="ttname"><a href="v__video_8h.html#afac9b4631eb89f8fbaa331bc1537ab8f">V_DrawPatch</a></div><div class="ttdeci">void V_DrawPatch(int x, int y, patch_t *patch)</div><div class="ttdef"><b>Definition:</b> v_video.c:210</div></div>
+<div class="ttc" id="av__video_8h_html_affad4dc810b1d4f03ddb2c46e60c0158"><div class="ttname"><a href="v__video_8h.html#affad4dc810b1d4f03ddb2c46e60c0158">V_CopyScaledBuffer</a></div><div class="ttdeci">void V_CopyScaledBuffer(pixel_t *dest, pixel_t *src, size_t size)</div><div class="ttdef"><b>Definition:</b> v_video.c:828</div></div>
+<div class="ttc" id="aw__wad_8h_html"><div class="ttname"><a href="w__wad_8h.html">w_wad.h</a></div></div>
+<div class="ttc" id="aw__wad_8h_html_af53134ff3c932d06fa1f0f38e8af9e12"><div class="ttname"><a href="w__wad_8h.html#af53134ff3c932d06fa1f0f38e8af9e12">lumpindex_t</a></div><div class="ttdeci">int lumpindex_t</div><div class="ttdef"><b>Definition:</b> w_wad.h:52</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="v__video_8h.html">v_video.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

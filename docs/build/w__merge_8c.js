@@ -1,0 +1,35 @@
+var w__merge_8c =
+[
+    [ "searchlist_t", "structsearchlist__t.html", "structsearchlist__t" ],
+    [ "sprite_frame_t", "structsprite__frame__t.html", "structsprite__frame__t" ],
+    [ "section_t", "w__merge_8c.html#ae0680445b6052d4c06d2f86e90421084", [
+      [ "SECTION_NORMAL", "w__merge_8c.html#ae0680445b6052d4c06d2f86e90421084a4373573e5177551075d23470c3cc3f45", null ],
+      [ "SECTION_FLATS", "w__merge_8c.html#ae0680445b6052d4c06d2f86e90421084abe005896d92ec7d8cf8d0ccce80fa604", null ],
+      [ "SECTION_SPRITES", "w__merge_8c.html#ae0680445b6052d4c06d2f86e90421084a71c77dbb37f54cafc51a315784d11963", null ]
+    ] ],
+    [ "AddSpriteLump", "w__merge_8c.html#a0f3415ec3be5c16ee74d2d40d3a829e0", null ],
+    [ "DoMerge", "w__merge_8c.html#a7eccfd2b82a412c51cb73a8e334c0ea4", null ],
+    [ "FindInList", "w__merge_8c.html#a1b3936ad6149e825e8cd5c46dc4e3dea", null ],
+    [ "FindSpriteFrame", "w__merge_8c.html#aebbf6d35a143f8e33050f8893e7cd0b9", null ],
+    [ "GenerateSpriteList", "w__merge_8c.html#a43012202d28bbc2c7d118ef4356fd9a7", null ],
+    [ "InitSpriteList", "w__merge_8c.html#add40d331e76dd421c5d0249fb7388f97", null ],
+    [ "SetupList", "w__merge_8c.html#a5e7f087f3a8842bc3ae8c6d9c9d508cb", null ],
+    [ "SetupLists", "w__merge_8c.html#a187385ed4353022088a92e2849a3f069", null ],
+    [ "SpriteLumpNeeded", "w__merge_8c.html#abf77e6daddbf6fb3ed2e989b296ccf78", null ],
+    [ "ValidSpriteLumpName", "w__merge_8c.html#ab9b7e9b03fb02627438a38414a9ec073", null ],
+    [ "W_MergeDump", "w__merge_8c.html#ab5feb4271f43995a6f04f171258b1021", null ],
+    [ "W_MergeFile", "w__merge_8c.html#a15ce912217c6fcfff1af41e530ff95b5", null ],
+    [ "W_NWTAddLumps", "w__merge_8c.html#a5dab6fc8ea25369682a92f53b39fb5cc", null ],
+    [ "W_NWTDashMerge", "w__merge_8c.html#a3cb869e53eff185ef6c8696ea8a4fd51", null ],
+    [ "W_NWTMergeFile", "w__merge_8c.html#a80af28083661e7d676c34b0eb3a08e87", null ],
+    [ "W_PrintDirectory", "w__merge_8c.html#ad464e2792859ce3e27842a3491253522", null ],
+    [ "iwad", "w__merge_8c.html#ac9235407c99253a48c8d98da4b939630", null ],
+    [ "iwad_flats", "w__merge_8c.html#a0a187c1e4bb454ef4d474e1a8676cd5a", null ],
+    [ "iwad_sprites", "w__merge_8c.html#a8c0239e2e0162653b28255ccdc4d3023", null ],
+    [ "num_sprite_frames", "w__merge_8c.html#a9d2e73ceb5b0b77614465fbcb5e32135", null ],
+    [ "pwad", "w__merge_8c.html#ad6e83913d9ba6bec1b4c5b310d2edcba", null ],
+    [ "pwad_flats", "w__merge_8c.html#afd0ae91b967de296ac3f0e034f54d5ca", null ],
+    [ "pwad_sprites", "w__merge_8c.html#ac40c13c0684c83fd3f7042136d2ed4ce", null ],
+    [ "sprite_frames", "w__merge_8c.html#abcfe735da88b964ed5e4424101e52280", null ],
+    [ "sprite_frames_alloced", "w__merge_8c.html#a892451dc33330477882d6290e9daf705", null ]
+];

@@ -1,0 +1,1098 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell-crispy/subprojects/little-hell-engine/src/m_misc.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('m__misc_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">m_misc.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;sys/stat.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="doomtype_8h_source.html">doomtype.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for m_misc.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="m__misc_8h__incl.svg" width="499" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="m__misc_8h__dep__incl.svg" width="6919" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div>
+<p><a href="m__misc_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a55283b8d360c09dd90723018b6224c42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a55283b8d360c09dd90723018b6224c42">LINKED_LIST_CHECK_NO_CYCLE</a>(list_type,  list,  next_member)</td></tr>
+<tr class="separator:a55283b8d360c09dd90723018b6224c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0fcef3d58be712548db439be922e4f7c"><td class="memItemLeft" align="right" valign="top">wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a0fcef3d58be712548db439be922e4f7c">M_ConvertUtf8ToWide</a> (const char *str)</td></tr>
+<tr class="separator:a0fcef3d58be712548db439be922e4f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a401a3d69179db3217adc1cf45f697c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a0a401a3d69179db3217adc1cf45f697c">M_ConvertWideToUtf8</a> (const wchar_t *wstr)</td></tr>
+<tr class="separator:a0a401a3d69179db3217adc1cf45f697c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad81231df6d35e03ff0b761c22323bb5c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#ad81231df6d35e03ff0b761c22323bb5c">M_ConvertUtf8ToSysNativeMB</a> (const char *str)</td></tr>
+<tr class="separator:ad81231df6d35e03ff0b761c22323bb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8947f476d0622bbd76331a3331d1a363"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a8947f476d0622bbd76331a3331d1a363">M_ConvertSysNativeMBToUtf8</a> (const char *str)</td></tr>
+<tr class="separator:a8947f476d0622bbd76331a3331d1a363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d438bc6079d34b903326f2167837831"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a0d438bc6079d34b903326f2167837831">M_fopen</a> (const char *filename, const char *<a class="el" href="d__mode_8c.html#a07bb4e8cdc92d8c8e99069d0e29cb370">mode</a>)</td></tr>
+<tr class="separator:a0d438bc6079d34b903326f2167837831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8731b0053e172d1ed2c4a3066d3f40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a9d8731b0053e172d1ed2c4a3066d3f40">M_remove</a> (const char *path)</td></tr>
+<tr class="separator:a9d8731b0053e172d1ed2c4a3066d3f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b99f449efea7c94ae3db1daf7940f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#ae7b99f449efea7c94ae3db1daf7940f9">M_rename</a> (const char *oldname, const char *newname)</td></tr>
+<tr class="separator:ae7b99f449efea7c94ae3db1daf7940f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd89f31f1f50c9bd5956213061b0ff43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#abd89f31f1f50c9bd5956213061b0ff43">M_stat</a> (const char *path, struct stat *buf)</td></tr>
+<tr class="separator:abd89f31f1f50c9bd5956213061b0ff43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8dbc009f77ce51bd264f867516d9bc1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#ab8dbc009f77ce51bd264f867516d9bc1">M_getenv</a> (const char *<a class="el" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
+<tr class="separator:ab8dbc009f77ce51bd264f867516d9bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af902438c58fba33113ee075e5f8705dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#af902438c58fba33113ee075e5f8705dc">M_WriteFile</a> (const char *<a class="el" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, const void *source, int length)</td></tr>
+<tr class="separator:af902438c58fba33113ee075e5f8705dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7eb21b982e8d1c0b7bb4772f9db798e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#af7eb21b982e8d1c0b7bb4772f9db798e">M_ReadFile</a> (const char *<a class="el" href="structrw_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> **buffer)</td></tr>
+<tr class="separator:af7eb21b982e8d1c0b7bb4772f9db798e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a451bc6dac4d5d39279df5c6932bc6b87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a451bc6dac4d5d39279df5c6932bc6b87">M_MakeDirectory</a> (const char *dir)</td></tr>
+<tr class="separator:a451bc6dac4d5d39279df5c6932bc6b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ee4b7f224396af482a5bbde3c66e25"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a28ee4b7f224396af482a5bbde3c66e25">M_TempFile</a> (const char *s)</td></tr>
+<tr class="separator:a28ee4b7f224396af482a5bbde3c66e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad650ee15d671a7d3c70880ae12daddff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#ad650ee15d671a7d3c70880ae12daddff">M_FileExists</a> (const char *file)</td></tr>
+<tr class="separator:ad650ee15d671a7d3c70880ae12daddff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa89f5ee38381546c2bb329ddcef7ec3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#afa89f5ee38381546c2bb329ddcef7ec3">M_FileCaseExists</a> (const char *file)</td></tr>
+<tr class="separator:afa89f5ee38381546c2bb329ddcef7ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f044c5c835c50fd126447665423272"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a60f044c5c835c50fd126447665423272">M_FileLength</a> (FILE *handle)</td></tr>
+<tr class="separator:a60f044c5c835c50fd126447665423272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acafe35843d60b1d1193012ee32416993"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#acafe35843d60b1d1193012ee32416993">M_StrToInt</a> (const char *str, int *result)</td></tr>
+<tr class="separator:acafe35843d60b1d1193012ee32416993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f00350fb4527aaf2aea39228390e24"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a03f00350fb4527aaf2aea39228390e24">M_DirName</a> (const char *path)</td></tr>
+<tr class="separator:a03f00350fb4527aaf2aea39228390e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b37e96ddfdbb3d1ab807b70b055690"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a76b37e96ddfdbb3d1ab807b70b055690">M_BaseName</a> (const char *path)</td></tr>
+<tr class="separator:a76b37e96ddfdbb3d1ab807b70b055690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228231416b7adb5a1e8a39f99dfa251d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a228231416b7adb5a1e8a39f99dfa251d">M_ExtractFileBase</a> (const char *path, char *dest)</td></tr>
+<tr class="separator:a228231416b7adb5a1e8a39f99dfa251d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0569ecc088731fb9bc9e07d72d1ab992"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a0569ecc088731fb9bc9e07d72d1ab992">M_ForceUppercase</a> (char *text)</td></tr>
+<tr class="separator:a0569ecc088731fb9bc9e07d72d1ab992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39258939f9a7bf6980ad2e63e1e6855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#ab39258939f9a7bf6980ad2e63e1e6855">M_ForceLowercase</a> (char *text)</td></tr>
+<tr class="separator:ab39258939f9a7bf6980ad2e63e1e6855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced3d071e8ded25d39cb1eccda4e7cc1"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#aced3d071e8ded25d39cb1eccda4e7cc1">M_StrCaseStr</a> (const char *haystack, const char *needle)</td></tr>
+<tr class="separator:aced3d071e8ded25d39cb1eccda4e7cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731b08079bf36bb1510012463d307d33"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a731b08079bf36bb1510012463d307d33">M_StringDuplicate</a> (const char *orig)</td></tr>
+<tr class="separator:a731b08079bf36bb1510012463d307d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f40d0118cc2bfb06ae5e9d9097bca6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a39f40d0118cc2bfb06ae5e9d9097bca6">M_StringCopy</a> (char *dest, const char *src, size_t dest_size)</td></tr>
+<tr class="separator:a39f40d0118cc2bfb06ae5e9d9097bca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab53da75adf23e9f53baaad10f8fb58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a6ab53da75adf23e9f53baaad10f8fb58">M_StringConcat</a> (char *dest, const char *src, size_t dest_size)</td></tr>
+<tr class="separator:a6ab53da75adf23e9f53baaad10f8fb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b517eff220ff0072fe72ab7461fa968"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a3b517eff220ff0072fe72ab7461fa968">M_StringReplace</a> (const char *haystack, const char *needle, const char *replacement)</td></tr>
+<tr class="separator:a3b517eff220ff0072fe72ab7461fa968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8265005d270994ca9f0bcbe56561eae2"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a8265005d270994ca9f0bcbe56561eae2">M_StringJoin</a> (const char *s,...)</td></tr>
+<tr class="separator:a8265005d270994ca9f0bcbe56561eae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b23b2a6f3cd85c80b2fd34d3e7ab46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a83b23b2a6f3cd85c80b2fd34d3e7ab46">M_StringStartsWith</a> (const char *s, const char *prefix)</td></tr>
+<tr class="separator:a83b23b2a6f3cd85c80b2fd34d3e7ab46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af125088c9d6a72b4c909e1ebedfb09a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#af125088c9d6a72b4c909e1ebedfb09a3">M_StringEndsWith</a> (const char *s, const char *suffix)</td></tr>
+<tr class="separator:af125088c9d6a72b4c909e1ebedfb09a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5772d362ba67979ef6d2cab435fe827"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#ad5772d362ba67979ef6d2cab435fe827">M_vsnprintf</a> (char *buf, size_t buf_len, const char *s, va_list args)</td></tr>
+<tr class="separator:ad5772d362ba67979ef6d2cab435fe827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6c9498dfd591b48a39327d895d490c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#aed6c9498dfd591b48a39327d895d490c">M_snprintf</a> (char *buf, size_t buf_len, const char *s,...) <a class="el" href="doomtype_8h.html#a44ea3bff2cf6f65cc9883ecbc6a7a9f1">PRINTF_ATTR</a>(3</td></tr>
+<tr class="separator:aed6c9498dfd591b48a39327d895d490c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed3121e05c19725b0dab37be3160b68"><td class="memItemLeft" align="right" valign="top">int void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a1ed3121e05c19725b0dab37be3160b68">M_NormalizeSlashes</a> (char *str)</td></tr>
+<tr class="separator:a1ed3121e05c19725b0dab37be3160b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da4da1827601fabc4652193cd4e0929"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__misc_8h.html#a8da4da1827601fabc4652193cd4e0929">M_CleanString</a> (char *s)</td></tr>
+<tr class="separator:a8da4da1827601fabc4652193cd4e0929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a55283b8d360c09dd90723018b6224c42" name="a55283b8d360c09dd90723018b6224c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55283b8d360c09dd90723018b6224c42">&#9670;&#160;</a></span>LINKED_LIST_CHECK_NO_CYCLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINKED_LIST_CHECK_NO_CYCLE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list_type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">next_member&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span>                                                                                             \</div>
+<div class="line">    {                                                                                              \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a76b37e96ddfdbb3d1ab807b70b055690" name="a76b37e96ddfdbb3d1ab807b70b055690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b37e96ddfdbb3d1ab807b70b055690">&#9670;&#160;</a></span>M_BaseName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * M_BaseName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8da4da1827601fabc4652193cd4e0929" name="a8da4da1827601fabc4652193cd4e0929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da4da1827601fabc4652193cd4e0929">&#9670;&#160;</a></span>M_CleanString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * M_CleanString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8947f476d0622bbd76331a3331d1a363" name="a8947f476d0622bbd76331a3331d1a363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8947f476d0622bbd76331a3331d1a363">&#9670;&#160;</a></span>M_ConvertSysNativeMBToUtf8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * M_ConvertSysNativeMBToUtf8 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad81231df6d35e03ff0b761c22323bb5c" name="ad81231df6d35e03ff0b761c22323bb5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad81231df6d35e03ff0b761c22323bb5c">&#9670;&#160;</a></span>M_ConvertUtf8ToSysNativeMB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * M_ConvertUtf8ToSysNativeMB </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fcef3d58be712548db439be922e4f7c" name="a0fcef3d58be712548db439be922e4f7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fcef3d58be712548db439be922e4f7c">&#9670;&#160;</a></span>M_ConvertUtf8ToWide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wchar_t * M_ConvertUtf8ToWide </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a401a3d69179db3217adc1cf45f697c" name="a0a401a3d69179db3217adc1cf45f697c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a401a3d69179db3217adc1cf45f697c">&#9670;&#160;</a></span>M_ConvertWideToUtf8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * M_ConvertWideToUtf8 </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>wstr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03f00350fb4527aaf2aea39228390e24" name="a03f00350fb4527aaf2aea39228390e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03f00350fb4527aaf2aea39228390e24">&#9670;&#160;</a></span>M_DirName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * M_DirName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a228231416b7adb5a1e8a39f99dfa251d" name="a228231416b7adb5a1e8a39f99dfa251d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a228231416b7adb5a1e8a39f99dfa251d">&#9670;&#160;</a></span>M_ExtractFileBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_ExtractFileBase </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa89f5ee38381546c2bb329ddcef7ec3" name="afa89f5ee38381546c2bb329ddcef7ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa89f5ee38381546c2bb329ddcef7ec3">&#9670;&#160;</a></span>M_FileCaseExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * M_FileCaseExists </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad650ee15d671a7d3c70880ae12daddff" name="ad650ee15d671a7d3c70880ae12daddff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad650ee15d671a7d3c70880ae12daddff">&#9670;&#160;</a></span>M_FileExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> M_FileExists </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60f044c5c835c50fd126447665423272" name="a60f044c5c835c50fd126447665423272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60f044c5c835c50fd126447665423272">&#9670;&#160;</a></span>M_FileLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long M_FileLength </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d438bc6079d34b903326f2167837831" name="a0d438bc6079d34b903326f2167837831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d438bc6079d34b903326f2167837831">&#9670;&#160;</a></span>M_fopen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE * M_fopen </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab39258939f9a7bf6980ad2e63e1e6855" name="ab39258939f9a7bf6980ad2e63e1e6855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39258939f9a7bf6980ad2e63e1e6855">&#9670;&#160;</a></span>M_ForceLowercase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_ForceLowercase </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0569ecc088731fb9bc9e07d72d1ab992" name="a0569ecc088731fb9bc9e07d72d1ab992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0569ecc088731fb9bc9e07d72d1ab992">&#9670;&#160;</a></span>M_ForceUppercase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_ForceUppercase </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8dbc009f77ce51bd264f867516d9bc1" name="ab8dbc009f77ce51bd264f867516d9bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8dbc009f77ce51bd264f867516d9bc1">&#9670;&#160;</a></span>M_getenv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * M_getenv </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a451bc6dac4d5d39279df5c6932bc6b87" name="a451bc6dac4d5d39279df5c6932bc6b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a451bc6dac4d5d39279df5c6932bc6b87">&#9670;&#160;</a></span>M_MakeDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_MakeDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ed3121e05c19725b0dab37be3160b68" name="a1ed3121e05c19725b0dab37be3160b68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ed3121e05c19725b0dab37be3160b68">&#9670;&#160;</a></span>M_NormalizeSlashes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int void M_NormalizeSlashes </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7eb21b982e8d1c0b7bb4772f9db798e" name="af7eb21b982e8d1c0b7bb4772f9db798e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7eb21b982e8d1c0b7bb4772f9db798e">&#9670;&#160;</a></span>M_ReadFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int M_ReadFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> **&#160;</td>
+          <td class="paramname"><em>buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d8731b0053e172d1ed2c4a3066d3f40" name="a9d8731b0053e172d1ed2c4a3066d3f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8731b0053e172d1ed2c4a3066d3f40">&#9670;&#160;</a></span>M_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int M_remove </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7b99f449efea7c94ae3db1daf7940f9" name="ae7b99f449efea7c94ae3db1daf7940f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b99f449efea7c94ae3db1daf7940f9">&#9670;&#160;</a></span>M_rename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int M_rename </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>oldname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>newname</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed6c9498dfd591b48a39327d895d490c" name="aed6c9498dfd591b48a39327d895d490c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6c9498dfd591b48a39327d895d490c">&#9670;&#160;</a></span>M_snprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int M_snprintf </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd89f31f1f50c9bd5956213061b0ff43" name="abd89f31f1f50c9bd5956213061b0ff43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd89f31f1f50c9bd5956213061b0ff43">&#9670;&#160;</a></span>M_stat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int M_stat </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct stat *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Make a Windows stat() in platforms/windows.h and call that function with the ifdef instead. </dd></dl>
+
+</div>
+</div>
+<a id="aced3d071e8ded25d39cb1eccda4e7cc1" name="aced3d071e8ded25d39cb1eccda4e7cc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced3d071e8ded25d39cb1eccda4e7cc1">&#9670;&#160;</a></span>M_StrCaseStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * M_StrCaseStr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>haystack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>needle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ab53da75adf23e9f53baaad10f8fb58" name="a6ab53da75adf23e9f53baaad10f8fb58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ab53da75adf23e9f53baaad10f8fb58">&#9670;&#160;</a></span>M_StringConcat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> M_StringConcat </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dest_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39f40d0118cc2bfb06ae5e9d9097bca6" name="a39f40d0118cc2bfb06ae5e9d9097bca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f40d0118cc2bfb06ae5e9d9097bca6">&#9670;&#160;</a></span>M_StringCopy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> M_StringCopy </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dest_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a731b08079bf36bb1510012463d307d33" name="a731b08079bf36bb1510012463d307d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a731b08079bf36bb1510012463d307d33">&#9670;&#160;</a></span>M_StringDuplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * M_StringDuplicate </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>orig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af125088c9d6a72b4c909e1ebedfb09a3" name="af125088c9d6a72b4c909e1ebedfb09a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af125088c9d6a72b4c909e1ebedfb09a3">&#9670;&#160;</a></span>M_StringEndsWith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> M_StringEndsWith </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>suffix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8265005d270994ca9f0bcbe56561eae2" name="a8265005d270994ca9f0bcbe56561eae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8265005d270994ca9f0bcbe56561eae2">&#9670;&#160;</a></span>M_StringJoin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * M_StringJoin </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b517eff220ff0072fe72ab7461fa968" name="a3b517eff220ff0072fe72ab7461fa968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b517eff220ff0072fe72ab7461fa968">&#9670;&#160;</a></span>M_StringReplace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * M_StringReplace </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>haystack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>needle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>replacement</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83b23b2a6f3cd85c80b2fd34d3e7ab46" name="a83b23b2a6f3cd85c80b2fd34d3e7ab46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b23b2a6f3cd85c80b2fd34d3e7ab46">&#9670;&#160;</a></span>M_StringStartsWith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> M_StringStartsWith </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acafe35843d60b1d1193012ee32416993" name="acafe35843d60b1d1193012ee32416993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acafe35843d60b1d1193012ee32416993">&#9670;&#160;</a></span>M_StrToInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> M_StrToInt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28ee4b7f224396af482a5bbde3c66e25" name="a28ee4b7f224396af482a5bbde3c66e25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ee4b7f224396af482a5bbde3c66e25">&#9670;&#160;</a></span>M_TempFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * M_TempFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5772d362ba67979ef6d2cab435fe827" name="ad5772d362ba67979ef6d2cab435fe827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5772d362ba67979ef6d2cab435fe827">&#9670;&#160;</a></span>M_vsnprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int M_vsnprintf </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af902438c58fba33113ee075e5f8705dc" name="af902438c58fba33113ee075e5f8705dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af902438c58fba33113ee075e5f8705dc">&#9670;&#160;</a></span>M_WriteFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> M_WriteFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="m__misc_8h.html">m_misc.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+var i__pcsound_8c =
+[
+    [ "TIMER_FREQ", "i__pcsound_8c.html#acf926951944b6cf370b7229ebd50dd8b", null ],
+    [ "CachePCSLump", "i__pcsound_8c.html#a99122e2d7c3d7044869df455093c74d6", null ],
+    [ "I_PCS_GetSfxLumpNum", "i__pcsound_8c.html#aea66b23f34da5230ec7f94149ef04f80", null ],
+    [ "I_PCS_InitSound", "i__pcsound_8c.html#a9a04ddc38e583391e2a8356a757230d3", null ],
+    [ "I_PCS_ShutdownSound", "i__pcsound_8c.html#a7de849e5d45a11b5f04682e13c0666a0", null ],
+    [ "I_PCS_SoundIsPlaying", "i__pcsound_8c.html#a9e8645b0be89feb0b833bf3c6b7313fa", null ],
+    [ "I_PCS_StartSound", "i__pcsound_8c.html#a108387803c2d9b73813cc9f041e75461", null ],
+    [ "I_PCS_StopSound", "i__pcsound_8c.html#a978cf9ef05b7e188b03698a365d3631e", null ],
+    [ "I_PCS_UpdateSound", "i__pcsound_8c.html#aaf2d93fccb04b7469bea0a023bd9934a", null ],
+    [ "I_PCS_UpdateSoundParams", "i__pcsound_8c.html#a46a4dd2c8348447bf25b89c8d0726174", null ],
+    [ "IsDisabledSound", "i__pcsound_8c.html#a7b89586e3d33c19a53b887ab4feabe57", null ],
+    [ "PCSCallbackFunc", "i__pcsound_8c.html#a25ba52b0da9f97207c45118bf678523d", null ],
+    [ "current_sound_handle", "i__pcsound_8c.html#a0a38f7bb8773eb7d68c1fe71e47a9f68", null ],
+    [ "current_sound_lump", "i__pcsound_8c.html#a957d94c566f82dfdfef158e429f540b3", null ],
+    [ "current_sound_lump_num", "i__pcsound_8c.html#a856c2b5f960768cc15ddfe82c74a0bca", null ],
+    [ "current_sound_pos", "i__pcsound_8c.html#a95b4c3952b84750bf65bee1c16c7401f", null ],
+    [ "current_sound_remaining", "i__pcsound_8c.html#ad3190ebbe20daac76027ff7be7402538", null ],
+    [ "divisors", "i__pcsound_8c.html#a0d2b55a194ec4ca666683c4d31e973e0", null ],
+    [ "pcs_initialized", "i__pcsound_8c.html#a4617bb43e85e25088be217af1c77ad92", null ],
+    [ "sound_lock", "i__pcsound_8c.html#a7afab620122c53e64848a1616aa84418", null ],
+    [ "sound_pcsound_devices", "i__pcsound_8c.html#a019f2ab88a253f7ded9b4cb42d674340", null ],
+    [ "sound_pcsound_module", "i__pcsound_8c.html#a0377ab63c79d49fd0db57e42b2d7d97f", null ],
+    [ "use_sfx_prefix", "i__pcsound_8c.html#aa598fea3f86b603d754b021b5a931fca", null ]
+];

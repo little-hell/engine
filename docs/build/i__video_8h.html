@@ -1,0 +1,1342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Little Hell Engine: /home/joshuam/Dropbox/Projects/little-hell-crispy/subprojects/little-hell-engine/src/i_video.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Little Hell Engine
+   </div>
+   <div id="projectbrief">The idTech 1 engine for the modern day.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('i__video_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">i_video.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="doomtype_8h_source.html">doomtype.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crispy_8h_source.html">crispy.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for i_video.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="i__video_8h__incl.svg" width="287" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="i__video_8h__dep__incl.svg" width="2360" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div>
+<p><a href="i__video_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab4438a205ddc583f38835cdbc28aab47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#ab4438a205ddc583f38835cdbc28aab47">ORIGWIDTH</a>&#160;&#160;&#160;320</td></tr>
+<tr class="separator:ab4438a205ddc583f38835cdbc28aab47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb5352d015de7206c4129341dde6d6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a2cb5352d015de7206c4129341dde6d6f">ORIGHEIGHT</a>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a2cb5352d015de7206c4129341dde6d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac101c663138f79260b6d5ea00140fa22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#ac101c663138f79260b6d5ea00140fa22">MAXWIDTH</a>&#160;&#160;&#160;(<a class="el" href="i__video_8h.html#ab4438a205ddc583f38835cdbc28aab47">ORIGWIDTH</a> &lt;&lt; 2)</td></tr>
+<tr class="separator:ac101c663138f79260b6d5ea00140fa22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1da022379102bc94d127f9c6358fe7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#ade1da022379102bc94d127f9c6358fe7">MAXHEIGHT</a>&#160;&#160;&#160;(<a class="el" href="i__video_8h.html#a2cb5352d015de7206c4129341dde6d6f">ORIGHEIGHT</a> &lt;&lt; 1)</td></tr>
+<tr class="separator:ade1da022379102bc94d127f9c6358fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec397406d8e659df266ffd34997bad47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#aec397406d8e659df266ffd34997bad47">ORIGHEIGHT_4_3</a>&#160;&#160;&#160;240</td></tr>
+<tr class="separator:aec397406d8e659df266ffd34997bad47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e66236d1a3e443410b47698b5b46b4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a9e66236d1a3e443410b47698b5b46b4b">MAXHEIGHT_4_3</a>&#160;&#160;&#160;(<a class="el" href="i__video_8h.html#aec397406d8e659df266ffd34997bad47">ORIGHEIGHT_4_3</a> &lt;&lt; 1)</td></tr>
+<tr class="separator:a9e66236d1a3e443410b47698b5b46b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ae40fcef6ce590689c20c234ad2a0e70e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#ae40fcef6ce590689c20c234ad2a0e70e">grabmouse_callback_t</a>) (void)</td></tr>
+<tr class="separator:ae40fcef6ce590689c20c234ad2a0e70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa79a698fe5754df94c7c14e10b6155aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#aa79a698fe5754df94c7c14e10b6155aa">I_GetScreenDimensions</a> (void)</td></tr>
+<tr class="separator:aa79a698fe5754df94c7c14e10b6155aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4954516491fec3debab3a4a8fda0f3ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a4954516491fec3debab3a4a8fda0f3ed">I_ToggleVsync</a> (void)</td></tr>
+<tr class="separator:a4954516491fec3debab3a4a8fda0f3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db51f3c757b03e542003a81e3332580"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a8db51f3c757b03e542003a81e3332580">I_InitGraphics</a> (void)</td></tr>
+<tr class="separator:a8db51f3c757b03e542003a81e3332580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3a7612af750799b5c4c99bb1cd042e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a8f3a7612af750799b5c4c99bb1cd042e">I_GraphicsCheckCommandLine</a> (void)</td></tr>
+<tr class="separator:a8f3a7612af750799b5c4c99bb1cd042e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70977aba17810971219c473ab4ebc2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#af70977aba17810971219c473ab4ebc2a">I_ShutdownGraphics</a> (void)</td></tr>
+<tr class="separator:af70977aba17810971219c473ab4ebc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe37ed6bc4cb006ee7767fe348c1b777"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#abe37ed6bc4cb006ee7767fe348c1b777">I_SetPalette</a> (<a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *<a class="el" href="i__video_8c.html#ac289aa1a25ae7602765bc84ebdf926d4">palette</a>)</td></tr>
+<tr class="separator:abe37ed6bc4cb006ee7767fe348c1b777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d62f4432fd5eac3ad364e3c06c0c82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a73d62f4432fd5eac3ad364e3c06c0c82">I_GetPaletteIndex</a> (int r, int g, int b)</td></tr>
+<tr class="separator:a73d62f4432fd5eac3ad364e3c06c0c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44dee4c68fef9b7aa707e60a68cc3570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a44dee4c68fef9b7aa707e60a68cc3570">I_UpdateNoBlit</a> (void)</td></tr>
+<tr class="separator:a44dee4c68fef9b7aa707e60a68cc3570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448fd2a7879095096dc1ec2b79932c60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a448fd2a7879095096dc1ec2b79932c60">I_FinishUpdate</a> (void)</td></tr>
+<tr class="separator:a448fd2a7879095096dc1ec2b79932c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85eb4b16f220cc83726f9f2ed712a1f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a85eb4b16f220cc83726f9f2ed712a1f2">I_ReadScreen</a> (<a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *scr)</td></tr>
+<tr class="separator:a85eb4b16f220cc83726f9f2ed712a1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23644c9601aba9f93c1db6bec23b08ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a23644c9601aba9f93c1db6bec23b08ca">I_BeginRead</a> (void)</td></tr>
+<tr class="separator:a23644c9601aba9f93c1db6bec23b08ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eba985b7a56a504f58d4586b0e7f85a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a9eba985b7a56a504f58d4586b0e7f85a">I_SetWindowTitle</a> (const char *title)</td></tr>
+<tr class="separator:a9eba985b7a56a504f58d4586b0e7f85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7004354e0f855c56301d0a517154b82d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a7004354e0f855c56301d0a517154b82d">I_CheckIsScreensaver</a> (void)</td></tr>
+<tr class="separator:a7004354e0f855c56301d0a517154b82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7eb8b12c490fc7a0d7cda08d8a2d2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#aef7eb8b12c490fc7a0d7cda08d8a2d2d">I_SetGrabMouseCallback</a> (<a class="el" href="i__video_8h.html#ae40fcef6ce590689c20c234ad2a0e70e">grabmouse_callback_t</a> func)</td></tr>
+<tr class="separator:aef7eb8b12c490fc7a0d7cda08d8a2d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc7c5f375b7de87cb6fe52df1171984"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#afdc7c5f375b7de87cb6fe52df1171984">I_DisplayFPSDots</a> (<a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> dots_on)</td></tr>
+<tr class="separator:afdc7c5f375b7de87cb6fe52df1171984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0849401b1ea9964f1d588d447fa577c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a0849401b1ea9964f1d588d447fa577c8">I_BindVideoVariables</a> (void)</td></tr>
+<tr class="separator:a0849401b1ea9964f1d588d447fa577c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76c79231bbc339a7509ecb2d731d936"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#ae76c79231bbc339a7509ecb2d731d936">I_InitWindowTitle</a> (void)</td></tr>
+<tr class="separator:ae76c79231bbc339a7509ecb2d731d936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0309f577fcfe536cd46ccf88c7e2602c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a0309f577fcfe536cd46ccf88c7e2602c">I_RegisterWindowIcon</a> (const unsigned int *icon, int width, int height)</td></tr>
+<tr class="separator:a0309f577fcfe536cd46ccf88c7e2602c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6943a08cf7b1444dfe2c9c7e764838a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a6943a08cf7b1444dfe2c9c7e764838a2">I_InitWindowIcon</a> (void)</td></tr>
+<tr class="separator:a6943a08cf7b1444dfe2c9c7e764838a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef80586010aba51c70bc2e44582d7fa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#aef80586010aba51c70bc2e44582d7fa8">I_StartFrame</a> (void)</td></tr>
+<tr class="separator:aef80586010aba51c70bc2e44582d7fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396a8e3d4c336c43f731e59be403b059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a396a8e3d4c336c43f731e59be403b059">I_StartTic</a> (void)</td></tr>
+<tr class="separator:a396a8e3d4c336c43f731e59be403b059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a087327a699a78e5fea68a6678ba7e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a9a087327a699a78e5fea68a6678ba7e9">I_EnableLoadingDisk</a> (int xoffs, int yoffs)</td></tr>
+<tr class="separator:a9a087327a699a78e5fea68a6678ba7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8faabad67055737658e9575501eba7fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a8faabad67055737658e9575501eba7fc">I_GetWindowPosition</a> (int *x, int *y, int w, int h)</td></tr>
+<tr class="separator:a8faabad67055737658e9575501eba7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a20adb9647727e647ce6ba07898877a7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a20adb9647727e647ce6ba07898877a7d">SCREENWIDTH</a></td></tr>
+<tr class="separator:a20adb9647727e647ce6ba07898877a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb232083d588a59b3ec4d564542c9911"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#acb232083d588a59b3ec4d564542c9911">SCREENHEIGHT</a></td></tr>
+<tr class="separator:acb232083d588a59b3ec4d564542c9911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4da2ad8be759fdd67842742452076f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#aef4da2ad8be759fdd67842742452076f">NONWIDEWIDTH</a></td></tr>
+<tr class="separator:aef4da2ad8be759fdd67842742452076f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac886d0f61ea04ae549996f2839527f45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#ac886d0f61ea04ae549996f2839527f45">WIDESCREENDELTA</a></td></tr>
+<tr class="separator:ac886d0f61ea04ae549996f2839527f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df5cfc46170ea64eafb2cf1a05b4809"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a9df5cfc46170ea64eafb2cf1a05b4809">SCREENHEIGHT_4_3</a></td></tr>
+<tr class="separator:a9df5cfc46170ea64eafb2cf1a05b4809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c824505648c335fde35a3b04ea40b5"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a01c824505648c335fde35a3b04ea40b5">video_driver</a></td></tr>
+<tr class="separator:a01c824505648c335fde35a3b04ea40b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e60eb3a388561825142efd9311968ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a9e60eb3a388561825142efd9311968ae">screenvisible</a></td></tr>
+<tr class="separator:a9e60eb3a388561825142efd9311968ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad845d91a388cf304c2b75b01f019e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a5ad845d91a388cf304c2b75b01f019e4">vanilla_keyboard_mapping</a></td></tr>
+<tr class="separator:a5ad845d91a388cf304c2b75b01f019e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a019127ff35f5832aa655e28fe99a4be3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a019127ff35f5832aa655e28fe99a4be3">screensaver_mode</a></td></tr>
+<tr class="separator:a019127ff35f5832aa655e28fe99a4be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31cb38f8f6f53671901736769ac6ecde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a31cb38f8f6f53671901736769ac6ecde">usegamma</a></td></tr>
+<tr class="separator:a31cb38f8f6f53671901736769ac6ecde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ab7bc9e4f1d1871abfe9f8e86a24d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a15ab7bc9e4f1d1871abfe9f8e86a24d6">I_VideoBuffer</a></td></tr>
+<tr class="separator:a15ab7bc9e4f1d1871abfe9f8e86a24d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d434a8b93410ea0ed660e48dac41c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#aa4d434a8b93410ea0ed660e48dac41c6">screen_width</a></td></tr>
+<tr class="separator:aa4d434a8b93410ea0ed660e48dac41c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4a1bd850991355b91c7bfc15247d49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a3b4a1bd850991355b91c7bfc15247d49">screen_height</a></td></tr>
+<tr class="separator:a3b4a1bd850991355b91c7bfc15247d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc359d0ba0a207e69da999c40bf762c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#adc359d0ba0a207e69da999c40bf762c8">fullscreen</a></td></tr>
+<tr class="separator:adc359d0ba0a207e69da999c40bf762c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e34723ebc88f8e7f6eab143428b696"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a58e34723ebc88f8e7f6eab143428b696">aspect_ratio_correct</a></td></tr>
+<tr class="separator:a58e34723ebc88f8e7f6eab143428b696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d86e89ce9486046592ee5953cdec5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#ad8d86e89ce9486046592ee5953cdec5f">integer_scaling</a></td></tr>
+<tr class="separator:ad8d86e89ce9486046592ee5953cdec5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ebbcd3d5d72f981dc9c033eb8919e23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a6ebbcd3d5d72f981dc9c033eb8919e23">vga_porch_flash</a></td></tr>
+<tr class="separator:a6ebbcd3d5d72f981dc9c033eb8919e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c53fb0cd275adead21513a0379ea60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a02c53fb0cd275adead21513a0379ea60">force_software_renderer</a></td></tr>
+<tr class="separator:a02c53fb0cd275adead21513a0379ea60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e25424bdf559c59174775dce9fedaba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a0e25424bdf559c59174775dce9fedaba">png_screenshots</a></td></tr>
+<tr class="separator:a0e25424bdf559c59174775dce9fedaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ada312348340a92f4ae892de6b198fd"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a6ada312348340a92f4ae892de6b198fd">window_position</a></td></tr>
+<tr class="separator:a6ada312348340a92f4ae892de6b198fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bdb733f4f755cc0343049a1f176808d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a5bdb733f4f755cc0343049a1f176808d">joywait</a></td></tr>
+<tr class="separator:a5bdb733f4f755cc0343049a1f176808d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177c777109c6dfae71bdb05987314ea8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i__video_8h.html#a177c777109c6dfae71bdb05987314ea8">usemouse</a></td></tr>
+<tr class="separator:a177c777109c6dfae71bdb05987314ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ade1da022379102bc94d127f9c6358fe7" name="ade1da022379102bc94d127f9c6358fe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1da022379102bc94d127f9c6358fe7">&#9670;&#160;</a></span>MAXHEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXHEIGHT&#160;&#160;&#160;(<a class="el" href="i__video_8h.html#a2cb5352d015de7206c4129341dde6d6f">ORIGHEIGHT</a> &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e66236d1a3e443410b47698b5b46b4b" name="a9e66236d1a3e443410b47698b5b46b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e66236d1a3e443410b47698b5b46b4b">&#9670;&#160;</a></span>MAXHEIGHT_4_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXHEIGHT_4_3&#160;&#160;&#160;(<a class="el" href="i__video_8h.html#aec397406d8e659df266ffd34997bad47">ORIGHEIGHT_4_3</a> &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac101c663138f79260b6d5ea00140fa22" name="ac101c663138f79260b6d5ea00140fa22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac101c663138f79260b6d5ea00140fa22">&#9670;&#160;</a></span>MAXWIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXWIDTH&#160;&#160;&#160;(<a class="el" href="i__video_8h.html#ab4438a205ddc583f38835cdbc28aab47">ORIGWIDTH</a> &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2cb5352d015de7206c4129341dde6d6f" name="a2cb5352d015de7206c4129341dde6d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb5352d015de7206c4129341dde6d6f">&#9670;&#160;</a></span>ORIGHEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORIGHEIGHT&#160;&#160;&#160;200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec397406d8e659df266ffd34997bad47" name="aec397406d8e659df266ffd34997bad47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec397406d8e659df266ffd34997bad47">&#9670;&#160;</a></span>ORIGHEIGHT_4_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORIGHEIGHT_4_3&#160;&#160;&#160;240</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4438a205ddc583f38835cdbc28aab47" name="ab4438a205ddc583f38835cdbc28aab47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4438a205ddc583f38835cdbc28aab47">&#9670;&#160;</a></span>ORIGWIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORIGWIDTH&#160;&#160;&#160;320</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ae40fcef6ce590689c20c234ad2a0e70e" name="ae40fcef6ce590689c20c234ad2a0e70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40fcef6ce590689c20c234ad2a0e70e">&#9670;&#160;</a></span>grabmouse_callback_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>(* grabmouse_callback_t) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a23644c9601aba9f93c1db6bec23b08ca" name="a23644c9601aba9f93c1db6bec23b08ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23644c9601aba9f93c1db6bec23b08ca">&#9670;&#160;</a></span>I_BeginRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_BeginRead </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0849401b1ea9964f1d588d447fa577c8" name="a0849401b1ea9964f1d588d447fa577c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0849401b1ea9964f1d588d447fa577c8">&#9670;&#160;</a></span>I_BindVideoVariables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_BindVideoVariables </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7004354e0f855c56301d0a517154b82d" name="a7004354e0f855c56301d0a517154b82d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7004354e0f855c56301d0a517154b82d">&#9670;&#160;</a></span>I_CheckIsScreensaver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_CheckIsScreensaver </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdc7c5f375b7de87cb6fe52df1171984" name="afdc7c5f375b7de87cb6fe52df1171984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc7c5f375b7de87cb6fe52df1171984">&#9670;&#160;</a></span>I_DisplayFPSDots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_DisplayFPSDots </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a>&#160;</td>
+          <td class="paramname"><em>dots_on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a087327a699a78e5fea68a6678ba7e9" name="a9a087327a699a78e5fea68a6678ba7e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a087327a699a78e5fea68a6678ba7e9">&#9670;&#160;</a></span>I_EnableLoadingDisk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_EnableLoadingDisk </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xoffs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yoffs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a448fd2a7879095096dc1ec2b79932c60" name="a448fd2a7879095096dc1ec2b79932c60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448fd2a7879095096dc1ec2b79932c60">&#9670;&#160;</a></span>I_FinishUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_FinishUpdate </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73d62f4432fd5eac3ad364e3c06c0c82" name="a73d62f4432fd5eac3ad364e3c06c0c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d62f4432fd5eac3ad364e3c06c0c82">&#9670;&#160;</a></span>I_GetPaletteIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int I_GetPaletteIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa79a698fe5754df94c7c14e10b6155aa" name="aa79a698fe5754df94c7c14e10b6155aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79a698fe5754df94c7c14e10b6155aa">&#9670;&#160;</a></span>I_GetScreenDimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_GetScreenDimensions </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8faabad67055737658e9575501eba7fc" name="a8faabad67055737658e9575501eba7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8faabad67055737658e9575501eba7fc">&#9670;&#160;</a></span>I_GetWindowPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_GetWindowPosition </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f3a7612af750799b5c4c99bb1cd042e" name="a8f3a7612af750799b5c4c99bb1cd042e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3a7612af750799b5c4c99bb1cd042e">&#9670;&#160;</a></span>I_GraphicsCheckCommandLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_GraphicsCheckCommandLine </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8db51f3c757b03e542003a81e3332580" name="a8db51f3c757b03e542003a81e3332580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db51f3c757b03e542003a81e3332580">&#9670;&#160;</a></span>I_InitGraphics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_InitGraphics </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6943a08cf7b1444dfe2c9c7e764838a2" name="a6943a08cf7b1444dfe2c9c7e764838a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6943a08cf7b1444dfe2c9c7e764838a2">&#9670;&#160;</a></span>I_InitWindowIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_InitWindowIcon </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae76c79231bbc339a7509ecb2d731d936" name="ae76c79231bbc339a7509ecb2d731d936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae76c79231bbc339a7509ecb2d731d936">&#9670;&#160;</a></span>I_InitWindowTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_InitWindowTitle </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85eb4b16f220cc83726f9f2ed712a1f2" name="a85eb4b16f220cc83726f9f2ed712a1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85eb4b16f220cc83726f9f2ed712a1f2">&#9670;&#160;</a></span>I_ReadScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_ReadScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a> *&#160;</td>
+          <td class="paramname"><em>scr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0309f577fcfe536cd46ccf88c7e2602c" name="a0309f577fcfe536cd46ccf88c7e2602c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0309f577fcfe536cd46ccf88c7e2602c">&#9670;&#160;</a></span>I_RegisterWindowIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_RegisterWindowIcon </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int *&#160;</td>
+          <td class="paramname"><em>icon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef7eb8b12c490fc7a0d7cda08d8a2d2d" name="aef7eb8b12c490fc7a0d7cda08d8a2d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7eb8b12c490fc7a0d7cda08d8a2d2d">&#9670;&#160;</a></span>I_SetGrabMouseCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_SetGrabMouseCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i__video_8h.html#ae40fcef6ce590689c20c234ad2a0e70e">grabmouse_callback_t</a>&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe37ed6bc4cb006ee7767fe348c1b777" name="abe37ed6bc4cb006ee7767fe348c1b777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe37ed6bc4cb006ee7767fe348c1b777">&#9670;&#160;</a></span>I_SetPalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_SetPalette </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="doomtype_8h.html#ab8ef12fab634c171394422d0ee8baf94">byte</a> *&#160;</td>
+          <td class="paramname"><em>palette</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9eba985b7a56a504f58d4586b0e7f85a" name="a9eba985b7a56a504f58d4586b0e7f85a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eba985b7a56a504f58d4586b0e7f85a">&#9670;&#160;</a></span>I_SetWindowTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_SetWindowTitle </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>title</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af70977aba17810971219c473ab4ebc2a" name="af70977aba17810971219c473ab4ebc2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af70977aba17810971219c473ab4ebc2a">&#9670;&#160;</a></span>I_ShutdownGraphics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_ShutdownGraphics </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef80586010aba51c70bc2e44582d7fa8" name="aef80586010aba51c70bc2e44582d7fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef80586010aba51c70bc2e44582d7fa8">&#9670;&#160;</a></span>I_StartFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_StartFrame </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a396a8e3d4c336c43f731e59be403b059" name="a396a8e3d4c336c43f731e59be403b059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a396a8e3d4c336c43f731e59be403b059">&#9670;&#160;</a></span>I_StartTic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_StartTic </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4954516491fec3debab3a4a8fda0f3ed" name="a4954516491fec3debab3a4a8fda0f3ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4954516491fec3debab3a4a8fda0f3ed">&#9670;&#160;</a></span>I_ToggleVsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_ToggleVsync </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44dee4c68fef9b7aa707e60a68cc3570" name="a44dee4c68fef9b7aa707e60a68cc3570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44dee4c68fef9b7aa707e60a68cc3570">&#9670;&#160;</a></span>I_UpdateNoBlit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I_UpdateNoBlit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a58e34723ebc88f8e7f6eab143428b696" name="a58e34723ebc88f8e7f6eab143428b696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e34723ebc88f8e7f6eab143428b696">&#9670;&#160;</a></span>aspect_ratio_correct</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int aspect_ratio_correct</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02c53fb0cd275adead21513a0379ea60" name="a02c53fb0cd275adead21513a0379ea60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c53fb0cd275adead21513a0379ea60">&#9670;&#160;</a></span>force_software_renderer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int force_software_renderer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc359d0ba0a207e69da999c40bf762c8" name="adc359d0ba0a207e69da999c40bf762c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc359d0ba0a207e69da999c40bf762c8">&#9670;&#160;</a></span>fullscreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fullscreen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15ab7bc9e4f1d1871abfe9f8e86a24d6" name="a15ab7bc9e4f1d1871abfe9f8e86a24d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ab7bc9e4f1d1871abfe9f8e86a24d6">&#9670;&#160;</a></span>I_VideoBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#ae35c9633c3609802dd539953d6bff262">pixel_t</a>* I_VideoBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8d86e89ce9486046592ee5953cdec5f" name="ad8d86e89ce9486046592ee5953cdec5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d86e89ce9486046592ee5953cdec5f">&#9670;&#160;</a></span>integer_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int integer_scaling</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bdb733f4f755cc0343049a1f176808d" name="a5bdb733f4f755cc0343049a1f176808d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bdb733f4f755cc0343049a1f176808d">&#9670;&#160;</a></span>joywait</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int joywait</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef4da2ad8be759fdd67842742452076f" name="aef4da2ad8be759fdd67842742452076f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef4da2ad8be759fdd67842742452076f">&#9670;&#160;</a></span>NONWIDEWIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NONWIDEWIDTH</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e25424bdf559c59174775dce9fedaba" name="a0e25424bdf559c59174775dce9fedaba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e25424bdf559c59174775dce9fedaba">&#9670;&#160;</a></span>png_screenshots</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int png_screenshots</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b4a1bd850991355b91c7bfc15247d49" name="a3b4a1bd850991355b91c7bfc15247d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b4a1bd850991355b91c7bfc15247d49">&#9670;&#160;</a></span>screen_height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int screen_height</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4d434a8b93410ea0ed660e48dac41c6" name="aa4d434a8b93410ea0ed660e48dac41c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d434a8b93410ea0ed660e48dac41c6">&#9670;&#160;</a></span>screen_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int screen_width</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb232083d588a59b3ec4d564542c9911" name="acb232083d588a59b3ec4d564542c9911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb232083d588a59b3ec4d564542c9911">&#9670;&#160;</a></span>SCREENHEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SCREENHEIGHT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9df5cfc46170ea64eafb2cf1a05b4809" name="a9df5cfc46170ea64eafb2cf1a05b4809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9df5cfc46170ea64eafb2cf1a05b4809">&#9670;&#160;</a></span>SCREENHEIGHT_4_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SCREENHEIGHT_4_3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a019127ff35f5832aa655e28fe99a4be3" name="a019127ff35f5832aa655e28fe99a4be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a019127ff35f5832aa655e28fe99a4be3">&#9670;&#160;</a></span>screensaver_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> screensaver_mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e60eb3a388561825142efd9311968ae" name="a9e60eb3a388561825142efd9311968ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e60eb3a388561825142efd9311968ae">&#9670;&#160;</a></span>screenvisible</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="doomtype_8h.html#a7c6368b321bd9acd0149b030bb8275ed">boolean</a> screenvisible</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20adb9647727e647ce6ba07898877a7d" name="a20adb9647727e647ce6ba07898877a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20adb9647727e647ce6ba07898877a7d">&#9670;&#160;</a></span>SCREENWIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SCREENWIDTH</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31cb38f8f6f53671901736769ac6ecde" name="a31cb38f8f6f53671901736769ac6ecde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31cb38f8f6f53671901736769ac6ecde">&#9670;&#160;</a></span>usegamma</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int usegamma</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a177c777109c6dfae71bdb05987314ea8" name="a177c777109c6dfae71bdb05987314ea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a177c777109c6dfae71bdb05987314ea8">&#9670;&#160;</a></span>usemouse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int usemouse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ad845d91a388cf304c2b75b01f019e4" name="a5ad845d91a388cf304c2b75b01f019e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad845d91a388cf304c2b75b01f019e4">&#9670;&#160;</a></span>vanilla_keyboard_mapping</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vanilla_keyboard_mapping</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ebbcd3d5d72f981dc9c033eb8919e23" name="a6ebbcd3d5d72f981dc9c033eb8919e23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ebbcd3d5d72f981dc9c033eb8919e23">&#9670;&#160;</a></span>vga_porch_flash</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vga_porch_flash</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01c824505648c335fde35a3b04ea40b5" name="a01c824505648c335fde35a3b04ea40b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c824505648c335fde35a3b04ea40b5">&#9670;&#160;</a></span>video_driver</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* video_driver</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac886d0f61ea04ae549996f2839527f45" name="ac886d0f61ea04ae549996f2839527f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac886d0f61ea04ae549996f2839527f45">&#9670;&#160;</a></span>WIDESCREENDELTA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WIDESCREENDELTA</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ada312348340a92f4ae892de6b198fd" name="a6ada312348340a92f4ae892de6b198fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ada312348340a92f4ae892de6b198fd">&#9670;&#160;</a></span>window_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* window_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="i__video_8h.html">i_video.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

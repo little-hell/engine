@@ -1,0 +1,25 @@
+var structrw_8h =
+[
+    [ "NET_ReadConnectData", "structrw_8h.html#a17728f9042507f96be18446f634b5d0f", null ],
+    [ "NET_ReadFullTiccmd", "structrw_8h.html#aae2e6ed8a1856c1ad15a1d16610f308b", null ],
+    [ "NET_ReadPRNGSeed", "structrw_8h.html#a02643165692b668575ce0df5d2252eae", null ],
+    [ "NET_ReadProtocol", "structrw_8h.html#ae5a314892f4e7411169b6445dba9979b", null ],
+    [ "NET_ReadProtocolList", "structrw_8h.html#a61a1fd2e5574e0763be63ebf100770aa", null ],
+    [ "NET_ReadQueryData", "structrw_8h.html#aadcb8896cb94cd6a0b53f885450b7340", null ],
+    [ "NET_ReadSettings", "structrw_8h.html#a9fa58fd3bdd7785a03ffebb03db5675b", null ],
+    [ "NET_ReadSHA1Sum", "structrw_8h.html#ae02646dd9d2d08ae8c449567f805a616", null ],
+    [ "NET_ReadTiccmdDiff", "structrw_8h.html#a7eaa0035b8cedb5abddedeb1e19f47c0", null ],
+    [ "NET_ReadWaitData", "structrw_8h.html#a8e9d4dee531290fdfd52f95966aaffc8", null ],
+    [ "NET_TiccmdDiff", "structrw_8h.html#a1ede6dd863f201e8ed28272eb9fffaea", null ],
+    [ "NET_TiccmdPatch", "structrw_8h.html#a157deca01237a1523f3d163476105d1e", null ],
+    [ "NET_WriteConnectData", "structrw_8h.html#a356df05a542c7c03a3b885026d2bbb66", null ],
+    [ "NET_WriteFullTiccmd", "structrw_8h.html#a3dd391b309e6f9fdff254b138e54690a", null ],
+    [ "NET_WritePRNGSeed", "structrw_8h.html#a3dec6630beb084dc174190e2259f027c", null ],
+    [ "NET_WriteProtocol", "structrw_8h.html#aaca01bee078c95aa3d2e2fd03cefaa67", null ],
+    [ "NET_WriteProtocolList", "structrw_8h.html#af543083703aed7ef6a1fe9fdb5f6ca5f", null ],
+    [ "NET_WriteQueryData", "structrw_8h.html#ac19fc992165efb8f417e408ce812b25c", null ],
+    [ "NET_WriteSettings", "structrw_8h.html#a6630954d7f99d6aa7db9c310b7a6fa14", null ],
+    [ "NET_WriteSHA1Sum", "structrw_8h.html#a19b739cfbc3b0bf03753ef1a93e3688c", null ],
+    [ "NET_WriteTiccmdDiff", "structrw_8h.html#a922b8f9ce9b185e35f156ffddf3008f1", null ],
+    [ "NET_WriteWaitData", "structrw_8h.html#af5635e2993cc4e4d587f0b6576e4bcfb", null ]
+];
